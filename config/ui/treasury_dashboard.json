@@ -1,0 +1,47 @@
+{
+  "dashboard_id": "treasury",
+  "title": "Tesorería (AR/AP)",
+  "icon": "DollarSign",
+  "tabs": [
+    {
+      "tab_id": "liquidez",
+      "label": "Liquidez",
+      "layout": "grid-cols-4",
+      "widgets": [
+        {
+          "id": "kpi_caja",
+          "type": "kpi_card",
+          "title": "Caja Disponible (Consolidado)",
+          "data_source": "dm_treasury_cash_flow",
+          "metric": "current_balance",
+          "sentiment": "positive",
+          "position": { "col": 1, "row": 1, "width": 1 }
+        },
+        {
+          "id": "kpi_days",
+          "type": "kpi_card",
+          "title": "Days Cash on Hand",
+          "data_source": "dm_treasury_cash_flow",
+          "metric": "days_cash_on_hand",
+          "sentiment": "positive",
+          "position": { "col": 2, "row": 1, "width": 1 }
+        },
+        {
+          "id": "chart_waterfall",
+          "type": "echarts_waterfall",
+          "title": "Cascada de Cash Flow (MTD)",
+          "data_source": "dm_treasury_cash_flow",
+          "position": { "col": 1, "row": 2, "width": 2 }
+        },
+        {
+          "id": "chart_forecast",
+          "type": "echarts_line",
+          "title": "Proyección de Liquidez (Forecast 8 Semanas)",
+          "data_source": "dm_treasury_cash_flow",
+          "series": ["Consolidado", "Forecast", "Limite Minimo"],
+          "position": { "col": 3, "row": 2, "width": 2 }
+        }
+      ]
+    }
+  ]
+}

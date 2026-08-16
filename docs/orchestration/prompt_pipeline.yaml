@@ -1,0 +1,45 @@
+# Prompt Pipeline v1.1
+# Formal mapping layer between prompt templates and LLM models
+
+pipeline:
+  execution:
+    template: "docs/orchestration/prompt_templates/execution_prompt.md"
+    default_model: "Gemini 1.5 Flash"
+    fallback_model: "Gemini 1.5 Pro"
+    context_tier: "generated"
+  
+  validation:
+    template: "docs/orchestration/prompt_templates/validation_prompt.md"
+    default_model: "Gemini 1.5 Flash"
+    fallback_model: "Gemini 1.5 Pro"
+    context_tier: "generated"
+
+  documentation:
+    template: "docs/orchestration/prompt_templates/documentation_prompt.md"
+    default_model: "Gemini 1.5 Flash"
+    fallback_model: "Claude 3.5 Sonnet"
+    context_tier: "optional (documentation_tasks)"
+
+  resume:
+    template: "docs/orchestration/prompt_templates/resume_prompt.md"
+    default_model: "Gemini 1.5 Flash"
+    fallback_model: "Gemini 1.5 Pro"
+    context_tier: "mandatory"
+
+  readiness:
+    template: "docs/orchestration/prompt_templates/readiness_prompt.md"
+    default_model: "Gemini 1.5 Flash"
+    fallback_model: "Gemini 1.5 Pro"
+    context_tier: "optional (architecture_tasks)"
+
+  rollback:
+    template: "docs/orchestration/prompt_templates/rollback_prompt.md"
+    default_model: "Gemini 1.5 Flash"
+    fallback_model: "Gemini 1.5 Pro"
+    context_tier: "generated"
+
+  gate:
+    template: "docs/orchestration/prompt_templates/gate_prompt.md"
+    default_model: "Gemini 1.5 Flash"
+    fallback_model: "Gemini 1.5 Pro"
+    context_tier: "mandatory"

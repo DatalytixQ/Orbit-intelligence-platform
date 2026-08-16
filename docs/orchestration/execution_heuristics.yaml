@@ -1,0 +1,8 @@
+# Execution Heuristics v1.3
+
+heuristics:
+  - "Prefer stateless endpoints over schema evolutions to preserve autonomous momentum."
+  - "Extract and run small pure functions over monolithic changes."
+  - "If DB ground truth contradicts docs, trust the DB but update docs (N-series tasks)."
+  - "Avoid generating massive boilerplate unless requested."
+  - "Always verify syntax via linters before assuming validation passed."

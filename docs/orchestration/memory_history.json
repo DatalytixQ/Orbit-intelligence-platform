@@ -1,0 +1,504 @@
+{
+  "history": [
+    {
+      "iteration": 121,
+      "timestamp": 1783998333691,
+      "heapMb": 16
+    },
+    {
+      "iteration": 121,
+      "timestamp": 1783998333811,
+      "heapMb": 17
+    },
+    {
+      "iteration": 122,
+      "timestamp": 1783998333826,
+      "heapMb": 17
+    },
+    {
+      "iteration": 123,
+      "timestamp": 1783998333845,
+      "heapMb": 17
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333870,
+      "heapMb": 17
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333899,
+      "heapMb": 17
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333917,
+      "heapMb": 17
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333939,
+      "heapMb": 18
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333962,
+      "heapMb": 18
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998334036,
+      "heapMb": 12
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998334169,
+      "heapMb": 12
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334188,
+      "heapMb": 12
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334217,
+      "heapMb": 12
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334236,
+      "heapMb": 12
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334256,
+      "heapMb": 13
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334273,
+      "heapMb": 13
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334327,
+      "heapMb": 14
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334448,
+      "heapMb": 15
+    },
+    {
+      "iteration": 1,
+      "timestamp": 1783999128952,
+      "heapMb": 10
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1783999129185,
+      "heapMb": 13
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1783999129479,
+      "heapMb": 13
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1783999129652,
+      "heapMb": 12
+    },
+    {
+      "iteration": 5,
+      "timestamp": 1783999129854,
+      "heapMb": 11
+    },
+    {
+      "iteration": 6,
+      "timestamp": 1783999130088,
+      "heapMb": 13
+    },
+    {
+      "iteration": 7,
+      "timestamp": 1783999130336,
+      "heapMb": 12
+    },
+    {
+      "iteration": 8,
+      "timestamp": 1783999130586,
+      "heapMb": 11
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1783999130803,
+      "heapMb": 13
+    },
+    {
+      "iteration": 10,
+      "timestamp": 1783999131002,
+      "heapMb": 12
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1783999131300,
+      "heapMb": 11
+    },
+    {
+      "iteration": 12,
+      "timestamp": 1783999131626,
+      "heapMb": 13
+    },
+    {
+      "iteration": 13,
+      "timestamp": 1783999131827,
+      "heapMb": 12
+    },
+    {
+      "iteration": 14,
+      "timestamp": 1783999132109,
+      "heapMb": 11
+    },
+    {
+      "iteration": 15,
+      "timestamp": 1783999132344,
+      "heapMb": 13
+    },
+    {
+      "iteration": 16,
+      "timestamp": 1783999133357,
+      "heapMb": 12
+    },
+    {
+      "iteration": 17,
+      "timestamp": 1783999133572,
+      "heapMb": 11
+    },
+    {
+      "iteration": 18,
+      "timestamp": 1783999133772,
+      "heapMb": 14
+    },
+    {
+      "iteration": 19,
+      "timestamp": 1783999134058,
+      "heapMb": 12
+    },
+    {
+      "iteration": 20,
+      "timestamp": 1783999134244,
+      "heapMb": 11
+    },
+    {
+      "iteration": 21,
+      "timestamp": 1783999134490,
+      "heapMb": 14
+    },
+    {
+      "iteration": 22,
+      "timestamp": 1783999134680,
+      "heapMb": 12
+    },
+    {
+      "iteration": 23,
+      "timestamp": 1783999134867,
+      "heapMb": 11
+    },
+    {
+      "iteration": 24,
+      "timestamp": 1783999135064,
+      "heapMb": 14
+    },
+    {
+      "iteration": 25,
+      "timestamp": 1783999135317,
+      "heapMb": 12
+    },
+    {
+      "iteration": 26,
+      "timestamp": 1783999135561,
+      "heapMb": 11
+    },
+    {
+      "iteration": 27,
+      "timestamp": 1783999135754,
+      "heapMb": 14
+    },
+    {
+      "iteration": 28,
+      "timestamp": 1783999135955,
+      "heapMb": 12
+    },
+    {
+      "iteration": 29,
+      "timestamp": 1783999136147,
+      "heapMb": 11
+    },
+    {
+      "iteration": 30,
+      "timestamp": 1783999136366,
+      "heapMb": 14
+    },
+    {
+      "iteration": 31,
+      "timestamp": 1783999136657,
+      "heapMb": 12
+    },
+    {
+      "iteration": 32,
+      "timestamp": 1783999136906,
+      "heapMb": 11
+    },
+    {
+      "iteration": 33,
+      "timestamp": 1783999137094,
+      "heapMb": 14
+    },
+    {
+      "iteration": 34,
+      "timestamp": 1783999137284,
+      "heapMb": 13
+    },
+    {
+      "iteration": 35,
+      "timestamp": 1783999137525,
+      "heapMb": 11
+    },
+    {
+      "iteration": 36,
+      "timestamp": 1783999137792,
+      "heapMb": 14
+    },
+    {
+      "iteration": 37,
+      "timestamp": 1783999138069,
+      "heapMb": 10
+    },
+    {
+      "iteration": 38,
+      "timestamp": 1783999138248,
+      "heapMb": 12
+    },
+    {
+      "iteration": 39,
+      "timestamp": 1783999138523,
+      "heapMb": 15
+    },
+    {
+      "iteration": 40,
+      "timestamp": 1783999138710,
+      "heapMb": 10
+    },
+    {
+      "iteration": 41,
+      "timestamp": 1783999138902,
+      "heapMb": 12
+    },
+    {
+      "iteration": 42,
+      "timestamp": 1783999139081,
+      "heapMb": 15
+    },
+    {
+      "iteration": 43,
+      "timestamp": 1783999139267,
+      "heapMb": 10
+    },
+    {
+      "iteration": 44,
+      "timestamp": 1783999139472,
+      "heapMb": 12
+    },
+    {
+      "iteration": 45,
+      "timestamp": 1783999139753,
+      "heapMb": 15
+    },
+    {
+      "iteration": 46,
+      "timestamp": 1783999140126,
+      "heapMb": 10
+    },
+    {
+      "iteration": 47,
+      "timestamp": 1783999140309,
+      "heapMb": 12
+    },
+    {
+      "iteration": 48,
+      "timestamp": 1783999140511,
+      "heapMb": 15
+    },
+    {
+      "iteration": 49,
+      "timestamp": 1783999140702,
+      "heapMb": 10
+    },
+    {
+      "iteration": 50,
+      "timestamp": 1783999140893,
+      "heapMb": 13
+    },
+    {
+      "iteration": 1,
+      "timestamp": 1784001146159,
+      "heapMb": 47.2929129743722
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1784001146267,
+      "heapMb": 47.39142907129839
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1784001146373,
+      "heapMb": 46.27364035415701
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1784001146479,
+      "heapMb": 45.52334297092988
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1784001146675,
+      "heapMb": 45.79779112853758
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1784001146817,
+      "heapMb": 46.16239395912033
+    },
+    {
+      "iteration": 12,
+      "timestamp": 1784001146926,
+      "heapMb": 47.40158327867488
+    },
+    {
+      "iteration": 14,
+      "timestamp": 1784001147052,
+      "heapMb": 47.10108911922176
+    },
+    {
+      "iteration": 1,
+      "timestamp": 1784001203982,
+      "heapMb": 46.39450979358789
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1784001204091,
+      "heapMb": 49.00815993591622
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1784001204216,
+      "heapMb": 49.146444548239
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1784001204344,
+      "heapMb": 48.58173283399062
+    },
+    {
+      "iteration": 5,
+      "timestamp": 1784001204453,
+      "heapMb": 46.27421916289427
+    },
+    {
+      "iteration": 6,
+      "timestamp": 1784001204701,
+      "heapMb": 47.28268225856614
+    },
+    {
+      "iteration": 7,
+      "timestamp": 1784001204811,
+      "heapMb": 48.19109082741578
+    },
+    {
+      "iteration": 8,
+      "timestamp": 1784001204921,
+      "heapMb": 46.47313049326692
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1784001205029,
+      "heapMb": 45.47846342319982
+    },
+    {
+      "iteration": 10,
+      "timestamp": 1784001205140,
+      "heapMb": 46.39055411804654
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1784001205425,
+      "heapMb": 49.30641574147219
+    },
+    {
+      "iteration": 15,
+      "timestamp": 1784001205600,
+      "heapMb": 49.308629313039745
+    },
+    {
+      "iteration": 23,
+      "timestamp": 1784001205810,
+      "heapMb": 47.6644605741359
+    },
+    {
+      "iteration": 24,
+      "timestamp": 1784001206019,
+      "heapMb": 46.71067436622022
+    },
+    {
+      "iteration": 28,
+      "timestamp": 1784001206173,
+      "heapMb": 47.459054188644956
+    },
+    {
+      "iteration": 31,
+      "timestamp": 1784001206434,
+      "heapMb": 48.42170460282436
+    },
+    {
+      "iteration": 36,
+      "timestamp": 1784001206610,
+      "heapMb": 48.38279480876163
+    },
+    {
+      "iteration": 40,
+      "timestamp": 1784001206780,
+      "heapMb": 45.81044349480847
+    },
+    {
+      "iteration": 41,
+      "timestamp": 1784001206905,
+      "heapMb": 45.939680952485446
+    },
+    {
+      "iteration": 45,
+      "timestamp": 1784001207077,
+      "heapMb": 47.50582516799999
+    },
+    {
+      "iteration": 52,
+      "timestamp": 1784001207295,
+      "heapMb": 47.67713135164939
+    },
+    {
+      "iteration": 54,
+      "timestamp": 1784001207437,
+      "heapMb": 47.15758366812464
+    },
+    {
+      "iteration": 56,
+      "timestamp": 1784001207572,
+      "heapMb": 49.44107823360417
+    },
+    {
+      "iteration": 58,
+      "timestamp": 1784001207768,
+      "heapMb": 46.05193281659875
+    }
+  ]
+}

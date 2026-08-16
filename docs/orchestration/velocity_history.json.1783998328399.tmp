@@ -1,0 +1,304 @@
+{
+  "history": [
+    {
+      "iteration": 85,
+      "timestamp": 1783998326505,
+      "itersPerHour": 160,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 85,
+      "timestamp": 1783998326527,
+      "itersPerHour": 160,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 85,
+      "timestamp": 1783998326544,
+      "itersPerHour": 160,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 85,
+      "timestamp": 1783998326594,
+      "itersPerHour": 160,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 85,
+      "timestamp": 1783998326723,
+      "itersPerHour": 160,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 86,
+      "timestamp": 1783998326736,
+      "itersPerHour": 161,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 87,
+      "timestamp": 1783998326753,
+      "itersPerHour": 162,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 88,
+      "timestamp": 1783998326773,
+      "itersPerHour": 163,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 89,
+      "timestamp": 1783998326790,
+      "itersPerHour": 164,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 90,
+      "timestamp": 1783998326811,
+      "itersPerHour": 165,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 90,
+      "timestamp": 1783998326851,
+      "itersPerHour": 165,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 90,
+      "timestamp": 1783998326869,
+      "itersPerHour": 165,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 90,
+      "timestamp": 1783998326888,
+      "itersPerHour": 165,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 90,
+      "timestamp": 1783998326905,
+      "itersPerHour": 165,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 90,
+      "timestamp": 1783998326990,
+      "itersPerHour": 165,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 90,
+      "timestamp": 1783998327119,
+      "itersPerHour": 165,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 91,
+      "timestamp": 1783998327130,
+      "itersPerHour": 166,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 92,
+      "timestamp": 1783998327149,
+      "itersPerHour": 167,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 92,
+      "timestamp": 1783998327188,
+      "itersPerHour": 167,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 92,
+      "timestamp": 1783998327205,
+      "itersPerHour": 167,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 92,
+      "timestamp": 1783998327224,
+      "itersPerHour": 167,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 92,
+      "timestamp": 1783998327239,
+      "itersPerHour": 167,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 92,
+      "timestamp": 1783998327300,
+      "itersPerHour": 167,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 92,
+      "timestamp": 1783998327429,
+      "itersPerHour": 167,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 93,
+      "timestamp": 1783998327444,
+      "itersPerHour": 168,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 94,
+      "timestamp": 1783998327460,
+      "itersPerHour": 169,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 94,
+      "timestamp": 1783998327486,
+      "itersPerHour": 169,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 94,
+      "timestamp": 1783998327505,
+      "itersPerHour": 169,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 94,
+      "timestamp": 1783998327524,
+      "itersPerHour": 169,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 94,
+      "timestamp": 1783998327538,
+      "itersPerHour": 169,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 94,
+      "timestamp": 1783998327592,
+      "itersPerHour": 169,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 94,
+      "timestamp": 1783998327712,
+      "itersPerHour": 169,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 95,
+      "timestamp": 1783998327727,
+      "itersPerHour": 170,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 95,
+      "timestamp": 1783998327759,
+      "itersPerHour": 170,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 95,
+      "timestamp": 1783998327775,
+      "itersPerHour": 170,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 95,
+      "timestamp": 1783998327792,
+      "itersPerHour": 170,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 95,
+      "timestamp": 1783998327811,
+      "itersPerHour": 170,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 95,
+      "timestamp": 1783998327867,
+      "itersPerHour": 170,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 95,
+      "timestamp": 1783998327993,
+      "itersPerHour": 170,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 96,
+      "timestamp": 1783998328007,
+      "itersPerHour": 171,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 96,
+      "timestamp": 1783998328036,
+      "itersPerHour": 171,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 96,
+      "timestamp": 1783998328057,
+      "itersPerHour": 171,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 96,
+      "timestamp": 1783998328080,
+      "itersPerHour": 171,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 96,
+      "timestamp": 1783998328099,
+      "itersPerHour": 171,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 96,
+      "timestamp": 1783998328164,
+      "itersPerHour": 171,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 96,
+      "timestamp": 1783998328287,
+      "itersPerHour": 171,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 97,
+      "timestamp": 1783998328305,
+      "itersPerHour": 172,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 98,
+      "timestamp": 1783998328326,
+      "itersPerHour": 173,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 98,
+      "timestamp": 1783998328376,
+      "itersPerHour": 173,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 98,
+      "timestamp": 1783998328399,
+      "itersPerHour": 173,
+      "avgValidationMs": 600
+    }
+  ]
+}

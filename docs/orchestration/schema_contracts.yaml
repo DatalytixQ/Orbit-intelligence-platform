@@ -1,0 +1,35 @@
+schema_evolution_contracts:
+  version: "1.6"
+  purpose: "Formalize schema evolution as an autonomous operation"
+  
+  contract_structure:
+    id: "string (e.g., SCH-001)"
+    owner: "Database Architect"
+    status: "Draft | Proposed | Approved | Applied | Validated | Rolled Back"
+    target_object: "Table | View | Function | RPC | Policy"
+    
+    phases:
+      proposal:
+        artifact: "docs/orchestration/schema_evolution_proposal.md"
+        required_fields: ["Purpose", "Alternatives", "Schema", "Impact", "Rollback"]
+      
+      migration:
+        artifact_up: "sql/{id}_apply.sql"
+        required_elements: ["Schema Change", "Indexes", "RLS Policies"]
+        
+      rollback:
+        artifact_down: "sql/{id}_rollback.sql"
+        required_elements: ["Drop/Revert Operations"]
+        
+      validation:
+        artifact: "sql/{id}_validate.sql"
+        required_criteria: ["Zero Data Loss", "RLS Applied", "Constraint Verification"]
+        
+      documentation:
+        target: "docs/business/database.md"
+        action: "Append or update section"
+        
+    transitions:
+      checkpoint_before: "Update checkpoint to 'Schema Evolution Running'"
+      checkpoint_after: "Update checkpoint to 'Schema Evolution Completed'"
+      approval_gate: "Mandatory human approval required before execution, unless explicitly bypassed by development rules"

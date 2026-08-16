@@ -1,0 +1,27 @@
+{
+  "integration": "NetSuite_SuiteQL",
+  "target_table": "dm_sales_lines",
+  "description": "Mapeo de facturas de venta (Invoices) desde NetSuite a la capa Oro (dm_sales_lines)",
+  "extraction": {
+    "type": "REST_SUITEQL",
+    "base_query": "SELECT t.id, t.tranid, t.trandate, t.entity, t.status, tl.item, tl.quantity, tl.rate, tl.foreignamount, tl.netamount FROM transaction t JOIN transactionline tl ON t.id = tl.transaction",
+    "filters": [
+      { "field": "t.type", "operator": "IN", "value": "('CustInvc', 'CashSale', 'SalesOrd')" },
+      { "field": "tl.mainline", "operator": "=", "value": "F" },
+      { "field": "t.trandate", "operator": ">=", "value": "TO_DATE('2026-01-01', 'YYYY-MM-DD')" }
+    ]
+  },
+  "mapping": {
+    "document_id": { "source_field": "tranid", "type": "string" },
+    "date": { "source_field": "trandate", "type": "date", "format": "YYYY-MM-DD" },
+    "partner_id": { "source_field": "entity", "type": "string" },
+    "item_id": { "source_field": "item", "type": "string" },
+    "quantity": { "source_field": "quantity", "type": "number" },
+    "unit_price": { "source_field": "rate", "type": "number" },
+    "total_amount": { "source_field": "foreignamount", "type": "number" }
+  },
+  "validation_rules": [
+    { "field": "total_amount", "rule": "is_not_null" },
+    { "field": "quantity", "rule": "greater_than", "value": 0 }
+  ]
+}

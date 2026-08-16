@@ -1,0 +1,34 @@
+{
+  "integration": "NetSuite_SuiteQL",
+  "target_table": "raw_ns_contacts",
+  "primary_keys": ["id"],
+  "description": "Contactos múltiples por Cliente B2B",
+  "extraction": {
+    "type": "REST_SUITEQL",
+    "base_query": "SELECT id, entityid, firstname, lastname, email, phone, title, contactrole, company, lastmodifieddate FROM contact",
+    "filters": [
+      { "field": "lastmodifieddate", "operator": ">=", "value": "TO_DATE('{{LAST_SYNC_DATE}}', 'YYYY-MM-DD HH24:MI:SS')" }
+    ]
+  },
+  "mapping": {
+    "id": { "source_field": "id", "type": "string" },
+    "entityid": { "source_field": "entityid", "type": "string" },
+    "first_name": { "source_field": "firstname", "type": "string" },
+    "last_name": { "source_field": "lastname", "type": "string" },
+    "email": { "source_field": "email", "type": "string" },
+    "phone": { "source_field": "phone", "type": "string" },
+    "job_title": { "source_field": "title", "type": "string" },
+    "role_id": { "source_field": "contactrole", "type": "string" },
+    "company_id": { "source_field": "company", "type": "string" },
+    "last_modified_ts": { "source_field": "lastmodifieddate", "type": "date" }
+  },
+  "defaults": {
+    "source_system": "netsuite",
+    "client_id": "vonderk",
+    "snapshot_ts": "{{CURRENT_TIMESTAMP}}"
+  },
+  "validation_rules": [
+    { "field": "id", "rule": "is_not_null" },
+    { "field": "company_id", "rule": "is_not_null" }
+  ]
+}

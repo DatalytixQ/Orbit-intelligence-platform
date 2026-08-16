@@ -1,0 +1,1 @@
+-- Rollback not possible for DROP TABLE without backups

@@ -1,0 +1,101 @@
+# Model Routing Policy v1.1
+# Optimizes for minimum token consumption as per Orchestrator evolution mandate
+
+route_mapping:
+  - activity: "Default Execution"
+    model: "Gemini 1.5 Flash"
+    rationale: "Fast, low cost. Used for general execution."
+
+  - activity: "Validation"
+    model: "Gemini 1.5 Flash"
+    rationale: "Validation checks and actual vs expected outcome assessment."
+
+  - activity: "Checkpoint updates"
+    model: "Gemini 1.5 Flash"
+    rationale: "State management requires zero reasoning overhead."
+
+  - activity: "Documentation updates"
+    model: "Gemini 1.5 Flash"
+    rationale: "Standard markdown generation and updates."
+
+  - activity: "State updates"
+    model: "Gemini 1.5 Flash"
+    rationale: "Log and state generation."
+
+  - activity: "Readiness verification"
+    model: "Gemini 1.5 Flash"
+    rationale: "Check preconditions and artifact existence."
+
+  - activity: "Small reasoning"
+    model: "Gemini 1.5 Flash"
+    rationale: "Basic logic jumps."
+
+  - activity: "Large documentation"
+    model: "Gemini 1.5 Flash"
+    rationale: "High token output where deep reasoning is not required."
+
+  - activity: "Planning"
+    model: "Gemini 1.5 Pro"
+    rationale: "Requires robust reasoning, multi-step dependency awareness, and context synthesis."
+
+  - activity: "Medium reasoning"
+    model: "Gemini 1.5 Pro"
+    rationale: "General purpose backend development and logic implementation."
+
+  - activity: "Architecture comparison"
+    model: "Gemini 1.5 Pro"
+    rationale: "Design evaluation."
+
+  - activity: "Design validation"
+    model: "Gemini 1.5 Pro"
+    rationale: "Validating structural choices."
+
+  - activity: "Dependency analysis"
+    model: "Gemini 1.5 Pro"
+    rationale: "Cross-file link and dependency mapping."
+
+  - activity: "Architecture"
+    model: "Claude 3.5 Sonnet"
+    rationale: "System-level thinking required."
+
+  - activity: "Long documentation"
+    model: "Claude 3.5 Sonnet"
+    rationale: "Technical writing and complex consolidations."
+
+  - activity: "Technical writing"
+    model: "Claude 3.5 Sonnet"
+    rationale: "High prose quality for specific domain reports."
+
+  - activity: "Complex reports"
+    model: "Claude 3.5 Sonnet"
+    rationale: "Synthesizing disparate technical realities."
+
+  - activity: "Large consolidations"
+    model: "Claude 3.5 Sonnet"
+    rationale: "Merging large amounts of documentation."
+
+  - activity: "Complex architecture"
+    model: "Claude 3 Opus"
+    rationale: "Zero-mistake tolerance for core framework design."
+
+  - activity: "Architecture redesign"
+    model: "Claude 3 Opus"
+    rationale: "High risk schema evolution and system redesign."
+
+  - activity: "Cross-domain reasoning"
+    model: "Claude 3 Opus"
+    rationale: "Abstract multi-system logic bridging."
+
+  - activity: "Framework evolution"
+    model: "Claude 3 Opus"
+    rationale: "Orchestrator self-improvement."
+
+  - activity: "Complex planning"
+    model: "Claude 3 Opus"
+    rationale: "High risk multi-wave orchestration."
+
+constraints:
+  - rule: "Never use Claude Opus for repetitive documentation."
+  - rule: "Never use Claude Opus for validation."
+  - rule: "Never use Claude Opus for checkpoint updates."
+  - rule: "Always prefer the cheapest capable model."

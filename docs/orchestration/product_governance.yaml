@@ -1,0 +1,8 @@
+# Product Governance Framework v1.4
+governance_rules:
+  framework_frozen: true
+  allow_roadmap_evolution: true
+  allow_schema_evolution: false
+  allow_code_evolution: true
+  require_human_gate_on_framework_change: true
+  require_human_gate_on_architecture_change: true

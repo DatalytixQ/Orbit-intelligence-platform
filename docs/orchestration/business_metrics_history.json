@@ -1,0 +1,164 @@
+{
+  "history": [
+    {
+      "iteration": 1,
+      "timestamp": 1784001146164,
+      "valueDelivered": 150
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1784001146274,
+      "valueDelivered": 300
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1784001146378,
+      "valueDelivered": 450
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1784001146485,
+      "valueDelivered": 600
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1784001146682,
+      "valueDelivered": 1350
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1784001146824,
+      "valueDelivered": 1650
+    },
+    {
+      "iteration": 12,
+      "timestamp": 1784001146934,
+      "valueDelivered": 1800
+    },
+    {
+      "iteration": 14,
+      "timestamp": 1784001147058,
+      "valueDelivered": 2100
+    },
+    {
+      "iteration": 1,
+      "timestamp": 1784001203989,
+      "valueDelivered": 150
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1784001204097,
+      "valueDelivered": 300
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1784001204223,
+      "valueDelivered": 450
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1784001204350,
+      "valueDelivered": 600
+    },
+    {
+      "iteration": 5,
+      "timestamp": 1784001204464,
+      "valueDelivered": 750
+    },
+    {
+      "iteration": 6,
+      "timestamp": 1784001204707,
+      "valueDelivered": 900
+    },
+    {
+      "iteration": 7,
+      "timestamp": 1784001204817,
+      "valueDelivered": 1050
+    },
+    {
+      "iteration": 8,
+      "timestamp": 1784001204927,
+      "valueDelivered": 1200
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1784001205036,
+      "valueDelivered": 1350
+    },
+    {
+      "iteration": 10,
+      "timestamp": 1784001205148,
+      "valueDelivered": 1500
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1784001205438,
+      "valueDelivered": 1650
+    },
+    {
+      "iteration": 15,
+      "timestamp": 1784001205607,
+      "valueDelivered": 2250
+    },
+    {
+      "iteration": 23,
+      "timestamp": 1784001205818,
+      "valueDelivered": 3450
+    },
+    {
+      "iteration": 24,
+      "timestamp": 1784001206027,
+      "valueDelivered": 3600
+    },
+    {
+      "iteration": 28,
+      "timestamp": 1784001206179,
+      "valueDelivered": 4200
+    },
+    {
+      "iteration": 31,
+      "timestamp": 1784001206442,
+      "valueDelivered": 4650
+    },
+    {
+      "iteration": 36,
+      "timestamp": 1784001206624,
+      "valueDelivered": 5400
+    },
+    {
+      "iteration": 40,
+      "timestamp": 1784001206787,
+      "valueDelivered": 6000
+    },
+    {
+      "iteration": 41,
+      "timestamp": 1784001206913,
+      "valueDelivered": 6150
+    },
+    {
+      "iteration": 45,
+      "timestamp": 1784001207084,
+      "valueDelivered": 6750
+    },
+    {
+      "iteration": 52,
+      "timestamp": 1784001207304,
+      "valueDelivered": 7800
+    },
+    {
+      "iteration": 54,
+      "timestamp": 1784001207446,
+      "valueDelivered": 8100
+    },
+    {
+      "iteration": 56,
+      "timestamp": 1784001207581,
+      "valueDelivered": 8400
+    },
+    {
+      "iteration": 58,
+      "timestamp": 1784001207785,
+      "valueDelivered": 8700
+    }
+  ]
+}

@@ -1,0 +1,504 @@
+{
+  "history": [
+    {
+      "iteration": 121,
+      "timestamp": 1783998333694,
+      "usagePct": 2.167096471126455
+    },
+    {
+      "iteration": 121,
+      "timestamp": 1783998333813,
+      "usagePct": 2.508467414784963
+    },
+    {
+      "iteration": 122,
+      "timestamp": 1783998333830,
+      "usagePct": 2.384974252143071
+    },
+    {
+      "iteration": 123,
+      "timestamp": 1783998333848,
+      "usagePct": 2.3046224627481706
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333873,
+      "usagePct": 2.1106189840480964
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333902,
+      "usagePct": 2.53172408218146
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333920,
+      "usagePct": 2.803468861059304
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333942,
+      "usagePct": 2.301956900920428
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333965,
+      "usagePct": 2.168712197973809
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998334039,
+      "usagePct": 2.7465566656164384
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998334171,
+      "usagePct": 2.0032148877352953
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334192,
+      "usagePct": 2.9808419897625757
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334221,
+      "usagePct": 2.887109241025339
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334240,
+      "usagePct": 2.0768152529445385
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334259,
+      "usagePct": 2.8389006246597157
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334276,
+      "usagePct": 2.2658386656801284
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334330,
+      "usagePct": 2.113492064329526
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334451,
+      "usagePct": 2.4252048104514743
+    },
+    {
+      "iteration": 1,
+      "timestamp": 1783999128950,
+      "usagePct": 2.035535251897525
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1783999129183,
+      "usagePct": 2.2939063210310384
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1783999129476,
+      "usagePct": 2.7740670279640773
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1783999129649,
+      "usagePct": 2.6795191700265963
+    },
+    {
+      "iteration": 5,
+      "timestamp": 1783999129851,
+      "usagePct": 2.732558982842578
+    },
+    {
+      "iteration": 6,
+      "timestamp": 1783999130084,
+      "usagePct": 2.7957327043027895
+    },
+    {
+      "iteration": 7,
+      "timestamp": 1783999130332,
+      "usagePct": 2.3899430165963205
+    },
+    {
+      "iteration": 8,
+      "timestamp": 1783999130583,
+      "usagePct": 2.8157392293809327
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1783999130798,
+      "usagePct": 2.739355162878633
+    },
+    {
+      "iteration": 10,
+      "timestamp": 1783999130999,
+      "usagePct": 2.9501376678959352
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1783999131296,
+      "usagePct": 2.5372283350150333
+    },
+    {
+      "iteration": 12,
+      "timestamp": 1783999131622,
+      "usagePct": 2.9606277848885174
+    },
+    {
+      "iteration": 13,
+      "timestamp": 1783999131823,
+      "usagePct": 2.824821048527008
+    },
+    {
+      "iteration": 14,
+      "timestamp": 1783999132106,
+      "usagePct": 2.6449176217742414
+    },
+    {
+      "iteration": 15,
+      "timestamp": 1783999132340,
+      "usagePct": 2.3308386099336675
+    },
+    {
+      "iteration": 16,
+      "timestamp": 1783999133354,
+      "usagePct": 2.7554624291788743
+    },
+    {
+      "iteration": 17,
+      "timestamp": 1783999133570,
+      "usagePct": 2.9455648541198762
+    },
+    {
+      "iteration": 18,
+      "timestamp": 1783999133770,
+      "usagePct": 2.550103732112893
+    },
+    {
+      "iteration": 19,
+      "timestamp": 1783999134055,
+      "usagePct": 2.42420293632808
+    },
+    {
+      "iteration": 20,
+      "timestamp": 1783999134241,
+      "usagePct": 2.1989691866805035
+    },
+    {
+      "iteration": 21,
+      "timestamp": 1783999134487,
+      "usagePct": 2.921455192206228
+    },
+    {
+      "iteration": 22,
+      "timestamp": 1783999134678,
+      "usagePct": 2.935845340925982
+    },
+    {
+      "iteration": 23,
+      "timestamp": 1783999134865,
+      "usagePct": 2.5648418703180056
+    },
+    {
+      "iteration": 24,
+      "timestamp": 1783999135061,
+      "usagePct": 2.882191530514841
+    },
+    {
+      "iteration": 25,
+      "timestamp": 1783999135313,
+      "usagePct": 2.8295683458602676
+    },
+    {
+      "iteration": 26,
+      "timestamp": 1783999135558,
+      "usagePct": 2.388606566249948
+    },
+    {
+      "iteration": 27,
+      "timestamp": 1783999135751,
+      "usagePct": 2.852434159899773
+    },
+    {
+      "iteration": 28,
+      "timestamp": 1783999135952,
+      "usagePct": 2.1192391170001383
+    },
+    {
+      "iteration": 29,
+      "timestamp": 1783999136145,
+      "usagePct": 2.1911326514381373
+    },
+    {
+      "iteration": 30,
+      "timestamp": 1783999136363,
+      "usagePct": 2.884066839838653
+    },
+    {
+      "iteration": 31,
+      "timestamp": 1783999136654,
+      "usagePct": 2.0097949259987447
+    },
+    {
+      "iteration": 32,
+      "timestamp": 1783999136903,
+      "usagePct": 2.939658907602319
+    },
+    {
+      "iteration": 33,
+      "timestamp": 1783999137091,
+      "usagePct": 2.7419418275119316
+    },
+    {
+      "iteration": 34,
+      "timestamp": 1783999137280,
+      "usagePct": 2.287490566499641
+    },
+    {
+      "iteration": 35,
+      "timestamp": 1783999137522,
+      "usagePct": 2.2761548776663187
+    },
+    {
+      "iteration": 36,
+      "timestamp": 1783999137787,
+      "usagePct": 2.5026406713495017
+    },
+    {
+      "iteration": 37,
+      "timestamp": 1783999138066,
+      "usagePct": 2.981385804962966
+    },
+    {
+      "iteration": 38,
+      "timestamp": 1783999138244,
+      "usagePct": 2.9154751331119795
+    },
+    {
+      "iteration": 39,
+      "timestamp": 1783999138521,
+      "usagePct": 2.3750644784361605
+    },
+    {
+      "iteration": 40,
+      "timestamp": 1783999138708,
+      "usagePct": 2.5696330189776058
+    },
+    {
+      "iteration": 41,
+      "timestamp": 1783999138899,
+      "usagePct": 2.8356846601233783
+    },
+    {
+      "iteration": 42,
+      "timestamp": 1783999139079,
+      "usagePct": 2.5954426044298993
+    },
+    {
+      "iteration": 43,
+      "timestamp": 1783999139264,
+      "usagePct": 2.6808834026989086
+    },
+    {
+      "iteration": 44,
+      "timestamp": 1783999139468,
+      "usagePct": 2.830104413625677
+    },
+    {
+      "iteration": 45,
+      "timestamp": 1783999139750,
+      "usagePct": 2.2652619713720537
+    },
+    {
+      "iteration": 46,
+      "timestamp": 1783999140124,
+      "usagePct": 2.5984507123687504
+    },
+    {
+      "iteration": 47,
+      "timestamp": 1783999140307,
+      "usagePct": 2.253262877038227
+    },
+    {
+      "iteration": 48,
+      "timestamp": 1783999140508,
+      "usagePct": 2.739242097734105
+    },
+    {
+      "iteration": 49,
+      "timestamp": 1783999140699,
+      "usagePct": 2.3311251560001
+    },
+    {
+      "iteration": 50,
+      "timestamp": 1783999140890,
+      "usagePct": 2.1661860194264007
+    },
+    {
+      "iteration": 1,
+      "timestamp": 1784001146157,
+      "usagePct": 2.0829198257347707
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1784001146265,
+      "usagePct": 2.7487071787682043
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1784001146371,
+      "usagePct": 2.701370310987391
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1784001146478,
+      "usagePct": 2.6563639601498092
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1784001146672,
+      "usagePct": 2.1439767752139804
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1784001146814,
+      "usagePct": 2.3650186879322375
+    },
+    {
+      "iteration": 12,
+      "timestamp": 1784001146924,
+      "usagePct": 2.173791027653009
+    },
+    {
+      "iteration": 14,
+      "timestamp": 1784001147049,
+      "usagePct": 2.1766847365238586
+    },
+    {
+      "iteration": 1,
+      "timestamp": 1784001203980,
+      "usagePct": 2.7458004259917956
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1784001204089,
+      "usagePct": 2.557985234659351
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1784001204214,
+      "usagePct": 2.3045272658646057
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1784001204341,
+      "usagePct": 2.2911839800827756
+    },
+    {
+      "iteration": 5,
+      "timestamp": 1784001204450,
+      "usagePct": 2.0029678904982546
+    },
+    {
+      "iteration": 6,
+      "timestamp": 1784001204699,
+      "usagePct": 2.076173972792838
+    },
+    {
+      "iteration": 7,
+      "timestamp": 1784001204808,
+      "usagePct": 2.78022349220422
+    },
+    {
+      "iteration": 8,
+      "timestamp": 1784001204918,
+      "usagePct": 2.292352802425432
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1784001205027,
+      "usagePct": 2.910422084488495
+    },
+    {
+      "iteration": 10,
+      "timestamp": 1784001205137,
+      "usagePct": 2.65526378634075
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1784001205417,
+      "usagePct": 2.2115348305183895
+    },
+    {
+      "iteration": 15,
+      "timestamp": 1784001205597,
+      "usagePct": 2.1714884031662205
+    },
+    {
+      "iteration": 23,
+      "timestamp": 1784001205808,
+      "usagePct": 2.601662566012865
+    },
+    {
+      "iteration": 24,
+      "timestamp": 1784001206016,
+      "usagePct": 2.137334329224513
+    },
+    {
+      "iteration": 28,
+      "timestamp": 1784001206170,
+      "usagePct": 2.2649110367661276
+    },
+    {
+      "iteration": 31,
+      "timestamp": 1784001206432,
+      "usagePct": 2.008534498759475
+    },
+    {
+      "iteration": 36,
+      "timestamp": 1784001206607,
+      "usagePct": 2.7805174141899895
+    },
+    {
+      "iteration": 40,
+      "timestamp": 1784001206777,
+      "usagePct": 2.403727265933404
+    },
+    {
+      "iteration": 41,
+      "timestamp": 1784001206902,
+      "usagePct": 2.713153277396085
+    },
+    {
+      "iteration": 45,
+      "timestamp": 1784001207074,
+      "usagePct": 2.0104429116360416
+    },
+    {
+      "iteration": 52,
+      "timestamp": 1784001207292,
+      "usagePct": 2.47874780039005
+    },
+    {
+      "iteration": 54,
+      "timestamp": 1784001207435,
+      "usagePct": 2.2352586145666122
+    },
+    {
+      "iteration": 56,
+      "timestamp": 1784001207569,
+      "usagePct": 2.843799636398692
+    },
+    {
+      "iteration": 58,
+      "timestamp": 1784001207765,
+      "usagePct": 2.110285437344851
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "integration": "NetSuite_SuiteQL",
+  "target_table": "raw_ns_subsidiaries",
+  "primary_keys": ["id"],
+  "description": "Maestro de Subsidiarias",
+  "extraction": {
+    "type": "REST_SUITEQL",
+    "base_query": "SELECT s.id, s.name, s.parent, s.fullname, s.country, s.currency, s.isinactive, s.lastmodifieddate FROM subsidiary s",
+    "filters": [
+      { "field": "s.lastmodifieddate", "operator": ">=", "value": "TO_DATE('{{LAST_SYNC_DATE}}', 'YYYY-MM-DD HH24:MI:SS')" }
+    ]
+  },
+  "mapping": {
+    "id": { "source_field": "id", "type": "string" },
+    "name": { "source_field": "name", "type": "string" },
+    "parent_id": { "source_field": "parent", "type": "string" },
+    "full_name": { "source_field": "fullname", "type": "string" },
+    "country": { "source_field": "country", "type": "string" },
+    "currency": { "source_field": "currency", "type": "string" },
+    "isinactive": { "source_field": "isinactive", "type": "string" },
+    "last_modified_ts": { "source_field": "lastmodifieddate", "type": "date" }
+  },
+  "defaults": { "source_system": "netsuite", "client_id": "vonderk", "snapshot_ts": "{{CURRENT_TIMESTAMP}}" },
+  "validation_rules": [{ "field": "id", "rule": "is_not_null" }]
+}

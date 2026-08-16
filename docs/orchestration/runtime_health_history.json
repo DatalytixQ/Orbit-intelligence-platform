@@ -1,0 +1,129 @@
+{
+  "history": [
+    {
+      "iteration": 1,
+      "timestamp": 1783996595017,
+      "health": 93.20048051855557
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1783996655017,
+      "health": 93.19391669589402
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1783996715017,
+      "health": 94.01098179869808
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1783996775017,
+      "health": 95.17262065329611
+    },
+    {
+      "iteration": 5,
+      "timestamp": 1783996835017,
+      "health": 98.30101753710399
+    },
+    {
+      "iteration": 6,
+      "timestamp": 1783996895017,
+      "health": 96.67946812733837
+    },
+    {
+      "iteration": 7,
+      "timestamp": 1783996955017,
+      "health": 94.16195283158193
+    },
+    {
+      "iteration": 8,
+      "timestamp": 1783997015017,
+      "health": 99.36496160828253
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1783997075017,
+      "health": 98.80033778252866
+    },
+    {
+      "iteration": 10,
+      "timestamp": 1783997135017,
+      "health": 99.22776566259472
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1783997195017,
+      "health": 94.50616895296373
+    },
+    {
+      "iteration": 12,
+      "timestamp": 1783997255017,
+      "health": 97.77354996826533
+    },
+    {
+      "iteration": 13,
+      "timestamp": 1783997315017,
+      "health": 98.8464478689152
+    },
+    {
+      "iteration": 14,
+      "timestamp": 1783997375017,
+      "health": 92.80174897403757
+    },
+    {
+      "iteration": 15,
+      "timestamp": 1783997435017,
+      "health": 90.50212462016971
+    },
+    {
+      "iteration": 16,
+      "timestamp": 1783997495017,
+      "health": 96.50338044913241
+    },
+    {
+      "iteration": 17,
+      "timestamp": 1783997555017,
+      "health": 97.51714875379571
+    },
+    {
+      "iteration": 18,
+      "timestamp": 1783997615017,
+      "health": 90.29755041736017
+    },
+    {
+      "iteration": 19,
+      "timestamp": 1783997675017,
+      "health": 97.21521794497002
+    },
+    {
+      "iteration": 20,
+      "timestamp": 1783997735017,
+      "health": 91.63636277807986
+    },
+    {
+      "iteration": 21,
+      "timestamp": 1783997795017,
+      "health": 98.28520687893743
+    },
+    {
+      "iteration": 22,
+      "timestamp": 1783997855017,
+      "health": 95.71878008360909
+    },
+    {
+      "iteration": 23,
+      "timestamp": 1783997915017,
+      "health": 96.01625306756041
+    },
+    {
+      "iteration": 24,
+      "timestamp": 1783997975017,
+      "health": 97.85164803910554
+    },
+    {
+      "iteration": 25,
+      "timestamp": 1783998035017,
+      "health": 91.62129340005701
+    }
+  ]
+}

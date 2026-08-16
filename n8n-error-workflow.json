@@ -1,0 +1,49 @@
+{
+  "name": "Alerta Global de Errores ETL",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "e4a2eb83-9b48-433b-8526-9d62061298aa",
+      "name": "Error Trigger",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        460,
+        460
+      ]
+    },
+    {
+      "parameters": {
+        "text": "=🚨 *ALERTA ETL FALLIDO* 🚨\n\n*Flujo:* {{ $json.workflow.name }}\n*ID Ejecución:* {{ $json.execution.id }}\n\n*Error Detalle:*\n```\n{{ $json.execution.error.message }}\n```\n\nPor favor revisa el panel de n8n para más detalles."
+      },
+      "id": "67b8ab21-5a55-48b4-82ea-1c255d4c88bb",
+      "name": "Configura tu Notificación (Slack/Email/Teams)",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.2,
+      "position": [
+        680,
+        460
+      ]
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "Configura tu Notificación (Slack/Email/Teams)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Santiago"
+  },
+  "versionId": "f96b1b59-4d64-46bb-9964-b040de29c0f9"
+}

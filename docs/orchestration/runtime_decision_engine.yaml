@@ -1,0 +1,48 @@
+runtime_decision_engine:
+  version: "1.6"
+  purpose: "Formalize all execution decisions for the autonomous runtime controller"
+
+  decisions:
+    continue:
+      condition: "Task completed successfully, no human gate, next task exists."
+      action: "Update checkpoint, release context, load next task, execute."
+
+    retry:
+      condition: "Task execution fails with a non-fatal error (e.g., rate limit, network timeout)."
+      action: "Apply retry policy. Backoff, then re-execute."
+
+    rollback:
+      condition: "Task execution fails fatally or validation fails."
+      action: "Execute rollback procedures. Transition to 'wait'."
+
+    resume:
+      condition: "Framework restarts after crash or human provides approval at a gate."
+      action: "Load checkpoint_state.yaml. Execute from exact resume_point."
+
+    stop:
+      condition: "Roadmap completed, or critical framework corruption detected."
+      action: "Halt all execution completely."
+
+    wait:
+      condition: "Human gate reached or pending asynchronous response."
+      action: "Pause execution loop. Update checkpoint to 'Waiting Human'."
+
+    request_approval:
+      condition: "High-risk action required (production deploy, architectural shift)."
+      action: "Halt execution. Generate detailed proposal. Wait."
+
+    request_schema_evolution:
+      condition: "Missing database object detected during task discovery."
+      action: "Trigger Schema Discovery Audit. Generate schema_evolution_proposal.md. Transition to 'wait'."
+
+    change_model:
+      condition: "Current model fails repeatedly on complex logic, or token budget exhausted."
+      action: "Fallback to model specified in fallback_model, or elevate to preferred_model if budget permits."
+
+    compress_context:
+      condition: "Context window limit approaching (e.g., 80% usage)."
+      action: "Summarize previous task context. Unload unused files from context routing."
+
+    split_task:
+      condition: "Task estimated tokens exceeds 90% of model window."
+      action: "Break task into sub-tasks. Inject into execution queue dynamically."

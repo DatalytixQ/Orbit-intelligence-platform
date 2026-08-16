@@ -1,0 +1,22 @@
+{
+  "integration": "NetSuite_SuiteQL",
+  "target_table": "raw_ns_classifications",
+  "primary_keys": ["id"],
+  "description": "Mapeo de Clasificaciones (Clases)",
+  "extraction": {
+    "type": "REST_SUITEQL",
+    "base_query": "SELECT c.id, c.name, c.parent, c.fullname, c.isinactive FROM classification c",
+    "filters": []
+  },
+  "mapping": {
+    "id": { "source_field": "id", "type": "string" },
+    "name": { "source_field": "name", "type": "string" },
+    "parent_id": { "source_field": "parent", "type": "string" },
+    "full_name": { "source_field": "fullname", "type": "string" },
+    "isinactive": { "source_field": "isinactive", "type": "string" }
+  },
+  "defaults": {
+    "source_system": "netsuite",
+    "client_id": "vonderk"
+  }
+}

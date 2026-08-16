@@ -1,0 +1,45 @@
+# Context Routing Strategy v1
+# Defines how the Orchestrator injects context into prompts based on the task
+
+strategy:
+  principles:
+    - rule: "Never inject the entire documentation folder into a single prompt."
+    - rule: "Tokens are expensive and cause hallucination; minimize context aggressively."
+    - rule: "Always include checkpoint_state.yaml and execution_rules.md as mandatory."
+
+context_tiers:
+  mandatory:
+    description: "Must be injected into EVERY agent prompt regardless of task."
+    files:
+      - "docs/orchestration/checkpoint_state.yaml"
+      - "docs/orchestration/execution_rules.md"
+  
+  generated:
+    description: "Injected dynamically based on the current step output (e.g., validation results)."
+    files:
+      - "docs/orchestration/execution_log.md (tail -n 5)"
+
+  optional:
+    description: "Injected ONLY if explicitly requested by the Task Contract or Agent Role."
+    mapping:
+      database_tasks:
+        - "docs/agents/platform/product-intelligence/database_ground_truth.md"
+        - "docs/agents/platform/product-intelligence/unified_product_graph.md"
+      backend_tasks:
+        - "docs/agents/platform/product-intelligence/unified_product_graph.md"
+      documentation_tasks:
+        - "docs/agents/platform/product-intelligence/reconciliation_report.md"
+      architecture_tasks:
+        - "docs/agents/platform/product-intelligence/unified_product_graph.md"
+        - "docs/orchestration/execution_manifest.yaml"
+
+  ignore:
+    description: "Legacy files that should NEVER be injected into autonomous execution."
+    files:
+      - "docs/agents/platform/product-intelligence/execution_queue.md"
+      - "docs/agents/platform/product-intelligence/project_state.md"
+      - "docs/agents/platform/product-intelligence/wave_execution_map.md"
+
+resumption_rules:
+  - rule: "On Resume (status: Paused or Waiting Human), inject recovery.md to ensure no duplicate work."
+  - rule: "If retrying a failed task, inject retry_policy.md and the error log."

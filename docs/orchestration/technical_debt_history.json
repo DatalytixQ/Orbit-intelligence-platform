@@ -1,0 +1,504 @@
+{
+  "history": [
+    {
+      "iteration": 121,
+      "timestamp": 1783998333697,
+      "debtScore": 42
+    },
+    {
+      "iteration": 121,
+      "timestamp": 1783998333816,
+      "debtScore": 42
+    },
+    {
+      "iteration": 122,
+      "timestamp": 1783998333834,
+      "debtScore": 41.5
+    },
+    {
+      "iteration": 123,
+      "timestamp": 1783998333851,
+      "debtScore": 41
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333877,
+      "debtScore": 40.5
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333906,
+      "debtScore": 40.5
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333924,
+      "debtScore": 40.5
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333945,
+      "debtScore": 40.5
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333969,
+      "debtScore": 40.5
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998334043,
+      "debtScore": 40.5
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998334174,
+      "debtScore": 40.5
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334195,
+      "debtScore": 40
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334224,
+      "debtScore": 40
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334243,
+      "debtScore": 40
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334262,
+      "debtScore": 40
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334279,
+      "debtScore": 40
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334333,
+      "debtScore": 40
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334456,
+      "debtScore": 40
+    },
+    {
+      "iteration": 1,
+      "timestamp": 1783999128954,
+      "debtScore": 89.5
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1783999129187,
+      "debtScore": 89
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1783999129480,
+      "debtScore": 88.5
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1783999129655,
+      "debtScore": 88
+    },
+    {
+      "iteration": 5,
+      "timestamp": 1783999129857,
+      "debtScore": 87.5
+    },
+    {
+      "iteration": 6,
+      "timestamp": 1783999130091,
+      "debtScore": 87
+    },
+    {
+      "iteration": 7,
+      "timestamp": 1783999130340,
+      "debtScore": 86.5
+    },
+    {
+      "iteration": 8,
+      "timestamp": 1783999130588,
+      "debtScore": 86
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1783999130808,
+      "debtScore": 85.5
+    },
+    {
+      "iteration": 10,
+      "timestamp": 1783999131006,
+      "debtScore": 85
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1783999131304,
+      "debtScore": 84.5
+    },
+    {
+      "iteration": 12,
+      "timestamp": 1783999131629,
+      "debtScore": 84
+    },
+    {
+      "iteration": 13,
+      "timestamp": 1783999131831,
+      "debtScore": 83.5
+    },
+    {
+      "iteration": 14,
+      "timestamp": 1783999132113,
+      "debtScore": 83
+    },
+    {
+      "iteration": 15,
+      "timestamp": 1783999132347,
+      "debtScore": 82.5
+    },
+    {
+      "iteration": 16,
+      "timestamp": 1783999133360,
+      "debtScore": 82
+    },
+    {
+      "iteration": 17,
+      "timestamp": 1783999133575,
+      "debtScore": 81.5
+    },
+    {
+      "iteration": 18,
+      "timestamp": 1783999133774,
+      "debtScore": 81
+    },
+    {
+      "iteration": 19,
+      "timestamp": 1783999134061,
+      "debtScore": 80.5
+    },
+    {
+      "iteration": 20,
+      "timestamp": 1783999134246,
+      "debtScore": 80
+    },
+    {
+      "iteration": 21,
+      "timestamp": 1783999134492,
+      "debtScore": 79.5
+    },
+    {
+      "iteration": 22,
+      "timestamp": 1783999134686,
+      "debtScore": 79
+    },
+    {
+      "iteration": 23,
+      "timestamp": 1783999134869,
+      "debtScore": 78.5
+    },
+    {
+      "iteration": 24,
+      "timestamp": 1783999135067,
+      "debtScore": 78
+    },
+    {
+      "iteration": 25,
+      "timestamp": 1783999135319,
+      "debtScore": 77.5
+    },
+    {
+      "iteration": 26,
+      "timestamp": 1783999135563,
+      "debtScore": 77
+    },
+    {
+      "iteration": 27,
+      "timestamp": 1783999135757,
+      "debtScore": 76.5
+    },
+    {
+      "iteration": 28,
+      "timestamp": 1783999135959,
+      "debtScore": 76
+    },
+    {
+      "iteration": 29,
+      "timestamp": 1783999136149,
+      "debtScore": 75.5
+    },
+    {
+      "iteration": 30,
+      "timestamp": 1783999136369,
+      "debtScore": 75
+    },
+    {
+      "iteration": 31,
+      "timestamp": 1783999136660,
+      "debtScore": 74.5
+    },
+    {
+      "iteration": 32,
+      "timestamp": 1783999136908,
+      "debtScore": 74
+    },
+    {
+      "iteration": 33,
+      "timestamp": 1783999137097,
+      "debtScore": 73.5
+    },
+    {
+      "iteration": 34,
+      "timestamp": 1783999137287,
+      "debtScore": 73
+    },
+    {
+      "iteration": 35,
+      "timestamp": 1783999137527,
+      "debtScore": 72.5
+    },
+    {
+      "iteration": 36,
+      "timestamp": 1783999137796,
+      "debtScore": 72
+    },
+    {
+      "iteration": 37,
+      "timestamp": 1783999138071,
+      "debtScore": 71.5
+    },
+    {
+      "iteration": 38,
+      "timestamp": 1783999138251,
+      "debtScore": 71
+    },
+    {
+      "iteration": 39,
+      "timestamp": 1783999138525,
+      "debtScore": 70.5
+    },
+    {
+      "iteration": 40,
+      "timestamp": 1783999138713,
+      "debtScore": 70
+    },
+    {
+      "iteration": 41,
+      "timestamp": 1783999138905,
+      "debtScore": 69.5
+    },
+    {
+      "iteration": 42,
+      "timestamp": 1783999139084,
+      "debtScore": 69
+    },
+    {
+      "iteration": 43,
+      "timestamp": 1783999139269,
+      "debtScore": 68.5
+    },
+    {
+      "iteration": 44,
+      "timestamp": 1783999139474,
+      "debtScore": 68
+    },
+    {
+      "iteration": 45,
+      "timestamp": 1783999139755,
+      "debtScore": 67.5
+    },
+    {
+      "iteration": 46,
+      "timestamp": 1783999140129,
+      "debtScore": 67
+    },
+    {
+      "iteration": 47,
+      "timestamp": 1783999140312,
+      "debtScore": 66.5
+    },
+    {
+      "iteration": 48,
+      "timestamp": 1783999140513,
+      "debtScore": 66
+    },
+    {
+      "iteration": 49,
+      "timestamp": 1783999140705,
+      "debtScore": 65.5
+    },
+    {
+      "iteration": 50,
+      "timestamp": 1783999140895,
+      "debtScore": 65
+    },
+    {
+      "iteration": 1,
+      "timestamp": 1784001146155,
+      "debtScore": 89.5
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1784001146263,
+      "debtScore": 89
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1784001146369,
+      "debtScore": 88.5
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1784001146476,
+      "debtScore": 88
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1784001146670,
+      "debtScore": 85.5
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1784001146811,
+      "debtScore": 84.5
+    },
+    {
+      "iteration": 12,
+      "timestamp": 1784001146921,
+      "debtScore": 84
+    },
+    {
+      "iteration": 14,
+      "timestamp": 1784001147047,
+      "debtScore": 83
+    },
+    {
+      "iteration": 1,
+      "timestamp": 1784001203978,
+      "debtScore": 89.5
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1784001204087,
+      "debtScore": 89
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1784001204211,
+      "debtScore": 88.5
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1784001204338,
+      "debtScore": 88
+    },
+    {
+      "iteration": 5,
+      "timestamp": 1784001204448,
+      "debtScore": 87.5
+    },
+    {
+      "iteration": 6,
+      "timestamp": 1784001204697,
+      "debtScore": 87
+    },
+    {
+      "iteration": 7,
+      "timestamp": 1784001204806,
+      "debtScore": 86.5
+    },
+    {
+      "iteration": 8,
+      "timestamp": 1784001204916,
+      "debtScore": 86
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1784001205024,
+      "debtScore": 85.5
+    },
+    {
+      "iteration": 10,
+      "timestamp": 1784001205132,
+      "debtScore": 85
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1784001205413,
+      "debtScore": 84.5
+    },
+    {
+      "iteration": 15,
+      "timestamp": 1784001205594,
+      "debtScore": 82.5
+    },
+    {
+      "iteration": 23,
+      "timestamp": 1784001205805,
+      "debtScore": 78.5
+    },
+    {
+      "iteration": 24,
+      "timestamp": 1784001206013,
+      "debtScore": 78
+    },
+    {
+      "iteration": 28,
+      "timestamp": 1784001206168,
+      "debtScore": 76
+    },
+    {
+      "iteration": 31,
+      "timestamp": 1784001206430,
+      "debtScore": 74.5
+    },
+    {
+      "iteration": 36,
+      "timestamp": 1784001206604,
+      "debtScore": 72
+    },
+    {
+      "iteration": 40,
+      "timestamp": 1784001206775,
+      "debtScore": 70
+    },
+    {
+      "iteration": 41,
+      "timestamp": 1784001206900,
+      "debtScore": 69.5
+    },
+    {
+      "iteration": 45,
+      "timestamp": 1784001207072,
+      "debtScore": 67.5
+    },
+    {
+      "iteration": 52,
+      "timestamp": 1784001207288,
+      "debtScore": 64
+    },
+    {
+      "iteration": 54,
+      "timestamp": 1784001207432,
+      "debtScore": 63
+    },
+    {
+      "iteration": 56,
+      "timestamp": 1784001207566,
+      "debtScore": 62
+    },
+    {
+      "iteration": 58,
+      "timestamp": 1784001207759,
+      "debtScore": 61
+    }
+  ]
+}

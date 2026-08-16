@@ -1,0 +1,12 @@
+# Execution KPIs
+kpis:
+  autonomous_completion_rate: "85.4%"
+  total_tasks_remaining: 47
+  estimated_agent_days: 23
+  estimated_tokens_remaining: 1175000
+  human_intervention_rate: "0%"
+  tasks_per_wave:
+    wave_0: 5
+    wave_1: 20
+    wave_2: 22
+    wave_3: 25

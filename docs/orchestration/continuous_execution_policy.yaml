@@ -1,0 +1,101 @@
+# Continuous Execution Policy
+# Version: 1.5
+# Status: Immutable Runtime Rule
+# Owner: Orchestrator
+# Applies to: Autonomous Execution Supervisor
+
+policy:
+  1_lifecycle:
+    planning: "Resolve dependencies, inject optimal context."
+    execution: "Execute task inputs strictly according to contract using preferred model."
+    validation: "Verify contract validation criteria without external modification."
+    documentation: "Append execution artifacts, update SOPs if defined in contract."
+    checkpoint: "Persist execution state post-validation."
+    resume: "Start from highest safe checkpoint."
+    recovery: "Execute rollback file if validation fails."
+    completion: "Release memory, route to next unblocked task."
+
+  2_automatic_continuation:
+    trigger: "Task completes successfully."
+    actions:
+      - "Update checkpoint_state.yaml"
+      - "Update execution_log.md"
+      - "Update artifact_registry.yaml"
+      - "Release task context from memory"
+      - "Release token budget reservations"
+      - "Load next executable task from execution_manifest.yaml"
+    intervention: "None. Continuation is fully autonomous."
+
+  3_stop_conditions:
+    rule: "The execution MUST stop ONLY when one of the following occurs:"
+    gates:
+      - "Human Gate defined in task contract"
+      - "Security Gate (Secrets, destructive access)"
+      - "Architecture Gate (Missing contracts, core refactors outside roadmap)"
+      - "Production Gate (Deployments)"
+      - "Schema Evolution Gate (Changes not pre-approved in DB schema)"
+      - "Rollback (When auto-recovery fails)"
+      - "Unrecoverable Error (Linter loop, build crash)"
+      - "Explicit STOP command from User"
+
+  4_automatic_resume:
+    trigger: ["model limit", "context limit", "timeout", "token exhaustion", "MCP reconnect", "IDE restart"]
+    procedure:
+      1: "Execution Supervisor reads checkpoint_state.yaml"
+      2: "Reads execution_manifest.yaml"
+      3: "Verifies artifact integrity"
+      4: "Resumes exactly from last completed checkpoint"
+    constraints:
+      - "Never repeat SQL execution."
+      - "Never regenerate completed documentation."
+      - "Never regenerate accepted code."
+      - "Never repeat completed validations."
+
+  5_checkpoint_policy:
+    - "Checkpoint after every completed task."
+    - "Checkpoint before every destructive action (DB writes, resets)."
+    - "Checkpoint after every Human Gate."
+    - "Checkpoint after every rollback operation."
+
+  6_documentation_policy:
+    rule: "Documentation is generated automatically by the Documenter role."
+    constraint: "Never regenerate existing documents. Only append or version when necessary."
+
+  7_model_selection_policy:
+    rule: "Follow model_routing.yaml and task_contracts.yaml definitions."
+    logic: "Prefer lowest-cost model that satisfies task complexity. Escalate only when reasoning complexity increases. Downgrade automatically afterwards."
+
+  8_token_policy:
+    rule: "Follow execution_budget.yaml constraints."
+    enforcement: "Release context after every completed task. Never reload unnecessary documents. Use context_routing.yaml."
+
+  9_parallel_execution:
+    rule: "Allowed automatically if:"
+    conditions:
+      - "Dependency graph confirms strict independence."
+      - "Shared artifacts are not modified concurrently."
+      - "No database schema conflicts exist."
+    decision_maker: "Execution Supervisor"
+
+  10_framework_freeze:
+    rule: "The Framework is frozen. Automatic evolution is forbidden."
+    forbidden_mutations:
+      - "changing framework code"
+      - "changing execution rules"
+      - "changing model routing"
+      - "changing governance logic"
+      - "changing task contracts"
+    exception: "Unless a Human Gate explicitly authorizes the mutation."
+
+  11_product_evolution:
+    rule: "The Product is allowed to evolve automatically."
+    allowed_mutations:
+      - "backend code"
+      - "frontend code"
+      - "database state"
+      - "documentation"
+      - "SOPs"
+      - "tests"
+      - "APIs"
+      - "AI business rules"
+    constraint: "Must follow execution_manifest.yaml."

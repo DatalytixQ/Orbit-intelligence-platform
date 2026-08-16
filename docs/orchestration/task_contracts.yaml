@@ -1,0 +1,1268 @@
+# Task Contracts v1
+# Explicit interface definitions for tasks in execution_manifest.yaml
+
+tasks:
+  N001:
+    id: "N001"
+    owner: "Database Agent"
+    purpose: "Define RLS policies on clients + app_users"
+    prerequisites: []
+    inputs: ["public.clients", "public.app_users"]
+    outputs: ["sql/rls_clients_app_users_apply.sql", "sql/rls_clients_app_users_rollback.sql"]
+    artifacts: ["n001_execution_report.md", "n001_validation.md"]
+    files_to_update: []
+    validation_criteria: "SELECT counts match; unauthorized queries return 0 rows."
+    rollback_strategy: "Execute rls_clients_app_users_rollback.sql"
+    resume_point: "If interrupted, check if policies exist in pg_policies."
+    human_gate: "execution"
+    completion_conditions: "All policies created and validation passes."
+    model_class: "Flash"
+    estimated_tokens: 15000
+    checkpoint_transition: "Update checkpoint_state and execution_log"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N002:
+    id: "N002"
+    owner: "Database Agent"
+    purpose: "Define RLS policies on all 27 domain tables"
+    prerequisites: ["N001"]
+    inputs: ["public.sales", "public.inventory", "etc"]
+    outputs: ["sql/n002_phase*_apply.sql", "sql/n002_phase*_rollback.sql"]
+    artifacts: ["n002_phase*_execution_report.md", "n002_phase*_validation.md"]
+    files_to_update: []
+    validation_criteria: "76 policies exist (Phases 1-2). Backend access unaffected."
+    rollback_strategy: "Execute phase-specific rollback.sql"
+    resume_point: "Count policies in pg_policies to determine which phase to resume."
+    human_gate: "execution (before Phase 3)"
+    completion_conditions: "116 total policies created and validated."
+    model_class: "Pro"
+    estimated_tokens: 30000
+    checkpoint_transition: "Update checkpoint_state and execution_log"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T001:
+    id: "T001"
+    owner: "Backend Agent"
+    purpose: "Extract clientId from JWT in routes/ai.js"
+    prerequisites: []
+    inputs: ["backend/routes/ai.js"]
+    outputs: ["backend/routes/ai.js"]
+    artifacts: []
+    files_to_update: ["backend/routes/ai.js"]
+    validation_criteria: "'vonderk' hardcode is removed; req.user.client_id is used."
+    rollback_strategy: "git checkout backend/routes/ai.js"
+    resume_point: "Check source code for hardcode."
+    human_gate: "none"
+    completion_conditions: "Code updated and linter passes."
+    model_class: "Flash"
+    estimated_tokens: 10000
+    checkpoint_transition: "Update checkpoint_state and execution_log"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T002:
+    id: "T002"
+    owner: "Backend Agent"
+    purpose: "Extract requireAuth to middleware/auth.js"
+    prerequisites: []
+    inputs: ["backend/routes/*.js"]
+    outputs: ["backend/middleware/auth.js"]
+    artifacts: []
+    files_to_update: ["backend/middleware/auth.js", "backend/routes/*.js"]
+    validation_criteria: "Middleware exists and is imported correctly."
+    rollback_strategy: "git reset --hard HEAD"
+    resume_point: "Check if middleware file exists."
+    human_gate: "none"
+    completion_conditions: "Routes refactored and server starts."
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint_state and execution_log"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T003:
+    id: "T003"
+    owner: "Backend Agent"
+    purpose: "Implement POST /api/auth/refresh-token"
+    prerequisites: ["T002"]
+    inputs: ["backend/routes/auth.js"]
+    outputs: ["backend/routes/auth.js"]
+    artifacts: []
+    files_to_update: ["backend/routes/auth.js"]
+    validation_criteria: "Endpoint returns valid new tokens."
+    rollback_strategy: "git reset --hard HEAD"
+    resume_point: "Check if route is registered."
+    human_gate: "none"
+    completion_conditions: "Route added and unit tests pass."
+    model_class: "Flash"
+    estimated_tokens: 15000
+    checkpoint_transition: "Update checkpoint_state and execution_log"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T004:
+    id: "T004"
+    owner: "Backend Agent"
+    purpose: "Implement POST /api/auth/logout (Stateless)"
+    prerequisites: ["T002"]
+    inputs: ["backend/routes/auth.js"]
+    outputs: ["backend/routes/auth.js"]
+    artifacts: []
+    files_to_update: ["backend/routes/auth.js"]
+    validation_criteria: "Endpoint returns 200 OK. Linter passes."
+    rollback_strategy: "git checkout backend/routes/auth.js"
+    resume_point: "Check if /logout route exists."
+    human_gate: "none"
+    completion_conditions: "Route added successfully."
+    model_class: "Flash"
+    estimated_tokens: 10000
+    checkpoint_transition: "Update checkpoint_state and execution_log"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T005:
+    id: "T005"
+    owner: "Backend Agent"
+    purpose: "Validate JWT_SECRET at startup"
+    prerequisites: []
+    inputs: ["backend/app.js"]
+    outputs: ["backend/app.js"]
+    artifacts: []
+    files_to_update: ["backend/app.js"]
+    validation_criteria: "App crashes if JWT_SECRET is default"
+    rollback_strategy: "git checkout backend/app.js"
+    resume_point: "Check if validation exists in app.js"
+    human_gate: "none"
+    completion_conditions: "Validation added and tested."
+    model_class: "Flash"
+    estimated_tokens: 8000
+    checkpoint_transition: "Update checkpoint_state and execution_log"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T006:
+    id: "T006"
+    owner: "Documentation Agent"
+    purpose: "Author sop_ar_intelligence.md"
+    prerequisites: []
+    inputs: ["docs/agents/platform/product-intelligence/unified_product_graph.md"]
+    outputs: ["docs/sop/sop_ar_intelligence.md"]
+    artifacts: ["docs/sop/sop_ar_intelligence.md"]
+    files_to_update: ["docs/sop/sop_ar_intelligence.md"]
+    validation_criteria: "Markdown lint passes; covers all SOP sections."
+    rollback_strategy: "rm docs/sop/sop_ar_intelligence.md"
+    resume_point: "Check if file exists and has content."
+    human_gate: "none"
+    completion_conditions: "File successfully generated and readable."
+    model_class: "Pro"
+    estimated_tokens: 35000
+    checkpoint_transition: "Update checkpoint_state and execution_log"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T007:
+    id: "T007"
+    owner: "Documentation"
+    purpose: "Complete AR KPI formulas in `kpi.md`"
+    prerequisites: ["T006"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T008:
+    id: "T008"
+    owner: "Documentation"
+    purpose: "Document AR semantic views in `database.md`"
+    prerequisites: ["T006"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N003:
+    id: "N003"
+    owner: "Documentation"
+    purpose: "Document Customer Payments domain in `database.md` and `kpi.md`"
+    prerequisites: ["T006"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T009:
+    id: "T009"
+    owner: "Chief Architect"
+    purpose: "Specify E001 cross-domain rule"
+    prerequisites: []
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T010:
+    id: "T010"
+    owner: "Chief Architect"
+    purpose: "Specify E002 cross-domain rule"
+    prerequisites: ["T009"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T011:
+    id: "T011"
+    owner: "Chief Architect"
+    purpose: "Specify E003 cross-domain rule"
+    prerequisites: ["T010"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T012:
+    id: "T012"
+    owner: "Chief Architect"
+    purpose: "Define Business Health Score formula"
+    prerequisites: ["T009–T011"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T013:
+    id: "T013"
+    owner: "Documentation"
+    purpose: "Define EX001 and EX002 KPI specs"
+    prerequisites: ["T012"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N017:
+    id: "N017"
+    owner: "Database"
+    purpose: "Activate `data_pipeline_step_log` — instrument all pipeline functions to write to it"
+    prerequisites: []
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T015:
+    id: "T015"
+    owner: "QA"
+    purpose: "Verify `data_pipeline_step_log` instrumentation"
+    prerequisites: ["N017"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T016:
+    id: "T016"
+    owner: "DevOps"
+    purpose: "Design n8n workflow (or evaluate pg_cron alternative)"
+    prerequisites: []
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N012:
+    id: "N012"
+    owner: "DevOps"
+    purpose: "Evaluate enabling `pg_cron` as alternative to n8n"
+    prerequisites: []
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T017:
+    id: "T017"
+    owner: "Backend"
+    purpose: "Implement GET /api/pipeline/status endpoint"
+    prerequisites: ["N017"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T018:
+    id: "T018"
+    owner: "Backend"
+    purpose: "Add data freshness metadata to KPI endpoint responses"
+    prerequisites: ["N017"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N005:
+    id: "N005"
+    owner: "Documentation"
+    purpose: "Document `ar_settings`, `inventory_settings`, `alert_config`, `client_config` in `database.md`"
+    prerequisites: []
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N006:
+    id: "N006"
+    owner: "Documentation"
+    purpose: "Document `sales_semantic_current` in `database.md`"
+    prerequisites: []
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N007:
+    id: "N007"
+    owner: "Documentation"
+    purpose: "Document item master resolution layer in `database.md`"
+    prerequisites: []
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N008:
+    id: "N008"
+    owner: "Documentation"
+    purpose: "Document SOP tables in `database.md`"
+    prerequisites: []
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N015:
+    id: "N015"
+    owner: "Documentation"
+    purpose: "Document `inventory_supply_snapshot_daily`"
+    prerequisites: []
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N016:
+    id: "N016"
+    owner: "Documentation"
+    purpose: "Add ERP identity (NetSuite) to all relevant documentation"
+    prerequisites: []
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N004a:
+    id: "N004a"
+    owner: "Backend"
+    purpose: "Audit `insights` table (1,371 rows) — determine if frontend reads from it"
+    prerequisites: []
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N004b:
+    id: "N004b"
+    owner: "Frontend"
+    purpose: "Migrate frontend to read from `insights_log` (if reading from legacy `insights`)"
+    prerequisites: ["N004a"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N004c:
+    id: "N004c"
+    owner: "Database"
+    purpose: "Migrate legacy insight data from `insights` → `insights_log` (if applicable)"
+    prerequisites: ["N004b"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T021:
+    id: "T021"
+    owner: "Database"
+    purpose: "Integrate AR STG into automated pipeline sequence"
+    prerequisites: ["T016"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T022:
+    id: "T022"
+    owner: "Database"
+    purpose: "Create `vw_ar_dso` semantic view"
+    prerequisites: ["T006","T008"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T023:
+    id: "T023"
+    owner: "Database"
+    purpose: "Create `vw_collection_efficiency` semantic view"
+    prerequisites: ["N003","T022"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T024:
+    id: "T024"
+    owner: "Database"
+    purpose: "Implement C001 (Overdue Receivables Risk)"
+    prerequisites: ["T022","T023"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T025:
+    id: "T025"
+    owner: "Database"
+    purpose: "Implement C002 (DSO Deterioration)"
+    prerequisites: ["T022"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T026:
+    id: "T026"
+    owner: "Database"
+    purpose: "Implement C003 (Customer Credit Risk)"
+    prerequisites: ["T022"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T027:
+    id: "T027"
+    owner: "Database"
+    purpose: "Implement C004 (Collection Forecast Risk)"
+    prerequisites: ["T023"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T028:
+    id: "T028"
+    owner: "Database"
+    purpose: "Implement C005 (Critical Overdue Documents)"
+    prerequisites: ["T022"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T029:
+    id: "T029"
+    owner: "Database"
+    purpose: "Update `vw_priority_engine` to include C-series"
+    prerequisites: ["T024–T028"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T030:
+    id: "T030"
+    owner: "DQBot"
+    purpose: "Implement `v002.handler.js` (Forecast Deviation)"
+    prerequisites: ["T001"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T031:
+    id: "T031"
+    owner: "DQBot"
+    purpose: "Implement `v001.handler.js` (Forecast Achievement)"
+    prerequisites: ["T030"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T032:
+    id: "T032"
+    owner: "DQBot"
+    purpose: "Implement `c001.handler.js` (Overdue Receivables)"
+    prerequisites: ["T024","T001"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T033:
+    id: "T033"
+    owner: "DQBot"
+    purpose: "Expand `intentDetector.js` for V001, V002, C001"
+    prerequisites: ["T030–T032"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T034:
+    id: "T034"
+    owner: "DQBot"
+    purpose: "Expand `buildSuggestedQuestions()`"
+    prerequisites: ["T033"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T035:
+    id: "T035"
+    owner: "Frontend"
+    purpose: "Build `app/insights/[id]/page.tsx`"
+    prerequisites: ["N004 complete"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T036:
+    id: "T036"
+    owner: "Frontend"
+    purpose: "Build InsightEvolutionChart component"
+    prerequisites: ["T035"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T037:
+    id: "T037"
+    owner: "Frontend"
+    purpose: "Build ActionManagementTable component"
+    prerequisites: ["T035"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T038:
+    id: "T038"
+    owner: "Refactoring"
+    purpose: "Convert `InsightsPanel.jsx` → `InsightsPanel.tsx`"
+    prerequisites: []
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  T039:
+    id: "T039"
+    owner: "Frontend"
+    purpose: "Expand `app/insights/page.tsx` from stub"
+    prerequisites: ["T035","T038"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N009:
+    id: "N009"
+    owner: "Database"
+    purpose: "Add primary keys to `sales`, `sales_lines`, `inventory`, `finance_ar_open_items`"
+    prerequisites: ["Wave 4 complete"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N010:
+    id: "N010"
+    owner: "Database"
+    purpose: "Remove 14 backup/validation tables from production schema"
+    prerequisites: ["Wave 4 complete"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N011:
+    id: "N011"
+    owner: "Database"
+    purpose: "Remove `tmp_subsidiaries` from production schema"
+    prerequisites: ["N010"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N013:
+    id: "N013"
+    owner: "DevOps"
+    purpose: "Enable `pgtap` extension for DB unit testing"
+    prerequisites: ["Wave 5 test setup"]
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"
+
+  N014:
+    id: "N014"
+    owner: "DQBot"
+    purpose: "Evaluate enabling `vector` (pgvector) for DQBot semantic search"
+    prerequisites: []
+    inputs: ["system/*"]
+    outputs: ["system/*"]
+    artifacts: []
+    files_to_update: []
+    validation_criteria: "Pending explicit validation"
+    rollback_strategy: "git checkout"
+    resume_point: "Check implementation state"
+    human_gate: "none"
+    completion_conditions: "Task executed successfully"
+    model_class: "Pro"
+    estimated_tokens: 25000
+    checkpoint_transition: "Update checkpoint state"
+    context: "auto"
+    preferred_model: "Pro"
+    fallback_model: "Flash"
+    forbidden_models: ["Lite"]
+    reason: "Standard complex logic routing"

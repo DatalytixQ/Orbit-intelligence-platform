@@ -1,0 +1,132 @@
+[
+  {
+    "path": "/api/kpi/finance/dso-analytics",
+    "status": 200,
+    "data": "{\"summary\":{\"period_days\":\"90\",\"dso_days\":\"46.3\",\"overdue_balance\":\"253641775.22\",\"overdue_90_balanc"
+  },
+  {
+    "path": "/api/kpi/finance/dso-customers",
+    "status": 200,
+    "data": "[{\"customer_id\":\"3695\",\"customer_name\":\"Abolsky Sergio Adrian\"},{\"customer_id\":\"13353\",\"customer_nam"
+  },
+  {
+    "path": "/api/kpi/finance/current",
+    "status": 200,
+    "data": "{\"open_balance_total\":\"702392534.67\",\"overdue_balance_total\":\"633686128.69\",\"overdue_ratio_pct\":\"90."
+  },
+  {
+    "path": "/api/kpi/finance/ar-aging-summary",
+    "status": 200,
+    "data": "[{\"aging_bucket\":\"No vencido\",\"documents\":\"72\",\"open_balance\":\"66452278.21\"},{\"aging_bucket\":\"Sin ve"
+  },
+  {
+    "path": "/api/kpi/finance/risk-bundle",
+    "status": 200,
+    "data": "{\"riskCustomers\":[{\"customer_id\":\"3651\",\"customer_name\":\"Basello Mario Jorge\",\"open_documents\":10,\"o"
+  },
+  {
+    "path": "/api/kpi/finance/special-receivables",
+    "status": 200,
+    "data": "[{\"cxc_type\":\"Saldo inicial\",\"documents\":\"16\",\"open_balance\":\"27239665.83\"}]"
+  },
+  {
+    "path": "/api/kpi/finance/risk-trend",
+    "status": 200,
+    "data": "{\"current\":{\"snapshot_date\":\"2026-07-13T00:00:00.000Z\",\"open_balance\":\"800937102.11\",\"overdue_balanc"
+  },
+  {
+    "path": "/api/kpi/sales/monthly",
+    "status": 200,
+    "data": "[{\"mes\":\"2025-08-01T00:00:00.000Z\",\"ventas_ars\":\"1225074994.89\",\"ventas_usd\":\"0\"},{\"mes\":\"2025-09-01"
+  },
+  {
+    "path": "/api/kpi/sales/forecast-monthly",
+    "status": 200,
+    "data": "[{\"mes\":\"2026-01-01T00:00:00.000Z\",\"forecast_ars\":\"1000000000\",\"forecast_units\":\"0\",\"quarter\":1,\"yea"
+  },
+  {
+    "path": "/api/kpi/sales/forecast-quarterly",
+    "status": 200,
+    "data": "[{\"year\":2026,\"quarter\":1,\"forecast_ars\":\"3000000000\",\"forecast_units\":\"0\"},{\"year\":2026,\"quarter\":2"
+  },
+  {
+    "path": "/api/kpi/sales/top-participation-2026",
+    "status": 200,
+    "data": "[{\"customer_internal_id\":\"13620\",\"customer_name\":\"Mentrau SA\",\"customer_sales_ars\":\"206674942.61\",\"t"
+  },
+  {
+    "path": "/api/kpi/sales/by-category",
+    "status": 200,
+    "data": "[{\"item_class\":\"Productos : Iluminación Residencial : Interior\",\"month\":\"2025-08-01T00:00:00.000Z\",\""
+  },
+  {
+    "path": "/api/kpi/inventory/coverage",
+    "status": 200,
+    "data": "[{\"coverage_status\":\"Sin demanda reciente\",\"items\":\"1542\",\"inventory_value\":\"5602580611.223457505\"},"
+  },
+  {
+    "path": "/api/kpi/inventory/critical-items-count",
+    "status": 200,
+    "data": "{\"critical_items\":\"71\"}"
+  },
+  {
+    "path": "/api/kpi/inventory/critical-value",
+    "status": 200,
+    "data": "{\"critical_inventory_value\":\"78147386.131322867\"}"
+  },
+  {
+    "path": "/api/kpi/inventory/slow-moving-summary",
+    "status": 200,
+    "data": "{\"slow_moving_items\":\"76\",\"slow_moving_value\":\"145685787.863748434\"}"
+  },
+  {
+    "path": "/api/kpi/inventory/critical-demand-mix",
+    "status": 200,
+    "data": "[{\"demand_segment\":\"Demanda baja\",\"items\":\"32\",\"inventory_value\":\"45827387.609954\"},{\"demand_segment"
+  },
+  {
+    "path": "/api/kpi/inventory/top-critical",
+    "status": 200,
+    "data": "[{\"item_id\":\"10289\",\"item_name\":\"VK-SPUN-36W-DIM-RGBW-12°-24V\",\"item_class\":\"Productos : Iluminación"
+  },
+  {
+    "path": "/api/kpi/inventory/slow-moving",
+    "status": 200,
+    "data": "[{\"item_id\":\"8401\",\"item_name\":\"INS-050-5050-HP-00-40\",\"item_class\":\"Productos\",\"stock_available\":\"1"
+  },
+  {
+    "path": "/api/home-executive-summary",
+    "status": 200,
+    "data": "{\"client_id\":\"vonderk\",\"as_of_date\":\"2026-07-14T00:00:00.000Z\",\"snapshot_type\":\"executive\",\"salud_ge"
+  },
+  {
+    "path": "/api/kpi/home/commercial-summary",
+    "status": 200,
+    "data": "[{\"year\":2026,\"invoiced_units\":\"369751.13\",\"net_revenue\":\"4607683528.31\",\"tax_amount\":\"791344182.68\""
+  },
+  {
+    "path": "/api/kpi/home/sales-vs-last-year",
+    "status": 200,
+    "data": "[{\"year\":2023,\"month\":1,\"month_date\":\"2023-01-01T00:00:00.000Z\",\"net_revenue\":\"2785018.61\",\"invoiced"
+  },
+  {
+    "path": "/api/executive/health-score",
+    "status": 200,
+    "data": "{\"overall_score\":\"35\",\"health_band\":\"Critical\",\"dimensions\":[{\"dimension\":\"DSO y Cobranzas\",\"score\":"
+  },
+  {
+    "path": "/api/analytics/executive",
+    "status": 200,
+    "data": "{\"generated_at\":\"2026-07-14T06:34:01.104Z\",\"finance\":{\"diagnostics\":{\"status\":\"Atención requerida\",\""
+  },
+  {
+    "path": "/api/insights/current",
+    "status": 200,
+    "data": "[{\"id\":\"1\",\"insight_key\":\"inventory_critical_items\",\"insight_type\":\"inventario\",\"title\":\"Ítems críti"
+  },
+  {
+    "path": "/api/ai/chat-v2",
+    "status": 401,
+    "data": "{\"ok\":false,\"error\":\"Token requerido\"}"
+  }
+]

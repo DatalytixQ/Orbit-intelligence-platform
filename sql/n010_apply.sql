@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS public.sales_bak_20260423 CASCADE;
+DROP TABLE IF EXISTS public.sales_lines_bak_20260423 CASCADE;
+DROP TABLE IF EXISTS public.raw_sales_bak_20260423 CASCADE;
+DROP TABLE IF EXISTS public.raw_sales_lines_bak_20260423 CASCADE;
+DROP TABLE IF EXISTS public.sales_ok_20260423 CASCADE;
+DROP TABLE IF EXISTS public.sales_lines_ok_20260423 CASCADE;
+DROP TABLE IF EXISTS public.finance_ar_open_items_ok_20260423 CASCADE;
+DROP TABLE IF EXISTS public.sales_base_ok CASCADE;
+DROP TABLE IF EXISTS public.sales_lines_base_ok CASCADE;
+DROP TABLE IF EXISTS public.finance_ar_open_items_base_ok CASCADE;
+DROP TABLE IF EXISTS public.sales_scope_ar_ok CASCADE;
+DROP TABLE IF EXISTS public.kpi_finance_current_snapshot_ok CASCADE;
+DROP TABLE IF EXISTS public.kpi_finance_ar_aging_summary_ok CASCADE;

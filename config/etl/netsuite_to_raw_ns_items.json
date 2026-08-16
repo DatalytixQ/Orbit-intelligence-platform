@@ -1,0 +1,29 @@
+{
+  "integration": "NetSuite_SuiteQL",
+  "target_table": "raw_ns_items",
+  "primary_keys": ["id"],
+  "description": "Maestro de Artículos / Productos",
+  "extraction": {
+    "type": "REST_SUITEQL",
+    "base_query": "SELECT i.id, i.itemid, i.displayname, i.salesdescription, i.itemtype, i.class, i.department, i.subsidiary, i.baseprice, i.cost, i.isinactive, i.lastmodifieddate FROM item i",
+    "filters": [
+      { "field": "i.lastmodifieddate", "operator": ">=", "value": "TO_DATE('{{LAST_SYNC_DATE}}', 'YYYY-MM-DD HH24:MI:SS')" }
+    ]
+  },
+  "mapping": {
+    "id": { "source_field": "id", "type": "string" },
+    "itemid": { "source_field": "itemid", "type": "string" },
+    "displayname": { "source_field": "displayname", "type": "string" },
+    "salesdescription": { "source_field": "salesdescription", "type": "string" },
+    "itemtype": { "source_field": "itemtype", "type": "string" },
+    "class": { "source_field": "class", "type": "string" },
+    "department": { "source_field": "department", "type": "string" },
+    "subsidiary": { "source_field": "subsidiary", "type": "string" },
+    "baseprice": { "source_field": "baseprice", "type": "number" },
+    "cost": { "source_field": "cost", "type": "number" },
+    "isinactive": { "source_field": "isinactive", "type": "string" },
+    "last_modified_ts": { "source_field": "lastmodifieddate", "type": "date" }
+  },
+  "defaults": { "source_system": "netsuite", "client_id": "vonderk", "snapshot_ts": "{{CURRENT_TIMESTAMP}}" },
+  "validation_rules": [{ "field": "id", "rule": "is_not_null" }]
+}

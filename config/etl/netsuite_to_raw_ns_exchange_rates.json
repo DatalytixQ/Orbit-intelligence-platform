@@ -1,0 +1,26 @@
+{
+  "integration": "NetSuite_SuiteQL",
+  "target_table": "raw_ns_exchange_rates",
+  "primary_keys": ["id"],
+  "description": "Tasas de Cambio actuales por moneda (currency.exchangerate). Nota: tasa histórica embebida en raw_ns_transactions.exchangerate",
+  "extraction": {
+    "type": "REST_SUITEQL",
+    "base_query": "SELECT c.id, c.name, c.symbol, c.exchangerate FROM currency c",
+    "filters": []
+  },
+  "mapping": {
+    "id": { "source_field": "id", "type": "string" },
+    "currency_name": { "source_field": "name", "type": "string" },
+    "currency_symbol": { "source_field": "symbol", "type": "string" },
+    "exchangerate": { "source_field": "exchangerate", "type": "number" },
+    "last_modified_ts": { "source_field": "symbol", "type": "string" }
+  },
+  "defaults": {
+    "source_system": "netsuite",
+    "client_id": "vonderk",
+    "snapshot_ts": "{{CURRENT_TIMESTAMP}}"
+  },
+  "validation_rules": [
+    { "field": "id", "rule": "is_not_null" }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "integration": "NetSuite_SuiteQL",
+  "target_table": "raw_ns_locations",
+  "primary_keys": ["id"],
+  "description": "Maestro de Ubicaciones (Warehouses, Offices)",
+  "extraction": {
+    "type": "REST_SUITEQL",
+    "base_query": "SELECT l.id, l.name, l.subsidiary, l.isinactive, l.lastmodifieddate FROM location l",
+    "filters": [
+      { "field": "l.lastmodifieddate", "operator": ">=", "value": "TO_DATE('{{LAST_SYNC_DATE}}', 'YYYY-MM-DD HH24:MI:SS')" }
+    ]
+  },
+  "mapping": {
+    "id": { "source_field": "id", "type": "string" },
+    "name": { "source_field": "name", "type": "string" },
+    "subsidiary": { "source_field": "subsidiary", "type": "string" },
+    "isinactive": { "source_field": "isinactive", "type": "string" },
+    "last_modified_ts": { "source_field": "lastmodifieddate", "type": "date" }
+  },
+  "defaults": { "source_system": "netsuite", "client_id": "vonderk", "snapshot_ts": "{{CURRENT_TIMESTAMP}}" },
+  "validation_rules": [{ "field": "id", "rule": "is_not_null" }]
+}

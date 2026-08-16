@@ -1,0 +1,18 @@
+schema_validation:
+  version: "1.6"
+  purpose: "Ensure schema evolutions maintain data integrity and security"
+  
+  pre_flight_checks:
+    syntax_validation: "Verify PostgreSQL syntax."
+    dependency_check: "Ensure no existing views or functions break."
+    destructive_check: "Identify if operation drops or truncates existing data."
+  
+  post_flight_checks:
+    object_existence: "Verify table/view/function exists."
+    rls_enforcement: "Verify ROW LEVEL SECURITY is enabled and policies exist."
+    index_verification: "Verify declared indexes exist."
+    constraint_verification: "Verify primary and foreign keys."
+    
+  validation_query_requirements:
+    structure: "A dedicated script ending in _validate.sql"
+    output: "Must return boolean TRUE or explicitly RAISE EXCEPTION on failure."

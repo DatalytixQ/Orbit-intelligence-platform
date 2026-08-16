@@ -1,0 +1,164 @@
+{
+  "history": [
+    {
+      "iteration": 1,
+      "timestamp": 1784001146165,
+      "pings": 1
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1784001146276,
+      "pings": 2
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1784001146380,
+      "pings": 3
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1784001146486,
+      "pings": 4
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1784001146684,
+      "pings": 9
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1784001146826,
+      "pings": 11
+    },
+    {
+      "iteration": 12,
+      "timestamp": 1784001146936,
+      "pings": 12
+    },
+    {
+      "iteration": 14,
+      "timestamp": 1784001147060,
+      "pings": 14
+    },
+    {
+      "iteration": 1,
+      "timestamp": 1784001203991,
+      "pings": 1
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1784001204099,
+      "pings": 2
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1784001204225,
+      "pings": 3
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1784001204352,
+      "pings": 4
+    },
+    {
+      "iteration": 5,
+      "timestamp": 1784001204467,
+      "pings": 5
+    },
+    {
+      "iteration": 6,
+      "timestamp": 1784001204710,
+      "pings": 6
+    },
+    {
+      "iteration": 7,
+      "timestamp": 1784001204819,
+      "pings": 7
+    },
+    {
+      "iteration": 8,
+      "timestamp": 1784001204929,
+      "pings": 8
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1784001205039,
+      "pings": 9
+    },
+    {
+      "iteration": 10,
+      "timestamp": 1784001205151,
+      "pings": 10
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1784001205441,
+      "pings": 11
+    },
+    {
+      "iteration": 15,
+      "timestamp": 1784001205610,
+      "pings": 15
+    },
+    {
+      "iteration": 23,
+      "timestamp": 1784001205820,
+      "pings": 23
+    },
+    {
+      "iteration": 24,
+      "timestamp": 1784001206029,
+      "pings": 24
+    },
+    {
+      "iteration": 28,
+      "timestamp": 1784001206181,
+      "pings": 28
+    },
+    {
+      "iteration": 31,
+      "timestamp": 1784001206444,
+      "pings": 31
+    },
+    {
+      "iteration": 36,
+      "timestamp": 1784001206626,
+      "pings": 36
+    },
+    {
+      "iteration": 40,
+      "timestamp": 1784001206790,
+      "pings": 40
+    },
+    {
+      "iteration": 41,
+      "timestamp": 1784001206917,
+      "pings": 41
+    },
+    {
+      "iteration": 45,
+      "timestamp": 1784001207087,
+      "pings": 45
+    },
+    {
+      "iteration": 52,
+      "timestamp": 1784001207306,
+      "pings": 52
+    },
+    {
+      "iteration": 54,
+      "timestamp": 1784001207448,
+      "pings": 54
+    },
+    {
+      "iteration": 56,
+      "timestamp": 1784001207584,
+      "pings": 56
+    },
+    {
+      "iteration": 58,
+      "timestamp": 1784001207791,
+      "pings": 58
+    }
+  ]
+}

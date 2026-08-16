@@ -1,0 +1,39 @@
+schema_governance:
+  version: "1.6"
+  purpose: "Establish rigid bounds for autonomous schema modifications"
+
+  allowed_automatic_operations:
+    - "Generate schema evolution proposal"
+    - "Generate migration scripts (apply, rollback, validate)"
+    - "Execute schema audits"
+    - "Update database documentation"
+
+  forbidden_operations:
+    - "Execute migration scripts autonomously without explicit Human Approval"
+    - "Modify existing, populated production tables (e.g., DROP COLUMN, ALTER COLUMN TYPE) without explicit data migration strategy"
+    - "Create tables without ROW LEVEL SECURITY enabled"
+
+  mandatory_human_approvals:
+    - "Schema Evolution Gate (Execution of ANY generated schema script)"
+    - "Index creation on tables exceeding 1M rows"
+
+  development_restrictions:
+    - "All migrations must be tested locally before staging."
+    - "Validation queries must be written and executed immediately post-apply."
+
+  production_restrictions:
+    - "Zero-downtime migrations only."
+    - "Schema locks must be analyzed prior to execution."
+
+  rollback_requirements:
+    - "Rollback script must exist before apply script is executed."
+    - "Rollback must be automated in case of validation failure."
+
+  rls_requirements:
+    - "ENABLE ROW LEVEL SECURITY is mandatory for every new table."
+    - "At least one SELECT and one INSERT policy must be defined per table."
+    
+  migration_quality_requirements:
+    - "Consistent naming conventions (snake_case)."
+    - "UUID primary keys by default."
+    - "Timestamp fields (created_at, updated_at) with default values."

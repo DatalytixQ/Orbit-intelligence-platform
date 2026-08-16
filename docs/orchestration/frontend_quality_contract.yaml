@@ -1,0 +1,36 @@
+# Frontend Quality Contract v2.1
+
+mandatory_standards:
+  ux:
+    - "Minimize friction and navigation depth."
+    - "Eliminate unnecessary clicks."
+    - "Ensure discoverability of key actions."
+    - "Validate complete user journeys (e.g., Login -> Dashboard -> Actions)."
+
+  ui:
+    - "Maintain a minimalist, professional interface."
+    - "Ensure dashboard visual hierarchy and card consistency."
+    - "Avoid generic placeholder layouts. Use premium density and readability."
+    - "Follow strict spacing and elevation rules."
+
+  accessibility:
+    - "Accessibility by default (WCAG AAA target)."
+    - "Support full keyboard navigation."
+    - "Ensure optimal color contrast for all states."
+
+  responsiveness:
+    - "Mobile, Tablet, and Desktop layouts must be distinct and optimized."
+    - "Test across all device breakpoints at every major change."
+
+  component_consistency:
+    - "No duplicated layouts, pages, or components."
+    - "Use pure shared component design system."
+    - "Ensure loading, empty, and error states are standardized."
+
+  navigation_consistency:
+    - "Predictable state transitions and routing."
+    - "Eliminate dead links and redundant paths."
+
+screenshot_validation:
+  enabled: true
+  action: "Capture and compare visual states across builds. Discrepancies generate objectives."

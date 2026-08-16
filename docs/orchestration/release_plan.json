@@ -1,0 +1,22 @@
+{
+  "releases": [
+    {
+      "id": "Release Candidate",
+      "objectives": [
+        "OBJ-1",
+        "OBJ-2",
+        "OBJ-3"
+      ],
+      "status": "PENDING"
+    },
+    {
+      "id": "Release 0.9",
+      "objectives": [
+        "OBJ-4",
+        "OBJ-5",
+        "OBJ-6"
+      ],
+      "status": "PLANNED"
+    }
+  ]
+}

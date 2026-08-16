@@ -1,0 +1,9 @@
+{
+  "objectivesDelivered": 24,
+  "objectivesPending": 124,
+  "avgLeadTimeHrs": 24.5,
+  "avgCycleTimeHrs": 8.2,
+  "debtTrend": "DECREASING",
+  "businessValueDelivered": 3600,
+  "deliveryConfidence": 94
+}

@@ -1,0 +1,698 @@
+﻿source_system;client_id;snapshot_ts;invoice_internal_id;document_number;customer_id;invoice_date;due_date;document_type;document_status;payment_terms;currency;exchange_rate;subsidiary_id;amount_total;amount_paid;open_balance
+netsuite;vonderk;8/6/2026 15:40;323745;MEX-9900021939;4043;8/6/2026;15/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;814,811.40;0;814,811.40
+netsuite;vonderk;8/6/2026 15:40;323752;MEX-9900021941;3878;8/6/2026;15/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;419,428.80;0;419,428.80
+netsuite;vonderk;8/6/2026 15:40;323893;MEX-9900021942;13571;8/6/2026;15/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;688,098.00;0;688,098.00
+netsuite;vonderk;8/6/2026 15:40;323894;MEX-9900021943;3777;8/6/2026;15/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;1,919,067.80;0;1,919,067.80
+netsuite;vonderk;8/6/2026 15:40;323895;MEX-9900021944;3720;8/6/2026;15/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;276,415.23;0;276,415.23
+netsuite;vonderk;8/6/2026 15:40;323897;MEX-9900021945;4069;8/6/2026;15/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;534,944.00;0;534,944.00
+netsuite;vonderk;8/6/2026 15:40;323900;MEX-9900021946;4002;8/6/2026;15/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;639,261.00;0;639,261.00
+netsuite;vonderk;8/6/2026 15:40;323901;MEX-9900021947;3767;8/6/2026;15/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;5,817,340.80;0;5,817,340.80
+netsuite;vonderk;8/6/2026 15:40;323902;MEX-9900021948;3740;8/6/2026;15/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;528,520.00;0;528,520.00
+netsuite;vonderk;8/6/2026 15:40;323903;MEX-9900021949;3720;8/6/2026;15/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;101,178.00;0;101,178.00
+netsuite;vonderk;8/6/2026 15:40;323904;MEX-9900021950;3778;8/6/2026;15/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;507,934.00;0;507,934.00
+netsuite;vonderk;8/6/2026 15:40;323909;MEX-9900021951;3720;8/6/2026;15/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;462,966.00;0;462,966.00
+netsuite;vonderk;8/6/2026 15:40;323910;MEX-9900021952;3924;8/6/2026;15/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;350,400.00;0;350,400.00
+netsuite;vonderk;8/6/2026 15:40;323912;MEX-9900021953;3923;8/6/2026;15/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;495,214.48;0;495,214.48
+netsuite;vonderk;8/6/2026 15:40;323914;MEX-9900021954;3923;8/6/2026;15/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;216,760.36;0;216,760.36
+netsuite;vonderk;8/6/2026 15:40;323935;FC A-00007-00047818;4041;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;111,339.60;0;111,339.60
+netsuite;vonderk;8/6/2026 15:40;323940;FC A-00007-00047819;4075;8/6/2026;7/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;205,278.92;0;205,278.92
+netsuite;vonderk;8/6/2026 15:40;323941;FC A-00007-00047820;4073;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;158,782.02;0;158,782.02
+netsuite;vonderk;8/6/2026 15:40;323943;FC A-00007-00047821;3767;8/6/2026;7/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;127,151.40;0;127,151.40
+netsuite;vonderk;8/6/2026 15:40;323947;FC A-00007-00047822;3812;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;543,724.14;0;543,724.14
+netsuite;vonderk;8/6/2026 15:40;323950;FC A-00007-00047823;3812;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;222,591.60;0;222,591.60
+netsuite;vonderk;8/6/2026 15:40;323957;FC A-00007-00047824;4173;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,297,727.28;0;2,297,727.28
+netsuite;vonderk;8/6/2026 15:40;323959;FC A-00007-00047825;4173;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;384,384.86;0;384,384.86
+netsuite;vonderk;8/6/2026 15:40;323961;FC A-00007-00047826;3812;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;74,197.20;0;74,197.20
+netsuite;vonderk;8/6/2026 15:40;323966;FC A-00007-00047827;3759;8/6/2026;7/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,023,336.05;0;1,023,336.05
+netsuite;vonderk;8/6/2026 15:40;323971;FC A-00007-00047828;5264;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,820,320.99;0;1,820,320.99
+netsuite;vonderk;8/6/2026 15:40;323976;FC A-00007-00047829;3767;8/6/2026;7/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;226,919.77;0;226,919.77
+netsuite;vonderk;8/6/2026 15:40;323982;FC A-00007-00047830;3857;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;145,880.28;0;145,880.28
+netsuite;vonderk;8/6/2026 15:40;323983;FC A-00007-00047831;3807;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;518,031.36;0;518,031.36
+netsuite;vonderk;8/6/2026 15:40;323985;FC A-00007-00047832;13932;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;200,939.51;0;200,939.51
+netsuite;vonderk;8/6/2026 15:40;323989;FC A-00007-00047833;3720;8/6/2026;23/7/2026;Factura de venta;Abierta;PLAZO 45 DIAS;Peso Argentino;1;3;3,622,185.18;0;3,622,185.18
+netsuite;vonderk;8/6/2026 15:40;323991;FC A-00007-00047834;3720;8/6/2026;23/7/2026;Factura de venta;Abierta;PLAZO 45 DIAS;Peso Argentino;1;3;1,067,990.00;0;1,067,990.00
+netsuite;vonderk;8/6/2026 15:40;323993;FC A-00007-00047835;3767;8/6/2026;7/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;2,070,481.70;0;2,070,481.70
+netsuite;vonderk;8/6/2026 15:40;323997;FC A-00007-00047836;4029;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;5,719,272.43;0;5,719,272.43
+netsuite;vonderk;8/6/2026 15:40;324003;FC A-00007-00047837;3973;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;6,750,939.56;0;6,750,939.56
+netsuite;vonderk;8/6/2026 15:40;324008;FC A-00007-00047838;4047;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;615,660.10;0;615,660.10
+netsuite;vonderk;8/6/2026 15:40;324014;FC A-00007-00047839;4075;8/6/2026;7/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;406,569.85;0;406,569.85
+netsuite;vonderk;8/6/2026 15:40;324017;FC A-00007-00047840;3979;8/6/2026;7/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,062,619.50;0;1,062,619.50
+netsuite;vonderk;8/6/2026 15:40;324021;FC A-00007-00047841;3767;8/6/2026;7/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;894,747.57;0;894,747.57
+netsuite;vonderk;8/6/2026 15:40;324022;FC A-00007-00047842;3906;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;667,068.16;0;667,068.16
+netsuite;vonderk;8/6/2026 15:40;324125;FC A-00007-00047843;3904;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;333,146.45;0;333,146.45
+netsuite;vonderk;8/6/2026 15:40;324128;FC A-00007-00047844;3923;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;230,447.98;0;230,447.98
+netsuite;vonderk;8/6/2026 15:40;324129;FC A-00007-00047845;3931;8/6/2026;7/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,341,626.71;0;1,341,626.71
+netsuite;vonderk;8/6/2026 15:40;324131;FC A-00007-00047846;3726;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;184,574.37;0;184,574.37
+netsuite;vonderk;8/6/2026 15:40;324135;FC A-00007-00047847;3932;8/6/2026;7/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,953,304.87;0;1,953,304.87
+netsuite;vonderk;8/6/2026 15:40;324138;FC A-00007-00047848;3932;8/6/2026;7/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;997,563.69;0;997,563.69
+netsuite;vonderk;8/6/2026 15:40;324140;FC A-00007-00047849;3932;8/6/2026;7/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,566,302.35;0;1,566,302.35
+netsuite;vonderk;8/6/2026 15:40;324141;FC A-00007-00047850;3932;8/6/2026;7/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;2,442,889.81;0;2,442,889.81
+netsuite;vonderk;8/6/2026 15:40;324143;FC A-00007-00047851;3857;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,333,265.13;0;2,333,265.13
+netsuite;vonderk;8/6/2026 15:40;324144;FC A-00007-00047852;3857;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;540,629.83;0;540,629.83
+netsuite;vonderk;8/6/2026 15:40;324145;FC A-00007-00047853;3750;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,058,512.98;0;2,058,512.98
+netsuite;vonderk;8/6/2026 15:40;324147;FC A-00007-00047854;3750;8/6/2026;8/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;916,229.42;0;916,229.42
+netsuite;vonderk;8/6/2026 15:40;322355;MEX-9900021906;3850;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;53,544.00;0;53,544.00
+netsuite;vonderk;8/6/2026 15:40;322362;MEX-9900021908;3702;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;116,618.25;0;116,618.25
+netsuite;vonderk;8/6/2026 15:40;322363;MEX-9900021909;3924;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;105,196.50;0;105,196.50
+netsuite;vonderk;8/6/2026 15:40;322369;MEX-9900021910;3898;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;458,150.40;0;458,150.40
+netsuite;vonderk;8/6/2026 15:40;322371;MEX-9900021911;3779;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;382,956.00;0;382,956.00
+netsuite;vonderk;8/6/2026 15:40;322377;MEX-9900021914;3920;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;860,196.00;0;860,196.00
+netsuite;vonderk;8/6/2026 15:40;322380;MEX-9900021915;13571;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;299,468.10;0;299,468.10
+netsuite;vonderk;8/6/2026 15:40;322385;MEX-9900021916;3924;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;171,981.00;0;171,981.00
+netsuite;vonderk;8/6/2026 15:40;322386;MEX-9900021917;3924;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;342,725.25;0;342,725.25
+netsuite;vonderk;8/6/2026 15:40;322388;MEX-9900021919;3778;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;479,480.70;0;479,480.70
+netsuite;vonderk;8/6/2026 15:40;322390;MEX-9900021921;3924;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;429,952.50;0;429,952.50
+netsuite;vonderk;8/6/2026 15:40;322391;MEX-9900021922;3920;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;148,468.20;0;148,468.20
+netsuite;vonderk;8/6/2026 15:40;322392;MEX-9900021923;3949;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;1,042,798.50;0;1,042,798.50
+netsuite;vonderk;8/6/2026 15:40;322393;MEX-9900021924;3778;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;472,074.75;0;472,074.75
+netsuite;vonderk;8/6/2026 15:40;322394;MEX-9900021925;3720;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;432,862.50;0;432,862.50
+netsuite;vonderk;8/6/2026 15:40;322395;MEX-9900021926;3949;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;186,240.00;0;186,240.00
+netsuite;vonderk;8/6/2026 15:40;322396;MEX-9900021927;3924;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;420,786.00;0;420,786.00
+netsuite;vonderk;8/6/2026 15:40;322397;MEX-9900021928;3640;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;56,163.00;0;56,163.00
+netsuite;vonderk;8/6/2026 15:40;322398;MEX-9900021929;3924;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;1,101,376.80;0;1,101,376.80
+netsuite;vonderk;8/6/2026 15:40;322399;MEX-9900021930;3740;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;574,812.30;0;574,812.30
+netsuite;vonderk;8/6/2026 15:40;322409;MEX-9900021931;3702;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;439,293.60;0;439,293.60
+netsuite;vonderk;8/6/2026 15:40;322414;MEX-9900021932;3811;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;450,380.70;0;450,380.70
+netsuite;vonderk;8/6/2026 15:40;322420;MEX-9900021933;3850;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;498,919.50;0;498,919.50
+netsuite;vonderk;8/6/2026 15:40;322450;MEX-9900021934;3846;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;377,136.00;0;377,136.00
+netsuite;vonderk;8/6/2026 15:40;322451;MEX-9900021935;3859;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;57,036.00;0;57,036.00
+netsuite;vonderk;8/6/2026 15:40;322452;MEX-9900021936;13716;5/6/2026;12/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;52,569.15;0;52,569.15
+netsuite;vonderk;8/6/2026 15:40;322553;FC A-00007-00047778;3868;5/6/2026;4/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;4,141,447.40;0;4,141,447.40
+netsuite;vonderk;8/6/2026 15:40;322556;FC A-00007-00047779;3767;5/6/2026;4/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;709,325.60;0;709,325.60
+netsuite;vonderk;8/6/2026 15:40;322559;FC A-00007-00047780;14071;5/6/2026;5/6/2026;Factura de venta;Abierta;Contado;Peso Argentino;1;3;1,350,455.92;0;1,350,455.92
+netsuite;vonderk;8/6/2026 15:40;322560;FC A-00007-00047781;14071;5/6/2026;5/6/2026;Factura de venta;Abierta;Contado;Peso Argentino;1;3;2,133,951.89;0;2,133,951.89
+netsuite;vonderk;8/6/2026 15:40;322563;FC A-00007-00047782;4075;5/6/2026;4/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;207,850.54;0;207,850.54
+netsuite;vonderk;8/6/2026 15:40;322566;FC A-00007-00047783;3707;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;546,654.63;0;546,654.63
+netsuite;vonderk;8/6/2026 15:40;322567;FC A-00007-00047784;3779;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;408,870.13;0;408,870.13
+netsuite;vonderk;8/6/2026 15:40;322568;FC A-00007-00047785;3979;5/6/2026;4/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;100,016.70;0;100,016.70
+netsuite;vonderk;8/6/2026 15:40;322569;FC A-00007-00047786;3864;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;608,594.44;0;608,594.44
+netsuite;vonderk;8/6/2026 15:40;322571;FC A-00007-00047787;4466;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;416,194.02;0;416,194.02
+netsuite;vonderk;8/6/2026 15:40;322572;FC A-00007-00047788;3767;5/6/2026;4/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,011,612.03;0;1,011,612.03
+netsuite;vonderk;8/6/2026 15:40;322576;FC A-00007-00047789;3979;5/6/2026;4/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;680,738.66;0;680,738.66
+netsuite;vonderk;8/6/2026 15:40;322581;FC A-00007-00047791;13743;5/6/2026;15/6/2026;Factura de venta;Abierta;PLAZO 10 DIAS;Peso Argentino;1;3;218,519.47;0;218,519.47
+netsuite;vonderk;8/6/2026 15:40;322582;FC A-00007-00047792;3748;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,284,011.71;0;2,284,011.71
+netsuite;vonderk;8/6/2026 15:40;322584;FC A-00007-00047793;3941;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,516,220.88;0;1,516,220.88
+netsuite;vonderk;8/6/2026 15:40;322585;FC A-00007-00047794;3700;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;306,775.84;0;306,775.84
+netsuite;vonderk;8/6/2026 15:40;322586;FC A-00007-00047795;3906;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;351,229.73;0;351,229.73
+netsuite;vonderk;8/6/2026 15:40;322587;FC A-00007-00047796;3937;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,816,887.61;0;1,816,887.61
+netsuite;vonderk;8/6/2026 15:40;322589;FC A-00007-00047797;3645;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;601,780.73;0;601,780.73
+netsuite;vonderk;8/6/2026 15:40;322590;FC A-00007-00047798;3859;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;245,068.56;0;245,068.56
+netsuite;vonderk;8/6/2026 15:40;322591;FC A-00007-00047799;3767;5/6/2026;4/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;2,052,889.33;0;2,052,889.33
+netsuite;vonderk;8/6/2026 15:40;322595;FC A-00007-00047801;3767;5/6/2026;4/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;59,154.48;0;59,154.48
+netsuite;vonderk;8/6/2026 15:40;322596;FC A-00007-00047802;3787;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,491,160.39;0;1,491,160.39
+netsuite;vonderk;8/6/2026 15:40;322598;FC A-00007-00047803;3953;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;471,827.40;0;471,827.40
+netsuite;vonderk;8/6/2026 15:40;322599;FC A-00007-00047804;3811;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;154,928.40;0;154,928.40
+netsuite;vonderk;8/6/2026 15:40;322600;FC A-00007-00047805;13609;5/6/2026;4/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;218,162.70;0;218,162.70
+netsuite;vonderk;8/6/2026 15:40;322605;FC A-00007-00047806;13943;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;667,557.64;0;667,557.64
+netsuite;vonderk;8/6/2026 15:40;322609;FC A-00007-00047807;3720;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;237,892.50;0;237,892.50
+netsuite;vonderk;8/6/2026 15:40;322610;FC A-00007-00047808;4075;5/6/2026;4/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;920,662.01;0;920,662.01
+netsuite;vonderk;8/6/2026 15:40;322611;FC A-00007-00047809;13718;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,103,657.18;2,029,347.50;74,309.68
+netsuite;vonderk;8/6/2026 15:40;322612;FC A-00007-00047810;3937;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;667,459.72;0;667,459.72
+netsuite;vonderk;8/6/2026 15:40;322614;FC A-00007-00047811;3727;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,466,010.00;0;1,466,010.00
+netsuite;vonderk;8/6/2026 15:40;322615;FC A-00007-00047812;3702;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;53,116.81;0;53,116.81
+netsuite;vonderk;8/6/2026 15:40;322616;FC A-00007-00047813;3847;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,109,692.28;0;1,109,692.28
+netsuite;vonderk;8/6/2026 15:40;322620;FC A-00007-00047814;4466;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,850,971.85;0;1,850,971.85
+netsuite;vonderk;8/6/2026 15:40;322721;FC A-00007-00047815;4466;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,111,710.21;0;1,111,710.21
+netsuite;vonderk;8/6/2026 15:40;322723;FC A-00007-00047816;3787;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,800,305.53;0;2,800,305.53
+netsuite;vonderk;8/6/2026 15:40;322726;FC A-00007-00047817;3787;5/6/2026;5/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;736,917.86;0;736,917.86
+netsuite;vonderk;8/6/2026 15:40;320987;MEX-9900021888;3773;4/6/2026;11/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;412,450.00;0;412,450.00
+netsuite;vonderk;8/6/2026 15:40;320998;MEX-9900021892;3720;4/6/2026;11/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;613,200.00;0;613,200.00
+netsuite;vonderk;8/6/2026 15:40;321004;MEX-9900021893;13943;4/6/2026;11/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;997,267.60;0;997,267.60
+netsuite;vonderk;8/6/2026 15:40;321012;MEX-9900021897;3866;4/6/2026;11/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;45,610.40;0;45,610.40
+netsuite;vonderk;8/6/2026 15:40;321013;MEX-9900021898;3850;4/6/2026;11/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;163,520.00;0;163,520.00
+netsuite;vonderk;8/6/2026 15:40;321016;MEX-9900021899;3854;4/6/2026;11/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;20,732.00;0;20,732.00
+netsuite;vonderk;8/6/2026 15:40;321017;MEX-9900021900;3777;4/6/2026;11/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;254,609.40;0;254,609.40
+netsuite;vonderk;8/6/2026 15:40;321018;MEX-9900021901;3640;4/6/2026;11/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;155,344.00;0;155,344.00
+netsuite;vonderk;8/6/2026 15:40;321021;MEX-9900021902;3640;4/6/2026;11/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;169,944.00;0;169,944.00
+netsuite;vonderk;8/6/2026 15:40;321023;MEX-9900021904;3641;4/6/2026;11/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;18,629.60;17,966.75;662.85
+netsuite;vonderk;8/6/2026 15:40;321024;MEX-9900021905;3850;4/6/2026;11/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;90,520.00;0;90,520.00
+netsuite;vonderk;8/6/2026 15:40;321025;FC A-00007-00047726;3868;4/6/2026;3/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;361,941.01;0;361,941.01
+netsuite;vonderk;8/6/2026 15:40;321026;FC A-00007-00047727;4073;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;7,426,552.80;0;7,426,552.80
+netsuite;vonderk;8/6/2026 15:40;321027;FC A-00007-00047728;14027;4/6/2026;4/6/2026;Factura de venta;Abierta;Contado;Peso Argentino;1;3;559,399.37;0;559,399.37
+netsuite;vonderk;8/6/2026 15:40;321028;FC A-00007-00047729;3767;4/6/2026;3/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;122,425.38;0;122,425.38
+netsuite;vonderk;8/6/2026 15:40;321032;FC A-00007-00047730;4047;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;797,796.56;0;797,796.56
+netsuite;vonderk;8/6/2026 15:40;321036;FC A-00007-00047731;4047;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;113,352.06;0;113,352.06
+netsuite;vonderk;8/6/2026 15:40;321041;FC A-00007-00047732;3674;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;617,707.02;0;617,707.02
+netsuite;vonderk;8/6/2026 15:40;321043;FC A-00007-00047734;3658;4/6/2026;3/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;3,049,247.38;0;3,049,247.38
+netsuite;vonderk;8/6/2026 15:40;321045;FC A-00007-00047736;3827;4/6/2026;11/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;3;533,831.19;0;533,831.19
+netsuite;vonderk;8/6/2026 15:40;321153;FC A-00007-00047737;3814;4/6/2026;19/7/2026;Factura de venta;Abierta;PLAZO 45 DIAS;Peso Argentino;1;3;1,387,540.64;0;1,387,540.64
+netsuite;vonderk;8/6/2026 15:40;321154;FC A-00007-00047738;3814;4/6/2026;19/7/2026;Factura de venta;Abierta;PLAZO 45 DIAS;Peso Argentino;1;3;1,034,856.61;0;1,034,856.61
+netsuite;vonderk;8/6/2026 15:40;321155;FC A-00007-00047739;3673;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;644,955.00;0;644,955.00
+netsuite;vonderk;8/6/2026 15:40;321156;FC A-00007-00047740;4043;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;415,749.60;0;415,749.60
+netsuite;vonderk;8/6/2026 15:40;321157;FC A-00007-00047741;3674;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;700,703.64;0;700,703.64
+netsuite;vonderk;8/6/2026 15:40;321158;FC A-00007-00047742;3759;4/6/2026;3/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;2,438,349.66;0;2,438,349.66
+netsuite;vonderk;8/6/2026 15:40;321159;FC A-00007-00047743;3707;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;626,937.51;0;626,937.51
+netsuite;vonderk;8/6/2026 15:40;321160;FC A-00007-00047744;3727;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;706,392.68;0;706,392.68
+netsuite;vonderk;8/6/2026 15:40;321162;FC A-00007-00047746;4043;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,204,054.99;0;1,204,054.99
+netsuite;vonderk;8/6/2026 15:40;321163;FC A-00007-00047747;3773;4/6/2026;11/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;3;889,851.32;0;889,851.32
+netsuite;vonderk;8/6/2026 15:40;321164;FC A-00007-00047748;3829;4/6/2026;3/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,037,753.83;0;1,037,753.83
+netsuite;vonderk;8/6/2026 15:40;321165;FC A-00007-00047749;3640;4/6/2026;2/9/2026;Factura de venta;Abierta;PLAZO 90 DIAS;Peso Argentino;1;3;5,938,425.90;0;5,938,425.90
+netsuite;vonderk;8/6/2026 15:40;321169;FC A-00007-00047752;3850;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;179,397.79;0;179,397.79
+netsuite;vonderk;8/6/2026 15:40;321173;FC A-00007-00047753;3674;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,148,652.80;0;2,148,652.80
+netsuite;vonderk;8/6/2026 15:40;321202;FC A-00007-00047755;3777;4/6/2026;3/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;384,235.50;0;384,235.50
+netsuite;vonderk;8/6/2026 15:40;321207;FC A-00007-00047756;13609;4/6/2026;3/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;4,356,136.01;0;4,356,136.01
+netsuite;vonderk;8/6/2026 15:40;321215;FC A-00007-00047757;3652;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,528,924.77;0;1,528,924.77
+netsuite;vonderk;8/6/2026 15:40;321220;FC A-00007-00047758;3825;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;468,502.32;0;468,502.32
+netsuite;vonderk;8/6/2026 15:40;321226;FC A-00007-00047759;3984;4/6/2026;19/7/2026;Factura de venta;Abierta;PLAZO 45 DIAS;Peso Argentino;1;3;1,749,496.83;0;1,749,496.83
+netsuite;vonderk;8/6/2026 15:40;321228;FC A-00007-00047760;3851;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;621,120.50;0;621,120.50
+netsuite;vonderk;8/6/2026 15:40;321234;FC A-00007-00047761;4047;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;773,770.80;0;773,770.80
+netsuite;vonderk;8/6/2026 15:40;321237;FC A-00007-00047763;3767;4/6/2026;3/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;748,932.40;0;748,932.40
+netsuite;vonderk;8/6/2026 15:40;321241;FC A-00007-00047764;4722;4/6/2026;11/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;3;604,595.64;0;604,595.64
+netsuite;vonderk;8/6/2026 15:40;321246;FC A-00007-00047765;3783;4/6/2026;11/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;3;438,237.25;0;438,237.25
+netsuite;vonderk;8/6/2026 15:40;321247;FC A-00007-00047766;3746;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;704,014.92;0;704,014.92
+netsuite;vonderk;8/6/2026 15:40;321253;FC A-00007-00047767;3727;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,149,879.94;0;1,149,879.94
+netsuite;vonderk;8/6/2026 15:40;321258;FC A-00007-00047768;3710;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,588,084.18;0;2,588,084.18
+netsuite;vonderk;8/6/2026 15:40;321263;FC A-00007-00047769;5264;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;244,298.88;0;244,298.88
+netsuite;vonderk;8/6/2026 15:40;321290;FC A-00007-00047770;13968;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,900,826.26;0;1,900,826.26
+netsuite;vonderk;8/6/2026 15:40;321298;FC A-00007-00047771;13968;4/6/2026;4/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;4,918,126.08;0;4,918,126.08
+netsuite;vonderk;8/6/2026 15:40;321301;FC A-00007-00047772;13932;4/6/2026;4/6/2026;Factura de venta;Abierta;Contado;Peso Argentino;1;3;991,765.15;0;991,765.15
+netsuite;vonderk;8/6/2026 15:40;321302;FC A-00007-00047773;13932;4/6/2026;4/6/2026;Factura de venta;Abierta;Contado;Peso Argentino;1;3;903,832.27;0;903,832.27
+netsuite;vonderk;8/6/2026 15:40;321304;FC A-00007-00047774;3829;4/6/2026;3/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;409,815.87;0;409,815.87
+netsuite;vonderk;8/6/2026 15:40;321306;FC A-00007-00047775;3829;4/6/2026;3/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;28,477.59;0;28,477.59
+netsuite;vonderk;8/6/2026 15:40;321307;FC A-00007-00047776;3793;4/6/2026;3/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;8,098,901.05;0;8,098,901.05
+netsuite;vonderk;8/6/2026 15:40;321308;FC A-00007-00047777;3793;4/6/2026;3/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;5,244,704.42;0;5,244,704.42
+netsuite;vonderk;8/6/2026 15:40;319318;MEX-9900021864;3811;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;287,100.00;0;287,100.00
+netsuite;vonderk;8/6/2026 15:40;319319;MEX-9900021865;3862;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;198,360.00;0;198,360.00
+netsuite;vonderk;8/6/2026 15:40;319330;MEX-9900021868;3640;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;315,984.00;153,050.75;162,933.25
+netsuite;vonderk;8/6/2026 15:40;319338;MEX-9900021869;3647;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;447,716.50;0;447,716.50
+netsuite;vonderk;8/6/2026 15:40;319339;MEX-9900021870;3862;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;32,828.00;0;32,828.00
+netsuite;vonderk;8/6/2026 15:40;319342;MEX-9900021871;3640;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;614,582.50;0;614,582.50
+netsuite;vonderk;8/6/2026 15:40;319347;MEX-9900021874;3750;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;336,371.00;0;336,371.00
+netsuite;vonderk;8/6/2026 15:40;319348;MEX-9900021875;3640;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;141,041.50;0;141,041.50
+netsuite;vonderk;8/6/2026 15:40;319349;MEX-9900021876;3850;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;420,935.00;0;420,935.00
+netsuite;vonderk;8/6/2026 15:40;319350;MEX-9900021877;3777;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;122,887.50;114,672.71;8,214.79
+netsuite;vonderk;8/6/2026 15:40;319452;MEX-9900021878;3640;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;604,041.00;0;604,041.00
+netsuite;vonderk;8/6/2026 15:40;319456;MEX-9900021880;13571;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;829,965.50;60,072.00;769,893.50
+netsuite;vonderk;8/6/2026 15:40;319459;MEX-9900021882;3720;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;401,635.50;0;401,635.50
+netsuite;vonderk;8/6/2026 15:40;319462;MEX-9900021883;3702;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;438,132.00;0;438,132.00
+netsuite;vonderk;8/6/2026 15:40;319463;MEX-9900021884;3924;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;1,971,768.00;0;1,971,768.00
+netsuite;vonderk;8/6/2026 15:40;319464;MEX-9900021885;3924;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;52,200.00;0;52,200.00
+netsuite;vonderk;8/6/2026 15:40;319465;MEX-9900021886;3811;3/6/2026;10/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;421,979.00;0;421,979.00
+netsuite;vonderk;8/6/2026 15:40;319468;FC A-00007-00047677;3868;3/6/2026;2/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;198,115.68;0;198,115.68
+netsuite;vonderk;8/6/2026 15:40;319469;FC A-00007-00047678;3979;3/6/2026;2/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;874,172.82;0;874,172.82
+netsuite;vonderk;8/6/2026 15:40;319471;FC A-00007-00047679;3811;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;390,867.52;0;390,867.52
+netsuite;vonderk;8/6/2026 15:40;319476;FC A-00007-00047681;3979;3/6/2026;2/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;2,179,759.52;0;2,179,759.52
+netsuite;vonderk;8/6/2026 15:40;319481;FC A-00007-00047682;3878;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;223,300.00;0;223,300.00
+netsuite;vonderk;8/6/2026 15:40;319486;FC A-00007-00047683;3857;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;82,435.40;0;82,435.40
+netsuite;vonderk;8/6/2026 15:40;319491;FC A-00007-00047684;4047;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;94,111.38;0;94,111.38
+netsuite;vonderk;8/6/2026 15:40;319492;FC A-00007-00047685;4047;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;348,162.98;0;348,162.98
+netsuite;vonderk;8/6/2026 15:40;319493;FC A-00007-00047686;3746;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,122,654.96;0;1,122,654.96
+netsuite;vonderk;8/6/2026 15:40;319495;FC A-00007-00047687;3813;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;398,464.51;0;398,464.51
+netsuite;vonderk;8/6/2026 15:40;319496;FC A-00007-00047688;3814;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;142,535.58;0;142,535.58
+netsuite;vonderk;8/6/2026 15:40;319501;FC A-00007-00047689;3814;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;474,581.74;0;474,581.74
+netsuite;vonderk;8/6/2026 15:40;319504;FC A-00007-00047690;3737;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;756,207.05;0;756,207.05
+netsuite;vonderk;8/6/2026 15:40;319505;FC A-00007-00047691;3737;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;681,623.25;0;681,623.25
+netsuite;vonderk;8/6/2026 15:40;319507;FC A-00007-00047692;4047;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,469,358.66;0;1,469,358.66
+netsuite;vonderk;8/6/2026 15:40;319511;FC A-00007-00047693;4047;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,371,408.63;0;1,371,408.63
+netsuite;vonderk;8/6/2026 15:40;319552;FC A-00007-00047694;3825;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;835,142.00;0;835,142.00
+netsuite;vonderk;8/6/2026 15:40;319559;FC A-00007-00047697;3769;3/6/2026;2/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,113,756.60;0;1,113,756.60
+netsuite;vonderk;8/6/2026 15:40;319560;FC A-00007-00047698;3671;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;403,226.21;0;403,226.21
+netsuite;vonderk;8/6/2026 15:40;319565;FC A-00007-00047700;3859;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;182,468.00;0;182,468.00
+netsuite;vonderk;8/6/2026 15:40;319567;FC A-00007-00047701;3862;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;583,588.75;0;583,588.75
+netsuite;vonderk;8/6/2026 15:40;319568;FC A-00007-00047702;4004;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,520,514.70;0;2,520,514.70
+netsuite;vonderk;8/6/2026 15:40;319677;FC A-00007-00047705;3777;3/6/2026;2/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;441,464.25;0;441,464.25
+netsuite;vonderk;8/6/2026 15:40;319681;FC A-00007-00047707;3769;3/6/2026;2/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,851,190.50;0;1,851,190.50
+netsuite;vonderk;8/6/2026 15:40;319684;FC A-00007-00047708;13932;3/6/2026;3/6/2026;Factura de venta;Abierta;Contado;Peso Argentino;1;3;199,563.22;0;199,563.22
+netsuite;vonderk;8/6/2026 15:40;319689;FC A-00007-00047709;4047;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;125,622.20;0;125,622.20
+netsuite;vonderk;8/6/2026 15:40;319692;FC A-00007-00047710;3746;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;546,729.76;0;546,729.76
+netsuite;vonderk;8/6/2026 15:40;319693;FC A-00007-00047711;3889;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;714,607.85;129,833.00;584,774.85
+netsuite;vonderk;8/6/2026 15:40;319694;FC A-00007-00047712;3746;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;693,803.26;0;693,803.26
+netsuite;vonderk;8/6/2026 15:40;319695;FC A-00007-00047713;3710;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,272,641.56;0;2,272,641.56
+netsuite;vonderk;8/6/2026 15:40;319696;FC A-00007-00047714;3953;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;197,240.89;0;197,240.89
+netsuite;vonderk;8/6/2026 15:40;319713;FC A-00007-00047715;3906;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;647,059.60;0;647,059.60
+netsuite;vonderk;8/6/2026 15:40;319715;FC A-00007-00047716;3951;3/6/2026;2/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;256,491.88;0;256,491.88
+netsuite;vonderk;8/6/2026 15:40;319726;FC A-00007-00047719;4075;3/6/2026;2/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;2,047,922.59;0;2,047,922.59
+netsuite;vonderk;8/6/2026 15:40;319729;FC A-00007-00047720;4075;3/6/2026;2/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,623,477.94;0;1,623,477.94
+netsuite;vonderk;8/6/2026 15:40;319733;FC A-00007-00047721;3979;3/6/2026;2/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,390,135.78;0;1,390,135.78
+netsuite;vonderk;8/6/2026 15:40;319734;FC A-00007-00047722;3979;3/6/2026;2/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,407,881.14;0;1,407,881.14
+netsuite;vonderk;8/6/2026 15:40;319736;FC A-00007-00047723;3812;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,352,609.05;0;2,352,609.05
+netsuite;vonderk;8/6/2026 15:40;319740;FC A-00007-00047724;3812;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;3,826,301.33;0;3,826,301.33
+netsuite;vonderk;8/6/2026 15:40;319741;FC A-00007-00047725;3812;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;858,740.03;0;858,740.03
+netsuite;vonderk;8/6/2026 15:40;319932;FC E-00009-00000061;13353;3/6/2026;3/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;1450;3;837,375.00;0;837,375.00
+netsuite;vonderk;8/6/2026 15:40;318047;MEX-9900021850;3702;2/6/2026;9/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;256,126.25;0;256,126.25
+netsuite;vonderk;8/6/2026 15:40;318050;MEX-9900021852;3778;2/6/2026;9/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;910,350.00;685,914.60;224,435.40
+netsuite;vonderk;8/6/2026 15:40;318051;MEX-9900021853;3720;2/6/2026;9/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;10,115.00;0;10,115.00
+netsuite;vonderk;8/6/2026 15:40;318052;MEX-9900021854;3702;2/6/2026;9/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;51,456.45;0;51,456.45
+netsuite;vonderk;8/6/2026 15:40;318053;MEX-9900021855;3720;2/6/2026;9/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;161,652.15;0;161,652.15
+netsuite;vonderk;8/6/2026 15:40;318055;MEX-9900021856;3779;2/6/2026;9/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;53,465.00;0;53,465.00
+netsuite;vonderk;8/6/2026 15:40;318056;MEX-9900021857;13871;2/6/2026;9/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;83,810.00;0;83,810.00
+netsuite;vonderk;8/6/2026 15:40;318064;FC A-00007-00047653;3793;2/6/2026;2/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,519,647.84;0;1,519,647.84
+netsuite;vonderk;8/6/2026 15:40;318065;FC A-00007-00047654;3767;2/6/2026;1/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;760,239.51;0;760,239.51
+netsuite;vonderk;8/6/2026 15:40;318069;FC A-00007-00047657;13607;2/6/2026;2/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;97,080.88;0;97,080.88
+netsuite;vonderk;8/6/2026 15:40;318071;FC A-00007-00047658;4047;2/6/2026;2/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;132,882.20;0;132,882.20
+netsuite;vonderk;8/6/2026 15:40;318072;FC A-00007-00047659;3816;2/6/2026;2/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;937,169.20;0;937,169.20
+netsuite;vonderk;8/6/2026 15:40;318073;FC A-00007-00047660;3825;2/6/2026;2/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,836,685.28;0;2,836,685.28
+netsuite;vonderk;8/6/2026 15:40;318223;FC A-00007-00047661;3868;2/6/2026;1/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;339,811.26;0;339,811.26
+netsuite;vonderk;8/6/2026 15:40;318224;FC A-00007-00047662;3720;2/6/2026;2/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;157,866.26;0;157,866.26
+netsuite;vonderk;8/6/2026 15:40;318225;FC A-00007-00047663;3759;2/6/2026;1/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;780,989.54;0;780,989.54
+netsuite;vonderk;8/6/2026 15:40;318226;FC A-00007-00047664;3962;2/6/2026;2/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;629,355.30;0;629,355.30
+netsuite;vonderk;8/6/2026 15:40;318238;FC A-00007-00047667;3944;2/6/2026;2/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,253,813.50;0;1,253,813.50
+netsuite;vonderk;8/6/2026 15:40;318239;FC A-00007-00047668;3951;2/6/2026;1/8/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,199,974.42;0;1,199,974.42
+netsuite;vonderk;8/6/2026 15:40;318241;FC A-00007-00047669;3913;2/6/2026;2/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,683,302.75;0;1,683,302.75
+netsuite;vonderk;8/6/2026 15:40;318242;FC A-00007-00047670;3904;2/6/2026;2/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;245,657.23;0;245,657.23
+netsuite;vonderk;8/6/2026 15:40;318244;FC A-00007-00047671;5264;2/6/2026;2/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;60,374.41;0;60,374.41
+netsuite;vonderk;8/6/2026 15:40;318245;FC A-00007-00047672;3913;2/6/2026;2/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;141,274.76;0;141,274.76
+netsuite;vonderk;8/6/2026 15:40;318248;FC A-00007-00047673;4047;2/6/2026;2/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;3,909,761.50;0;3,909,761.50
+netsuite;vonderk;8/6/2026 15:40;318250;FC A-00007-00047674;4047;2/6/2026;2/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;916,673.32;0;916,673.32
+netsuite;vonderk;8/6/2026 15:40;318254;FC A-00007-00047675;3702;2/6/2026;2/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;3,793,279.15;0;3,793,279.15
+netsuite;vonderk;8/6/2026 15:40;318255;FC A-00007-00047676;3702;2/6/2026;2/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;678,325.46;0;678,325.46
+netsuite;vonderk;8/6/2026 15:40;316473;MEX-9900021841;3845;1/6/2026;8/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;182,839.80;0;182,839.80
+netsuite;vonderk;8/6/2026 15:40;316581;FC A-00007-00047623;3814;1/6/2026;1/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;108,403.30;0;108,403.30
+netsuite;vonderk;8/6/2026 15:40;316582;FC A-00007-00047624;4168;1/6/2026;8/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;3;377,609.38;0;377,609.38
+netsuite;vonderk;8/6/2026 15:40;316705;MEX-9900021842;3810;1/6/2026;8/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;3,027,667.50;0;3,027,667.50
+netsuite;vonderk;8/6/2026 15:40;316711;MEX-9900021846;3854;1/6/2026;8/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;240,812.00;38.54;240,773.46
+netsuite;vonderk;8/6/2026 15:40;316712;MEX-9900021847;13716;1/6/2026;8/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;80,223.00;0;80,223.00
+netsuite;vonderk;8/6/2026 15:40;316717;FC A-00007-00047626;3814;1/6/2026;1/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,096,396.87;0;2,096,396.87
+netsuite;vonderk;8/6/2026 15:40;316721;FC A-00007-00047627;4075;1/6/2026;31/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;112,504.11;0;112,504.11
+netsuite;vonderk;8/6/2026 15:40;316725;FC A-00007-00047628;3816;1/6/2026;1/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,754,593.41;0;1,754,593.41
+netsuite;vonderk;8/6/2026 15:40;316726;FC A-00007-00047629;3813;1/6/2026;1/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,205,690.35;0;1,205,690.35
+netsuite;vonderk;8/6/2026 15:40;316728;FC A-00007-00047630;3813;1/6/2026;1/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,084,215.58;0;2,084,215.58
+netsuite;vonderk;8/6/2026 15:40;316730;FC A-00007-00047631;3813;1/6/2026;31/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,554,309.17;0;1,554,309.17
+netsuite;vonderk;8/6/2026 15:40;316731;FC A-00007-00047632;3810;1/6/2026;1/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;912,733.25;0;912,733.25
+netsuite;vonderk;8/6/2026 15:40;316741;FC A-00007-00047635;13834;1/6/2026;1/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;333,048.14;0;333,048.14
+netsuite;vonderk;8/6/2026 15:40;316745;FC A-00007-00047637;3834;1/6/2026;8/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;3;132,367.95;0;132,367.95
+netsuite;vonderk;8/6/2026 15:40;316747;FC A-00007-00047638;3671;1/6/2026;1/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,706,663.96;0;2,706,663.96
+netsuite;vonderk;8/6/2026 15:40;316749;FC A-00007-00047639;3767;1/6/2026;31/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;9,516.65;0;9,516.65
+netsuite;vonderk;8/6/2026 15:40;316751;FC A-00007-00047640;3759;1/6/2026;31/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;472,371.90;0;472,371.90
+netsuite;vonderk;8/6/2026 15:40;316756;FC A-00007-00047642;4075;1/6/2026;31/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,130,993.29;0;1,130,993.29
+netsuite;vonderk;8/6/2026 15:40;316758;FC A-00007-00047643;3813;1/6/2026;31/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;591,935.63;0;591,935.63
+netsuite;vonderk;8/6/2026 15:40;316759;FC A-00007-00047644;3851;1/6/2026;1/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;641,941.30;0;641,941.30
+netsuite;vonderk;8/6/2026 15:40;316761;FC A-00007-00047645;3878;1/6/2026;1/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;900,900.00;0;900,900.00
+netsuite;vonderk;8/6/2026 15:40;316763;FC A-00007-00047647;3866;1/6/2026;1/7/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;226,666.44;0;226,666.44
+netsuite;vonderk;8/6/2026 15:40;317772;FC A-00007-00047648;3868;1/6/2026;31/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;715,911.63;0;715,911.63
+netsuite;vonderk;8/6/2026 15:40;315358;MEX-9900021798;3740;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;86,372.00;0;86,372.00
+netsuite;vonderk;8/6/2026 15:40;315359;MEX-9900021799;3702;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;18,532.80;0;18,532.80
+netsuite;vonderk;8/6/2026 15:40;315362;MEX-9900021800;3702;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;200,943.60;0;200,943.60
+netsuite;vonderk;8/6/2026 15:40;315363;MEX-9900021801;3702;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;99,957.00;0;99,957.00
+netsuite;vonderk;8/6/2026 15:40;315368;MEX-9900021805;3845;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;491,348.00;0;491,348.00
+netsuite;vonderk;8/6/2026 15:40;315371;MEX-9900021808;3702;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;262,347.80;0;262,347.80
+netsuite;vonderk;8/6/2026 15:40;315375;MEX-9900021810;3702;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;13,327.60;0;13,327.60
+netsuite;vonderk;8/6/2026 15:40;315381;MEX-9900021816;3873;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;736,593.00;0;736,593.00
+netsuite;vonderk;8/6/2026 15:40;315383;MEX-9900021818;3713;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;403,260.00;0;403,260.00
+netsuite;vonderk;8/6/2026 15:40;315384;MEX-9900021819;3873;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;223,366.00;0;223,366.00
+netsuite;vonderk;8/6/2026 15:40;315385;MEX-9900021820;3862;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;32,661.20;0;32,661.20
+netsuite;vonderk;8/6/2026 15:40;315387;MEX-9900021822;3740;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;221,793.00;0;221,793.00
+netsuite;vonderk;8/6/2026 15:40;315389;MEX-9900021823;3720;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;146,489.20;0;146,489.20
+netsuite;vonderk;8/6/2026 15:40;315392;MEX-9900021824;3720;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;139,639.50;0;139,639.50
+netsuite;vonderk;8/6/2026 15:40;315396;MEX-9900021827;3720;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;28,028.00;0;28,028.00
+netsuite;vonderk;8/6/2026 15:40;315400;MEX-9900021831;3873;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;97,240.00;0;97,240.00
+netsuite;vonderk;8/6/2026 15:40;315401;MEX-9900021832;3720;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;51,251.20;0;51,251.20
+netsuite;vonderk;8/6/2026 15:40;315503;MEX-9900021833;3720;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;519,032.80;0;519,032.80
+netsuite;vonderk;8/6/2026 15:40;315509;FC A-00007-00047556;4075;29/5/2026;28/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;816,587.56;0;816,587.56
+netsuite;vonderk;8/6/2026 15:40;315511;FC A-00007-00047557;4075;29/5/2026;28/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,502,503.01;0;1,502,503.01
+netsuite;vonderk;8/6/2026 15:40;315523;FC A-00007-00047560;3671;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;3,684,753.08;0;3,684,753.08
+netsuite;vonderk;8/6/2026 15:40;315557;FC A-00007-00047569;13935;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;947,150.28;0;947,150.28
+netsuite;vonderk;8/6/2026 15:40;315560;FC A-00007-00047571;13935;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;423,498.79;0;423,498.79
+netsuite;vonderk;8/6/2026 15:40;315662;FC A-00007-00047573;3878;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;92,592.50;0;92,592.50
+netsuite;vonderk;8/6/2026 15:40;315674;FC A-00007-00047576;3750;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;480,850.37;0;480,850.37
+netsuite;vonderk;8/6/2026 15:40;315677;FC A-00007-00047577;3694;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,561,578.46;0;1,561,578.46
+netsuite;vonderk;8/6/2026 15:40;315680;FC A-00007-00047578;3694;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,833,668.13;0;1,833,668.13
+netsuite;vonderk;8/6/2026 15:40;315693;FC A-00007-00047579;3873;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;3;338,273.65;0;338,273.65
+netsuite;vonderk;8/6/2026 15:40;315713;FC A-00007-00047580;3829;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;608,529.21;0;608,529.21
+netsuite;vonderk;8/6/2026 15:40;315727;FC A-00007-00047583;3868;29/5/2026;28/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;201,977.92;0;201,977.92
+netsuite;vonderk;8/6/2026 15:40;315737;FC A-00007-00047585;3750;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;660,559.32;0;660,559.32
+netsuite;vonderk;8/6/2026 15:40;315742;FC A-00007-00047587;3694;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;272,695.28;0;272,695.28
+netsuite;vonderk;8/6/2026 15:40;315788;FC A-00007-00047590;3852;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;6,172,390.65;0;6,172,390.65
+netsuite;vonderk;8/6/2026 15:40;315790;FC A-00007-00047591;3777;29/5/2026;28/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,956,398.30;0;1,956,398.30
+netsuite;vonderk;8/6/2026 15:40;315804;FC A-00007-00047594;3746;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;25,328,803.50;0;25,328,803.50
+netsuite;vonderk;8/6/2026 15:40;315940;FC A-00007-00047596;3720;29/5/2026;28/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,426,425.00;0;1,426,425.00
+netsuite;vonderk;8/6/2026 15:40;315942;FC A-00007-00047597;3720;29/5/2026;28/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,163,674.12;0;1,163,674.12
+netsuite;vonderk;8/6/2026 15:40;315951;FC A-00007-00047598;3767;29/5/2026;28/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;3,113,069.26;2,498,627.87;614,441.39
+netsuite;vonderk;8/6/2026 15:40;315963;FC A-00007-00047601;3720;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;405,405.00;0;405,405.00
+netsuite;vonderk;8/6/2026 15:40;315969;FC A-00007-00047604;3857;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,593,749.16;1,270,287.59;1,323,461.57
+netsuite;vonderk;8/6/2026 15:40;315974;FC A-00007-00047608;3641;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;548,470.50;0;548,470.50
+netsuite;vonderk;8/6/2026 15:40;315975;FC A-00007-00047609;3686;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;813,629.82;0;813,629.82
+netsuite;vonderk;8/6/2026 15:40;315976;FC A-00007-00047610;3759;29/5/2026;28/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,426,113.27;552,443.00;873,670.27
+netsuite;vonderk;8/6/2026 15:40;315977;FC A-00007-00047611;13571;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;477,095.62;0;477,095.62
+netsuite;vonderk;8/6/2026 15:40;315979;FC A-00007-00047612;3931;29/5/2026;28/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;498,568.64;0;498,568.64
+netsuite;vonderk;8/6/2026 15:40;315986;FC A-00007-00047614;3720;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;47,547.50;0;47,547.50
+netsuite;vonderk;8/6/2026 15:40;315989;FC A-00007-00047617;3720;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;450,450.00;0;450,450.00
+netsuite;vonderk;8/6/2026 15:40;315990;FC A-00007-00047618;3677;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,720,749.04;0;1,720,749.04
+netsuite;vonderk;8/6/2026 15:40;315993;FC A-00007-00047620;13935;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,164,665.14;0;2,164,665.14
+netsuite;vonderk;8/6/2026 15:40;315994;FC A-00007-00047621;13935;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,550,521.26;0;1,550,521.26
+netsuite;vonderk;8/6/2026 15:40;315995;FC A-00007-00047622;3694;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;218,156.22;0;218,156.22
+netsuite;vonderk;8/6/2026 15:40;315998;MEX-9900021836;3720;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;113,341.80;0;113,341.80
+netsuite;vonderk;8/6/2026 15:40;316000;MEX-9900021837;3740;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;114,114.00;0;114,114.00
+netsuite;vonderk;8/6/2026 15:40;316001;MEX-9900021838;3740;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;342,628.00;0;342,628.00
+netsuite;vonderk;8/6/2026 15:40;316002;MEX-9900021839;3750;29/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;282,782.50;0;282,782.50
+netsuite;vonderk;8/6/2026 15:40;316012;E-FACTURA A118;14062;29/5/2026;29/5/2026;Factura de venta;Abierta;Contado;US Dollar;40.11;10;11,996,315.84;0;11,996,315.84
+netsuite;vonderk;8/6/2026 15:40;316016;E-FACTURA EXPORTACION A47;13343;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;40.11;10;5,551,784.78;0;5,551,784.78
+netsuite;vonderk;8/6/2026 15:40;316020;FC A-00002-00000316;13620;29/5/2026;28/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;6;37,268,000.00;27,106,626.51;10,161,373.49
+netsuite;vonderk;8/6/2026 15:40;313571;MEX-9900021775;13943;28/5/2026;4/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;617,760.00;0;617,760.00
+netsuite;vonderk;8/6/2026 15:40;313576;MEX-9900021777;13943;28/5/2026;4/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;49,992.80;0;49,992.80
+netsuite;vonderk;8/6/2026 15:40;313577;MEX-9900021778;13871;28/5/2026;4/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;572,000.00;420,927.20;151,072.80
+netsuite;vonderk;8/6/2026 15:40;313582;MEX-9900021781;3874;28/5/2026;4/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;898,132.95;0;898,132.95
+netsuite;vonderk;8/6/2026 15:40;313583;MEX-9900021782;3850;28/5/2026;4/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;744,400.80;0;744,400.80
+netsuite;vonderk;8/6/2026 15:40;313584;MEX-9900021783;3850;28/5/2026;4/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;171,028.00;0;171,028.00
+netsuite;vonderk;8/6/2026 15:40;313586;MEX-9900021785;3720;28/5/2026;4/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;288,445.30;0;288,445.30
+netsuite;vonderk;8/6/2026 15:40;313592;MEX-9900021787;3720;28/5/2026;4/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;94,380.00;0;94,380.00
+netsuite;vonderk;8/6/2026 15:40;313622;MEX-9900021792;4069;28/5/2026;4/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;403,260.00;0;403,260.00
+netsuite;vonderk;8/6/2026 15:40;313624;MEX-9900021793;3720;28/5/2026;4/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;159,974.10;0;159,974.10
+netsuite;vonderk;8/6/2026 15:40;313726;MEX-9900021794;3811;28/5/2026;4/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;903,760.00;0;903,760.00
+netsuite;vonderk;8/6/2026 15:40;313731;MEX-9900021797;3923;28/5/2026;4/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;110,554.73;0;110,554.73
+netsuite;vonderk;8/6/2026 15:40;313746;FC A-00007-00047482;3674;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;492,972.48;0;492,972.48
+netsuite;vonderk;8/6/2026 15:40;313757;FC A-00007-00047484;3878;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;311,561.26;0;311,561.26
+netsuite;vonderk;8/6/2026 15:40;313762;FC A-00007-00047485;3815;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;69,778.67;0;69,778.67
+netsuite;vonderk;8/6/2026 15:40;313768;FC A-00007-00047486;3815;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;170,365.34;0;170,365.34
+netsuite;vonderk;8/6/2026 15:40;313781;FC A-00007-00047488;3813;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;872,071.20;0;872,071.20
+netsuite;vonderk;8/6/2026 15:40;313792;FC A-00007-00047489;3642;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,721,763.20;0;1,721,763.20
+netsuite;vonderk;8/6/2026 15:40;313811;FC A-00007-00047491;3825;28/5/2026;12/7/2026;Factura de venta;Abierta;PLAZO 45 DIAS;Peso Argentino;1;3;2,072,034.25;0;2,072,034.25
+netsuite;vonderk;8/6/2026 15:40;313821;FC A-00007-00047492;3664;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;538,709.61;0;538,709.61
+netsuite;vonderk;8/6/2026 15:40;313831;FC A-00007-00047494;3737;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;476,801.46;0;476,801.46
+netsuite;vonderk;8/6/2026 15:40;313832;FC A-00007-00047495;3737;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;395,719.61;0;395,719.61
+netsuite;vonderk;8/6/2026 15:40;313835;FC A-00007-00047496;3889;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,931,672.31;0;1,931,672.31
+netsuite;vonderk;8/6/2026 15:40;313840;FC A-00007-00047497;3737;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;672,221.55;0;672,221.55
+netsuite;vonderk;8/6/2026 15:40;313849;FC A-00007-00047501;13734;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;593,914.75;0;593,914.75
+netsuite;vonderk;8/6/2026 15:40;313857;FC A-00007-00047504;3868;28/5/2026;27/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,918,556.64;0;1,918,556.64
+netsuite;vonderk;8/6/2026 15:40;313858;FC A-00007-00047505;3813;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;839,991.44;0;839,991.44
+netsuite;vonderk;8/6/2026 15:40;313862;FC A-00007-00047506;3813;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;381,531.15;0;381,531.15
+netsuite;vonderk;8/6/2026 15:40;313864;FC A-00007-00047507;3674;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;630,251.63;0;630,251.63
+netsuite;vonderk;8/6/2026 15:40;313976;FC A-00007-00047510;3674;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;663,062.40;0;663,062.40
+netsuite;vonderk;8/6/2026 15:40;313977;FC A-00007-00047511;3815;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;421,847.14;0;421,847.14
+netsuite;vonderk;8/6/2026 15:40;313978;FC A-00007-00047512;3941;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;174,829.51;0;174,829.51
+netsuite;vonderk;8/6/2026 15:40;313990;FC A-00007-00047514;3880;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,139,161.75;0;2,139,161.75
+netsuite;vonderk;8/6/2026 15:40;313995;FC A-00007-00047516;3811;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;485,931.88;0;485,931.88
+netsuite;vonderk;8/6/2026 15:40;314011;FC A-00007-00047517;3746;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;62,936.88;0;62,936.88
+netsuite;vonderk;8/6/2026 15:40;314014;FC A-00007-00047520;3816;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,119,677.13;0;1,119,677.13
+netsuite;vonderk;8/6/2026 15:40;314015;FC A-00007-00047521;3710;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;238,781.40;0;238,781.40
+netsuite;vonderk;8/6/2026 15:40;314022;FC A-00007-00047523;3710;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;496,596.96;0;496,596.96
+netsuite;vonderk;8/6/2026 15:40;314023;FC A-00007-00047524;3674;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;218,243.03;0;218,243.03
+netsuite;vonderk;8/6/2026 15:40;314025;FC A-00007-00047525;3746;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,277,745.48;0;2,277,745.48
+netsuite;vonderk;8/6/2026 15:40;314036;FC A-00007-00047527;3737;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,926,983.23;0;1,926,983.23
+netsuite;vonderk;8/6/2026 15:40;314040;FC A-00007-00047529;3674;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;821,620.80;0;821,620.80
+netsuite;vonderk;8/6/2026 15:40;314060;FC A-00007-00047531;3868;28/5/2026;27/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;2,797,702.63;0;2,797,702.63
+netsuite;vonderk;8/6/2026 15:40;314066;FC A-00007-00047535;3674;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;35,315.28;0;35,315.28
+netsuite;vonderk;8/6/2026 15:40;314181;FC A-00007-00047536;3710;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;911,084.28;0;911,084.28
+netsuite;vonderk;8/6/2026 15:40;314182;FC A-00007-00047537;3720;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;278,867.87;0;278,867.87
+netsuite;vonderk;8/6/2026 15:40;314193;FC A-00007-00047538;3941;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,395,486.95;0;1,395,486.95
+netsuite;vonderk;8/6/2026 15:40;314199;FC A-00007-00047540;3931;28/5/2026;27/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;726,726.00;0;726,726.00
+netsuite;vonderk;8/6/2026 15:40;314200;FC A-00007-00047541;3941;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,162,761.60;0;1,162,761.60
+netsuite;vonderk;8/6/2026 15:40;314209;FC A-00007-00047543;3851;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;6,097,404.17;0;6,097,404.17
+netsuite;vonderk;8/6/2026 15:40;314216;FC A-00007-00047547;13609;28/5/2026;27/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,890,250.38;1,545,234.24;345,016.14
+netsuite;vonderk;8/6/2026 15:40;314217;FC A-00007-00047548;3859;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;694,888.48;0;694,888.48
+netsuite;vonderk;8/6/2026 15:40;314218;FC A-00007-00047549;13609;28/5/2026;26/8/2026;Factura de venta;Abierta;PLAZO 90 DIAS;Peso Argentino;1;3;831,170.35;0;831,170.35
+netsuite;vonderk;8/6/2026 15:40;314220;FC A-00007-00047550;13609;28/5/2026;26/8/2026;Factura de venta;Abierta;PLAZO 90 DIAS;Peso Argentino;1;3;2,098,051.98;0;2,098,051.98
+netsuite;vonderk;8/6/2026 15:40;314244;FC A-00007-00047552;3953;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;346,740.01;0;346,740.01
+netsuite;vonderk;8/6/2026 15:40;314262;FC A-00007-00047553;3813;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;72,672.60;0;72,672.60
+netsuite;vonderk;8/6/2026 15:40;314265;FC E-00009-00000060;13343;28/5/2026;27/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;1430;3;7,913,906.00;0;7,913,906.00
+netsuite;vonderk;8/6/2026 15:40;312050;MEX-9900021748;3720;27/5/2026;3/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;3,597,079.20;711.6;3,596,367.60
+netsuite;vonderk;8/6/2026 15:40;312058;MEX-9900021750;3862;27/5/2026;3/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;1,235,434.20;0;1,235,434.20
+netsuite;vonderk;8/6/2026 15:40;312114;MEX-9900021759;3862;27/5/2026;3/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;149,292.00;0;149,292.00
+netsuite;vonderk;8/6/2026 15:40;312117;MEX-9900021762;3702;27/5/2026;3/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;1,440,839.40;1,440,551.40;288
+netsuite;vonderk;8/6/2026 15:40;312118;MEX-9900021763;3720;27/5/2026;3/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;106,606.50;0;106,606.50
+netsuite;vonderk;8/6/2026 15:40;312120;MEX-9900021764;3720;27/5/2026;3/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;84,584.50;0;84,584.50
+netsuite;vonderk;8/6/2026 15:40;312126;MEX-9900021768;3720;27/5/2026;3/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;298,526.80;0;298,526.80
+netsuite;vonderk;8/6/2026 15:40;312131;MEX-9900021771;3811;27/5/2026;3/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;257,400.00;0;257,400.00
+netsuite;vonderk;8/6/2026 15:40;312133;FC A-00007-00047430;3816;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;708,384.82;0;708,384.82
+netsuite;vonderk;8/6/2026 15:40;312138;FC A-00007-00047432;3814;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;363,812.88;0;363,812.88
+netsuite;vonderk;8/6/2026 15:40;312143;FC A-00007-00047433;3882;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;283,128.99;0;283,128.99
+netsuite;vonderk;8/6/2026 15:40;312149;FC A-00007-00047434;3826;27/5/2026;11/7/2026;Factura de venta;Abierta;PLAZO 45 DIAS;Peso Argentino;1;3;2,316,560.25;0;2,316,560.25
+netsuite;vonderk;8/6/2026 15:40;312260;FC A-00007-00047436;3702;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;156,721.76;0;156,721.76
+netsuite;vonderk;8/6/2026 15:40;312282;FC A-00007-00047438;3702;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;169,813.35;0;169,813.35
+netsuite;vonderk;8/6/2026 15:40;312292;FC A-00007-00047440;3746;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;514,449.94;0;514,449.94
+netsuite;vonderk;8/6/2026 15:40;312301;FC A-00007-00047443;3673;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,411,410.00;1,000,000.00;411,410.00
+netsuite;vonderk;8/6/2026 15:40;312309;FC A-00007-00047445;3814;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,733,684.09;0;2,733,684.09
+netsuite;vonderk;8/6/2026 15:40;312315;FC A-00007-00047446;3814;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,955,923.33;0;1,955,923.33
+netsuite;vonderk;8/6/2026 15:40;312319;FC A-00007-00047447;3859;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,890,871.84;0;1,890,871.84
+netsuite;vonderk;8/6/2026 15:40;312332;FC A-00007-00047451;3920;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;480,435.10;0;480,435.10
+netsuite;vonderk;8/6/2026 15:40;312334;FC A-00007-00047452;3941;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;300,380.08;0;300,380.08
+netsuite;vonderk;8/6/2026 15:40;312363;FC A-00007-00047457;3811;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;229,783.84;0;229,783.84
+netsuite;vonderk;8/6/2026 15:40;312364;FC A-00007-00047458;3777;27/5/2026;26/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,233,184.81;0;1,233,184.81
+netsuite;vonderk;8/6/2026 15:40;312488;FC A-00007-00047463;3671;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;846,954.11;0;846,954.11
+netsuite;vonderk;8/6/2026 15:40;312495;FC A-00007-00047467;3882;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;27,961.64;0;27,961.64
+netsuite;vonderk;8/6/2026 15:40;312497;FC A-00007-00047468;13910;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;160,987.11;0;160,987.11
+netsuite;vonderk;8/6/2026 15:40;312501;FC A-00007-00047470;3944;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,567,651.80;0;1,567,651.80
+netsuite;vonderk;8/6/2026 15:40;312535;FC A-00007-00047478;3955;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;254,700.16;0;254,700.16
+netsuite;vonderk;8/6/2026 15:40;312537;FC A-00007-00047479;3814;27/5/2026;26/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;196,216.02;0;196,216.02
+netsuite;vonderk;8/6/2026 15:40;310237;MEX-9900021722;13716;26/5/2026;2/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;1,063,192.50;1,058,446.40;4,746.10
+netsuite;vonderk;8/6/2026 15:40;310241;MEX-9900021726;3874;26/5/2026;2/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;738,862.50;0;738,862.50
+netsuite;vonderk;8/6/2026 15:40;310244;MEX-9900021727;13943;26/5/2026;2/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;880,080.00;879,209.60;870.4
+netsuite;vonderk;8/6/2026 15:40;310249;MEX-9900021731;4069;26/5/2026;2/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;262,200.00;0;262,200.00
+netsuite;vonderk;8/6/2026 15:40;310250;MEX-9900021732;3740;26/5/2026;2/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;381,900.00;0;381,900.00
+netsuite;vonderk;8/6/2026 15:40;310252;MEX-9900021734;3923;26/5/2026;2/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;50,801.25;0;50,801.25
+netsuite;vonderk;8/6/2026 15:40;310256;MEX-9900021735;3740;26/5/2026;2/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;99,750.00;0;99,750.00
+netsuite;vonderk;8/6/2026 15:40;310257;MEX-9900021736;3922;26/5/2026;2/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;92,055.00;0;92,055.00
+netsuite;vonderk;8/6/2026 15:40;310259;MEX-9900021737;3924;26/5/2026;2/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;208,420.50;0;208,420.50
+netsuite;vonderk;8/6/2026 15:40;310261;MEX-9900021738;3924;26/5/2026;2/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;96,615.00;0;96,615.00
+netsuite;vonderk;8/6/2026 15:40;310263;MEX-9900021739;3813;26/5/2026;2/6/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;653,362.50;0;653,362.50
+netsuite;vonderk;8/6/2026 15:40;310370;FC A-00007-00047382;4466;26/5/2026;25/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,173,037.79;0;2,173,037.79
+netsuite;vonderk;8/6/2026 15:40;310372;FC A-00007-00047383;5264;26/5/2026;25/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,220,652.73;0;1,220,652.73
+netsuite;vonderk;8/6/2026 15:40;310460;FC A-00007-00047388;4466;26/5/2026;25/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;140,698.80;0;140,698.80
+netsuite;vonderk;8/6/2026 15:40;310466;FC A-00007-00047389;3729;26/5/2026;25/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;528,071.54;0;528,071.54
+netsuite;vonderk;8/6/2026 15:40;310470;FC A-00007-00047390;4466;26/5/2026;25/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,293,187.50;0;1,293,187.50
+netsuite;vonderk;8/6/2026 15:40;310471;FC A-00007-00047391;3729;26/5/2026;25/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;218,685.78;0;218,685.78
+netsuite;vonderk;8/6/2026 15:40;310476;FC A-00007-00047392;3931;26/5/2026;25/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;157,906.82;0;157,906.82
+netsuite;vonderk;8/6/2026 15:40;310491;FC A-00007-00047393;13968;26/5/2026;25/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;38,623.20;0;38,623.20
+netsuite;vonderk;8/6/2026 15:40;310496;FC A-00007-00047394;13968;26/5/2026;25/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;557,277.60;0;557,277.60
+netsuite;vonderk;8/6/2026 15:40;310501;FC A-00007-00047395;13968;26/5/2026;25/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;581,658.50;0;581,658.50
+netsuite;vonderk;8/6/2026 15:40;310620;FC A-00007-00047400;3700;26/5/2026;25/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;674,181.75;0;674,181.75
+netsuite;vonderk;8/6/2026 15:40;310628;FC A-00007-00047403;3813;26/5/2026;25/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,739,992.42;0;1,739,992.42
+netsuite;vonderk;8/6/2026 15:40;310643;FC A-00007-00047407;3746;26/5/2026;25/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;739,027.80;0;739,027.80
+netsuite;vonderk;8/6/2026 15:40;310646;FC A-00007-00047409;3641;26/5/2026;25/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;205,446.11;103,922.50;101,523.61
+netsuite;vonderk;8/6/2026 15:40;310648;FC A-00007-00047411;13746;26/5/2026;25/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;605,625.00;0;605,625.00
+netsuite;vonderk;8/6/2026 15:40;310658;FC A-00007-00047417;3746;26/5/2026;25/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;232,912.26;0;232,912.26
+netsuite;vonderk;8/6/2026 15:40;310673;FC A-00007-00047424;3777;26/5/2026;25/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;814,811.58;804,566.10;10,245.48
+netsuite;vonderk;8/6/2026 15:40;310676;FC A-00007-00047426;3931;26/5/2026;25/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;2,938,294.44;0;2,938,294.44
+netsuite;vonderk;8/6/2026 15:40;310680;FC A-00007-00047428;3857;26/5/2026;25/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;730,170.00;0;730,170.00
+netsuite;vonderk;8/6/2026 15:40;308492;MEX-9900021698;3898;22/5/2026;29/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;446,688.00;0;446,688.00
+netsuite;vonderk;8/6/2026 15:40;308506;MEX-9900021702;3737;22/5/2026;29/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;2,747,356.80;2,493,694.33;253,662.47
+netsuite;vonderk;8/6/2026 15:40;308507;MEX-9900021703;3737;22/5/2026;29/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;1,044,951.00;0;1,044,951.00
+netsuite;vonderk;8/6/2026 15:40;308511;MEX-9900021707;3737;22/5/2026;29/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;577,395.00;0;577,395.00
+netsuite;vonderk;8/6/2026 15:40;308516;MEX-9900021708;3923;22/5/2026;29/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;1,010,853.67;0;1,010,853.67
+netsuite;vonderk;8/6/2026 15:40;308630;MEX-9900021715;3898;22/5/2026;29/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;401,568.00;0;401,568.00
+netsuite;vonderk;8/6/2026 15:40;308631;MEX-9900021716;3924;22/5/2026;29/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;1,378,909.50;0;1,378,909.50
+netsuite;vonderk;8/6/2026 15:40;308715;FC A-00007-00047339;3931;22/5/2026;21/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;795,042.60;0;795,042.60
+netsuite;vonderk;8/6/2026 15:40;308719;FC A-00007-00047340;3931;22/5/2026;21/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;262,739.40;0;262,739.40
+netsuite;vonderk;8/6/2026 15:40;308723;FC A-00007-00047341;3941;22/5/2026;21/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,612,264.50;0;1,612,264.50
+netsuite;vonderk;8/6/2026 15:40;308741;FC A-00007-00047350;3941;22/5/2026;21/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;270,416.85;0;270,416.85
+netsuite;vonderk;8/6/2026 15:40;308753;FC A-00007-00047359;3737;22/5/2026;21/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;166,344.75;0;166,344.75
+netsuite;vonderk;8/6/2026 15:40;308763;FC A-00007-00047368;3931;22/5/2026;21/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,436,706.82;0;1,436,706.82
+netsuite;vonderk;8/6/2026 15:40;308764;FC A-00007-00047369;3932;22/5/2026;21/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;322,111.68;0;322,111.68
+netsuite;vonderk;8/6/2026 15:40;308765;FC A-00007-00047370;3932;22/5/2026;21/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;2,424,026.88;0;2,424,026.88
+netsuite;vonderk;8/6/2026 15:40;308774;FC A-00007-00047373;3868;22/5/2026;21/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;939,515.15;0;939,515.15
+netsuite;vonderk;8/6/2026 15:40;308787;FC A-00007-00047376;3941;22/5/2026;21/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;5,758,957.62;0;5,758,957.62
+netsuite;vonderk;8/6/2026 15:40;308791;FC A-00007-00047377;3941;22/5/2026;21/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,095,538.00;0;1,095,538.00
+netsuite;vonderk;8/6/2026 15:40;308893;FC A-00007-00047378;3878;22/5/2026;21/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,019,888.28;0;1,019,888.28
+netsuite;vonderk;8/6/2026 15:40;308896;FC A-00007-00047379;3878;22/5/2026;21/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;371,958.01;0;371,958.01
+netsuite;vonderk;8/6/2026 15:40;308897;FC A-00007-00047380;3878;22/5/2026;21/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;360,431.26;0;360,431.26
+netsuite;vonderk;8/6/2026 15:40;308898;FC A-00007-00047381;3878;22/5/2026;21/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;992,146.50;0;992,146.50
+netsuite;vonderk;8/6/2026 15:40;306876;MEX-9900021666;3695;21/5/2026;28/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;572,700.20;442,086.70;130,613.50
+netsuite;vonderk;8/6/2026 15:40;306897;MEX-9900021670;3873;21/5/2026;28/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;536,816.80;0;536,816.80
+netsuite;vonderk;8/6/2026 15:40;307019;MEX-9900021679;3924;21/5/2026;28/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;340,800.00;1,846.01;338,953.99
+netsuite;vonderk;8/6/2026 15:40;307024;MEX-9900021682;3923;21/5/2026;28/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;401,339.92;0;401,339.92
+netsuite;vonderk;8/6/2026 15:40;307025;MEX-9900021683;4069;21/5/2026;28/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;664,190.80;14,728.31;649,462.49
+netsuite;vonderk;8/6/2026 15:40;307028;MEX-9900021684;3811;21/5/2026;28/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;393,212.20;966.1;392,246.10
+netsuite;vonderk;8/6/2026 15:40;307029;MEX-9900021685;3813;21/5/2026;28/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;271,844.80;0;271,844.80
+netsuite;vonderk;8/6/2026 15:40;307030;MEX-9900021686;3924;21/5/2026;28/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;294,351.80;0;294,351.80
+netsuite;vonderk;8/6/2026 15:40;307035;FC A-00007-00047255;3746;21/5/2026;20/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;68,043.28;0;68,043.28
+netsuite;vonderk;8/6/2026 15:40;307039;FC A-00007-00047257;13618;21/5/2026;20/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;712,151.30;0;712,151.30
+netsuite;vonderk;8/6/2026 15:40;307040;FC A-00007-00047258;3877;21/5/2026;20/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;293,124.92;0;293,124.92
+netsuite;vonderk;8/6/2026 15:40;307041;FC A-00007-00047259;3811;21/5/2026;20/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;22,594.33;0;22,594.33
+netsuite;vonderk;8/6/2026 15:40;307051;FC A-00007-00047265;3811;21/5/2026;20/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;116,734.51;0;116,734.51
+netsuite;vonderk;8/6/2026 15:40;307072;FC A-00007-00047278;3850;21/5/2026;20/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;300,775.08;0;300,775.08
+netsuite;vonderk;8/6/2026 15:40;307075;FC A-00007-00047280;3868;21/5/2026;20/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;282,643.90;0;282,643.90
+netsuite;vonderk;8/6/2026 15:40;307095;FC A-00007-00047288;3880;21/5/2026;20/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;220,899.11;0;220,899.11
+netsuite;vonderk;8/6/2026 15:40;307100;FC A-00007-00047292;3813;21/5/2026;20/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,230,729.48;0;1,230,729.48
+netsuite;vonderk;8/6/2026 15:40;307102;FC A-00007-00047294;3813;21/5/2026;20/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;426,972.70;0;426,972.70
+netsuite;vonderk;8/6/2026 15:40;307104;FC A-00007-00047295;13968;21/5/2026;20/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;28,865.76;0;28,865.76
+netsuite;vonderk;8/6/2026 15:40;307108;FC A-00007-00047297;13746;21/5/2026;20/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;573,325.00;0;573,325.00
+netsuite;vonderk;8/6/2026 15:40;307110;FC A-00007-00047299;5265;21/5/2026;20/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;127,851.12;0;127,851.12
+netsuite;vonderk;8/6/2026 15:40;307114;FC A-00007-00047303;3868;21/5/2026;20/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,876,669.58;0;1,876,669.58
+netsuite;vonderk;8/6/2026 15:40;307115;FC A-00007-00047304;3868;21/5/2026;20/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;341,664.07;0;341,664.07
+netsuite;vonderk;8/6/2026 15:40;307163;FC A-00007-00047310;3873;21/5/2026;28/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;3;369,052.18;0;369,052.18
+netsuite;vonderk;8/6/2026 15:40;307164;FC A-00007-00047311;3873;21/5/2026;28/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;3;268,812.39;0;268,812.39
+netsuite;vonderk;8/6/2026 15:40;307284;FC A-00007-00047312;3746;21/5/2026;20/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,568,681.10;0;1,568,681.10
+netsuite;vonderk;8/6/2026 15:40;305290;MEX-9900021651;3996;20/5/2026;27/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;898,008.00;885,360.00;12,648.00
+netsuite;vonderk;8/6/2026 15:40;305318;FC A-00007-00047207;3702;20/5/2026;19/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;54,239.02;0;54,239.02
+netsuite;vonderk;8/6/2026 15:40;305343;FC A-00007-00047208;3862;20/5/2026;19/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;306,720.00;0;306,720.00
+netsuite;vonderk;8/6/2026 15:40;305487;FC A-00007-00047216;3702;20/5/2026;19/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;748,207.66;0;748,207.66
+netsuite;vonderk;8/6/2026 15:40;305488;FC A-00007-00047217;3702;20/5/2026;19/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;412,342.01;0;412,342.01
+netsuite;vonderk;8/6/2026 15:40;305526;FC A-00007-00047226;3746;20/5/2026;19/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,724,788.80;0;1,724,788.80
+netsuite;vonderk;8/6/2026 15:40;305531;FC A-00007-00047227;3671;20/5/2026;19/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,044,248.69;0;1,044,248.69
+netsuite;vonderk;8/6/2026 15:40;305537;FC A-00007-00047228;3702;20/5/2026;19/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;608,458.01;0;608,458.01
+netsuite;vonderk;8/6/2026 15:40;305559;FC A-00007-00047234;3943;20/5/2026;19/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;620,785.66;0;620,785.66
+netsuite;vonderk;8/6/2026 15:40;305562;FC A-00007-00047235;3826;20/5/2026;4/7/2026;Factura de venta;Abierta;PLAZO 45 DIAS;Peso Argentino;1;3;4,611,717.74;0;4,611,717.74
+netsuite;vonderk;8/6/2026 15:40;305564;FC A-00007-00047236;3826;20/5/2026;4/7/2026;Factura de venta;Abierta;PLAZO 45 DIAS;Peso Argentino;1;3;52,576.92;0;52,576.92
+netsuite;vonderk;8/6/2026 15:40;305567;FC A-00007-00047239;3710;20/5/2026;19/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;523,621.45;0;523,621.45
+netsuite;vonderk;8/6/2026 15:40;305568;FC A-00007-00047240;3904;20/5/2026;19/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,826,326.33;0;1,826,326.33
+netsuite;vonderk;8/6/2026 15:40;305572;FC A-00007-00047242;5265;20/5/2026;19/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;95,888.34;0;95,888.34
+netsuite;vonderk;8/6/2026 15:40;305573;FC A-00007-00047243;3746;20/5/2026;19/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;145,819.80;0;145,819.80
+netsuite;vonderk;8/6/2026 15:40;305576;FC A-00007-00047245;3931;20/5/2026;19/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,705,657.14;0;1,705,657.14
+netsuite;vonderk;8/6/2026 15:40;305582;FC A-00007-00047247;13612;20/5/2026;19/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;380,151.75;0;380,151.75
+netsuite;vonderk;8/6/2026 15:40;305586;FC A-00007-00047248;3941;20/5/2026;19/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,647,753.80;0;1,647,753.80
+netsuite;vonderk;8/6/2026 15:40;305692;FC A-00007-00047249;3944;20/5/2026;19/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;474,848.00;0;474,848.00
+netsuite;vonderk;8/6/2026 15:40;305695;FC A-00007-00047251;3868;20/5/2026;19/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;561,937.31;0;561,937.31
+netsuite;vonderk;8/6/2026 15:40;305727;FC A-00007-00047253;3671;20/5/2026;19/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;9,815,461.65;0;9,815,461.65
+netsuite;vonderk;8/6/2026 15:40;303366;MEX-9900021621;3862;19/5/2026;26/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;83,098.40;0;83,098.40
+netsuite;vonderk;8/6/2026 15:40;303372;MEX-9900021624;13716;19/5/2026;26/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;403,166.40;244,022.77;159,143.63
+netsuite;vonderk;8/6/2026 15:40;303374;MEX-9900021625;3874;19/5/2026;26/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;1,987,701.80;0;1,987,701.80
+netsuite;vonderk;8/6/2026 15:40;303577;FC A-00007-00047167;3746;19/5/2026;18/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;431,465.58;0;431,465.58
+netsuite;vonderk;8/6/2026 15:40;303589;FC A-00007-00047171;3746;19/5/2026;18/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;496,324.08;0;496,324.08
+netsuite;vonderk;8/6/2026 15:40;303602;FC A-00007-00047176;3840;19/5/2026;18/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;3,280,902.90;0;3,280,902.90
+netsuite;vonderk;8/6/2026 15:40;303624;FC A-00007-00047185;3746;19/5/2026;18/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;5,651,635.50;0;5,651,635.50
+netsuite;vonderk;8/6/2026 15:40;303625;FC A-00007-00047186;3746;19/5/2026;18/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;601,171.20;0;601,171.20
+netsuite;vonderk;8/6/2026 15:40;303629;FC A-00007-00047188;3746;19/5/2026;18/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,352,706.77;0;1,352,706.77
+netsuite;vonderk;8/6/2026 15:40;303644;FC A-00007-00047197;3866;19/5/2026;18/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;561,236.26;0;561,236.26
+netsuite;vonderk;8/6/2026 15:40;303753;FC A-00007-00047202;3941;19/5/2026;18/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,063,730.02;0;2,063,730.02
+netsuite;vonderk;8/6/2026 15:40;301767;MEX-9900021604;3862;18/5/2026;25/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;293,088.00;0;293,088.00
+netsuite;vonderk;8/6/2026 15:40;301988;FC A-00007-00047136;3814;18/5/2026;17/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,136,318.68;0;1,136,318.68
+netsuite;vonderk;8/6/2026 15:40;302011;FC A-00007-00047150;3710;18/5/2026;17/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;905,869.40;0;905,869.40
+netsuite;vonderk;8/6/2026 15:40;302018;FC A-00007-00047154;3931;18/5/2026;17/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,786,928.00;0;1,786,928.00
+netsuite;vonderk;8/6/2026 15:40;302020;FC A-00007-00047155;3710;18/5/2026;17/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;118,555.80;0;118,555.80
+netsuite;vonderk;8/6/2026 15:40;302022;FC A-00007-00047156;3944;18/5/2026;17/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,232,121.22;0;1,232,121.22
+netsuite;vonderk;8/6/2026 15:40;302023;FC A-00007-00047157;3829;18/5/2026;17/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;543,466.66;18,649.69;524,816.97
+netsuite;vonderk;8/6/2026 15:40;300476;MEX-9900021600;3873;15/5/2026;22/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;41,983.05;0;41,983.05
+netsuite;vonderk;8/6/2026 15:40;300491;FC A-00007-00047069;3737;15/5/2026;14/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,131,799.08;0;1,131,799.08
+netsuite;vonderk;8/6/2026 15:40;300506;FC A-00007-00047074;5265;15/5/2026;14/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;525,658.36;0;525,658.36
+netsuite;vonderk;8/6/2026 15:40;300513;FC A-00007-00047078;3737;15/5/2026;14/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;477,004.99;0;477,004.99
+netsuite;vonderk;8/6/2026 15:40;300522;FC A-00007-00047084;3814;15/5/2026;14/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,191,019.48;0;1,191,019.48
+netsuite;vonderk;8/6/2026 15:40;300524;FC A-00007-00047085;3814;15/5/2026;14/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;174,528.00;0;174,528.00
+netsuite;vonderk;8/6/2026 15:40;300550;FC A-00007-00047100;3811;15/5/2026;14/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;169,502.85;0;169,502.85
+netsuite;vonderk;8/6/2026 15:40;300552;FC A-00007-00047101;3710;15/5/2026;14/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;880,558.75;0;880,558.75
+netsuite;vonderk;8/6/2026 15:40;300553;FC A-00007-00047102;3868;15/5/2026;14/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;647,192.70;0;647,192.70
+netsuite;vonderk;8/6/2026 15:40;300572;FC A-00007-00047114;3814;15/5/2026;14/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,996,027.89;0;1,996,027.89
+netsuite;vonderk;8/6/2026 15:40;300573;FC A-00007-00047112;3814;15/5/2026;14/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;29,996.87;0;29,996.87
+netsuite;vonderk;8/6/2026 15:40;300677;FC A-00007-00047116;3944;15/5/2026;14/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;493,099.20;0;493,099.20
+netsuite;vonderk;8/6/2026 15:40;301375;E-FACTURA EXPORTACION A46;13353;15/5/2026;14/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;40.055;10;3,608,955.59;0;3,608,955.59
+netsuite;vonderk;8/6/2026 15:40;299094;MEX-9900021565;3743;14/5/2026;21/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;216,495.00;216,000.00;495
+netsuite;vonderk;8/6/2026 15:40;299301;FC A-00007-00047018;3868;14/5/2026;13/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;5,012,250.64;1,320,987.41;3,691,263.23
+netsuite;vonderk;8/6/2026 15:40;299304;FC A-00007-00047019;3868;14/5/2026;13/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,708,040.84;0;1,708,040.84
+netsuite;vonderk;8/6/2026 15:40;299333;FC A-00007-00047030;3859;14/5/2026;13/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;32,051.45;0;32,051.45
+netsuite;vonderk;8/6/2026 15:40;299359;FC A-00007-00047033;13618;14/5/2026;13/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;719,523.97;0;719,523.97
+netsuite;vonderk;8/6/2026 15:40;299506;FC A-00007-00047048;13571;14/5/2026;13/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;221,894.64;27,817.34;194,077.30
+netsuite;vonderk;8/6/2026 15:40;299515;FC A-00007-00047053;3710;14/5/2026;13/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;563,742.51;0;563,742.51
+netsuite;vonderk;8/6/2026 15:40;299520;FC A-00007-00047055;3868;14/5/2026;13/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;550,695.93;0;550,695.93
+netsuite;vonderk;8/6/2026 15:40;299542;FC A-00007-00047062;3814;14/5/2026;13/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,884,186.83;0;1,884,186.83
+netsuite;vonderk;8/6/2026 15:40;299545;FC A-00007-00047063;3931;14/5/2026;13/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;5,159,461.31;0;5,159,461.31
+netsuite;vonderk;8/6/2026 15:40;299546;FC A-00007-00047064;3931;14/5/2026;13/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;5,583,526.63;0;5,583,526.63
+netsuite;vonderk;8/6/2026 15:40;299547;FC A-00007-00047065;3931;14/5/2026;13/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;3,919,228.82;0;3,919,228.82
+netsuite;vonderk;8/6/2026 15:40;299548;FC A-00007-00047066;3931;14/5/2026;13/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,569,442.30;0;1,569,442.30
+netsuite;vonderk;8/6/2026 15:40;297813;MEX-9900021551;3862;13/5/2026;20/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;509,677.80;481,733.70;27,944.10
+netsuite;vonderk;8/6/2026 15:40;297817;MEX-9900021554;3873;13/5/2026;20/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;214,965.00;116,332.51;98,632.49
+netsuite;vonderk;8/6/2026 15:40;298012;FC A-00007-00046984;3814;13/5/2026;12/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;394,275.60;0;394,275.60
+netsuite;vonderk;8/6/2026 15:40;298020;FC A-00007-00046989;3825;13/5/2026;12/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,185,954.87;0;1,185,954.87
+netsuite;vonderk;8/6/2026 15:40;298027;FC A-00007-00046996;3811;13/5/2026;12/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;386,251.36;0;386,251.36
+netsuite;vonderk;8/6/2026 15:40;298036;FC A-00007-00047002;3710;13/5/2026;12/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,817,166.45;0;1,817,166.45
+netsuite;vonderk;8/6/2026 15:40;298047;FC A-00007-00047008;3937;13/5/2026;12/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;879,877.89;0;879,877.89
+netsuite;vonderk;8/6/2026 15:40;298057;FC A-00007-00047012;3931;13/5/2026;12/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,264,412.19;242,267.99;1,022,144.20
+netsuite;vonderk;8/6/2026 15:40;298610;FC E-00009-00000056;13353;13/5/2026;12/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;1405;3;310,125.65;200,535.65;109,590.00
+netsuite;vonderk;8/6/2026 15:40;296238;MEX-9900021517;3662;12/5/2026;19/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;126,218.00;116,220.00;9,998.00
+netsuite;vonderk;8/6/2026 15:40;296294;FC A-00007-00046949;3749;12/5/2026;11/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;400,797.20;0;400,797.20
+netsuite;vonderk;8/6/2026 15:40;296415;FC A-00007-00046955;3662;12/5/2026;11/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,304,044.49;0;2,304,044.49
+netsuite;vonderk;8/6/2026 15:40;296433;FC A-00007-00046961;3749;12/5/2026;11/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;122,247.51;0;122,247.51
+netsuite;vonderk;8/6/2026 15:40;296439;FC A-00007-00046962;3749;12/5/2026;11/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;262,986.24;0;262,986.24
+netsuite;vonderk;8/6/2026 15:40;296447;FC A-00007-00046963;3749;12/5/2026;11/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,105,174.04;0;2,105,174.04
+netsuite;vonderk;8/6/2026 15:40;296505;FC A-00007-00046973;3686;12/5/2026;11/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,026,700.80;60,618.60;966,082.20
+netsuite;vonderk;8/6/2026 15:40;296508;FC A-00007-00046975;3953;12/5/2026;11/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;398,112.54;0;398,112.54
+netsuite;vonderk;8/6/2026 15:40;294851;FC A-00007-00046926;3816;11/5/2026;10/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;502,384.50;0;502,384.50
+netsuite;vonderk;8/6/2026 15:40;294876;FC A-00007-00046928;4111;11/5/2026;10/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,199,819.06;0;1,199,819.06
+netsuite;vonderk;8/6/2026 15:40;294930;FC A-00007-00046934;3737;11/5/2026;10/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,112,534.50;216,497.21;896,037.29
+netsuite;vonderk;8/6/2026 15:40;295061;FC A-00007-00046944;3737;11/5/2026;10/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,561,201.46;0;2,561,201.46
+netsuite;vonderk;8/6/2026 15:40;293290;MEX-9900021479;3845;8/5/2026;15/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;291,270.40;0;291,270.40
+netsuite;vonderk;8/6/2026 15:40;293440;FC A-00007-00046892;3833;8/5/2026;7/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;505,339.81;0;505,339.81
+netsuite;vonderk;8/6/2026 15:40;293442;FC A-00007-00046894;13572;8/5/2026;15/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;3;437,625.54;0;437,625.54
+netsuite;vonderk;8/6/2026 15:40;293513;FC A-00007-00046916;3753;8/5/2026;7/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,323,495.10;0;1,323,495.10
+netsuite;vonderk;8/6/2026 15:40;292088;MEX-9900021468;3813;7/5/2026;14/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;396,280.50;127,666.14;268,614.36
+netsuite;vonderk;8/6/2026 15:40;292344;FC A-00007-00046876;3941;7/5/2026;6/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;3,502,469.76;0;3,502,469.76
+netsuite;vonderk;8/6/2026 15:40;292725;E-FACTURA EXPORTACION A45;13888;7/5/2026;6/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;39.985;10;11,005,213.35;0;11,005,213.35
+netsuite;vonderk;8/6/2026 15:40;290890;FC A-00007-00046813;3674;6/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;267,328.03;0;267,328.03
+netsuite;vonderk;8/6/2026 15:40;290893;FC A-00007-00046816;3825;6/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;669,895.81;0;669,895.81
+netsuite;vonderk;8/6/2026 15:40;290921;FC A-00007-00046824;3932;6/5/2026;5/7/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;1,206,038.46;0;1,206,038.46
+netsuite;vonderk;8/6/2026 15:40;290938;FC A-00007-00046829;3859;6/5/2026;5/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;91,411.69;0;91,411.69
+netsuite;vonderk;8/6/2026 15:40;288213;FC A-00007-00046787;3859;4/5/2026;3/6/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;157,517.80;0;157,517.80
+netsuite;vonderk;8/6/2026 15:40;286785;MEX-9900021339;3923;30/4/2026;7/5/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;695,582.16;685,260.35;10,321.81
+netsuite;vonderk;8/6/2026 15:40;286847;FC A-00007-00046656;3816;30/4/2026;29/6/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;113,686.76;0;113,686.76
+netsuite;vonderk;8/6/2026 15:40;286854;FC A-00007-00046660;3815;30/4/2026;30/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;188,815.90;0;188,815.90
+netsuite;vonderk;8/6/2026 15:40;286973;FC A-00007-00046672;3859;30/4/2026;30/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;758,824.88;149,629.73;609,195.15
+netsuite;vonderk;8/6/2026 15:40;286977;FC A-00007-00046676;3856;30/4/2026;30/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;6,961.80;0;6,961.80
+netsuite;vonderk;8/6/2026 15:40;287036;FC A-00007-00046707;3674;30/4/2026;30/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;88,289.21;0;88,289.21
+netsuite;vonderk;8/6/2026 15:40;287062;FC A-00007-00046720;3811;30/4/2026;30/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;123,274.80;0;123,274.80
+netsuite;vonderk;8/6/2026 15:40;287148;FC A-00007-00046764;3816;30/4/2026;29/6/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;401,670.39;0;401,670.39
+netsuite;vonderk;8/6/2026 15:40;287149;FC A-00007-00046765;3816;30/4/2026;29/6/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;3,685,231.67;0;3,685,231.67
+netsuite;vonderk;8/6/2026 15:40;287150;FC A-00007-00046766;3816;30/4/2026;29/6/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;26,641.05;0;26,641.05
+netsuite;vonderk;8/6/2026 15:40;284872;FC A-00007-00046603;3812;29/4/2026;29/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;79,230.44;0;79,230.44
+netsuite;vonderk;8/6/2026 15:40;284907;FC A-00007-00046624;3825;29/4/2026;29/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,317,796.48;0;1,317,796.48
+netsuite;vonderk;8/6/2026 15:40;285134;FC A-00007-00046644;3941;29/4/2026;29/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;427,557.13;0;427,557.13
+netsuite;vonderk;8/6/2026 15:40;283600;FC A-00007-00046554;3674;28/4/2026;28/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;279,853.06;0;279,853.06
+netsuite;vonderk;8/6/2026 15:40;283601;FC A-00007-00046555;3674;28/4/2026;28/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;2,499,807.74;0;2,499,807.74
+netsuite;vonderk;8/6/2026 15:40;283608;FC A-00007-00046557;13622;28/4/2026;28/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;16,936,579.37;13,501,397.35;3,435,182.02
+netsuite;vonderk;8/6/2026 15:40;283621;FC A-00007-00046563;3674;28/4/2026;28/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;525,051.07;0;525,051.07
+netsuite;vonderk;8/6/2026 15:40;283650;FC A-00007-00046572;3825;28/4/2026;28/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;933,926.40;0;933,926.40
+netsuite;vonderk;8/6/2026 15:40;283781;FC A-00007-00046583;3825;28/4/2026;28/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,503,760.90;0;1,503,760.90
+netsuite;vonderk;8/6/2026 15:40;283821;E-FACTURA A117;13344;28/4/2026;28/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;39.465;10;7,412,679.50;0;7,412,679.50
+netsuite;vonderk;8/6/2026 15:40;281362;FC A-00007-00046521;3932;27/4/2026;27/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;536,078.40;0;536,078.40
+netsuite;vonderk;8/6/2026 15:40;281377;FC A-00007-00046529;3944;27/4/2026;27/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;520,958.24;0;520,958.24
+netsuite;vonderk;8/6/2026 15:40;281382;FC A-00007-00046530;3813;27/4/2026;27/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;13,590.96;0;13,590.96
+netsuite;vonderk;8/6/2026 15:40;281383;FC A-00007-00046531;3941;27/4/2026;27/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,303,101.34;0;1,303,101.34
+netsuite;vonderk;8/6/2026 15:40;281585;FC A-00007-00046548;3931;27/4/2026;27/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,201,760.63;1,198,463.60;3,297.03
+netsuite;vonderk;8/6/2026 15:40;282221;E-FACTURA EXPORTACION A44;13353;27/4/2026;27/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;39.775;10;210,239.44;0;210,239.44
+netsuite;vonderk;8/6/2026 15:40;282337;FC E-00009-00000055;13353;27/4/2026;27/4/2026;Factura de venta;Abierta;Contado;US Dollar;1399.5;3;23,651.55;0;23,651.55
+netsuite;vonderk;8/6/2026 15:40;280116;FC A-00007-00046512;3825;24/4/2026;24/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;591,719.04;0;591,719.04
+netsuite;vonderk;8/6/2026 15:40;280800;FC E-00009-00000054;13353;24/4/2026;24/4/2026;Factura de venta;Abierta;Contado;US Dollar;1415;3;2,965,189.10;0;2,965,189.10
+netsuite;vonderk;8/6/2026 15:40;278510;FC A-00007-00046438;3932;23/4/2026;23/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,050,280.00;647,286.96;402,993.04
+netsuite;vonderk;8/6/2026 15:40;278542;FC A-00007-00046458;13572;23/4/2026;30/4/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;3;1,771,110.88;590,864.99;1,180,245.89
+netsuite;vonderk;8/6/2026 15:40;276785;MEX-9900021207;3964;22/4/2026;29/4/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;1,422,764.00;1,420,000.00;2,764.00
+netsuite;vonderk;8/6/2026 15:40;276935;FC A-00007-00046394;4160;22/4/2026;29/4/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;3;574,520.10;0;574,520.10
+netsuite;vonderk;8/6/2026 15:40;276937;FC A-00007-00046395;3931;22/4/2026;22/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;3,890,273.80;3,871,632.92;18,640.88
+netsuite;vonderk;8/6/2026 15:40;276992;FC A-00007-00046411;3944;22/4/2026;22/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;720,966.40;0;720,966.40
+netsuite;vonderk;8/6/2026 15:40;271610;FC A-00007-00046256;3944;16/4/2026;15/6/2026;Factura de venta;Abierta;PLAZO 60 DIAS;Peso Argentino;1;3;2,088,320.72;0;2,088,320.72
+netsuite;vonderk;8/6/2026 15:40;269473;FC A-00007-00046204;3674;15/4/2026;15/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;270,909.33;0;270,909.33
+netsuite;vonderk;8/6/2026 15:40;270338;E-FACTURA EXPORTACION A43;13353;15/4/2026;15/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;40.225;10;855,568.32;0;855,568.32
+netsuite;vonderk;8/6/2026 15:40;268083;FC A-00007-00046170;3674;14/4/2026;14/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,116,864.00;0;1,116,864.00
+netsuite;vonderk;8/6/2026 15:40;268596;FC E-00009-00000049;13348;14/4/2026;14/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;1385;3;160,106.00;0;160,106.00
+netsuite;vonderk;8/6/2026 15:40;266819;FC A-00007-00046131;3749;13/4/2026;13/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;164,878.96;115,597.69;49,281.27
+netsuite;vonderk;8/6/2026 15:40;267726;E-FACTURA EXPORTACION A42;13888;13/4/2026;13/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;40.355;10;23,856,272.05;23,674,549.07;181,722.98
+netsuite;vonderk;8/6/2026 15:40;265464;FC A-00007-00046116;3932;10/4/2026;10/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;3,091,506.92;0;3,091,506.92
+netsuite;vonderk;8/6/2026 15:40;259740;FC A-00007-00045946;3821;6/4/2026;6/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;621,168.02;0;621,168.02
+netsuite;vonderk;8/6/2026 15:40;258107;E-FACTURA EXPORTACION A41;13348;1/4/2026;1/5/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;40.645;10;936,602.17;0;936,602.17
+netsuite;vonderk;8/6/2026 15:40;251584;E-FACTURA EXPORTACION A40;13343;26/3/2026;25/4/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;40.54;10;7,543,637.58;0;7,543,637.58
+netsuite;vonderk;8/6/2026 15:40;249280;MEX-9900020767;3923;25/3/2026;1/4/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;807,330.75;596,213.44;211,117.31
+netsuite;vonderk;8/6/2026 15:40;250015;FC E-00009-00000046;13353;25/3/2026;24/4/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;1410;3;16,834,624.50;461,775.00;16,372,849.50
+netsuite;vonderk;8/6/2026 15:40;228213;MEX-9900020458;13799;4/3/2026;11/3/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;11;295,782.20;0;295,782.20
+netsuite;vonderk;8/6/2026 15:40;208419;FC A-00011-00002707;3812;11/2/2026;18/2/2026;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;4;1,934,608.50;0;1,934,608.50
+netsuite;vonderk;8/6/2026 15:40;202250;FC E-00009-00000043;13353;4/2/2026;6/3/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;1465;3;2,946,320.10;0;2,946,320.10
+netsuite;vonderk;8/6/2026 15:40;202358;E-FACTURA EXPORTACION A37;13353;4/2/2026;6/3/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;38.54;10;1,643,455.59;0;1,643,455.59
+netsuite;vonderk;8/6/2026 15:40;199134;E-FACTURA A115;13351;2/2/2026;3/4/2026;Factura de venta;Abierta;PLAZO 60 DIAS;US Dollar;38.8;10;224,726.71;0;224,726.71
+netsuite;vonderk;8/6/2026 15:40;172766;E-FACTURA A114;13344;9/1/2026;9/1/2026;Factura de venta;Abierta;Contado;US Dollar;38.935;10;19,433,522.98;0;19,433,522.98
+netsuite;vonderk;8/6/2026 15:40;163363;FC E-00009-00000039;13353;30/12/2025;29/1/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;1475;3;3,174,318.00;0;3,174,318.00
+netsuite;vonderk;8/6/2026 15:40;161882;E-FACTURA EXPORTACION A35;13343;29/12/2025;28/1/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;39.265;10;1,860,746.58;1,846,113.67;14,632.92
+netsuite;vonderk;8/6/2026 15:40;158899;FC A-00007-00043481;3651;23/12/2025;22/1/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;581,150.30;0;581,150.30
+netsuite;vonderk;8/6/2026 15:40;159035;FC A-00007-00043492;3651;23/12/2025;22/1/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;250,668.14;0;250,668.14
+netsuite;vonderk;8/6/2026 15:40;151147;FC A-00007-00043242;3651;16/12/2025;15/1/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;894,833.72;0;894,833.72
+netsuite;vonderk;8/6/2026 15:40;150709;E-FACTURA EXPORTACION A28;13353;15/12/2025;14/1/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;39.185;10;5,418,421.12;2,243,340.99;3,175,080.12
+netsuite;vonderk;8/6/2026 15:40;141443;FC A-00007-00042905;3651;4/12/2025;3/1/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;509,410.97;0;509,410.97
+netsuite;vonderk;8/6/2026 15:40;141465;FC A-00007-00042918;3651;4/12/2025;3/1/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;88,071.54;0;88,071.54
+netsuite;vonderk;8/6/2026 15:40;141470;FC A-00007-00042919;3651;4/12/2025;3/1/2026;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;55,120.82;0;55,120.82
+netsuite;vonderk;8/6/2026 15:40;142113;E-FACTURA EXPORTACION A34;13353;4/12/2025;3/1/2026;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;39.175;10;1,651,141.30;0;1,651,141.30
+netsuite;vonderk;8/6/2026 15:40;135967;FC A-00007-00042759;3651;28/11/2025;28/12/2025;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;1,946,662.52;215,029.65;1,731,632.87
+netsuite;vonderk;8/6/2026 15:40;135970;FC A-00007-00042761;3651;28/11/2025;28/12/2025;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;91,950.32;0;91,950.32
+netsuite;vonderk;8/6/2026 15:40;135973;FC A-00007-00042763;3651;28/11/2025;28/12/2025;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;311,706.59;0;311,706.59
+netsuite;vonderk;8/6/2026 15:40;136449;FC A-00007-00042804;3651;28/11/2025;28/12/2025;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;6,338,962.96;0;6,338,962.96
+netsuite;vonderk;8/6/2026 15:40;128316;E-FACTURA EXPORTACION A33;13343;19/11/2025;19/12/2025;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;39.825;10;3,521,112.11;3,434,536.03;86,576.09
+netsuite;vonderk;8/6/2026 15:40;128331;E-FACTURA EXPORTACION A32;13353;19/11/2025;19/12/2025;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;39.825;10;2,804,150.31;1,678,537.58;1,125,612.73
+netsuite;vonderk;8/6/2026 15:40;116322;FC E-00009-00000034;13348;10/11/2025;10/11/2025;Factura de venta;Abierta;Contado;US Dollar;1445;3;382,043.55;0;382,043.55
+netsuite;vonderk;8/6/2026 15:40;114909;E-FACTURA EXPORTACION A20;13343;7/11/2025;7/12/2025;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;39.825;10;2,859,632.61;0;2,859,632.61
+netsuite;vonderk;8/6/2026 15:40;112457;E-FACTURA EXPORTACION A19;13353;4/11/2025;4/11/2025;Factura de venta;Abierta;Contado;US Dollar;39.815;10;66,441,863.04;39,464,542.24;26,977,320.81
+netsuite;vonderk;8/6/2026 15:40;92297;FC E-00009-00000032;13353;16/10/2025;16/10/2025;Factura de venta;Abierta;Contado;US Dollar;1405;3;1,315,782.50;0;1,315,782.50
+netsuite;vonderk;8/6/2026 15:40;81967;FC E-00009-00000027;13343;3/10/2025;2/11/2025;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;1450;3;1,006,749.50;0;1,006,749.50
+netsuite;vonderk;8/6/2026 15:40;77156;E-FACTURA EXPORTACION A15;13829;29/9/2025;29/9/2025;Factura de venta;Abierta;Contado;US Dollar;39.875;10;3,102,077.02;3,071,118.01;30,959.01
+netsuite;vonderk;8/6/2026 15:40;72203;E-FACTURA EXPORTACION A12;13343;23/9/2025;23/9/2025;Factura de venta;Abierta;Contado;US Dollar;39.825;10;4,224,232.61;4,051,080.44;173,152.17
+netsuite;vonderk;8/6/2026 15:40;61527;E-FACTURA EXPORTACION A7;13805;11/9/2025;;Factura de venta;Abierta;;US Dollar;40.025;10;8,547,513.04;8,547,500.62;12.42
+netsuite;vonderk;8/6/2026 15:40;72249;E-FACTURA EXPORTACION A6;13801;29/8/2025;29/8/2025;Factura de venta;Abierta;;US Dollar;40.442;10;7,941,075.47;0;7,941,075.47
+netsuite;vonderk;8/6/2026 15:40;18118;FC A-00006-00000046;13623;30/7/2025;29/8/2025;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;1097.5;6;1,741,282.54;0;1,741,282.54
+netsuite;vonderk;8/6/2026 15:40;19664;A9999900001611;4173;28/7/2025;30/7/2025;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;14;58,167.50;0;58,167.50
+netsuite;vonderk;8/6/2026 15:40;1110;FC E-00006-00000045;13623;30/6/2025;1/7/2025;Factura de venta;Abierta;PLAZO 30 DIAS;US Dollar;1165;6;19,032,535.10;5,373,737.25;13,658,797.85
+netsuite;vonderk;8/6/2026 15:40;405;FC A-00007-00037555;3815;19/6/2025;19/7/2025;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;85,184.96;37,525.08;47,659.88
+netsuite;vonderk;8/6/2026 15:40;882;FC A-00011-00002527;4131;30/5/2025;6/6/2025;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;4;88,265,834.23;87,973,013.70;292,820.53
+netsuite;vonderk;8/6/2026 15:40;33271;1.76E+12;13343;27/5/2025;26/6/2025;Factura de venta;Abierta;Contado;US Dollar;40.442;10;14,197,402.80;14,002,740.99;194,661.80
+netsuite;vonderk;8/6/2026 15:40;36;FC A-00007-00036112;3815;2/5/2025;1/6/2025;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;3;9,027.64;0;9,027.64
+netsuite;vonderk;8/6/2026 15:40;1116;FC E-00006-00000043;13353;15/4/2025;16/4/2025;Factura de venta;Abierta;Contado;US Dollar;1165;6;75,725.00;0;75,725.00
+netsuite;vonderk;8/6/2026 15:40;881;FC A-00011-00002486;4132;9/4/2025;9/5/2025;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;4;335,518.48;0;335,518.48
+netsuite;vonderk;8/6/2026 15:40;1114;FC E-00006-00000041;13353;27/3/2025;28/3/2025;Factura de venta;Abierta;Contado;US Dollar;1165;6;69,900.00;0;69,900.00
+netsuite;vonderk;8/6/2026 15:40;1115;FC E-00006-00000042;13353;27/3/2025;28/3/2025;Factura de venta;Abierta;Contado;US Dollar;1165;6;93,200.00;0;93,200.00
+netsuite;vonderk;8/6/2026 15:40;33270;1.76E+12;13349;2/12/2024;1/1/2025;Factura de venta;Abierta;Contado;US Dollar;40.442;10;94,222.36;0;94,222.36
+netsuite;vonderk;8/6/2026 15:40;4505;B9999900000974;13353;26/9/2024;28/9/2024;Factura de venta;Abierta;Contado;Peso Argentino;1;11;132,208.65;0;132,208.65
+netsuite;vonderk;8/6/2026 15:40;875;FC A-00011-00002318;13622;19/8/2024;26/8/2024;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;4;3,155,588.38;0;3,155,588.38
+netsuite;vonderk;8/6/2026 15:40;1113;FC E-00006-00000032;13353;20/5/2024;21/5/2024;Factura de venta;Abierta;Contado;US Dollar;1165;6;5,414,349.15;0;5,414,349.15
+netsuite;vonderk;8/6/2026 15:40;1112;FC B-00002-00000180;13624;4/4/2024;5/4/2024;Factura de venta;Abierta;PLAZO 30 DIAS;Peso Argentino;1;6;822,800.00;0;822,800.00
+netsuite;vonderk;8/6/2026 15:40;884;FC B-00011-00000030;4146;17/1/2023;16/2/2023;Factura de venta;Abierta;PLAZO 7 DIAS;Peso Argentino;1;4;2,785,018.61;0;2,785,018.61

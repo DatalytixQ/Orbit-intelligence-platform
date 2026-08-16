@@ -1,0 +1,27 @@
+{
+  "integration": "NetSuite_SuiteQL",
+  "target_table": "raw_ns_employees",
+  "primary_keys": ["id"],
+  "description": "Mapeo de Empleados (Vendedores)",
+  "extraction": {
+    "type": "REST_SUITEQL",
+    "base_query": "SELECT e.id, e.entityid, e.firstname, e.lastname, e.email, e.issalesrep, e.subsidiary, e.department FROM employee e",
+    "filters": [
+      { "field": "e.issalesrep", "operator": "=", "value": "'T'" }
+    ]
+  },
+  "mapping": {
+    "id": { "source_field": "id", "type": "string" },
+    "entityid": { "source_field": "entityid", "type": "string" },
+    "firstname": { "source_field": "firstname", "type": "string" },
+    "lastname": { "source_field": "lastname", "type": "string" },
+    "email": { "source_field": "email", "type": "string" },
+    "issalesrep": { "source_field": "issalesrep", "type": "string" },
+    "subsidiary": { "source_field": "subsidiary", "type": "string" },
+    "department": { "source_field": "department", "type": "string" }
+  },
+  "defaults": {
+    "source_system": "netsuite",
+    "client_id": "vonderk"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "integration": "NetSuite_SuiteQL",
+  "target_table": "raw_ns_currencies",
+  "primary_keys": ["id"],
+  "description": "Mapeo de Monedas",
+  "extraction": {
+    "type": "REST_SUITEQL",
+    "base_query": "SELECT c.id, c.name, c.symbol, c.isinactive, c.lastmodifieddate FROM currency c",
+    "filters": [
+      { "field": "c.lastmodifieddate", "operator": ">=", "value": "TO_DATE('{{LAST_SYNC_DATE}}', 'YYYY-MM-DD HH24:MI:SS')" }
+    ]
+  },
+  "mapping": {
+    "id": { "source_field": "id", "type": "string" },
+    "name": { "source_field": "name", "type": "string" },
+    "symbol": { "source_field": "symbol", "type": "string" },
+    "isinactive": { "source_field": "isinactive", "type": "string" },
+    "last_modified_ts": { "source_field": "lastmodifieddate", "type": "date" }
+  },
+  "defaults": {
+    "source_system": "netsuite",
+    "client_id": "vonderk",
+    "snapshot_ts": "{{CURRENT_TIMESTAMP}}"
+  },
+  "validation_rules": [
+    { "field": "id", "rule": "is_not_null" }
+  ]
+}

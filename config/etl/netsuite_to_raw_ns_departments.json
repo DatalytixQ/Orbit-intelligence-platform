@@ -1,0 +1,21 @@
+{
+  "integration": "NetSuite_SuiteQL",
+  "target_table": "raw_ns_departments",
+  "primary_keys": ["id"],
+  "description": "Mapeo de Departamentos",
+  "extraction": {
+    "type": "REST_SUITEQL",
+    "base_query": "SELECT d.id, d.name, d.parent, d.isinactive FROM department d",
+    "filters": []
+  },
+  "mapping": {
+    "id": { "source_field": "id", "type": "string" },
+    "name": { "source_field": "name", "type": "string" },
+    "parent": { "source_field": "parent", "type": "string" },
+    "isinactive": { "source_field": "isinactive", "type": "string" }
+  },
+  "defaults": {
+    "source_system": "netsuite",
+    "client_id": "vonderk"
+  }
+}

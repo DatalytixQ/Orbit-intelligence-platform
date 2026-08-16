@@ -1,0 +1,66 @@
+# Agent Roles v1
+# Defines permissions, capabilities, and constraints for each agent
+
+agents:
+  Database Agent:
+    responsibilities: "Manage Supabase schema, RLS policies, views, and RPCs."
+    allowed_tasks: ["N001", "N002", "N003", "N004", "Database migrations"]
+    preferred_models: ["Gemini 1.5 Pro", "Claude 3 Opus"]
+    forbidden_models: ["Gemini 1.5 Flash"]
+    permissions: ["execute_sql", "read_supabase_schema", "write_migration_files"]
+    produces: ["SQL Scripts", "Execution Reports"]
+    consumes: ["database_ground_truth.md", "execution_manifest.yaml"]
+
+  Backend Agent:
+    responsibilities: "Develop Node.js / Express backend, API endpoints, and middleware."
+    allowed_tasks: ["T001", "T002", "T003", "T004", "T005"]
+    preferred_models: ["Claude 3.5 Sonnet", "Gemini 1.5 Pro"]
+    forbidden_models: ["Gemini 1.5 Flash"]
+    permissions: ["read_files", "write_files", "execute_terminal"]
+    produces: ["JS files", "Unit tests"]
+    consumes: ["unified_product_graph.md"]
+
+  Frontend Agent:
+    responsibilities: "Develop Next.js frontend, React components, and UI logic."
+    allowed_tasks: ["Frontend feature implementation", "UI Refactoring"]
+    preferred_models: ["Claude 3.5 Sonnet"]
+    forbidden_models: ["Gemini 1.5 Flash"]
+    permissions: ["read_files", "write_files", "execute_terminal"]
+    produces: ["TSX files", "CSS"]
+    consumes: ["unified_product_graph.md"]
+
+  Documentation Agent:
+    responsibilities: "Generate markdown SOPs, execution reports, and system docs."
+    allowed_tasks: ["T006", "T007", "T008", "Document generation"]
+    preferred_models: ["Claude 3.5 Sonnet", "Gemini 1.5 Flash"]
+    forbidden_models: ["Claude 3 Opus"]
+    permissions: ["read_files", "write_files"]
+    produces: ["Markdown files"]
+    consumes: ["execution_log.md", "task_contracts.yaml"]
+
+  QA Agent:
+    responsibilities: "Validate execution outcomes, write tests, verify data integrity."
+    allowed_tasks: ["Validation steps", "Test creation"]
+    preferred_models: ["Gemini 1.5 Pro"]
+    forbidden_models: ["Gemini 1.5 Flash"]
+    permissions: ["execute_sql_read_only", "execute_terminal"]
+    produces: ["Validation Reports", "Test scripts"]
+    consumes: ["task_contracts.yaml", "execution_manifest.yaml"]
+
+  Chief Architect Agent:
+    responsibilities: "High-level design, readiness reviews, business logic rules."
+    allowed_tasks: ["T009", "T010", "T011", "T012", "Readiness Reviews"]
+    preferred_models: ["Claude 3 Opus"]
+    forbidden_models: ["Gemini 1.5 Flash", "Gemini 1.5 Pro"]
+    permissions: ["read_files"]
+    produces: ["Architecture Specs", "Readiness Reports"]
+    consumes: ["unified_product_graph.md", "master_execution_plan_v2.md"]
+
+  Orchestrator:
+    responsibilities: "Manage state, route tasks, evaluate gates, trigger retries."
+    allowed_tasks: ["State transitions", "Gate evaluation"]
+    preferred_models: ["Gemini 1.5 Pro"]
+    forbidden_models: ["Gemini 1.5 Flash"]
+    permissions: ["read_files", "write_files", "manage_state"]
+    produces: ["checkpoint_state.yaml", "execution_log.md"]
+    consumes: ["All Orchestration configs"]

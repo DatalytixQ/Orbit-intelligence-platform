@@ -1,0 +1,645 @@
+version: 2.3.1
+last_updated: '2026-07-14T03:53:27.628Z'
+objectives:
+  - id: OBJ-F01
+    category: Frontend
+    title: Fix Next.js Build Failure (Missing lucide-react)
+    severity: Critical
+    business_impact: 10
+    user_value: 10
+    implementation_cost: 10
+    technical_debt: 5
+    estimated_effort: 1h
+    dependencies: []
+    validation_required:
+      - Frontend Build
+    execution_priority: 50
+    status: Completed
+    execution_history:
+      - '[iteration_1783982518767] Resolved as SOLVED'
+      - '[iteration_1783982518767] Resolved as SOLVED'
+      - '[iteration_1783982518767] Resolved as SOLVED'
+      - '[iteration_1783982518767] Resolved as SOLVED'
+      - '[iteration_1783982573132] Resolved as SOLVED'
+      - '[iteration_1783982600553] Resolved as SOLVED'
+      - '[iteration_1783982626842] Resolved as SOLVED'
+      - '[iteration_1783983374260] Resolved as SOLVED'
+      - '[iteration_1783983374382] Resolved as SOLVED'
+      - '[iteration_1783983374508] Resolved as SOLVED'
+      - '[iteration_1783983374664] Resolved as SOLVED'
+      - '[iteration_1783983374772] Resolved as SOLVED'
+      - '[iteration_1783983374880] Resolved as SOLVED'
+      - '[iteration_1783983374989] Resolved as SOLVED'
+      - '[iteration_1783983375128] Resolved as SOLVED'
+      - '[iteration_1783983375237] Resolved as SOLVED'
+      - '[iteration_1783983375346] Resolved as SOLVED'
+      - '[iteration_1783983375456] Resolved as SOLVED'
+      - '[iteration_1783983375564] Resolved as SOLVED'
+      - '[iteration_1783983375672] Resolved as SOLVED'
+      - '[iteration_1783983375811] Resolved as SOLVED'
+      - '[iteration_1783983375935] Resolved as SOLVED'
+      - '[iteration_1783983376060] Resolved as SOLVED'
+      - '[iteration_1783983376183] Resolved as SOLVED'
+      - '[iteration_1783983376305] Resolved as SOLVED'
+      - '[iteration_1783983376428] Resolved as SOLVED'
+      - '[iteration_1783983376551] Resolved as SOLVED'
+      - '[iteration_1783983376674] Resolved as SOLVED'
+      - '[iteration_1783983376797] Resolved as SOLVED'
+      - '[iteration_1783983376935] Resolved as SOLVED'
+      - '[iteration_1783983377059] Resolved as SOLVED'
+      - '[iteration_1783983377169] Resolved as SOLVED'
+      - '[iteration_1783983377279] Resolved as SOLVED'
+      - '[iteration_1783983377388] Resolved as SOLVED'
+      - '[iteration_1783983377513] Resolved as SOLVED'
+      - '[iteration_1783983377669] Resolved as SOLVED'
+      - '[iteration_1783983377780] Resolved as SOLVED'
+      - '[iteration_1783983377920] Resolved as SOLVED'
+      - '[iteration_1783983378029] Resolved as SOLVED'
+      - '[iteration_1783983378139] Resolved as SOLVED'
+      - '[iteration_1783983378264] Resolved as SOLVED'
+      - '[iteration_1783983378388] Resolved as SOLVED'
+      - '[iteration_1783983378498] Resolved as SOLVED'
+      - '[iteration_1783983378623] Resolved as SOLVED'
+      - '[iteration_1783983378733] Resolved as SOLVED'
+      - '[iteration_1783983378852] Resolved as SOLVED'
+      - '[iteration_1783983378991] Resolved as SOLVED'
+      - '[iteration_1783983379115] Resolved as SOLVED'
+      - '[iteration_1783983379225] Resolved as SOLVED'
+      - '[iteration_1783983379350] Resolved as SOLVED'
+      - '[iteration_1783983379475] Resolved as SOLVED'
+      - '[iteration_1783983379614] Resolved as SOLVED'
+      - '[iteration_1783983379737] Resolved as SOLVED'
+      - '[iteration_1783983379846] Resolved as SOLVED'
+      - '[iteration_1783983379969] Resolved as SOLVED'
+      - '[iteration_1783983380094] Resolved as SOLVED'
+      - '[iteration_1783983380738] Resolved as SOLVED'
+      - '[iteration_1783983380874] Resolved as SOLVED'
+      - '[iteration_1783983381013] Resolved as SOLVED'
+      - '[iteration_1783983381137] Resolved as SOLVED'
+      - '[iteration_1783983381293] Resolved as SOLVED'
+      - '[iteration_1783983381431] Resolved as SOLVED'
+      - '[iteration_1783983381571] Resolved as SOLVED'
+      - '[iteration_1783983381694] Resolved as SOLVED'
+      - '[iteration_1783983381819] Resolved as SOLVED'
+      - '[iteration_1783983381957] Resolved as SOLVED'
+      - '[iteration_1783983382080] Resolved as SOLVED'
+      - '[iteration_1783983382204] Resolved as SOLVED'
+      - '[iteration_1783983382313] Resolved as SOLVED'
+      - '[iteration_1783983382452] Resolved as SOLVED'
+      - '[iteration_1783983382561] Resolved as SOLVED'
+      - '[iteration_1783983382669] Resolved as SOLVED'
+      - '[iteration_1783983382808] Resolved as SOLVED'
+      - '[iteration_1783983382948] Resolved as SOLVED'
+      - '[iteration_1783983383074] Resolved as SOLVED'
+      - '[iteration_1783983383198] Resolved as SOLVED'
+      - '[iteration_1783983383323] Resolved as SOLVED'
+      - '[iteration_1783983383446] Resolved as SOLVED'
+      - '[iteration_1783983383569] Resolved as SOLVED'
+      - '[iteration_1783983383693] Resolved as SOLVED'
+      - '[iteration_1783983383834] Resolved as SOLVED'
+      - '[iteration_1783983383973] Resolved as SOLVED'
+      - '[iteration_1783983384093] Resolved as SOLVED'
+      - '[iteration_1783983384207] Resolved as SOLVED'
+      - '[iteration_1783983384331] Resolved as SOLVED'
+      - '[iteration_1783983384519] Resolved as SOLVED'
+      - '[iteration_1783983384642] Resolved as SOLVED'
+      - '[iteration_1783983384797] Resolved as SOLVED'
+      - '[iteration_1783983384937] Resolved as SOLVED'
+      - '[iteration_1783983385076] Resolved as SOLVED'
+      - '[iteration_1783983385215] Resolved as SOLVED'
+      - '[iteration_1783983385338] Resolved as SOLVED'
+      - '[iteration_1783983385447] Resolved as SOLVED'
+      - '[iteration_1783983385572] Resolved as SOLVED'
+      - '[iteration_1783983385681] Resolved as SOLVED'
+      - '[iteration_1783983385806] Resolved as SOLVED'
+      - '[iteration_1783983385930] Resolved as SOLVED'
+      - '[iteration_1783983386069] Resolved as SOLVED'
+      - '[iteration_1783983386178] Resolved as SOLVED'
+      - '[iteration_1783983386334] Resolved as SOLVED'
+      - '[iteration_1783983386442] Resolved as SOLVED'
+      - '[iteration_1783983386552] Resolved as SOLVED'
+      - '[iteration_1783983386691] Resolved as SOLVED'
+      - '[iteration_1783983386813] Resolved as SOLVED'
+      - '[iteration_1783983386920] Resolved as SOLVED'
+      - '[iteration_1783983387029] Resolved as SOLVED'
+      - '[iteration_1783983387153] Resolved as SOLVED'
+      - '[iteration_1783989315340] Resolved as SOLVED'
+      - '[iteration_1783989315621] Resolved as SOLVED'
+      - '[iteration_1783989315885] Resolved as SOLVED'
+      - '[iteration_1783989316133] Resolved as SOLVED'
+      - '[iteration_1783989316382] Resolved as SOLVED'
+      - '[iteration_1783989316662] Resolved as SOLVED'
+      - '[iteration_1783989316912] Resolved as SOLVED'
+      - '[iteration_1783989317197] Resolved as SOLVED'
+      - '[iteration_1783989317446] Resolved as SOLVED'
+      - '[iteration_1783989317695] Resolved as SOLVED'
+      - '[iteration_1783989317963] Resolved as SOLVED'
+      - '[iteration_1783989318242] Resolved as SOLVED'
+      - '[iteration_1783989318490] Resolved as SOLVED'
+      - '[iteration_1783989318755] Resolved as SOLVED'
+      - '[iteration_1783989319018] Resolved as SOLVED'
+      - '[iteration_1783989319282] Resolved as SOLVED'
+      - '[iteration_1783989319549] Resolved as SOLVED'
+      - '[iteration_1783989319795] Resolved as SOLVED'
+      - '[iteration_1783989320077] Resolved as SOLVED'
+      - '[iteration_1783989320372] Resolved as SOLVED'
+      - '[iteration_1783989320635] Resolved as SOLVED'
+      - '[iteration_1783989320900] Resolved as SOLVED'
+      - '[iteration_1783989321164] Resolved as SOLVED'
+      - '[iteration_1783989321413] Resolved as SOLVED'
+      - '[iteration_1783989321662] Resolved as SOLVED'
+      - '[iteration_1783989321925] Resolved as SOLVED'
+      - '[iteration_1783989322190] Resolved as SOLVED'
+      - '[iteration_1783989322452] Resolved as SOLVED'
+      - '[iteration_1783989322703] Resolved as SOLVED'
+      - '[iteration_1783989322951] Resolved as SOLVED'
+      - '[iteration_1783989323201] Resolved as SOLVED'
+      - '[iteration_1783989323479] Resolved as SOLVED'
+      - '[iteration_1783989323744] Resolved as SOLVED'
+      - '[iteration_1783989324040] Resolved as SOLVED'
+      - '[iteration_1783989324289] Resolved as SOLVED'
+      - '[iteration_1783989324565] Resolved as SOLVED'
+      - '[iteration_1783989324816] Resolved as SOLVED'
+      - '[iteration_1783989325079] Resolved as SOLVED'
+      - '[iteration_1783989325359] Resolved as SOLVED'
+      - '[iteration_1783989325639] Resolved as SOLVED'
+      - '[iteration_1783989325926] Resolved as SOLVED'
+      - '[iteration_1783989326174] Resolved as SOLVED'
+      - '[iteration_1783989326438] Resolved as SOLVED'
+      - '[iteration_1783989326719] Resolved as SOLVED'
+      - '[iteration_1783989327000] Resolved as SOLVED'
+      - '[iteration_1783989327263] Resolved as SOLVED'
+      - '[iteration_1783989327542] Resolved as SOLVED'
+      - '[iteration_1783989327790] Resolved as SOLVED'
+      - '[iteration_1783989328041] Resolved as SOLVED'
+      - '[iteration_1783989328289] Resolved as SOLVED'
+      - '[iteration_1783989328566] Resolved as SOLVED'
+      - '[iteration_1783989328846] Resolved as SOLVED'
+      - '[iteration_1783989329098] Resolved as SOLVED'
+      - '[iteration_1783989329358] Resolved as SOLVED'
+      - '[iteration_1783989329636] Resolved as SOLVED'
+      - '[iteration_1783989329909] Resolved as SOLVED'
+      - '[iteration_1783989330158] Resolved as SOLVED'
+      - '[iteration_1783989330436] Resolved as SOLVED'
+      - '[iteration_1783989330727] Resolved as SOLVED'
+      - '[iteration_1783989331004] Resolved as SOLVED'
+      - '[iteration_1783989331298] Resolved as SOLVED'
+      - '[iteration_1783989331560] Resolved as SOLVED'
+      - '[iteration_1783989331837] Resolved as SOLVED'
+      - '[iteration_1783989332113] Resolved as SOLVED'
+      - '[iteration_1783989332358] Resolved as SOLVED'
+      - '[iteration_1783989332618] Resolved as SOLVED'
+      - '[iteration_1783989332882] Resolved as SOLVED'
+      - '[iteration_1783989333159] Resolved as SOLVED'
+      - '[iteration_1783989333423] Resolved as SOLVED'
+      - '[iteration_1783989333671] Resolved as SOLVED'
+      - '[iteration_1783989333966] Resolved as SOLVED'
+      - '[iteration_1783989334231] Resolved as SOLVED'
+      - '[iteration_1783989334495] Resolved as SOLVED'
+      - '[iteration_1783989334774] Resolved as SOLVED'
+      - '[iteration_1783989335087] Resolved as SOLVED'
+      - '[iteration_1783989335366] Resolved as SOLVED'
+      - '[iteration_1783989336110] Resolved as SOLVED'
+      - '[iteration_1783989336358] Resolved as SOLVED'
+      - '[iteration_1783989336636] Resolved as SOLVED'
+      - '[iteration_1783989336902] Resolved as SOLVED'
+      - '[iteration_1783989337197] Resolved as SOLVED'
+      - '[iteration_1783989337457] Resolved as SOLVED'
+      - '[iteration_1783989337718] Resolved as SOLVED'
+      - '[iteration_1783989337983] Resolved as SOLVED'
+      - '[iteration_1783989338243] Resolved as SOLVED'
+      - '[iteration_1783989338506] Resolved as SOLVED'
+      - '[iteration_1783989338755] Resolved as SOLVED'
+      - '[iteration_1783989339015] Resolved as SOLVED'
+      - '[iteration_1783989339280] Resolved as SOLVED'
+      - '[iteration_1783989339545] Resolved as SOLVED'
+      - '[iteration_1783989339793] Resolved as SOLVED'
+      - '[iteration_1783989340042] Resolved as SOLVED'
+      - '[iteration_1783989340322] Resolved as SOLVED'
+      - '[iteration_1783989340602] Resolved as SOLVED'
+      - '[iteration_1783989340880] Resolved as SOLVED'
+      - '[iteration_1783989341133] Resolved as SOLVED'
+      - '[iteration_1783989341409] Resolved as SOLVED'
+      - '[iteration_1783989341674] Resolved as SOLVED'
+      - '[iteration_1783989341955] Resolved as SOLVED'
+      - '[iteration_1783989342249] Resolved as SOLVED'
+      - '[iteration_1783989734149] Resolved as SOLVED'
+      - '[iteration_1783989783595] Resolved as SOLVED'
+      - '[iteration_1783989850922] Resolved as SOLVED'
+      - '[iteration_1783989890086] Resolved as SOLVED'
+      - '[iteration_1783989927386] Resolved as SOLVED'
+      - '[iteration_1783989961982] Resolved as SOLVED'
+      - '[iteration_1783989997392] Resolved as SOLVED'
+      - '[iteration_1783990032006] Resolved as SOLVED'
+      - '[iteration_1783990067498] Resolved as SOLVED'
+      - '[iteration_1783990102157] Resolved as SOLVED'
+      - '[iteration_1783990136474] Resolved as SOLVED'
+      - '[iteration_1783990171431] Resolved as SOLVED'
+      - '[iteration_1783990205954] Resolved as SOLVED'
+      - '[iteration_1783990240776] Resolved as SOLVED'
+      - '[iteration_1783990275662] Resolved as SOLVED'
+      - '[iteration_1783990311535] Resolved as SOLVED'
+      - '[iteration_1783990346732] Resolved as SOLVED'
+      - '[iteration_1783990381833] Resolved as SOLVED'
+      - '[iteration_1783990416702] Resolved as SOLVED'
+      - '[iteration_1783990451954] Resolved as SOLVED'
+      - '[iteration_1783990486338] Resolved as SOLVED'
+      - '[iteration_1783990521711] Resolved as SOLVED'
+      - '[iteration_1783990556490] Resolved as SOLVED'
+      - '[iteration_1783990591333] Resolved as SOLVED'
+      - '[iteration_1783990626504] Resolved as SOLVED'
+      - '[iteration_1783990661591] Resolved as SOLVED'
+      - '[iteration_1783990697074] Resolved as SOLVED'
+      - '[iteration_1783990732084] Resolved as SOLVED'
+      - '[iteration_1783990767372] Resolved as SOLVED'
+      - '[iteration_1783990805903] Resolved as SOLVED'
+      - '[iteration_1783990847093] Resolved as SOLVED'
+      - '[iteration_1783990885991] Resolved as SOLVED'
+      - '[iteration_1783990920591] Resolved as SOLVED'
+      - '[iteration_1783990954633] Resolved as SOLVED'
+      - '[iteration_1783990989990] Resolved as SOLVED'
+      - '[iteration_1783991026351] Resolved as SOLVED'
+      - '[iteration_1783991076234] Resolved as SOLVED'
+      - '[iteration_1783991118788] Resolved as SOLVED'
+      - '[iteration_1783991169050] Resolved as SOLVED'
+      - '[iteration_1783991209804] Resolved as SOLVED'
+      - '[iteration_1783991245882] Resolved as SOLVED'
+      - '[iteration_1783991279182] Resolved as SOLVED'
+      - '[iteration_1783991312007] Resolved as SOLVED'
+      - '[iteration_1783991348616] Resolved as SOLVED'
+      - '[iteration_1783991385857] Resolved as SOLVED'
+      - '[iteration_1783991430214] Resolved as SOLVED'
+      - '[iteration_1783991472157] Resolved as SOLVED'
+      - '[iteration_1783991513673] Resolved as SOLVED'
+      - '[iteration_1783991553042] Resolved as SOLVED'
+      - '[iteration_1783991588148] Resolved as SOLVED'
+      - '[iteration_1783991622943] Resolved as SOLVED'
+      - '[iteration_1783991657023] Resolved as SOLVED'
+      - '[iteration_1783991692851] Resolved as SOLVED'
+      - '[iteration_1783991731724] Resolved as SOLVED'
+      - '[iteration_1783991775984] Resolved as SOLVED'
+      - '[iteration_1783991815602] Resolved as SOLVED'
+      - '[iteration_1783991850102] Resolved as SOLVED'
+      - '[iteration_1783991884470] Resolved as SOLVED'
+      - '[iteration_1783991920771] Resolved as SOLVED'
+      - '[iteration_1783991954909] Resolved as SOLVED'
+      - '[iteration_1783991990787] Resolved as SOLVED'
+      - '[iteration_1783992025533] Resolved as SOLVED'
+      - '[iteration_1783992060673] Resolved as SOLVED'
+      - '[iteration_1783992095647] Resolved as SOLVED'
+      - '[iteration_1783992130198] Resolved as SOLVED'
+      - '[iteration_1783992164860] Resolved as SOLVED'
+      - '[iteration_1783992199121] Resolved as SOLVED'
+      - '[iteration_1783992233071] Resolved as SOLVED'
+      - '[iteration_1783992266540] Resolved as SOLVED'
+      - '[iteration_1783992301070] Resolved as SOLVED'
+      - '[iteration_1783992336136] Resolved as SOLVED'
+      - '[iteration_1783992370452] Resolved as SOLVED'
+      - '[iteration_1783992404379] Resolved as SOLVED'
+      - '[iteration_1783992438118] Resolved as SOLVED'
+      - '[iteration_1783992471456] Resolved as SOLVED'
+      - '[iteration_1783992505905] Resolved as SOLVED'
+      - '[iteration_1783992539170] Resolved as SOLVED'
+      - '[iteration_1783992573267] Resolved as SOLVED'
+      - '[iteration_1783992607163] Resolved as SOLVED'
+      - '[iteration_1783992641707] Resolved as SOLVED'
+      - '[iteration_1783992676406] Resolved as SOLVED'
+      - '[iteration_1783992711612] Resolved as SOLVED'
+      - '[iteration_1783992745862] Resolved as SOLVED'
+      - '[iteration_1783992779553] Resolved as SOLVED'
+      - '[iteration_1783992813895] Resolved as SOLVED'
+      - '[iteration_1783992848141] Resolved as SOLVED'
+      - '[iteration_1783992881738] Resolved as SOLVED'
+      - '[iteration_1783992916205] Resolved as SOLVED'
+      - '[iteration_1783992950552] Resolved as SOLVED'
+      - '[iteration_1783992984757] Resolved as SOLVED'
+      - '[iteration_1783993019530] Resolved as SOLVED'
+      - '[iteration_1783993052748] Resolved as SOLVED'
+      - '[iteration_1783993087419] Resolved as SOLVED'
+      - '[iteration_1783993120904] Resolved as SOLVED'
+      - '[iteration_1783993154927] Resolved as SOLVED'
+      - '[iteration_1783993191565] Resolved as SOLVED'
+      - '[iteration_1783993226474] Resolved as SOLVED'
+      - '[iteration_1783993259225] Resolved as SOLVED'
+      - '[iteration_1783993292045] Resolved as SOLVED'
+      - '[iteration_1783993324945] Resolved as SOLVED'
+      - '[iteration_1783993358505] Resolved as SOLVED'
+      - '[iteration_1783993394536] Resolved as SOLVED'
+      - '[iteration_1783993428925] Resolved as SOLVED'
+      - '[iteration_1783993461949] Resolved as SOLVED'
+      - '[iteration_1783993495061] Resolved as SOLVED'
+      - '[iteration_1783993528755] Resolved as SOLVED'
+      - '[iteration_1783993562621] Resolved as SOLVED'
+      - '[iteration_1783993598415] Resolved as SOLVED'
+      - '[iteration_1783993632428] Resolved as SOLVED'
+      - '[iteration_1783993665382] Resolved as SOLVED'
+      - '[iteration_1783993698765] Resolved as SOLVED'
+      - '[iteration_1783993732220] Resolved as SOLVED'
+      - '[iteration_1783993766336] Resolved as SOLVED'
+      - '[iteration_1783993798890] Resolved as SOLVED'
+      - '[iteration_1783993832144] Resolved as SOLVED'
+      - '[iteration_1783993865382] Resolved as SOLVED'
+      - '[iteration_1783995639381] Resolved as SOLVED'
+      - '[iteration_1783995639778] Resolved as SOLVED'
+      - '[iteration_1783995640120] Resolved as SOLVED'
+      - '[iteration_1783995640434] Resolved as SOLVED'
+      - '[iteration_1783995640743] Resolved as SOLVED'
+      - '[iteration_1783995641086] Resolved as SOLVED'
+      - '[iteration_1783995641227] Resolved as SOLVED'
+      - '[iteration_1783995641441] Resolved as SOLVED'
+      - '[iteration_1783995641768] Resolved as SOLVED'
+      - '[iteration_1783995642078] Resolved as SOLVED'
+      - '[iteration_1783995642421] Resolved as SOLVED'
+      - '[iteration_1783995642764] Resolved as SOLVED'
+      - '[iteration_1783995643089] Resolved as SOLVED'
+      - '[iteration_1783995643414] Resolved as SOLVED'
+      - '[iteration_1783995643756] Resolved as SOLVED'
+      - '[iteration_1783995644069] Resolved as SOLVED'
+      - '[iteration_1783995644378] Resolved as SOLVED'
+      - '[iteration_1783995644696] Resolved as SOLVED'
+      - '[iteration_1783995645015] Resolved as SOLVED'
+      - '[iteration_1783995645386] Resolved as SOLVED'
+      - '[iteration_1783995645711] Resolved as SOLVED'
+      - '[iteration_1783995646130] Resolved as SOLVED'
+      - '[iteration_1783995646439] Resolved as SOLVED'
+      - '[iteration_1783995646796] Resolved as SOLVED'
+      - '[iteration_1783995647137] Resolved as SOLVED'
+      - '[iteration_1783995647463] Resolved as SOLVED'
+      - '[iteration_1783998141609] Resolved as SOLVED'
+      - '[iteration_1783998186696] Resolved as SOLVED'
+      - '[iteration_1783998221294] Resolved as SOLVED'
+      - '[iteration_1783998256248] Resolved as SOLVED'
+      - '[iteration_1783998313910] Resolved as SOLVED'
+      - '[iteration_1783998314193] Resolved as SOLVED'
+      - '[iteration_1783998314476] Resolved as SOLVED'
+      - '[iteration_1783998314772] Resolved as SOLVED'
+      - '[iteration_1783998315050] Resolved as SOLVED'
+      - '[iteration_1783998315336] Resolved as SOLVED'
+      - '[iteration_1783998315602] Resolved as SOLVED'
+      - '[iteration_1783998315877] Resolved as SOLVED'
+      - '[iteration_1783998316223] Resolved as SOLVED'
+      - '[iteration_1783998316525] Resolved as SOLVED'
+      - '[iteration_1783998316853] Resolved as SOLVED'
+      - '[iteration_1783998317131] Resolved as SOLVED'
+      - '[iteration_1783998317452] Resolved as SOLVED'
+      - '[iteration_1783998317728] Resolved as SOLVED'
+      - '[iteration_1783998318082] Resolved as SOLVED'
+      - '[iteration_1783998318346] Resolved as SOLVED'
+      - '[iteration_1783998318643] Resolved as SOLVED'
+      - '[iteration_1783998318988] Resolved as SOLVED'
+      - '[iteration_1783998319260] Resolved as SOLVED'
+      - '[iteration_1783998319543] Resolved as SOLVED'
+      - '[iteration_1783998319845] Resolved as SOLVED'
+      - '[iteration_1783998320131] Resolved as SOLVED'
+      - '[iteration_1783998320424] Resolved as SOLVED'
+      - '[iteration_1783998320691] Resolved as SOLVED'
+      - '[iteration_1783998320985] Resolved as SOLVED'
+      - '[iteration_1783998321314] Resolved as SOLVED'
+      - '[iteration_1783998321642] Resolved as SOLVED'
+      - '[iteration_1783998321923] Resolved as SOLVED'
+      - '[iteration_1783998322234] Resolved as SOLVED'
+      - '[iteration_1783998322521] Resolved as SOLVED'
+      - '[iteration_1783998322821] Resolved as SOLVED'
+      - '[iteration_1783998323123] Resolved as SOLVED'
+      - '[iteration_1783998323465] Resolved as SOLVED'
+      - '[iteration_1783998323769] Resolved as SOLVED'
+      - '[iteration_1783998324056] Resolved as SOLVED'
+      - '[iteration_1783998324350] Resolved as SOLVED'
+      - '[iteration_1783998324664] Resolved as SOLVED'
+      - '[iteration_1783998324962] Resolved as SOLVED'
+      - '[iteration_1783998325245] Resolved as SOLVED'
+      - '[iteration_1783998325557] Resolved as SOLVED'
+      - '[iteration_1783998325837] Resolved as SOLVED'
+      - '[iteration_1783998326158] Resolved as SOLVED'
+      - '[iteration_1783998326433] Resolved as SOLVED'
+      - '[iteration_1783998326809] Resolved as SOLVED'
+      - '[iteration_1783998327148] Resolved as SOLVED'
+      - '[iteration_1783998327458] Resolved as SOLVED'
+      - '[iteration_1783998327725] Resolved as SOLVED'
+      - '[iteration_1783998328005] Resolved as SOLVED'
+      - '[iteration_1783998328323] Resolved as SOLVED'
+      - '[iteration_1783998328657] Resolved as SOLVED'
+      - '[iteration_1783998328949] Resolved as SOLVED'
+      - '[iteration_1783998329227] Resolved as SOLVED'
+      - '[iteration_1783998329534] Resolved as SOLVED'
+      - '[iteration_1783998329817] Resolved as SOLVED'
+      - '[iteration_1783998330154] Resolved as SOLVED'
+      - '[iteration_1783998330305] Resolved as SOLVED'
+      - '[iteration_1783998330488] Resolved as SOLVED'
+      - '[iteration_1783998330747] Resolved as SOLVED'
+      - '[iteration_1783998331047] Resolved as SOLVED'
+      - '[iteration_1783998331363] Resolved as SOLVED'
+      - '[iteration_1783998331641] Resolved as SOLVED'
+      - '[iteration_1783998331962] Resolved as SOLVED'
+      - '[iteration_1783998332255] Resolved as SOLVED'
+      - '[iteration_1783998332539] Resolved as SOLVED'
+      - '[iteration_1783998332863] Resolved as SOLVED'
+      - '[iteration_1783998333175] Resolved as SOLVED'
+      - '[iteration_1783998333469] Resolved as SOLVED'
+      - '[iteration_1783998333862] Resolved as SOLVED'
+      - '[iteration_1783998334180] Resolved as SOLVED'
+      - '[iteration_1783999128753] Resolved as SOLVED'
+      - '[iteration_1783999128957] Resolved as SOLVED'
+      - '[iteration_1783999129191] Resolved as SOLVED'
+      - '[iteration_1783999129484] Resolved as SOLVED'
+      - '[iteration_1783999129658] Resolved as SOLVED'
+      - '[iteration_1783999129862] Resolved as SOLVED'
+      - '[iteration_1783999130096] Resolved as SOLVED'
+      - '[iteration_1783999130344] Resolved as SOLVED'
+      - '[iteration_1783999130592] Resolved as SOLVED'
+      - '[iteration_1783999130812] Resolved as SOLVED'
+      - '[iteration_1783999131010] Resolved as SOLVED'
+      - '[iteration_1783999131310] Resolved as SOLVED'
+      - '[iteration_1783999131634] Resolved as SOLVED'
+      - '[iteration_1783999131835] Resolved as SOLVED'
+      - '[iteration_1783999132118] Resolved as SOLVED'
+      - '[iteration_1783999132352] Resolved as SOLVED'
+      - '[iteration_1783999133364] Resolved as SOLVED'
+      - '[iteration_1783999133579] Resolved as SOLVED'
+      - '[iteration_1783999133777] Resolved as SOLVED'
+      - '[iteration_1783999134064] Resolved as SOLVED'
+      - '[iteration_1783999134250] Resolved as SOLVED'
+      - '[iteration_1783999134495] Resolved as SOLVED'
+      - '[iteration_1783999134689] Resolved as SOLVED'
+      - '[iteration_1783999134872] Resolved as SOLVED'
+      - '[iteration_1783999135071] Resolved as SOLVED'
+      - '[iteration_1783999135323] Resolved as SOLVED'
+      - '[iteration_1783999135566] Resolved as SOLVED'
+      - '[iteration_1783999135761] Resolved as SOLVED'
+      - '[iteration_1783999135964] Resolved as SOLVED'
+      - '[iteration_1783999136153] Resolved as SOLVED'
+      - '[iteration_1783999136374] Resolved as SOLVED'
+      - '[iteration_1783999136666] Resolved as SOLVED'
+      - '[iteration_1783999136912] Resolved as SOLVED'
+      - '[iteration_1783999137101] Resolved as SOLVED'
+      - '[iteration_1783999137291] Resolved as SOLVED'
+      - '[iteration_1783999137530] Resolved as SOLVED'
+      - '[iteration_1783999137800] Resolved as SOLVED'
+      - '[iteration_1783999138075] Resolved as SOLVED'
+      - '[iteration_1783999138256] Resolved as SOLVED'
+      - '[iteration_1783999138528] Resolved as SOLVED'
+      - '[iteration_1783999138721] Resolved as SOLVED'
+      - '[iteration_1783999138913] Resolved as SOLVED'
+      - '[iteration_1783999139088] Resolved as SOLVED'
+      - '[iteration_1783999139274] Resolved as SOLVED'
+      - '[iteration_1783999139478] Resolved as SOLVED'
+      - '[iteration_1783999139759] Resolved as SOLVED'
+      - '[iteration_1783999140132] Resolved as SOLVED'
+      - '[iteration_1783999140316] Resolved as SOLVED'
+      - '[iteration_1783999140517] Resolved as SOLVED'
+      - '[iteration_1783999140709] Resolved as SOLVED'
+      - '[iteration_1784000166504] Resolved as SOLVED'
+      - '[iteration_1784001146052] Resolved as SOLVED'
+      - '[iteration_1784001146174] Resolved as SOLVED'
+      - '[iteration_1784001146285] Resolved as SOLVED'
+      - '[iteration_1784001146389] Resolved as SOLVED'
+      - '[iteration_1784001146565] Resolved as SOLVED'
+      - '[iteration_1784001146708] Resolved as SOLVED'
+      - '[iteration_1784001146837] Resolved as SOLVED'
+      - '[iteration_1784001146956] Resolved as SOLVED'
+      - '[iteration_1784001203869] Resolved as SOLVED'
+      - '[iteration_1784001204000] Resolved as SOLVED'
+      - '[iteration_1784001204108] Resolved as SOLVED'
+      - '[iteration_1784001204236] Resolved as SOLVED'
+      - '[iteration_1784001204365] Resolved as SOLVED'
+      - '[iteration_1784001204478] Resolved as SOLVED'
+      - '[iteration_1784001204720] Resolved as SOLVED'
+      - '[iteration_1784001204828] Resolved as SOLVED'
+      - '[iteration_1784001204940] Resolved as SOLVED'
+      - '[iteration_1784001205048] Resolved as SOLVED'
+      - '[iteration_1784001205169] Resolved as SOLVED'
+      - '[iteration_1784001205489] Resolved as SOLVED'
+      - '[iteration_1784001205709] Resolved as SOLVED'
+      - '[iteration_1784001205830] Resolved as SOLVED'
+      - '[iteration_1784001206083] Resolved as SOLVED'
+      - '[iteration_1784001206211] Resolved as SOLVED'
+      - '[iteration_1784001206493] Resolved as SOLVED'
+      - '[iteration_1784001206668] Resolved as SOLVED'
+      - '[iteration_1784001206802] Resolved as SOLVED'
+      - '[iteration_1784001206957] Resolved as SOLVED'
+      - '[iteration_1784001207182] Resolved as SOLVED'
+      - '[iteration_1784001207329] Resolved as SOLVED'
+      - '[iteration_1784001207470] Resolved as SOLVED'
+      - '[iteration_1784001207606] Resolved as SOLVED'
+    version: 506
+  - id: OBJ-F02
+    category: Frontend
+    title: Resolve Strict ESLint Violations
+    severity: High
+    business_impact: 5
+    user_value: 8
+    implementation_cost: 8
+    technical_debt: 10
+    estimated_effort: 2h
+    dependencies: []
+    validation_required:
+      - Static Analysis
+      - UX Review
+    execution_priority: 45
+    status: Completed
+  - id: OBJ-D01
+    category: Security
+    title: Audit and Enforce Supabase RLS Policies
+    severity: High
+    business_impact: 10
+    user_value: 5
+    implementation_cost: 5
+    technical_debt: 8
+    estimated_effort: 4h
+    dependencies: []
+    validation_required:
+      - Database Security
+      - API Tests
+    execution_priority: 42
+    status: Completed
+  - id: OBJ-D02
+    category: Security
+    description: Audit and Enforce Tenant Isolation for tables missing client_id
+    business_value: 9
+    user_impact: 2
+    debt_reduction: 8
+    risk_reduction: 10
+    implementation_cost: 6
+    dependencies:
+      - OBJ-D01
+    validation_required:
+      - Static Analysis
+      - Security Review
+    execution_priority: 55
+    status: In Progress
+    version: 2
+  - id: OBJ-B01
+    category: Testing
+    title: Implement Backend Automated Test Suite
+    severity: High
+    business_impact: 8
+    user_value: 0
+    implementation_cost: 3
+    technical_debt: 10
+    estimated_effort: 8h
+    dependencies: []
+    validation_required:
+      - Backend Testing
+    execution_priority: 38
+    status: In Progress
+    version: 2
+  - id: OBJ-F04
+    category: Testing
+    title: Implement Frontend Automated Test Suite
+    severity: High
+    business_impact: 8
+    user_value: 0
+    implementation_cost: 3
+    technical_debt: 10
+    estimated_effort: 8h
+    dependencies: []
+    validation_required:
+      - Frontend Testing
+    execution_priority: 38
+    status: In Progress
+    version: 2
+  - id: OBJ-A01
+    category: AI
+    title: Implement DQBot Semantic Search using pgvector
+    severity: Medium
+    business_impact: 8
+    user_value: 9
+    implementation_cost: 4
+    technical_debt: 5
+    estimated_effort: 6h
+    dependencies: []
+    validation_required:
+      - DQBot Functionality
+      - Backend Testing
+    execution_priority: 35
+    status: In Progress
+    version: 2
+  - id: OBJ-AUTO-1783976571899
+    version: 44
+    title: Fix Build/Lint Issues
+    description: Automated discovery found build or lint failures.
+    category: Frontend
+    severity: Medium
+    priority_score: 10
+    business_value: 0
+    technical_value: 0
+    security_value: 0
+    ux_value: 0
+    performance_value: 0
+    estimated_effort: 1h
+    dependencies: []
+    affected_modules: []
+    discovered_by: Runtime
+    discovered_at: '2026-07-13T21:02:51.899Z'
+    expected_maturity_gain: 1
+    automatic_validation_required:
+      - Build
+      - Lint
+    manual_validation_required: []
+    evidence_links: []
+    retry_count: 0
+    failure_count: 0
+    execution_history: []
+    status: In Progress
+    auto_close_conditions: []
+    reopen_conditions: []

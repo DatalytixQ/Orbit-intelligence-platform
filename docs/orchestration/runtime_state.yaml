@@ -1,0 +1,22 @@
+# Runtime State v1.2
+# Volatile state tracking the live execution environment
+
+runtime:
+  supervisor_status: "Active"
+  controller_status: "Active"
+  
+  environment:
+    mcp_connectivity: "Unknown"
+    token_budget_remaining: 1000000
+    last_heartbeat: "2026-07-13T11:50:00Z"
+    execution_lock_holder: "None"
+
+  current_metrics:
+    active_model: "Gemini 1.5 Flash"
+    estimated_cost_usd: 0.00
+    retries_attempted: 0
+
+  interrupt_flag: false
+  fatal_error_flag: false
+  
+  active_warnings: []

@@ -1,0 +1,323 @@
+# Artifact Registry v1
+# Master inventory of all framework and execution artifacts
+
+artifacts:
+  # Framework Configuration
+  - name: "execution_manifest.yaml"
+    type: "Configuration"
+    owner: "Orchestrator"
+    origin: "System Init"
+    consumers: ["All Agents", "Orchestrator"]
+    version: "1.0"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "checkpoint_state.yaml"
+    type: "State"
+    owner: "Orchestrator"
+    origin: "Execution Loop"
+    consumers: ["Orchestrator"]
+    version: "Live"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  # Execution Logs & History
+  - name: "execution_log.md"
+    type: "Log"
+    owner: "Orchestrator"
+    origin: "Execution Loop"
+    consumers: ["Orchestrator", "Documentation Agent"]
+    version: "Live"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  # Legacy Documents (Retained for Context)
+  - name: "unified_product_graph.md"
+    type: "Context"
+    owner: "Chief Architect Agent"
+    origin: "Discovery Phase"
+    consumers: ["All Agents"]
+    version: "2.0"
+    status: "Frozen"
+    location: "docs/agents/platform/product-intelligence/"
+
+  - name: "database_ground_truth.md"
+    type: "Context"
+    owner: "Database Agent"
+    origin: "Discovery Phase"
+    consumers: ["Database Agent", "Backend Agent"]
+    version: "1.0"
+    status: "Frozen"
+    location: "docs/agents/platform/product-intelligence/"
+
+  # Output Artifacts (Generated during Execution)
+  - name: "n002_phase2_execution_report.md"
+    type: "Report"
+    owner: "Documentation Agent"
+    origin: "Task N002"
+    consumers: ["User", "Orchestrator"]
+    version: "1.0"
+    status: "Completed"
+    location: "docs/agents/platform/product-intelligence/"
+
+  - name: "n002_phase2_validation.md"
+    type: "Validation"
+    owner: "QA Agent"
+    origin: "Task N002"
+    consumers: ["Orchestrator"]
+    version: "1.0"
+    status: "Completed"
+    location: "docs/agents/platform/product-intelligence/"
+
+  # Orchestration Reports
+  - name: "framework_acceptance_report.md"
+    type: "Report"
+    owner: "Orchestrator"
+    origin: "Framework Audit"
+    consumers: ["User"]
+    version: "1.0"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "t004_analysis.md"
+    type: "Report"
+    owner: "Orchestrator"
+    origin: "T004 Discovery"
+    consumers: ["User"]
+    version: "1.0"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "t004_contract.md"
+    type: "Contract"
+    owner: "Orchestrator"
+    origin: "T004 Discovery"
+    consumers: ["Orchestrator"]
+    version: "1.0"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "roadmap_consistency_report.md"
+    type: "Report"
+    owner: "Orchestrator"
+    origin: "T004 Discovery"
+    consumers: ["User"]
+    version: "1.0"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "roadmap_v3.md"
+    type: "Plan"
+    owner: "Orchestrator"
+    origin: "Framework Evolution v1.3"
+    consumers: ["User"]
+    version: "1.3"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "dependency_graph.md"
+    type: "Diagram"
+    owner: "Orchestrator"
+    origin: "Framework Evolution v1.3"
+    consumers: ["Orchestrator"]
+    version: "1.0"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "roadmap_traceability.md"
+    type: "Report"
+    owner: "Orchestrator"
+    origin: "Framework Evolution v1.3"
+    consumers: ["User"]
+    version: "1.0"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "framework_v1_3_release_notes.md"
+    type: "Report"
+    owner: "Orchestrator"
+    origin: "Framework Evolution v1.3"
+    consumers: ["User"]
+    version: "1.3"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "product_governance.yaml"
+    type: "Configuration"
+    owner: "Orchestrator"
+    origin: "Framework v1.4"
+    consumers: ["Orchestrator"]
+    version: "1.4"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "execution_kpi.yaml"
+    type: "Configuration"
+    owner: "Orchestrator"
+    origin: "Framework v1.4"
+    consumers: ["Orchestrator"]
+    version: "1.4"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "framework_operational_validation.md"
+    type: "Report"
+    owner: "Orchestrator"
+    origin: "Framework v1.4"
+    consumers: ["User"]
+    version: "1.4"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "framework_pre_go_report.md"
+    type: "Report"
+    owner: "Orchestrator"
+    origin: "Framework v1.4"
+    consumers: ["User"]
+    version: "1.4"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "framework_v1_4_release_notes.md"
+    type: "Report"
+    owner: "Orchestrator"
+    origin: "Framework v1.4"
+    consumers: ["User"]
+    version: "1.4"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "continuous_execution_policy.yaml"
+    type: "Configuration"
+    owner: "Orchestrator"
+    origin: "Framework v1.5"
+    consumers: ["Orchestrator"]
+    version: "1.5"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "continuous_execution_validation.md"
+    type: "Report"
+    owner: "Orchestrator"
+    origin: "Framework v1.5"
+    consumers: ["User"]
+    version: "1.5"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "continuous_execution_release_notes.md"
+    type: "Report"
+    owner: "Orchestrator"
+    origin: "Framework v1.5"
+    consumers: ["User"]
+    version: "1.5"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "schema_contracts.yaml"
+    type: "Configuration"
+    owner: "Orchestrator"
+    origin: "Framework v1.6"
+    consumers: ["Orchestrator"]
+    version: "1.6"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "schema_workflow.yaml"
+    type: "Configuration"
+    owner: "Orchestrator"
+    origin: "Framework v1.6"
+    consumers: ["Orchestrator"]
+    version: "1.6"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "schema_validation.yaml"
+    type: "Configuration"
+    owner: "Orchestrator"
+    origin: "Framework v1.6"
+    consumers: ["Orchestrator"]
+    version: "1.6"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "schema_documentation.yaml"
+    type: "Configuration"
+    owner: "Orchestrator"
+    origin: "Framework v1.6"
+    consumers: ["Orchestrator"]
+    version: "1.6"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "schema_rollback.yaml"
+    type: "Configuration"
+    owner: "Orchestrator"
+    origin: "Framework v1.6"
+    consumers: ["Orchestrator"]
+    version: "1.6"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "schema_governance.yaml"
+    type: "Configuration"
+    owner: "Orchestrator"
+    origin: "Framework v1.6"
+    consumers: ["Orchestrator"]
+    version: "1.6"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "runtime_decision_engine.yaml"
+    type: "Configuration"
+    owner: "Orchestrator"
+    origin: "Framework v1.6"
+    consumers: ["Orchestrator"]
+    version: "1.6"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "framework_v1_6_release_notes.md"
+    type: "Report"
+    owner: "Orchestrator"
+    origin: "Framework v1.6"
+    consumers: ["User"]
+    version: "1.6"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "framework_v1_6_validation.md"
+    type: "Report"
+    owner: "Orchestrator"
+    origin: "Framework v1.6"
+    consumers: ["User"]
+    version: "1.6"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "framework_v1_6_readiness.md"
+    type: "Report"
+    owner: "Orchestrator"
+    origin: "Framework v1.6"
+    consumers: ["User"]
+    version: "1.6"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "framework_v1_6_gap_analysis.md"
+    type: "Report"
+    owner: "Orchestrator"
+    origin: "Framework v1.6"
+    consumers: ["User"]
+    version: "1.6"
+    status: "Active"
+    location: "docs/orchestration/"
+
+  - name: "framework_v1_6_certification.md"
+    type: "Report"
+    owner: "Orchestrator"
+    origin: "Framework v1.6"
+    consumers: ["User"]
+    version: "1.6"
+    status: "Active"
+    location: "docs/orchestration/"

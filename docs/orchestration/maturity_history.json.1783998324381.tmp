@@ -1,0 +1,304 @@
+{
+  "history": [
+    {
+      "iteration": 66,
+      "timestamp": 1783998322378,
+      "score": 74.1,
+      "confidence": 80
+    },
+    {
+      "iteration": 66,
+      "timestamp": 1783998322509,
+      "score": 74.1,
+      "confidence": 80
+    },
+    {
+      "iteration": 67,
+      "timestamp": 1783998322525,
+      "score": 74.2,
+      "confidence": 80
+    },
+    {
+      "iteration": 67,
+      "timestamp": 1783998322551,
+      "score": 74.2,
+      "confidence": 80
+    },
+    {
+      "iteration": 67,
+      "timestamp": 1783998322568,
+      "score": 74.2,
+      "confidence": 80
+    },
+    {
+      "iteration": 67,
+      "timestamp": 1783998322592,
+      "score": 74.2,
+      "confidence": 80
+    },
+    {
+      "iteration": 67,
+      "timestamp": 1783998322622,
+      "score": 74.2,
+      "confidence": 80
+    },
+    {
+      "iteration": 67,
+      "timestamp": 1783998322683,
+      "score": 74.2,
+      "confidence": 80
+    },
+    {
+      "iteration": 67,
+      "timestamp": 1783998322805,
+      "score": 74.2,
+      "confidence": 80
+    },
+    {
+      "iteration": 68,
+      "timestamp": 1783998322825,
+      "score": 74.3,
+      "confidence": 80
+    },
+    {
+      "iteration": 68,
+      "timestamp": 1783998322861,
+      "score": 74.3,
+      "confidence": 80
+    },
+    {
+      "iteration": 68,
+      "timestamp": 1783998322881,
+      "score": 74.3,
+      "confidence": 80
+    },
+    {
+      "iteration": 68,
+      "timestamp": 1783998322900,
+      "score": 74.3,
+      "confidence": 80
+    },
+    {
+      "iteration": 68,
+      "timestamp": 1783998322918,
+      "score": 74.3,
+      "confidence": 80
+    },
+    {
+      "iteration": 68,
+      "timestamp": 1783998322982,
+      "score": 74.3,
+      "confidence": 80
+    },
+    {
+      "iteration": 68,
+      "timestamp": 1783998323111,
+      "score": 74.3,
+      "confidence": 80
+    },
+    {
+      "iteration": 69,
+      "timestamp": 1783998323127,
+      "score": 74.4,
+      "confidence": 80
+    },
+    {
+      "iteration": 69,
+      "timestamp": 1783998323153,
+      "score": 74.4,
+      "confidence": 80
+    },
+    {
+      "iteration": 69,
+      "timestamp": 1783998323171,
+      "score": 74.4,
+      "confidence": 80
+    },
+    {
+      "iteration": 69,
+      "timestamp": 1783998323190,
+      "score": 74.4,
+      "confidence": 80
+    },
+    {
+      "iteration": 69,
+      "timestamp": 1783998323207,
+      "score": 74.4,
+      "confidence": 80
+    },
+    {
+      "iteration": 69,
+      "timestamp": 1783998323264,
+      "score": 74.4,
+      "confidence": 80
+    },
+    {
+      "iteration": 69,
+      "timestamp": 1783998323402,
+      "score": 74.4,
+      "confidence": 80
+    },
+    {
+      "iteration": 70,
+      "timestamp": 1783998323433,
+      "score": 74.5,
+      "confidence": 80
+    },
+    {
+      "iteration": 71,
+      "timestamp": 1783998323449,
+      "score": 74.6,
+      "confidence": 80
+    },
+    {
+      "iteration": 72,
+      "timestamp": 1783998323470,
+      "score": 74.7,
+      "confidence": 80
+    },
+    {
+      "iteration": 72,
+      "timestamp": 1783998323495,
+      "score": 74.7,
+      "confidence": 80
+    },
+    {
+      "iteration": 72,
+      "timestamp": 1783998323511,
+      "score": 74.7,
+      "confidence": 80
+    },
+    {
+      "iteration": 72,
+      "timestamp": 1783998323529,
+      "score": 74.7,
+      "confidence": 80
+    },
+    {
+      "iteration": 72,
+      "timestamp": 1783998323547,
+      "score": 74.7,
+      "confidence": 80
+    },
+    {
+      "iteration": 72,
+      "timestamp": 1783998323612,
+      "score": 74.7,
+      "confidence": 80
+    },
+    {
+      "iteration": 72,
+      "timestamp": 1783998323741,
+      "score": 74.7,
+      "confidence": 80
+    },
+    {
+      "iteration": 73,
+      "timestamp": 1783998323755,
+      "score": 74.8,
+      "confidence": 80
+    },
+    {
+      "iteration": 74,
+      "timestamp": 1783998323774,
+      "score": 74.9,
+      "confidence": 80
+    },
+    {
+      "iteration": 74,
+      "timestamp": 1783998323808,
+      "score": 74.9,
+      "confidence": 80
+    },
+    {
+      "iteration": 74,
+      "timestamp": 1783998323823,
+      "score": 74.9,
+      "confidence": 80
+    },
+    {
+      "iteration": 74,
+      "timestamp": 1783998323841,
+      "score": 74.9,
+      "confidence": 80
+    },
+    {
+      "iteration": 74,
+      "timestamp": 1783998323855,
+      "score": 74.9,
+      "confidence": 80
+    },
+    {
+      "iteration": 74,
+      "timestamp": 1783998323922,
+      "score": 74.9,
+      "confidence": 80
+    },
+    {
+      "iteration": 74,
+      "timestamp": 1783998324048,
+      "score": 74.9,
+      "confidence": 80
+    },
+    {
+      "iteration": 75,
+      "timestamp": 1783998324061,
+      "score": 75,
+      "confidence": 80
+    },
+    {
+      "iteration": 75,
+      "timestamp": 1783998324086,
+      "score": 75,
+      "confidence": 80
+    },
+    {
+      "iteration": 75,
+      "timestamp": 1783998324101,
+      "score": 75,
+      "confidence": 80
+    },
+    {
+      "iteration": 75,
+      "timestamp": 1783998324115,
+      "score": 75,
+      "confidence": 80
+    },
+    {
+      "iteration": 75,
+      "timestamp": 1783998324128,
+      "score": 75,
+      "confidence": 80
+    },
+    {
+      "iteration": 75,
+      "timestamp": 1783998324182,
+      "score": 75,
+      "confidence": 80
+    },
+    {
+      "iteration": 75,
+      "timestamp": 1783998324321,
+      "score": 75,
+      "confidence": 80
+    },
+    {
+      "iteration": 76,
+      "timestamp": 1783998324337,
+      "score": 75.1,
+      "confidence": 80
+    },
+    {
+      "iteration": 77,
+      "timestamp": 1783998324355,
+      "score": 75.2,
+      "confidence": 80
+    },
+    {
+      "iteration": 77,
+      "timestamp": 1783998324381,
+      "score": 75.2,
+      "confidence": 80
+    }
+  ]
+}

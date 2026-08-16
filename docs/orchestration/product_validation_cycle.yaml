@@ -1,0 +1,34 @@
+# Product Validation Cycle v2.1
+
+continuous_validation_loop:
+  description: "Mandatory validation cycle executed after every completed objective."
+  order:
+    1: "Business Validation"
+    2: "Architecture Validation"
+    3: "Backend Validation"
+    4: "Database Validation"
+    5: "API Validation"
+    6: "Frontend Validation"
+    7: "UX Validation"
+    8: "UI Validation"
+    9: "Accessibility Validation"
+    10: "Performance Validation"
+    11: "Security Validation"
+    12: "Regression Validation"
+    13: "Documentation Synchronization"
+    14: "Gap Discovery"
+    15: "Objective Reprioritization"
+
+retry_policy:
+  max_attempts: 3
+  strategy: "Exponential backoff"
+  on_failure: "Generate new objective and prioritize it based on impact"
+
+regression_policy:
+  trigger: "On every build/change"
+  action: "Run regression suite. If regressions are detected, create a P0 blocker objective immediately."
+  screenshot_comparison: "Mandatory for all frontend changes."
+
+escalation_policy:
+  condition: "Zero automated recovery after max_attempts"
+  action: "Pause execution. Reach Human Gate."

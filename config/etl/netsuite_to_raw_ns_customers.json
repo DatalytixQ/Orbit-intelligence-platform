@@ -1,0 +1,32 @@
+{
+  "integration": "NetSuite_SuiteQL",
+  "target_table": "raw_ns_customers",
+  "primary_keys": ["customer_id"],
+  "description": "Mapeo maestro de clientes",
+  "extraction": {
+    "type": "REST_SUITEQL",
+    "base_query": "SELECT c.id, c.entityid, c.companyname, c.subsidiary, c.salesrep, c.email, c.phone, c.defaultbillingaddress, c.defaultshippingaddress, c.lastmodifieddate FROM customer c",
+    "filters": [
+      { "field": "c.lastmodifieddate", "operator": ">=", "value": "TO_DATE('{{LAST_SYNC_DATE}}', 'YYYY-MM-DD HH24:MI:SS')" }
+    ]
+  },
+  "mapping": {
+    "customer_id": { "source_field": "id", "type": "string" },
+    "companyname": { "source_field": "companyname", "type": "string" },
+    "subsidiary_id": { "source_field": "subsidiary", "type": "string" },
+    "salesrep_id": { "source_field": "salesrep", "type": "string" },
+    "email": { "source_field": "email", "type": "string" },
+    "phone": { "source_field": "phone", "type": "string" },
+    "billing_address": { "source_field": "defaultbillingaddress", "type": "string" },
+    "shipping_address": { "source_field": "defaultshippingaddress", "type": "string" },
+    "last_modified_ts": { "source_field": "lastmodifieddate", "type": "date" }
+  },
+  "defaults": {
+    "source_system": "netsuite",
+    "client_id": "vonderk",
+    "snapshot_ts": "{{CURRENT_TIMESTAMP}}"
+  },
+  "validation_rules": [
+    { "field": "customer_id", "rule": "is_not_null" }
+  ]
+}

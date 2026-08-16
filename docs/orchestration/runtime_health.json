@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Runtime",
+    "score": 95
+  },
+  {
+    "name": "EventBus",
+    "score": 100
+  },
+  {
+    "name": "Validator",
+    "score": 92
+  },
+  {
+    "name": "Evidence",
+    "score": 98
+  },
+  {
+    "name": "Telemetry",
+    "score": 100
+  },
+  {
+    "name": "Dashboard",
+    "score": 99
+  }
+]

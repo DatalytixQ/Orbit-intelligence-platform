@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  backend:
+    build: 
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: orbit_backend
+    restart: always
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./backend/.env
+    # We use a volume for local development so you don't need to rebuild the container on every change
+    volumes:
+      - ./backend:/app
+      - /app/node_modules # Prevents local node_modules from overwriting container's
+      - /app/venv # Prevents local venv from overwriting container's
+    environment:
+      - NODE_ENV=production
+
+  # n8n is included here so everything spins up together
+  n8n:
+    image: docker.n8n.io/n8nio/n8n
+    container_name: n8n_orchestrator
+    restart: always
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=localhost
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - NODE_ENV=production
+      - WEBHOOK_URL=http://localhost:5678/
+      - GENERIC_TIMEZONE=America/Santiago
+    volumes:
+      - n8n_data:/home/node/.n8n
+    # Ensure backend starts before n8n
+    depends_on:
+      - backend
+
+volumes:
+  n8n_data:

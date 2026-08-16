@@ -1,0 +1,342 @@
+[
+  {
+    "file": "ai.js",
+    "method": "post",
+    "path": "/ai/chat-v2"
+  },
+  {
+    "file": "analytics.js",
+    "method": "get",
+    "path": "/analytics/finance"
+  },
+  {
+    "file": "analytics.js",
+    "method": "get",
+    "path": "/analytics/sales"
+  },
+  {
+    "file": "analytics.js",
+    "method": "get",
+    "path": "/analytics/inventory"
+  },
+  {
+    "file": "analytics.js",
+    "method": "get",
+    "path": "/analytics/executive"
+  },
+  {
+    "file": "auth.js",
+    "method": "get",
+    "path": "/test"
+  },
+  {
+    "file": "auth.js",
+    "method": "post",
+    "path": "/bootstrap-admin"
+  },
+  {
+    "file": "auth.js",
+    "method": "post",
+    "path": "/login"
+  },
+  {
+    "file": "auth.js",
+    "method": "post",
+    "path": "/refresh-token"
+  },
+  {
+    "file": "auth.js",
+    "method": "post",
+    "path": "/logout"
+  },
+  {
+    "file": "businessInsights.js",
+    "method": "get",
+    "path": "/home-premium"
+  },
+  {
+    "file": "businessInsights.js",
+    "method": "get",
+    "path": "/home-executive-summary"
+  },
+  {
+    "file": "businessInsights.js",
+    "method": "get",
+    "path": "/business-insights"
+  },
+  {
+    "file": "businessInsights.js",
+    "method": "get",
+    "path": "/business-insights/top"
+  },
+  {
+    "file": "executive.js",
+    "method": "get",
+    "path": "/health-score"
+  },
+  {
+    "file": "executive.js",
+    "method": "get",
+    "path": "/health-trend"
+  },
+  {
+    "file": "finance.js",
+    "method": "get",
+    "path": "/kpi/finance/current"
+  },
+  {
+    "file": "finance.js",
+    "method": "get",
+    "path": "/kpi/finance/ar-aging-summary"
+  },
+  {
+    "file": "finance.js",
+    "method": "get",
+    "path": "/kpi/finance/ar-open-items"
+  },
+  {
+    "file": "finance.js",
+    "method": "get",
+    "path": "/kpi/finance/special-receivables"
+  },
+  {
+    "file": "finance.js",
+    "method": "get",
+    "path": "/kpi/finance/special-receivables-detail"
+  },
+  {
+    "file": "finance.js",
+    "method": "get",
+    "path": "/kpi/finance/test"
+  },
+  {
+    "file": "finance.js",
+    "method": "get",
+    "path": "/kpi/finance/top-risk-customers"
+  },
+  {
+    "file": "finance.js",
+    "method": "get",
+    "path": "/kpi/finance/risk-summary"
+  },
+  {
+    "file": "finance.js",
+    "method": "get",
+    "path": "/kpi/finance/risk-bundle"
+  },
+  {
+    "file": "finance.js",
+    "method": "get",
+    "path": "/kpi/finance/dso-analytics"
+  },
+  {
+    "file": "finance.js",
+    "method": "get",
+    "path": "/kpi/finance/dso-customers"
+  },
+  {
+    "file": "finance.js",
+    "method": "get",
+    "path": "/kpi/finance/risk-trend"
+  },
+  {
+    "file": "finance.js",
+    "method": "post",
+    "path": "/admin/finance/refresh-snapshots"
+  },
+  {
+    "file": "finance.js",
+    "method": "get",
+    "path": "/kpi/customers/health-summary"
+  },
+  {
+    "file": "finance.js",
+    "method": "get",
+    "path": "/kpi/customers/health-detail"
+  },
+  {
+    "file": "health.js",
+    "method": "get",
+    "path": "/health"
+  },
+  {
+    "file": "health.js",
+    "method": "get",
+    "path": "/test"
+  },
+  {
+    "file": "insights.js",
+    "method": "post",
+    "path": "/insights/generate"
+  },
+  {
+    "file": "insights.js",
+    "method": "get",
+    "path": "/insights/current"
+  },
+  {
+    "file": "insights.js",
+    "method": "get",
+    "path": "/insights/evolution"
+  },
+  {
+    "file": "insights.js",
+    "method": "get",
+    "path": "/insights/actions"
+  },
+  {
+    "file": "insights.js",
+    "method": "get",
+    "path": "/insights/:id"
+  },
+  {
+    "file": "insights.js",
+    "method": "post",
+    "path": "/insights/actions/:id/status"
+  },
+  {
+    "file": "inventory.js",
+    "method": "get",
+    "path": "/kpi/inventory/commercial-stock"
+  },
+  {
+    "file": "inventory.js",
+    "method": "get",
+    "path": "/kpi/inventory/commercial-valuation"
+  },
+  {
+    "file": "inventory.js",
+    "method": "get",
+    "path": "/kpi/inventory/critical-demand-mix"
+  },
+  {
+    "file": "inventory.js",
+    "method": "get",
+    "path": "/kpi/inventory/critical-stock"
+  },
+  {
+    "file": "inventory.js",
+    "method": "get",
+    "path": "/kpi/inventory/by-class"
+  },
+  {
+    "file": "inventory.js",
+    "method": "get",
+    "path": "/kpi/inventory/total-valuation"
+  },
+  {
+    "file": "inventory.js",
+    "method": "get",
+    "path": "/kpi/inventory/coverage"
+  },
+  {
+    "file": "inventory.js",
+    "method": "get",
+    "path": "/kpi/inventory/top-critical"
+  },
+  {
+    "file": "inventory.js",
+    "method": "get",
+    "path": "/kpi/inventory/slow-moving"
+  },
+  {
+    "file": "inventory.js",
+    "method": "get",
+    "path": "/kpi/inventory/slow-moving-summary"
+  },
+  {
+    "file": "inventory.js",
+    "method": "get",
+    "path": "/kpi/inventory/critical-items-count"
+  },
+  {
+    "file": "inventory.js",
+    "method": "get",
+    "path": "/kpi/inventory/critical-value"
+  },
+  {
+    "file": "pipeline.js",
+    "method": "get",
+    "path": "/pipeline/status"
+  },
+  {
+    "file": "sales.js",
+    "method": "get",
+    "path": "/kpi/sales/total"
+  },
+  {
+    "file": "sales.js",
+    "method": "get",
+    "path": "/kpi/sales/monthly"
+  },
+  {
+    "file": "sales.js",
+    "method": "get",
+    "path": "/kpi/sales/by-category"
+  },
+  {
+    "file": "sales.js",
+    "method": "get",
+    "path": "/kpi/sales/top-customers"
+  },
+  {
+    "file": "sales.js",
+    "method": "get",
+    "path": "/kpi/sales/by-subsidiary"
+  },
+  {
+    "file": "sales.js",
+    "method": "get",
+    "path": "/kpi/sales/forecast-monthly"
+  },
+  {
+    "file": "sales.js",
+    "method": "get",
+    "path": "/kpi/sales/forecast-quarterly"
+  },
+  {
+    "file": "sales.js",
+    "method": "get",
+    "path": "/kpi/home/commercial-summary"
+  },
+  {
+    "file": "sales.js",
+    "method": "get",
+    "path": "/kpi/home/sales-vs-last-year"
+  },
+  {
+    "file": "sales.js",
+    "method": "get",
+    "path": "/kpi/sales/concentration-category"
+  },
+  {
+    "file": "sales.js",
+    "method": "get",
+    "path": "/kpi/sales/concentration-customer"
+  },
+  {
+    "file": "sales.js",
+    "method": "get",
+    "path": "/kpi/sales/top-participation-2026"
+  },
+  {
+    "file": "supply.js",
+    "method": "get",
+    "path": "/pipeline-summary"
+  },
+  {
+    "file": "supply.js",
+    "method": "get",
+    "path": "/pipeline-vs-supply"
+  },
+  {
+    "file": "supply.js",
+    "method": "get",
+    "path": "/risk-by-customer"
+  },
+  {
+    "file": "supply.js",
+    "method": "get",
+    "path": "/inbound-timeline"
+  }
+]

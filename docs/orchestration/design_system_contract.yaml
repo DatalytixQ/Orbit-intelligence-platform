@@ -1,0 +1,53 @@
+# Design System Contract v2.1
+# Single source of truth for the product's visual and interactive layer.
+
+tokens:
+  typography:
+    family_primary: "Inter, sans-serif"
+    family_mono: "JetBrains Mono, monospace"
+    weights: [400, 500, 600, 700]
+    sizes:
+      sm: "0.875rem"
+      base: "1rem"
+      lg: "1.125rem"
+      xl: "1.25rem"
+      2xl: "1.5rem"
+
+  colors:
+    primary: "Slate/Blue modern scheme"
+    secondary: "Neutral gray palette"
+    background: "White / Gray-50"
+    surface: "White"
+    error: "Red-500"
+    warning: "Amber-500"
+    success: "Green-500"
+    text_primary: "Gray-900"
+    text_secondary: "Gray-500"
+    dark_mode:
+      background: "Gray-900"
+      surface: "Gray-800"
+
+  spacing:
+    scale: [2, 4, 8, 12, 16, 24, 32, 48, 64]
+    base_unit: "8px"
+
+  elevation:
+    shadow_sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)"
+    shadow_md: "0 4px 6px -1px rgba(0, 0, 0, 0.1)"
+    shadow_lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1)"
+
+  borders:
+    radius_sm: "0.25rem"
+    radius_md: "0.375rem"
+    radius_lg: "0.5rem"
+    radius_full: "9999px"
+
+dashboard_standards:
+  - "High information density but clear visual hierarchy."
+  - "Cards must have distinct separation and uniform padding (min 16px)."
+  - "Executive dashboards should prioritize top-level KPIs."
+
+interaction_rules:
+  - "Buttons must have hover, active, and disabled states."
+  - "Micro-animations should be used for transitions (max 200ms duration)."
+  - "Always display loading states for async operations."

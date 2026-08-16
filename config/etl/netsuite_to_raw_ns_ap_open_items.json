@@ -1,0 +1,28 @@
+{
+  "integration": "NetSuite_SuiteQL",
+  "target_table": "raw_ns_ap_open_items",
+  "primary_keys": ["id"],
+  "description": "Cuentas por Pagar - Vendor Bills (AP)",
+  "extraction": {
+    "type": "REST_SUITEQL",
+    "base_query": "SELECT t.id, t.tranid, t.trandate, t.entity, t.subsidiary, t.currency, t.exchangerate, t.status, t.duedate, t.lastmodifieddate FROM transaction t",
+    "filters": [
+      { "field": "t.type", "operator": "=", "value": "VendBill" },
+      { "field": "t.lastmodifieddate", "operator": ">=", "value": "TO_DATE('{{LAST_SYNC_DATE}}', 'YYYY-MM-DD HH24:MI:SS')" }
+    ]
+  },
+  "mapping": {
+    "id": { "source_field": "id", "type": "string" },
+    "tranid": { "source_field": "tranid", "type": "string" },
+    "trandate": { "source_field": "trandate", "type": "date" },
+    "entity": { "source_field": "entity", "type": "string" },
+    "subsidiary": { "source_field": "subsidiary", "type": "string" },
+    "currency": { "source_field": "currency", "type": "string" },
+    "exchangerate": { "source_field": "exchangerate", "type": "number" },
+    "status": { "source_field": "status", "type": "string" },
+    "duedate": { "source_field": "duedate", "type": "date" },
+    "last_modified_ts": { "source_field": "lastmodifieddate", "type": "date" }
+  },
+  "defaults": { "source_system": "netsuite", "client_id": "vonderk", "snapshot_ts": "{{CURRENT_TIMESTAMP}}" },
+  "validation_rules": [{ "field": "id", "rule": "is_not_null" }]
+}

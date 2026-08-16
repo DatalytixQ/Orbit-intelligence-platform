@@ -1,0 +1,215 @@
+# Execution Manifest v1.3
+# Source of truth for Roadmap orchestration
+
+roadmap:
+  wave_0:
+    name: "SECURITY EMERGENCY (NEW)"
+    milestone: "M0"
+    status: "Completed"
+    dependencies: []
+    tasks:
+      - id: "N001"
+        status: "Completed"
+        dependencies: []
+      - id: "N002"
+        status: "Completed"
+        dependencies: ["N001"]
+      - id: "T001"
+        status: "Completed"
+        dependencies: []
+      - id: "T002"
+        status: "Completed"
+        dependencies: []
+      - id: "T005"
+        status: "Completed"
+        dependencies: []
+    execution_log:
+      | 2026-07-13T12:35:00Z | - | ORCH | Framework Evolution to v1.4 | ✅ COMPLETED | `framework_v1_4_release_notes.md` |
+      | 2026-07-13T12:40:00Z | - | ORCH | Framework Evolution to v1.5 | ✅ COMPLETED | `continuous_execution_release_notes.md` |
+      | 2026-07-13T12:41:00Z | T007 | DOCS | Complete AR KPI formulas in kpi.md | ✅ COMPLETED | `docs/business/kpi.md` |
+
+  wave_1:
+    name: "FOUNDATION (Revised)"
+    milestone: "M1"
+    status: "Not Started"
+    dependencies: ["wave_0"]
+    tasks:
+      - id: "T003"
+        status: "Completed"
+        dependencies: ["T002"]
+      - id: "T004"
+        status: "Completed"
+        dependencies: ["T002"]
+      - id: "T006"
+        status: "Completed"
+        dependencies: []
+      - id: "T007"
+        status: "Completed"
+        dependencies: ["T006"]
+      - id: "T008"
+        status: "Completed"
+        dependencies: ["T006"]
+      - id: "N003"
+        status: "Completed"
+        dependencies: ["T006"]
+      - id: "T009"
+        status: "Completed"
+        dependencies: []
+      - id: "T010"
+        status: "Completed"
+        dependencies: ["T009"]
+      - id: "T011"
+        status: "Completed"
+        dependencies: ["T010"]
+      - id: "T012"
+        status: "Completed"
+        dependencies: ["T009–T011"]
+      - id: "T013"
+        status: "Completed"
+        dependencies: ["T012"]
+      - id: "N017"
+        status: "Completed"
+        dependencies: []
+      - id: "T015"
+        status: "Completed"
+        dependencies: ["N017"]
+      - id: "T016"
+        status: "Completed"
+        dependencies: []
+      - id: "N012"
+        status: "Completed"
+        dependencies: []
+      - id: "T017"
+        status: "Completed"
+        dependencies: ["N017"]
+      - id: "T018"
+        status: "Completed"
+        dependencies: ["N017"]
+      - id: "N005"
+        status: "Completed"
+        dependencies: []
+      - id: "N006"
+        status: "Completed"
+        dependencies: []
+      - id: "N007"
+        status: "Completed"
+        dependencies: []
+      - id: "N008"
+        status: "Completed"
+        dependencies: []
+      - id: "N015"
+        status: "Completed"
+        dependencies: []
+      - id: "N016"
+        status: "Completed"
+        dependencies: []
+
+  wave_2:
+    name: "RULES COMPLETION + INSIGHT RECONCILIATION (Revised)"
+    milestone: "M2"
+    status: "Running"
+    dependencies: ["wave_1"]
+    tasks:
+      - id: "N004a"
+        status: "Completed"
+        dependencies: []
+      - id: "N004b"
+        status: "Completed"
+        dependencies: ["N004a"]
+      - id: "N004c"
+        status: "Completed"
+        dependencies: ["N004b"]
+      - id: "T021"
+        status: "Completed"
+        dependencies: ["T016"]
+      - id: "T022"
+        status: "Completed"
+        dependencies: ["T006","T008"]
+      - id: "T023"
+        status: "Completed"
+        dependencies: ["N003","T022"]
+      - id: "T024"
+        status: "Completed"
+        dependencies: ["T022","T023"]
+      - id: "T025"
+        status: "Completed"
+        dependencies: ["T022"]
+      - id: "T026"
+        status: "Completed"
+        dependencies: ["T022"]
+      - id: "T027"
+        status: "Completed"
+        dependencies: ["T023"]
+      - id: "T028"
+        status: "Completed"
+        dependencies: ["T022"]
+      - id: "T029"
+        status: "Completed"
+        dependencies: ["T024–T028"]
+      - id: "T030"
+        status: "Completed"
+        dependencies: ["T001"]
+      - id: "T031"
+        status: "Completed"
+        dependencies: ["T030"]
+      - id: "T032"
+        status: "Completed"
+        dependencies: ["T024","T001"]
+      - id: "T033"
+        status: "Completed"
+        dependencies: ["T030–T032"]
+      - id: "T034"
+        status: "Completed"
+        dependencies: ["T033"]
+      - id: "T035"
+        status: "Completed"
+        dependencies: ["N004 complete"]
+      - id: "T036"
+        status: "Completed"
+        dependencies: ["T035"]
+      - id: "T037"
+        status: "Completed"
+        dependencies: ["T035"]
+      - id: "T038"
+        status: "Completed"
+        dependencies: []
+      - id: "T039"
+        status: "Completed"
+        dependencies: ["T035","T038"]
+
+  wave_3:
+    name: "INTELLIGENCE EXPANSION (Unchanged from v1)"
+    milestone: "M3"
+    status: "Not Started"
+    dependencies: ["wave_2"]
+    tasks:
+
+  wave_4:
+    name: "DQBOT DEPTH (Adds N018)"
+    milestone: "M4"
+    status: "Not Started"
+    dependencies: ["wave_3"]
+    tasks:
+
+  wave_5:
+    name: "PRODUCTION POLISH + CLEANUP (Revised)"
+    milestone: "M5"
+    status: "Not Started"
+    dependencies: ["wave_4"]
+    tasks:
+      - id: "N009"
+        status: "Completed"
+        dependencies: ["Wave 4 complete"]
+      - id: "N010"
+        status: "Completed"
+        dependencies: ["Wave 4 complete"]
+      - id: "N011"
+        status: "Completed"
+        dependencies: ["N010"]
+      - id: "N013"
+        status: "Completed"
+        dependencies: ["Wave 5 test setup"]
+      - id: "N014"
+        status: "Completed"
+        dependencies: []
+

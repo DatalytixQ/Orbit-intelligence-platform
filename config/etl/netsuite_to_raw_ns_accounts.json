@@ -1,0 +1,30 @@
+{
+  "integration": "NetSuite_SuiteQL",
+  "target_table": "raw_ns_accounts",
+  "primary_keys": ["id"],
+  "description": "Mapeo de Plan de Cuentas (Chart of Accounts)",
+  "extraction": {
+    "type": "REST_SUITEQL",
+    "base_query": "SELECT a.id, a.acctnumber, a.acctname, a.accttype, a.subsidiary, a.isinactive, a.lastmodifieddate FROM account a",
+    "filters": [
+      { "field": "a.lastmodifieddate", "operator": ">=", "value": "TO_DATE('{{LAST_SYNC_DATE}}', 'YYYY-MM-DD HH24:MI:SS')" }
+    ]
+  },
+  "mapping": {
+    "id": { "source_field": "id", "type": "string" },
+    "acctnumber": { "source_field": "acctnumber", "type": "string" },
+    "acctname": { "source_field": "acctname", "type": "string" },
+    "accttype": { "source_field": "accttype", "type": "string" },
+    "subsidiary": { "source_field": "subsidiary", "type": "string" },
+    "isinactive": { "source_field": "isinactive", "type": "string" },
+    "last_modified_ts": { "source_field": "lastmodifieddate", "type": "date" }
+  },
+  "defaults": {
+    "source_system": "netsuite",
+    "client_id": "vonderk",
+    "snapshot_ts": "{{CURRENT_TIMESTAMP}}"
+  },
+  "validation_rules": [
+    { "field": "id", "rule": "is_not_null" }
+  ]
+}

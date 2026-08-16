@@ -1,0 +1,11 @@
+# Execution Budget
+
+token_limit_per_task: 128000
+average_task_cost_estimate: 25000
+total_remaining_tasks: 47
+total_budget_estimate: 1175000
+
+budget_rules:
+  - Halt execution if a single task uses > 100,000 tokens without resolving.
+  - Require human intervention if credit limits approach zero.
+  - Flush context immediately after task completion to preserve budget.

@@ -1,0 +1,154 @@
+{
+  "history": [
+    {
+      "iteration": 1,
+      "timestamp": 1783996595021,
+      "pending": 15,
+      "retry": 0
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1783996655021,
+      "pending": 15,
+      "retry": 0
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1783996715021,
+      "pending": 14,
+      "retry": 0
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1783996775021,
+      "pending": 14,
+      "retry": 0
+    },
+    {
+      "iteration": 5,
+      "timestamp": 1783996835021,
+      "pending": 13,
+      "retry": 0
+    },
+    {
+      "iteration": 6,
+      "timestamp": 1783996895021,
+      "pending": 13,
+      "retry": 0
+    },
+    {
+      "iteration": 7,
+      "timestamp": 1783996955021,
+      "pending": 12,
+      "retry": 0
+    },
+    {
+      "iteration": 8,
+      "timestamp": 1783997015021,
+      "pending": 12,
+      "retry": 0
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1783997075021,
+      "pending": 11,
+      "retry": 0
+    },
+    {
+      "iteration": 10,
+      "timestamp": 1783997135021,
+      "pending": 11,
+      "retry": 0
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1783997195021,
+      "pending": 10,
+      "retry": 0
+    },
+    {
+      "iteration": 12,
+      "timestamp": 1783997255021,
+      "pending": 10,
+      "retry": 0
+    },
+    {
+      "iteration": 13,
+      "timestamp": 1783997315021,
+      "pending": 9,
+      "retry": 0
+    },
+    {
+      "iteration": 14,
+      "timestamp": 1783997375021,
+      "pending": 9,
+      "retry": 0
+    },
+    {
+      "iteration": 15,
+      "timestamp": 1783997435021,
+      "pending": 8,
+      "retry": 0
+    },
+    {
+      "iteration": 16,
+      "timestamp": 1783997495021,
+      "pending": 8,
+      "retry": 0
+    },
+    {
+      "iteration": 17,
+      "timestamp": 1783997555021,
+      "pending": 7,
+      "retry": 0
+    },
+    {
+      "iteration": 18,
+      "timestamp": 1783997615021,
+      "pending": 7,
+      "retry": 0
+    },
+    {
+      "iteration": 19,
+      "timestamp": 1783997675021,
+      "pending": 6,
+      "retry": 0
+    },
+    {
+      "iteration": 20,
+      "timestamp": 1783997735021,
+      "pending": 6,
+      "retry": 0
+    },
+    {
+      "iteration": 21,
+      "timestamp": 1783997795021,
+      "pending": 5,
+      "retry": 0
+    },
+    {
+      "iteration": 22,
+      "timestamp": 1783997855021,
+      "pending": 5,
+      "retry": 0
+    },
+    {
+      "iteration": 23,
+      "timestamp": 1783997915021,
+      "pending": 4,
+      "retry": 0
+    },
+    {
+      "iteration": 24,
+      "timestamp": 1783997975021,
+      "pending": 4,
+      "retry": 0
+    },
+    {
+      "iteration": 25,
+      "timestamp": 1783998035021,
+      "pending": 3,
+      "retry": 0
+    }
+  ]
+}

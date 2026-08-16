@@ -1,0 +1,23 @@
+# Preflight Checklist v1.2
+# Verified by Execution Supervisor before ANY task dispatch
+
+preflight:
+  dependencies:
+    - check: "Verify all dependencies in execution_manifest.yaml are marked COMPLETED."
+      action_on_fail: "Halt and switch to Waiting Human."
+  
+  artifacts:
+    - check: "Verify mandatory context files (context_routing.yaml) exist and are readable."
+      action_on_fail: "Log error, attempt auto-repair, halt if failed."
+
+  mcp_connectivity:
+    - check: "If task requires DB, verify Supabase MCP is responsive."
+      action_on_fail: "Retry 3 times via retry_policy.md, then halt."
+
+  model_availability:
+    - check: "Verify default model (Gemini 1.5 Flash) is not rate-limited."
+      action_on_fail: "Fall back to secondary model as defined in prompt_pipeline.yaml."
+
+  cost_estimation:
+    - check: "Verify estimated tokens fit within execution_budget.yaml limits."
+      action_on_fail: "Halt if budget is exceeded to prevent credit drain."

@@ -1,0 +1,17 @@
+schema_rollback_policy:
+  version: "1.6"
+  purpose: "Define autonomous recovery from failed schema evolutions"
+  
+  requirements:
+    artifact: "Must be a distinct file named {id}_rollback.sql."
+    completeness: "Must exactly reverse the operations in the apply script."
+    safety: "Must use IF EXISTS clauses (e.g., DROP TABLE IF EXISTS, DROP POLICY IF EXISTS)."
+    
+  execution_triggers:
+    on_apply_failure: "Triggered if the apply script raises an exception."
+    on_validation_failure: "Triggered if the validate script returns false or raises an exception."
+    on_human_reject: "Triggered if human gate manually forces a rollback of an uncommitted state."
+    
+  post_rollback_state:
+    checkpoint: "Return to 'Waiting Human' due to rollback."
+    log: "Record rollback event in execution_log.md."

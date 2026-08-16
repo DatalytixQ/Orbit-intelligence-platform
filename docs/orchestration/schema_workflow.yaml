@@ -1,0 +1,49 @@
+schema_evolution_workflow:
+  version: "1.6"
+  description: "End-to-end autonomous schema lifecycle"
+
+  steps:
+    1_discovery:
+      action: "Identify missing object during task execution."
+      tool: "Repository-wide audit."
+      result: "Confirm absence of object or alternatives."
+
+    2_proposal:
+      action: "Generate schema_evolution_proposal.md."
+      tool: "LLM Generation."
+      result: "Draft proposal."
+
+    3_approval:
+      action: "Wait for Human Approval."
+      gate: "Schema Evolution Gate."
+      result: "Approved | Rejected."
+
+    4_generation:
+      action: "Create apply, rollback, and validate SQL scripts."
+      tool: "LLM Generation."
+      result: "SQL artifacts ready."
+
+    5_execution:
+      action: "Execute apply SQL."
+      tool: "Supabase MCP / DB Execution."
+      result: "Schema applied."
+
+    6_validation:
+      action: "Execute validate SQL."
+      tool: "Supabase MCP / DB Execution."
+      result: "Schema verified."
+
+    7_documentation:
+      action: "Update database.md."
+      tool: "File edit."
+      result: "Schema documented."
+
+    8_resumption:
+      action: "Resume original suspended task."
+      state: "Checkpoint update."
+      result: "Task continues."
+
+  failure_recovery:
+    on_execution_error: "Execute rollback SQL automatically."
+    on_validation_error: "Execute rollback SQL automatically."
+    post_rollback: "Return to Human Gate."

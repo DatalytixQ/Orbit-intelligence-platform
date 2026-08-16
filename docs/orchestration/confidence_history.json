@@ -1,0 +1,129 @@
+{
+  "history": [
+    {
+      "iteration": 1,
+      "timestamp": 1783996595022,
+      "score": 86.80695058466449
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1783996655022,
+      "score": 88.91777512264296
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1783996715022,
+      "score": 86.70186803488762
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1783996775022,
+      "score": 89.7253867571038
+    },
+    {
+      "iteration": 5,
+      "timestamp": 1783996835022,
+      "score": 88.34187928071351
+    },
+    {
+      "iteration": 6,
+      "timestamp": 1783996895022,
+      "score": 89.3618282809012
+    },
+    {
+      "iteration": 7,
+      "timestamp": 1783996955022,
+      "score": 87.43810417273804
+    },
+    {
+      "iteration": 8,
+      "timestamp": 1783997015022,
+      "score": 86.67773661758358
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1783997075022,
+      "score": 87.17332617951776
+    },
+    {
+      "iteration": 10,
+      "timestamp": 1783997135022,
+      "score": 88.58985039737189
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1783997195022,
+      "score": 88.19097726586226
+    },
+    {
+      "iteration": 12,
+      "timestamp": 1783997255022,
+      "score": 89.18676660149593
+    },
+    {
+      "iteration": 13,
+      "timestamp": 1783997315022,
+      "score": 88.61509728285428
+    },
+    {
+      "iteration": 14,
+      "timestamp": 1783997375022,
+      "score": 88.03449210731296
+    },
+    {
+      "iteration": 15,
+      "timestamp": 1783997435022,
+      "score": 89.56460881046328
+    },
+    {
+      "iteration": 16,
+      "timestamp": 1783997495022,
+      "score": 86.30815874802441
+    },
+    {
+      "iteration": 17,
+      "timestamp": 1783997555022,
+      "score": 87.67765649208457
+    },
+    {
+      "iteration": 18,
+      "timestamp": 1783997615022,
+      "score": 85.87679737952294
+    },
+    {
+      "iteration": 19,
+      "timestamp": 1783997675022,
+      "score": 86.30293840376235
+    },
+    {
+      "iteration": 20,
+      "timestamp": 1783997735022,
+      "score": 86.71547962706033
+    },
+    {
+      "iteration": 21,
+      "timestamp": 1783997795022,
+      "score": 86.28204544253953
+    },
+    {
+      "iteration": 22,
+      "timestamp": 1783997855022,
+      "score": 88.57778169534515
+    },
+    {
+      "iteration": 23,
+      "timestamp": 1783997915022,
+      "score": 87.19757707337392
+    },
+    {
+      "iteration": 24,
+      "timestamp": 1783997975022,
+      "score": 86.07558306476805
+    },
+    {
+      "iteration": 25,
+      "timestamp": 1783998035022,
+      "score": 87.20051718700493
+    }
+  ]
+}

@@ -1,0 +1,522 @@
+{
+  "history": [
+    {
+      "iteration": 121,
+      "timestamp": 1783998333685,
+      "itersPerHour": 196,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 121,
+      "timestamp": 1783998333805,
+      "itersPerHour": 196,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 122,
+      "timestamp": 1783998333820,
+      "itersPerHour": 197,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 123,
+      "timestamp": 1783998333839,
+      "itersPerHour": 198,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333864,
+      "itersPerHour": 199,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333892,
+      "itersPerHour": 199,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333911,
+      "itersPerHour": 199,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333932,
+      "itersPerHour": 199,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998333951,
+      "itersPerHour": 199,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998334020,
+      "itersPerHour": 199,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 124,
+      "timestamp": 1783998334162,
+      "itersPerHour": 199,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334182,
+      "itersPerHour": 200,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334211,
+      "itersPerHour": 200,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334229,
+      "itersPerHour": 200,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334250,
+      "itersPerHour": 200,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334267,
+      "itersPerHour": 200,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334321,
+      "itersPerHour": 200,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 125,
+      "timestamp": 1783998334441,
+      "itersPerHour": 200,
+      "avgValidationMs": 600
+    },
+    {
+      "iteration": 1,
+      "timestamp": 1783999128947,
+      "itersPerHour": 101
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1783999129180,
+      "itersPerHour": 102
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1783999129473,
+      "itersPerHour": 103
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1783999129646,
+      "itersPerHour": 104
+    },
+    {
+      "iteration": 5,
+      "timestamp": 1783999129848,
+      "itersPerHour": 105
+    },
+    {
+      "iteration": 6,
+      "timestamp": 1783999130080,
+      "itersPerHour": 106
+    },
+    {
+      "iteration": 7,
+      "timestamp": 1783999130329,
+      "itersPerHour": 107
+    },
+    {
+      "iteration": 8,
+      "timestamp": 1783999130579,
+      "itersPerHour": 108
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1783999130795,
+      "itersPerHour": 109
+    },
+    {
+      "iteration": 10,
+      "timestamp": 1783999130996,
+      "itersPerHour": 110
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1783999131292,
+      "itersPerHour": 111
+    },
+    {
+      "iteration": 12,
+      "timestamp": 1783999131619,
+      "itersPerHour": 112
+    },
+    {
+      "iteration": 13,
+      "timestamp": 1783999131820,
+      "itersPerHour": 113
+    },
+    {
+      "iteration": 14,
+      "timestamp": 1783999132102,
+      "itersPerHour": 114
+    },
+    {
+      "iteration": 15,
+      "timestamp": 1783999132337,
+      "itersPerHour": 115
+    },
+    {
+      "iteration": 16,
+      "timestamp": 1783999133351,
+      "itersPerHour": 116
+    },
+    {
+      "iteration": 17,
+      "timestamp": 1783999133567,
+      "itersPerHour": 117
+    },
+    {
+      "iteration": 18,
+      "timestamp": 1783999133767,
+      "itersPerHour": 118
+    },
+    {
+      "iteration": 19,
+      "timestamp": 1783999134052,
+      "itersPerHour": 119
+    },
+    {
+      "iteration": 20,
+      "timestamp": 1783999134239,
+      "itersPerHour": 120
+    },
+    {
+      "iteration": 21,
+      "timestamp": 1783999134485,
+      "itersPerHour": 121
+    },
+    {
+      "iteration": 22,
+      "timestamp": 1783999134676,
+      "itersPerHour": 122
+    },
+    {
+      "iteration": 23,
+      "timestamp": 1783999134862,
+      "itersPerHour": 123
+    },
+    {
+      "iteration": 24,
+      "timestamp": 1783999135057,
+      "itersPerHour": 124
+    },
+    {
+      "iteration": 25,
+      "timestamp": 1783999135310,
+      "itersPerHour": 125
+    },
+    {
+      "iteration": 26,
+      "timestamp": 1783999135556,
+      "itersPerHour": 126
+    },
+    {
+      "iteration": 27,
+      "timestamp": 1783999135748,
+      "itersPerHour": 127
+    },
+    {
+      "iteration": 28,
+      "timestamp": 1783999135950,
+      "itersPerHour": 128
+    },
+    {
+      "iteration": 29,
+      "timestamp": 1783999136143,
+      "itersPerHour": 129
+    },
+    {
+      "iteration": 30,
+      "timestamp": 1783999136355,
+      "itersPerHour": 130
+    },
+    {
+      "iteration": 31,
+      "timestamp": 1783999136652,
+      "itersPerHour": 131
+    },
+    {
+      "iteration": 32,
+      "timestamp": 1783999136901,
+      "itersPerHour": 132
+    },
+    {
+      "iteration": 33,
+      "timestamp": 1783999137088,
+      "itersPerHour": 133
+    },
+    {
+      "iteration": 34,
+      "timestamp": 1783999137275,
+      "itersPerHour": 134
+    },
+    {
+      "iteration": 35,
+      "timestamp": 1783999137520,
+      "itersPerHour": 135
+    },
+    {
+      "iteration": 36,
+      "timestamp": 1783999137783,
+      "itersPerHour": 136
+    },
+    {
+      "iteration": 37,
+      "timestamp": 1783999138062,
+      "itersPerHour": 137
+    },
+    {
+      "iteration": 38,
+      "timestamp": 1783999138241,
+      "itersPerHour": 138
+    },
+    {
+      "iteration": 39,
+      "timestamp": 1783999138519,
+      "itersPerHour": 139
+    },
+    {
+      "iteration": 40,
+      "timestamp": 1783999138705,
+      "itersPerHour": 140
+    },
+    {
+      "iteration": 41,
+      "timestamp": 1783999138896,
+      "itersPerHour": 141
+    },
+    {
+      "iteration": 42,
+      "timestamp": 1783999139076,
+      "itersPerHour": 142
+    },
+    {
+      "iteration": 43,
+      "timestamp": 1783999139261,
+      "itersPerHour": 143
+    },
+    {
+      "iteration": 44,
+      "timestamp": 1783999139464,
+      "itersPerHour": 144
+    },
+    {
+      "iteration": 45,
+      "timestamp": 1783999139748,
+      "itersPerHour": 145
+    },
+    {
+      "iteration": 46,
+      "timestamp": 1783999140121,
+      "itersPerHour": 146
+    },
+    {
+      "iteration": 47,
+      "timestamp": 1783999140305,
+      "itersPerHour": 147
+    },
+    {
+      "iteration": 48,
+      "timestamp": 1783999140506,
+      "itersPerHour": 148
+    },
+    {
+      "iteration": 49,
+      "timestamp": 1783999140695,
+      "itersPerHour": 149
+    },
+    {
+      "iteration": 50,
+      "timestamp": 1783999140887,
+      "itersPerHour": 150
+    },
+    {
+      "iteration": 1,
+      "timestamp": 1784001146151,
+      "itersPerHour": 101
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1784001146259,
+      "itersPerHour": 102
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1784001146365,
+      "itersPerHour": 103
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1784001146472,
+      "itersPerHour": 104
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1784001146665,
+      "itersPerHour": 109
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1784001146806,
+      "itersPerHour": 111
+    },
+    {
+      "iteration": 12,
+      "timestamp": 1784001146916,
+      "itersPerHour": 112
+    },
+    {
+      "iteration": 14,
+      "timestamp": 1784001147041,
+      "itersPerHour": 114
+    },
+    {
+      "iteration": 1,
+      "timestamp": 1784001203974,
+      "itersPerHour": 101
+    },
+    {
+      "iteration": 2,
+      "timestamp": 1784001204082,
+      "itersPerHour": 102
+    },
+    {
+      "iteration": 3,
+      "timestamp": 1784001204206,
+      "itersPerHour": 103
+    },
+    {
+      "iteration": 4,
+      "timestamp": 1784001204333,
+      "itersPerHour": 104
+    },
+    {
+      "iteration": 5,
+      "timestamp": 1784001204441,
+      "itersPerHour": 105
+    },
+    {
+      "iteration": 6,
+      "timestamp": 1784001204693,
+      "itersPerHour": 106
+    },
+    {
+      "iteration": 7,
+      "timestamp": 1784001204802,
+      "itersPerHour": 107
+    },
+    {
+      "iteration": 8,
+      "timestamp": 1784001204911,
+      "itersPerHour": 108
+    },
+    {
+      "iteration": 9,
+      "timestamp": 1784001205020,
+      "itersPerHour": 109
+    },
+    {
+      "iteration": 10,
+      "timestamp": 1784001205127,
+      "itersPerHour": 110
+    },
+    {
+      "iteration": 11,
+      "timestamp": 1784001205401,
+      "itersPerHour": 111
+    },
+    {
+      "iteration": 15,
+      "timestamp": 1784001205588,
+      "itersPerHour": 115
+    },
+    {
+      "iteration": 23,
+      "timestamp": 1784001205801,
+      "itersPerHour": 123
+    },
+    {
+      "iteration": 24,
+      "timestamp": 1784001206007,
+      "itersPerHour": 124
+    },
+    {
+      "iteration": 28,
+      "timestamp": 1784001206163,
+      "itersPerHour": 128
+    },
+    {
+      "iteration": 31,
+      "timestamp": 1784001206426,
+      "itersPerHour": 131
+    },
+    {
+      "iteration": 36,
+      "timestamp": 1784001206598,
+      "itersPerHour": 136
+    },
+    {
+      "iteration": 40,
+      "timestamp": 1784001206770,
+      "itersPerHour": 140
+    },
+    {
+      "iteration": 41,
+      "timestamp": 1784001206894,
+      "itersPerHour": 141
+    },
+    {
+      "iteration": 45,
+      "timestamp": 1784001207066,
+      "itersPerHour": 145
+    },
+    {
+      "iteration": 52,
+      "timestamp": 1784001207283,
+      "itersPerHour": 152
+    },
+    {
+      "iteration": 54,
+      "timestamp": 1784001207427,
+      "itersPerHour": 154
+    },
+    {
+      "iteration": 56,
+      "timestamp": 1784001207560,
+      "itersPerHour": 156
+    },
+    {
+      "iteration": 58,
+      "timestamp": 1784001207749,
+      "itersPerHour": 158
+    }
+  ]
+}

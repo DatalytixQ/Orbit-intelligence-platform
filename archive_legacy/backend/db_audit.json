@@ -1,0 +1,7019 @@
+{
+  "tables": [
+    {
+      "table_name": "_migrations",
+      "table_type": "BASE TABLE",
+      "cols": "2"
+    },
+    {
+      "table_name": "actions_log",
+      "table_type": "BASE TABLE",
+      "cols": "11"
+    },
+    {
+      "table_name": "ai_usage_logs",
+      "table_type": "BASE TABLE",
+      "cols": "12"
+    },
+    {
+      "table_name": "alert_config",
+      "table_type": "BASE TABLE",
+      "cols": "10"
+    },
+    {
+      "table_name": "app_users",
+      "table_type": "BASE TABLE",
+      "cols": "8"
+    },
+    {
+      "table_name": "ar_payment_applications",
+      "table_type": "BASE TABLE",
+      "cols": "14"
+    },
+    {
+      "table_name": "ar_settings",
+      "table_type": "BASE TABLE",
+      "cols": "7"
+    },
+    {
+      "table_name": "audit_log",
+      "table_type": "BASE TABLE",
+      "cols": "7"
+    },
+    {
+      "table_name": "business_review_rules",
+      "table_type": "BASE TABLE",
+      "cols": "12"
+    },
+    {
+      "table_name": "business_rule_thresholds",
+      "table_type": "BASE TABLE",
+      "cols": "6"
+    },
+    {
+      "table_name": "business_rules",
+      "table_type": "BASE TABLE",
+      "cols": "6"
+    },
+    {
+      "table_name": "client_config",
+      "table_type": "BASE TABLE",
+      "cols": "12"
+    },
+    {
+      "table_name": "clients",
+      "table_type": "BASE TABLE",
+      "cols": "6"
+    },
+    {
+      "table_name": "core_inventory_coverage",
+      "table_type": "VIEW",
+      "cols": "8"
+    },
+    {
+      "table_name": "core_inventory_coverage_timing",
+      "table_type": "VIEW",
+      "cols": "16"
+    },
+    {
+      "table_name": "core_inventory_coverage_with_inbound",
+      "table_type": "VIEW",
+      "cols": "14"
+    },
+    {
+      "table_name": "customer_daily_snapshot",
+      "table_type": "BASE TABLE",
+      "cols": "4"
+    },
+    {
+      "table_name": "customer_payments",
+      "table_type": "BASE TABLE",
+      "cols": "17"
+    },
+    {
+      "table_name": "customer_segments",
+      "table_type": "BASE TABLE",
+      "cols": "6"
+    },
+    {
+      "table_name": "customers",
+      "table_type": "BASE TABLE",
+      "cols": "20"
+    },
+    {
+      "table_name": "data_load_runs",
+      "table_type": "BASE TABLE",
+      "cols": "9"
+    },
+    {
+      "table_name": "data_pipeline_step_log",
+      "table_type": "BASE TABLE",
+      "cols": "9"
+    },
+    {
+      "table_name": "data_quality_checks",
+      "table_type": "BASE TABLE",
+      "cols": "7"
+    },
+    {
+      "table_name": "data_quality_latest_status",
+      "table_type": "VIEW",
+      "cols": "7"
+    },
+    {
+      "table_name": "executive_health_snapshot",
+      "table_type": "BASE TABLE",
+      "cols": "6"
+    },
+    {
+      "table_name": "finance_ar_invoices",
+      "table_type": "BASE TABLE",
+      "cols": "13"
+    },
+    {
+      "table_name": "finance_ar_open_items",
+      "table_type": "BASE TABLE",
+      "cols": "19"
+    },
+    {
+      "table_name": "finance_ar_open_items_ar_demo",
+      "table_type": "VIEW",
+      "cols": "18"
+    },
+    {
+      "table_name": "finance_ar_open_items_cxc",
+      "table_type": "VIEW",
+      "cols": "32"
+    },
+    {
+      "table_name": "finance_ar_open_items_enriched",
+      "table_type": "VIEW",
+      "cols": "30"
+    },
+    {
+      "table_name": "finance_ar_snapshot_daily",
+      "table_type": "BASE TABLE",
+      "cols": "9"
+    },
+    {
+      "table_name": "finance_collections",
+      "table_type": "BASE TABLE",
+      "cols": "10"
+    },
+    {
+      "table_name": "finance_customer_risk_snapshot",
+      "table_type": "BASE TABLE",
+      "cols": "14"
+    },
+    {
+      "table_name": "financial_currency_field_catalog",
+      "table_type": "BASE TABLE",
+      "cols": "10"
+    },
+    {
+      "table_name": "inbound_shipments",
+      "table_type": "BASE TABLE",
+      "cols": "17"
+    },
+    {
+      "table_name": "inbound_shipments_normalized",
+      "table_type": "VIEW",
+      "cols": "16"
+    },
+    {
+      "table_name": "industry_profiles",
+      "table_type": "BASE TABLE",
+      "cols": "4"
+    },
+    {
+      "table_name": "insight_evolution",
+      "table_type": "BASE TABLE",
+      "cols": "8"
+    },
+    {
+      "table_name": "insight_execution_context",
+      "table_type": "BASE TABLE",
+      "cols": "6"
+    },
+    {
+      "table_name": "insights",
+      "table_type": "BASE TABLE",
+      "cols": "11"
+    },
+    {
+      "table_name": "insights_log",
+      "table_type": "BASE TABLE",
+      "cols": "18"
+    },
+    {
+      "table_name": "inventory",
+      "table_type": "BASE TABLE",
+      "cols": "14"
+    },
+    {
+      "table_name": "inventory_bom_capacity_current",
+      "table_type": "BASE TABLE",
+      "cols": "6"
+    },
+    {
+      "table_name": "inventory_category_settings",
+      "table_type": "BASE TABLE",
+      "cols": "6"
+    },
+    {
+      "table_name": "inventory_movements",
+      "table_type": "BASE TABLE",
+      "cols": "16"
+    },
+    {
+      "table_name": "inventory_position_v",
+      "table_type": "VIEW",
+      "cols": "9"
+    },
+    {
+      "table_name": "inventory_settings",
+      "table_type": "BASE TABLE",
+      "cols": "8"
+    },
+    {
+      "table_name": "inventory_stock",
+      "table_type": "BASE TABLE",
+      "cols": "12"
+    },
+    {
+      "table_name": "inventory_supply_semantic_current",
+      "table_type": "BASE TABLE",
+      "cols": "13"
+    },
+    {
+      "table_name": "inventory_supply_snapshot_daily",
+      "table_type": "BASE TABLE",
+      "cols": "14"
+    },
+    {
+      "table_name": "item_alias_map",
+      "table_type": "BASE TABLE",
+      "cols": "5"
+    },
+    {
+      "table_name": "item_bom",
+      "table_type": "BASE TABLE",
+      "cols": "14"
+    },
+    {
+      "table_name": "item_bom_resolved",
+      "table_type": "BASE TABLE",
+      "cols": "8"
+    },
+    {
+      "table_name": "item_lookup_normalized",
+      "table_type": "BASE TABLE",
+      "cols": "3"
+    },
+    {
+      "table_name": "items_master",
+      "table_type": "BASE TABLE",
+      "cols": "25"
+    },
+    {
+      "table_name": "items_master_override",
+      "table_type": "BASE TABLE",
+      "cols": "6"
+    },
+    {
+      "table_name": "items_master_v",
+      "table_type": "VIEW",
+      "cols": "24"
+    },
+    {
+      "table_name": "kpi_cantidad_facturas",
+      "table_type": "VIEW",
+      "cols": "1"
+    },
+    {
+      "table_name": "kpi_current_insights_base",
+      "table_type": "VIEW",
+      "cols": "11"
+    },
+    {
+      "table_name": "kpi_customer_health_classified",
+      "table_type": "VIEW",
+      "cols": "10"
+    },
+    {
+      "table_name": "kpi_customer_health_detail",
+      "table_type": "VIEW",
+      "cols": "9"
+    },
+    {
+      "table_name": "kpi_customer_health_summary",
+      "table_type": "VIEW",
+      "cols": "5"
+    },
+    {
+      "table_name": "kpi_finance_ar_aging_summary",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "kpi_finance_collections_health",
+      "table_type": "VIEW",
+      "cols": "6"
+    },
+    {
+      "table_name": "kpi_finance_current_snapshot",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "kpi_finance_customer_risk",
+      "table_type": "VIEW",
+      "cols": "13"
+    },
+    {
+      "table_name": "kpi_finance_dso",
+      "table_type": "VIEW",
+      "cols": "1"
+    },
+    {
+      "table_name": "kpi_finance_dso_by_customer",
+      "table_type": "VIEW",
+      "cols": "8"
+    },
+    {
+      "table_name": "kpi_finance_dso_by_customer_v2",
+      "table_type": "VIEW",
+      "cols": "10"
+    },
+    {
+      "table_name": "kpi_finance_dso_by_customer_v3",
+      "table_type": "VIEW",
+      "cols": "11"
+    },
+    {
+      "table_name": "kpi_finance_dso_by_customer_v4",
+      "table_type": "VIEW",
+      "cols": "11"
+    },
+    {
+      "table_name": "kpi_finance_dso_by_segment",
+      "table_type": "VIEW",
+      "cols": "7"
+    },
+    {
+      "table_name": "kpi_finance_dso_summary",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "kpi_finance_special_receivables",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "kpi_finance_special_receivables_detail",
+      "table_type": "VIEW",
+      "cols": "9"
+    },
+    {
+      "table_name": "kpi_home_commercial_summary",
+      "table_type": "VIEW",
+      "cols": "8"
+    },
+    {
+      "table_name": "kpi_home_sales_vs_last_year",
+      "table_type": "VIEW",
+      "cols": "5"
+    },
+    {
+      "table_name": "kpi_inventory_commercial_stock",
+      "table_type": "VIEW",
+      "cols": "1"
+    },
+    {
+      "table_name": "kpi_inventory_commercial_valuation",
+      "table_type": "VIEW",
+      "cols": "1"
+    },
+    {
+      "table_name": "kpi_inventory_coverage",
+      "table_type": "VIEW",
+      "cols": "11"
+    },
+    {
+      "table_name": "kpi_inventory_critical_demand_mix",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "kpi_inventory_critical_items_count",
+      "table_type": "VIEW",
+      "cols": "1"
+    },
+    {
+      "table_name": "kpi_inventory_critical_stock",
+      "table_type": "VIEW",
+      "cols": "6"
+    },
+    {
+      "table_name": "kpi_inventory_critical_value",
+      "table_type": "VIEW",
+      "cols": "1"
+    },
+    {
+      "table_name": "kpi_inventory_item_snapshot",
+      "table_type": "VIEW",
+      "cols": "9"
+    },
+    {
+      "table_name": "kpi_inventory_slow_moving",
+      "table_type": "VIEW",
+      "cols": "8"
+    },
+    {
+      "table_name": "kpi_inventory_slow_moving_summary",
+      "table_type": "VIEW",
+      "cols": "2"
+    },
+    {
+      "table_name": "kpi_inventory_stock_by_class",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "kpi_inventory_stock_by_location",
+      "table_type": "VIEW",
+      "cols": "2"
+    },
+    {
+      "table_name": "kpi_inventory_stock_by_subsidiary",
+      "table_type": "VIEW",
+      "cols": "2"
+    },
+    {
+      "table_name": "kpi_inventory_top_critical_items",
+      "table_type": "VIEW",
+      "cols": "11"
+    },
+    {
+      "table_name": "kpi_inventory_top_slow_moving",
+      "table_type": "VIEW",
+      "cols": "7"
+    },
+    {
+      "table_name": "kpi_inventory_total_stock",
+      "table_type": "VIEW",
+      "cols": "1"
+    },
+    {
+      "table_name": "kpi_inventory_total_valuation",
+      "table_type": "VIEW",
+      "cols": "1"
+    },
+    {
+      "table_name": "kpi_item_demand_3m",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "kpi_latest_active_insights",
+      "table_type": "VIEW",
+      "cols": "10"
+    },
+    {
+      "table_name": "kpi_latest_insights",
+      "table_type": "VIEW",
+      "cols": "9"
+    },
+    {
+      "table_name": "kpi_sales_category_monthly",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "kpi_sales_concentration_category",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "kpi_sales_concentration_customer",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "kpi_sales_current_month",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "kpi_sales_forecast_monthly",
+      "table_type": "VIEW",
+      "cols": "5"
+    },
+    {
+      "table_name": "kpi_sales_forecast_quarterly",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "kpi_sales_previous_month",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "kpi_sales_top_10_customer_participation_2026",
+      "table_type": "VIEW",
+      "cols": "5"
+    },
+    {
+      "table_name": "kpi_sales_top_reps_2026",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "kpi_stock_critico",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "kpi_stock_por_item",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "kpi_stock_por_subsidiaria",
+      "table_type": "VIEW",
+      "cols": "2"
+    },
+    {
+      "table_name": "kpi_stock_por_ubicacion",
+      "table_type": "VIEW",
+      "cols": "2"
+    },
+    {
+      "table_name": "kpi_stock_total",
+      "table_type": "VIEW",
+      "cols": "1"
+    },
+    {
+      "table_name": "kpi_ticket_promedio",
+      "table_type": "VIEW",
+      "cols": "2"
+    },
+    {
+      "table_name": "kpi_top_10_customer_sales_participation_2026",
+      "table_type": "VIEW",
+      "cols": "5"
+    },
+    {
+      "table_name": "kpi_top_clientes",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "kpi_valorizacion_inventario",
+      "table_type": "VIEW",
+      "cols": "1"
+    },
+    {
+      "table_name": "kpi_ventas_mensuales",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "kpi_ventas_subsidiaria",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "kpi_ventas_totales",
+      "table_type": "VIEW",
+      "cols": "2"
+    },
+    {
+      "table_name": "locations_master",
+      "table_type": "VIEW",
+      "cols": "10"
+    },
+    {
+      "table_name": "open_sales_order_demand",
+      "table_type": "BASE TABLE",
+      "cols": "20"
+    },
+    {
+      "table_name": "pg_all_foreign_keys",
+      "table_type": "VIEW",
+      "cols": "16"
+    },
+    {
+      "table_name": "pipeline_error_log",
+      "table_type": "BASE TABLE",
+      "cols": "10"
+    },
+    {
+      "table_name": "product_catalog",
+      "table_type": "BASE TABLE",
+      "cols": "8"
+    },
+    {
+      "table_name": "raw_ar_open_items",
+      "table_type": "BASE TABLE",
+      "cols": "19"
+    },
+    {
+      "table_name": "raw_ar_open_items_clean",
+      "table_type": "VIEW",
+      "cols": "18"
+    },
+    {
+      "table_name": "raw_collections",
+      "table_type": "BASE TABLE",
+      "cols": "16"
+    },
+    {
+      "table_name": "raw_customer_payments",
+      "table_type": "BASE TABLE",
+      "cols": "16"
+    },
+    {
+      "table_name": "raw_customers",
+      "table_type": "BASE TABLE",
+      "cols": "23"
+    },
+    {
+      "table_name": "raw_customers_clean",
+      "table_type": "VIEW",
+      "cols": "14"
+    },
+    {
+      "table_name": "raw_fx_rates",
+      "table_type": "BASE TABLE",
+      "cols": "8"
+    },
+    {
+      "table_name": "raw_inbound_shipments",
+      "table_type": "BASE TABLE",
+      "cols": "16"
+    },
+    {
+      "table_name": "raw_inventory",
+      "table_type": "BASE TABLE",
+      "cols": "10"
+    },
+    {
+      "table_name": "raw_inventory_transactions",
+      "table_type": "BASE TABLE",
+      "cols": "16"
+    },
+    {
+      "table_name": "raw_invoices",
+      "table_type": "BASE TABLE",
+      "cols": "18"
+    },
+    {
+      "table_name": "raw_item_bom",
+      "table_type": "BASE TABLE",
+      "cols": "13"
+    },
+    {
+      "table_name": "raw_items",
+      "table_type": "BASE TABLE",
+      "cols": "11"
+    },
+    {
+      "table_name": "raw_items_master",
+      "table_type": "BASE TABLE",
+      "cols": "25"
+    },
+    {
+      "table_name": "raw_locations",
+      "table_type": "BASE TABLE",
+      "cols": "8"
+    },
+    {
+      "table_name": "raw_netsuite_customers",
+      "table_type": "BASE TABLE",
+      "cols": "5"
+    },
+    {
+      "table_name": "raw_open_sales_orders",
+      "table_type": "BASE TABLE",
+      "cols": "19"
+    },
+    {
+      "table_name": "raw_sales",
+      "table_type": "BASE TABLE",
+      "cols": "22"
+    },
+    {
+      "table_name": "raw_sales_lines",
+      "table_type": "BASE TABLE",
+      "cols": "28"
+    },
+    {
+      "table_name": "raw_sales_orders",
+      "table_type": "BASE TABLE",
+      "cols": "13"
+    },
+    {
+      "table_name": "raw_subsidiaries",
+      "table_type": "BASE TABLE",
+      "cols": "10"
+    },
+    {
+      "table_name": "sales",
+      "table_type": "BASE TABLE",
+      "cols": "27"
+    },
+    {
+      "table_name": "sales_ar_demo",
+      "table_type": "VIEW",
+      "cols": "26"
+    },
+    {
+      "table_name": "sales_exclusion_rules",
+      "table_type": "BASE TABLE",
+      "cols": "4"
+    },
+    {
+      "table_name": "sales_forecast_monthly",
+      "table_type": "BASE TABLE",
+      "cols": "8"
+    },
+    {
+      "table_name": "sales_lines",
+      "table_type": "BASE TABLE",
+      "cols": "37"
+    },
+    {
+      "table_name": "sales_lines_ar_demo",
+      "table_type": "VIEW",
+      "cols": "26"
+    },
+    {
+      "table_name": "sales_scope_ar",
+      "table_type": "VIEW",
+      "cols": "26"
+    },
+    {
+      "table_name": "sales_semantic_current",
+      "table_type": "BASE TABLE",
+      "cols": "11"
+    },
+    {
+      "table_name": "sales_settings",
+      "table_type": "BASE TABLE",
+      "cols": "9"
+    },
+    {
+      "table_name": "sop_business_pipeline",
+      "table_type": "BASE TABLE",
+      "cols": "19"
+    },
+    {
+      "table_name": "sop_inventory_supply_intelligence",
+      "table_type": "BASE TABLE",
+      "cols": "10"
+    },
+    {
+      "table_name": "stg_ar_open_items_clean",
+      "table_type": "BASE TABLE",
+      "cols": "19"
+    },
+    {
+      "table_name": "stg_customer_payments_clean",
+      "table_type": "BASE TABLE",
+      "cols": "17"
+    },
+    {
+      "table_name": "stg_customers_clean",
+      "table_type": "BASE TABLE",
+      "cols": "20"
+    },
+    {
+      "table_name": "stg_inbound_shipments_clean",
+      "table_type": "BASE TABLE",
+      "cols": "17"
+    },
+    {
+      "table_name": "stg_inventory_clean",
+      "table_type": "BASE TABLE",
+      "cols": "15"
+    },
+    {
+      "table_name": "stg_inventory_transactions_clean",
+      "table_type": "BASE TABLE",
+      "cols": "15"
+    },
+    {
+      "table_name": "stg_items_master_clean",
+      "table_type": "BASE TABLE",
+      "cols": "24"
+    },
+    {
+      "table_name": "stg_sales_clean",
+      "table_type": "BASE TABLE",
+      "cols": "21"
+    },
+    {
+      "table_name": "stg_sales_lines_clean",
+      "table_type": "BASE TABLE",
+      "cols": "27"
+    },
+    {
+      "table_name": "subsidiaries_master",
+      "table_type": "VIEW",
+      "cols": "10"
+    },
+    {
+      "table_name": "sync_runs",
+      "table_type": "BASE TABLE",
+      "cols": "9"
+    },
+    {
+      "table_name": "tap_funky",
+      "table_type": "VIEW",
+      "cols": "13"
+    },
+    {
+      "table_name": "tenant_business_policies",
+      "table_type": "BASE TABLE",
+      "cols": "6"
+    },
+    {
+      "table_name": "v_bom_demand_component_coverage",
+      "table_type": "VIEW",
+      "cols": "10"
+    },
+    {
+      "table_name": "v_inbound_supply_by_item",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "v_inbound_supply_by_item_date",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "v_kpi_sales_base",
+      "table_type": "VIEW",
+      "cols": "10"
+    },
+    {
+      "table_name": "v_open_demand_by_item_date",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "vw_ar_account_statement_diagnostics",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "vw_ar_aging_summary",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "vw_ar_currency_context",
+      "table_type": "VIEW",
+      "cols": "25"
+    },
+    {
+      "table_name": "vw_ar_customer_risk",
+      "table_type": "VIEW",
+      "cols": "7"
+    },
+    {
+      "table_name": "vw_ar_data_quality_alerts",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "vw_ar_insights",
+      "table_type": "VIEW",
+      "cols": "15"
+    },
+    {
+      "table_name": "vw_ar_old_open_invoice_diagnostics",
+      "table_type": "VIEW",
+      "cols": "12"
+    },
+    {
+      "table_name": "vw_ar_open_items_detail",
+      "table_type": "VIEW",
+      "cols": "19"
+    },
+    {
+      "table_name": "vw_ar_open_sales_invoices_base",
+      "table_type": "VIEW",
+      "cols": "20"
+    },
+    {
+      "table_name": "vw_ar_review_documents",
+      "table_type": "VIEW",
+      "cols": "23"
+    },
+    {
+      "table_name": "vw_business_health_score",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "vw_cash_collection_forecast",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "vw_data_integrity_summary",
+      "table_type": "VIEW",
+      "cols": "5"
+    },
+    {
+      "table_name": "vw_data_quality_alerts",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "vw_executive_home_demo",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "vw_executive_home_final_demo",
+      "table_type": "VIEW",
+      "cols": "6"
+    },
+    {
+      "table_name": "vw_finance_ar_open_items_semantic",
+      "table_type": "VIEW",
+      "cols": "19"
+    },
+    {
+      "table_name": "vw_home_executive_summary",
+      "table_type": "VIEW",
+      "cols": "9"
+    },
+    {
+      "table_name": "vw_home_premium",
+      "table_type": "VIEW",
+      "cols": "7"
+    },
+    {
+      "table_name": "vw_inventory_bom_capacity_theoretical",
+      "table_type": "VIEW",
+      "cols": "6"
+    },
+    {
+      "table_name": "vw_inventory_bom_constraints",
+      "table_type": "VIEW",
+      "cols": "10"
+    },
+    {
+      "table_name": "vw_inventory_component_constraints_summary",
+      "table_type": "VIEW",
+      "cols": "6"
+    },
+    {
+      "table_name": "vw_inventory_coverage_semantic",
+      "table_type": "VIEW",
+      "cols": "8"
+    },
+    {
+      "table_name": "vw_inventory_demand_profile",
+      "table_type": "VIEW",
+      "cols": "34"
+    },
+    {
+      "table_name": "vw_inventory_executive_coverage",
+      "table_type": "VIEW",
+      "cols": "13"
+    },
+    {
+      "table_name": "vw_inventory_executive_summary",
+      "table_type": "VIEW",
+      "cols": "9"
+    },
+    {
+      "table_name": "vw_inventory_i003_candidates",
+      "table_type": "VIEW",
+      "cols": "44"
+    },
+    {
+      "table_name": "vw_inventory_i003_score",
+      "table_type": "VIEW",
+      "cols": "42"
+    },
+    {
+      "table_name": "vw_inventory_inbound_semantic",
+      "table_type": "VIEW",
+      "cols": "5"
+    },
+    {
+      "table_name": "vw_inventory_insights",
+      "table_type": "VIEW",
+      "cols": "15"
+    },
+    {
+      "table_name": "vw_inventory_item_movement_health",
+      "table_type": "VIEW",
+      "cols": "12"
+    },
+    {
+      "table_name": "vw_inventory_items_semantic",
+      "table_type": "VIEW",
+      "cols": "15"
+    },
+    {
+      "table_name": "vw_inventory_master_alerts",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "vw_inventory_normalized",
+      "table_type": "VIEW",
+      "cols": "16"
+    },
+    {
+      "table_name": "vw_inventory_position_semantic",
+      "table_type": "VIEW",
+      "cols": "8"
+    },
+    {
+      "table_name": "vw_inventory_rotation_semantic",
+      "table_type": "VIEW",
+      "cols": "7"
+    },
+    {
+      "table_name": "vw_item_bom_exceptions",
+      "table_type": "VIEW",
+      "cols": "13"
+    },
+    {
+      "table_name": "vw_item_bom_quality_summary",
+      "table_type": "VIEW",
+      "cols": "5"
+    },
+    {
+      "table_name": "vw_item_bom_resolved",
+      "table_type": "VIEW",
+      "cols": "13"
+    },
+    {
+      "table_name": "vw_item_master_cost_quality_alerts",
+      "table_type": "VIEW",
+      "cols": "9"
+    },
+    {
+      "table_name": "vw_kpi_finance_dso_offenders",
+      "table_type": "VIEW",
+      "cols": "5"
+    },
+    {
+      "table_name": "vw_kpi_finance_dso_trend",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "vw_priority_engine",
+      "table_type": "VIEW",
+      "cols": "5"
+    },
+    {
+      "table_name": "vw_rule_c001_detail",
+      "table_type": "VIEW",
+      "cols": "7"
+    },
+    {
+      "table_name": "vw_rule_e002_detail",
+      "table_type": "VIEW",
+      "cols": "5"
+    },
+    {
+      "table_name": "vw_rule_e003_detail",
+      "table_type": "VIEW",
+      "cols": "6"
+    },
+    {
+      "table_name": "vw_rule_i003_detail",
+      "table_type": "VIEW",
+      "cols": "17"
+    },
+    {
+      "table_name": "vw_rule_i003_summary",
+      "table_type": "VIEW",
+      "cols": "5"
+    },
+    {
+      "table_name": "vw_rule_v001_detail",
+      "table_type": "VIEW",
+      "cols": "8"
+    },
+    {
+      "table_name": "vw_rule_v002_detail",
+      "table_type": "VIEW",
+      "cols": "13"
+    },
+    {
+      "table_name": "vw_sales_actual_summary",
+      "table_type": "VIEW",
+      "cols": "6"
+    },
+    {
+      "table_name": "vw_sales_category_performance",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "vw_sales_current_month_demo",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "vw_sales_customer_concentration",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "vw_sales_customer_performance",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "vw_sales_executive_summary",
+      "table_type": "VIEW",
+      "cols": "6"
+    },
+    {
+      "table_name": "vw_sales_item_cost_diagnostics",
+      "table_type": "VIEW",
+      "cols": "8"
+    },
+    {
+      "table_name": "vw_sales_item_performance",
+      "table_type": "VIEW",
+      "cols": "11"
+    },
+    {
+      "table_name": "vw_sales_monthly",
+      "table_type": "VIEW",
+      "cols": "3"
+    },
+    {
+      "table_name": "vw_sales_negative_margin_customers",
+      "table_type": "VIEW",
+      "cols": "5"
+    },
+    {
+      "table_name": "vw_sales_negative_margin_items",
+      "table_type": "VIEW",
+      "cols": "5"
+    },
+    {
+      "table_name": "vw_sales_negative_margin_orders",
+      "table_type": "VIEW",
+      "cols": "8"
+    },
+    {
+      "table_name": "vw_sales_open_demand_monthly",
+      "table_type": "VIEW",
+      "cols": "5"
+    },
+    {
+      "table_name": "vw_sales_pipeline_profitability_distribution",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "vw_sales_pipeline_risk",
+      "table_type": "VIEW",
+      "cols": "21"
+    },
+    {
+      "table_name": "vw_sales_pipeline_summary",
+      "table_type": "VIEW",
+      "cols": "5"
+    },
+    {
+      "table_name": "vw_sales_profitability_summary",
+      "table_type": "VIEW",
+      "cols": "7"
+    },
+    {
+      "table_name": "vw_sales_top_customers_current",
+      "table_type": "VIEW",
+      "cols": "4"
+    },
+    {
+      "table_name": "vw_sales_top_products_current",
+      "table_type": "VIEW",
+      "cols": "6"
+    },
+    {
+      "table_name": "vw_stg_inventory_enriched",
+      "table_type": "VIEW",
+      "cols": "19"
+    },
+    {
+      "table_name": "vw_text_quality_alerts",
+      "table_type": "VIEW",
+      "cols": "6"
+    }
+  ],
+  "matviews": [
+    {
+      "matviewname": "mv_kpi_finance_dso_action_list"
+    }
+  ],
+  "policies": [
+    {
+      "tablename": "item_bom",
+      "policyname": "n002_item_bom_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "item_bom",
+      "policyname": "n002_item_bom_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "item_bom",
+      "policyname": "n002_item_bom_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "item_bom",
+      "policyname": "n002_item_bom_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "sync_runs",
+      "policyname": "n002_sync_runs_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "sync_runs",
+      "policyname": "n002_sync_runs_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "sync_runs",
+      "policyname": "n002_sync_runs_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "sync_runs",
+      "policyname": "n002_sync_runs_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_collections",
+      "policyname": "n018_raw_collections_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_collections",
+      "policyname": "n018_raw_collections_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_collections",
+      "policyname": "n018_raw_collections_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_collections",
+      "policyname": "n018_raw_collections_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "app_users",
+      "policyname": "n001_app_users_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "((client_id IS NOT NULL) AND (client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text)))",
+      "with_check": null
+    },
+    {
+      "tablename": "app_users",
+      "policyname": "n001_app_users_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "((client_id IS NOT NULL) AND (client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text)))"
+    },
+    {
+      "tablename": "app_users",
+      "policyname": "n001_app_users_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "((client_id IS NOT NULL) AND (client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text)))",
+      "with_check": null
+    },
+    {
+      "tablename": "app_users",
+      "policyname": "n001_app_users_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "((client_id IS NOT NULL) AND (client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text)))",
+      "with_check": "((client_id IS NOT NULL) AND (client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text)))"
+    },
+    {
+      "tablename": "raw_customers",
+      "policyname": "n018_raw_customers_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_customers",
+      "policyname": "n018_raw_customers_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_customers",
+      "policyname": "n018_raw_customers_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_customers",
+      "policyname": "n018_raw_customers_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "clients",
+      "policyname": "n001_clients_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "clients",
+      "policyname": "n001_clients_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "clients",
+      "policyname": "n001_clients_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "clients",
+      "policyname": "n001_clients_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "stg_inventory_transactions_clean",
+      "policyname": "n018_stg_inventory_transactions_clean_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "stg_inventory_transactions_clean",
+      "policyname": "n018_stg_inventory_transactions_clean_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "stg_inventory_transactions_clean",
+      "policyname": "n018_stg_inventory_transactions_clean_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "stg_inventory_transactions_clean",
+      "policyname": "n018_stg_inventory_transactions_clean_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "audit_log",
+      "policyname": "audit_log_delete_policy",
+      "cmd": "DELETE",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "audit_log",
+      "policyname": "audit_log_insert_policy",
+      "cmd": "INSERT",
+      "roles": [
+        "public"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "audit_log",
+      "policyname": "audit_log_select_policy",
+      "cmd": "SELECT",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "audit_log",
+      "policyname": "audit_log_update_policy",
+      "cmd": "UPDATE",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_sales_lines",
+      "policyname": "n018_raw_sales_lines_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_sales_lines",
+      "policyname": "n018_raw_sales_lines_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_sales_lines",
+      "policyname": "n018_raw_sales_lines_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_sales_lines",
+      "policyname": "n018_raw_sales_lines_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_netsuite_customers",
+      "policyname": "n018_raw_netsuite_customers_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_netsuite_customers",
+      "policyname": "n018_raw_netsuite_customers_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_netsuite_customers",
+      "policyname": "n018_raw_netsuite_customers_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_netsuite_customers",
+      "policyname": "n018_raw_netsuite_customers_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "ai_usage_logs",
+      "policyname": "ai_usage_logs_delete_policy",
+      "cmd": "DELETE",
+      "roles": [
+        "public"
+      ],
+      "qual": "((client_id)::text = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "ai_usage_logs",
+      "policyname": "ai_usage_logs_insert_policy",
+      "cmd": "INSERT",
+      "roles": [
+        "public"
+      ],
+      "qual": null,
+      "with_check": "((client_id)::text = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "ai_usage_logs",
+      "policyname": "ai_usage_logs_select_policy",
+      "cmd": "SELECT",
+      "roles": [
+        "public"
+      ],
+      "qual": "((client_id)::text = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "ai_usage_logs",
+      "policyname": "ai_usage_logs_update_policy",
+      "cmd": "UPDATE",
+      "roles": [
+        "public"
+      ],
+      "qual": "((client_id)::text = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_sales",
+      "policyname": "n018_raw_sales_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_sales",
+      "policyname": "n018_raw_sales_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_sales",
+      "policyname": "n018_raw_sales_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_sales",
+      "policyname": "n018_raw_sales_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "stg_items_master_clean",
+      "policyname": "n018_stg_items_master_clean_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "stg_items_master_clean",
+      "policyname": "n018_stg_items_master_clean_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "stg_items_master_clean",
+      "policyname": "n018_stg_items_master_clean_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "stg_items_master_clean",
+      "policyname": "n018_stg_items_master_clean_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "stg_inbound_shipments_clean",
+      "policyname": "n018_stg_inbound_shipments_clean_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "stg_inbound_shipments_clean",
+      "policyname": "n018_stg_inbound_shipments_clean_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "stg_inbound_shipments_clean",
+      "policyname": "n018_stg_inbound_shipments_clean_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "stg_inbound_shipments_clean",
+      "policyname": "n018_stg_inbound_shipments_clean_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "insights",
+      "policyname": "n002_insights_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "insights",
+      "policyname": "n002_insights_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "insights",
+      "policyname": "n002_insights_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "insights",
+      "policyname": "n002_insights_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "inbound_shipments",
+      "policyname": "n002_inbound_shipments_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "inbound_shipments",
+      "policyname": "n002_inbound_shipments_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "inbound_shipments",
+      "policyname": "n002_inbound_shipments_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "inbound_shipments",
+      "policyname": "n002_inbound_shipments_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_subsidiaries",
+      "policyname": "n018_raw_subsidiaries_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_subsidiaries",
+      "policyname": "n018_raw_subsidiaries_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_subsidiaries",
+      "policyname": "n018_raw_subsidiaries_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_subsidiaries",
+      "policyname": "n018_raw_subsidiaries_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_locations",
+      "policyname": "n018_raw_locations_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_locations",
+      "policyname": "n018_raw_locations_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_locations",
+      "policyname": "n018_raw_locations_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_locations",
+      "policyname": "n018_raw_locations_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "stg_sales_lines_clean",
+      "policyname": "n018_stg_sales_lines_clean_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "stg_sales_lines_clean",
+      "policyname": "n018_stg_sales_lines_clean_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "stg_sales_lines_clean",
+      "policyname": "n018_stg_sales_lines_clean_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "stg_sales_lines_clean",
+      "policyname": "n018_stg_sales_lines_clean_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "sales",
+      "policyname": "n002_sales_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "sales",
+      "policyname": "n002_sales_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "sales",
+      "policyname": "n002_sales_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "sales",
+      "policyname": "n002_sales_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_ar_open_items",
+      "policyname": "n018_raw_ar_open_items_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_ar_open_items",
+      "policyname": "n018_raw_ar_open_items_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_ar_open_items",
+      "policyname": "n018_raw_ar_open_items_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_ar_open_items",
+      "policyname": "n018_raw_ar_open_items_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "stg_sales_clean",
+      "policyname": "n018_stg_sales_clean_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "stg_sales_clean",
+      "policyname": "n018_stg_sales_clean_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "stg_sales_clean",
+      "policyname": "n018_stg_sales_clean_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "stg_sales_clean",
+      "policyname": "n018_stg_sales_clean_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_customer_payments",
+      "policyname": "n018_raw_customer_payments_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_customer_payments",
+      "policyname": "n018_raw_customer_payments_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_customer_payments",
+      "policyname": "n018_raw_customer_payments_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_customer_payments",
+      "policyname": "n018_raw_customer_payments_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "data_load_runs",
+      "policyname": "n002_data_load_runs_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "data_load_runs",
+      "policyname": "n002_data_load_runs_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "data_load_runs",
+      "policyname": "n002_data_load_runs_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "data_load_runs",
+      "policyname": "n002_data_load_runs_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_inbound_shipments",
+      "policyname": "n018_raw_inbound_shipments_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_inbound_shipments",
+      "policyname": "n018_raw_inbound_shipments_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_inbound_shipments",
+      "policyname": "n018_raw_inbound_shipments_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_inbound_shipments",
+      "policyname": "n018_raw_inbound_shipments_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "items_master",
+      "policyname": "n002_items_master_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "items_master",
+      "policyname": "n002_items_master_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "items_master",
+      "policyname": "n002_items_master_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "items_master",
+      "policyname": "n002_items_master_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "inventory_movements",
+      "policyname": "n002_inventory_movements_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "inventory_movements",
+      "policyname": "n002_inventory_movements_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "inventory_movements",
+      "policyname": "n002_inventory_movements_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "inventory_movements",
+      "policyname": "n002_inventory_movements_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_inventory_transactions",
+      "policyname": "n018_raw_inventory_transactions_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_inventory_transactions",
+      "policyname": "n018_raw_inventory_transactions_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_inventory_transactions",
+      "policyname": "n018_raw_inventory_transactions_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_inventory_transactions",
+      "policyname": "n018_raw_inventory_transactions_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "inventory_stock",
+      "policyname": "n002_inventory_stock_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "inventory_stock",
+      "policyname": "n002_inventory_stock_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "inventory_stock",
+      "policyname": "n002_inventory_stock_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "inventory_stock",
+      "policyname": "n002_inventory_stock_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_inventory",
+      "policyname": "n018_raw_inventory_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_inventory",
+      "policyname": "n018_raw_inventory_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_inventory",
+      "policyname": "n018_raw_inventory_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_inventory",
+      "policyname": "n018_raw_inventory_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_items_master",
+      "policyname": "n018_raw_items_master_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_items_master",
+      "policyname": "n018_raw_items_master_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_items_master",
+      "policyname": "n018_raw_items_master_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_items_master",
+      "policyname": "n018_raw_items_master_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "stg_customer_payments_clean",
+      "policyname": "n018_stg_customer_payments_clean_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "stg_customer_payments_clean",
+      "policyname": "n018_stg_customer_payments_clean_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "stg_customer_payments_clean",
+      "policyname": "n018_stg_customer_payments_clean_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "stg_customer_payments_clean",
+      "policyname": "n018_stg_customer_payments_clean_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "item_alias_map",
+      "policyname": "n002_item_alias_map_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "item_alias_map",
+      "policyname": "n002_item_alias_map_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "item_alias_map",
+      "policyname": "n002_item_alias_map_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "item_alias_map",
+      "policyname": "n002_item_alias_map_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "customer_payments",
+      "policyname": "n002_customer_payments_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "customer_payments",
+      "policyname": "n002_customer_payments_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "customer_payments",
+      "policyname": "n002_customer_payments_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "customer_payments",
+      "policyname": "n002_customer_payments_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "item_bom_resolved",
+      "policyname": "n002_item_bom_resolved_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "item_bom_resolved",
+      "policyname": "n002_item_bom_resolved_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "item_bom_resolved",
+      "policyname": "n002_item_bom_resolved_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "item_bom_resolved",
+      "policyname": "n002_item_bom_resolved_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_item_bom",
+      "policyname": "n018_raw_item_bom_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_item_bom",
+      "policyname": "n018_raw_item_bom_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_item_bom",
+      "policyname": "n018_raw_item_bom_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_item_bom",
+      "policyname": "n018_raw_item_bom_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_open_sales_orders",
+      "policyname": "n018_raw_open_sales_orders_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_open_sales_orders",
+      "policyname": "n018_raw_open_sales_orders_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "raw_open_sales_orders",
+      "policyname": "n018_raw_open_sales_orders_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "raw_open_sales_orders",
+      "policyname": "n018_raw_open_sales_orders_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "open_sales_order_demand",
+      "policyname": "n002_open_sales_order_demand_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "open_sales_order_demand",
+      "policyname": "n002_open_sales_order_demand_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "open_sales_order_demand",
+      "policyname": "n002_open_sales_order_demand_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "open_sales_order_demand",
+      "policyname": "n002_open_sales_order_demand_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "stg_ar_open_items_clean",
+      "policyname": "n018_stg_ar_open_items_clean_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "stg_ar_open_items_clean",
+      "policyname": "n018_stg_ar_open_items_clean_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "stg_ar_open_items_clean",
+      "policyname": "n018_stg_ar_open_items_clean_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "stg_ar_open_items_clean",
+      "policyname": "n018_stg_ar_open_items_clean_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "business_review_rules",
+      "policyname": "n002_business_review_rules_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "business_review_rules",
+      "policyname": "n002_business_review_rules_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "business_review_rules",
+      "policyname": "n002_business_review_rules_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "business_review_rules",
+      "policyname": "n002_business_review_rules_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "stg_inventory_clean",
+      "policyname": "n018_stg_inventory_clean_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "stg_inventory_clean",
+      "policyname": "n018_stg_inventory_clean_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "stg_inventory_clean",
+      "policyname": "n018_stg_inventory_clean_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "stg_inventory_clean",
+      "policyname": "n018_stg_inventory_clean_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "inventory_settings",
+      "policyname": "inventory_settings_delete_policy",
+      "cmd": "DELETE",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "inventory_settings",
+      "policyname": "inventory_settings_insert_policy",
+      "cmd": "INSERT",
+      "roles": [
+        "public"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "inventory_settings",
+      "policyname": "inventory_settings_select_policy",
+      "cmd": "SELECT",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "inventory_settings",
+      "policyname": "inventory_settings_update_policy",
+      "cmd": "UPDATE",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "sales_settings",
+      "policyname": "sales_settings_delete_policy",
+      "cmd": "DELETE",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "sales_settings",
+      "policyname": "sales_settings_insert_policy",
+      "cmd": "INSERT",
+      "roles": [
+        "public"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "sales_settings",
+      "policyname": "sales_settings_select_policy",
+      "cmd": "SELECT",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "sales_settings",
+      "policyname": "sales_settings_update_policy",
+      "cmd": "UPDATE",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "business_rule_thresholds",
+      "policyname": "n002_business_rule_thresholds_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "business_rule_thresholds",
+      "policyname": "n002_business_rule_thresholds_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "business_rule_thresholds",
+      "policyname": "n002_business_rule_thresholds_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "business_rule_thresholds",
+      "policyname": "n002_business_rule_thresholds_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "customer_segments",
+      "policyname": "n002_customer_segments_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "customer_segments",
+      "policyname": "n002_customer_segments_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "customer_segments",
+      "policyname": "n002_customer_segments_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "customer_segments",
+      "policyname": "n002_customer_segments_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "insight_execution_context",
+      "policyname": "n002_insight_execution_context_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "insight_execution_context",
+      "policyname": "n002_insight_execution_context_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "insight_execution_context",
+      "policyname": "n002_insight_execution_context_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "insight_execution_context",
+      "policyname": "n002_insight_execution_context_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "ar_settings",
+      "policyname": "ar_settings_delete_policy",
+      "cmd": "DELETE",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "ar_settings",
+      "policyname": "ar_settings_insert_policy",
+      "cmd": "INSERT",
+      "roles": [
+        "public"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "ar_settings",
+      "policyname": "ar_settings_select_policy",
+      "cmd": "SELECT",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "ar_settings",
+      "policyname": "ar_settings_update_policy",
+      "cmd": "UPDATE",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "client_config",
+      "policyname": "client_config_delete_policy",
+      "cmd": "DELETE",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "client_config",
+      "policyname": "client_config_insert_policy",
+      "cmd": "INSERT",
+      "roles": [
+        "public"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "client_config",
+      "policyname": "client_config_select_policy",
+      "cmd": "SELECT",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "client_config",
+      "policyname": "client_config_update_policy",
+      "cmd": "UPDATE",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "alert_config",
+      "policyname": "alert_config_delete_policy",
+      "cmd": "DELETE",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "alert_config",
+      "policyname": "alert_config_insert_policy",
+      "cmd": "INSERT",
+      "roles": [
+        "public"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "alert_config",
+      "policyname": "alert_config_select_policy",
+      "cmd": "SELECT",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "alert_config",
+      "policyname": "alert_config_update_policy",
+      "cmd": "UPDATE",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "inventory_category_settings",
+      "policyname": "inventory_category_settings_delete_policy",
+      "cmd": "DELETE",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "inventory_category_settings",
+      "policyname": "inventory_category_settings_insert_policy",
+      "cmd": "INSERT",
+      "roles": [
+        "public"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "inventory_category_settings",
+      "policyname": "inventory_category_settings_select_policy",
+      "cmd": "SELECT",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "inventory_category_settings",
+      "policyname": "inventory_category_settings_update_policy",
+      "cmd": "UPDATE",
+      "roles": [
+        "public"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "sales_lines",
+      "policyname": "n002_sales_lines_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "sales_lines",
+      "policyname": "n002_sales_lines_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "sales_lines",
+      "policyname": "n002_sales_lines_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "sales_lines",
+      "policyname": "n002_sales_lines_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "finance_ar_open_items",
+      "policyname": "n002_finance_ar_open_items_delete_own_tenant",
+      "cmd": "DELETE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "finance_ar_open_items",
+      "policyname": "n002_finance_ar_open_items_insert_own_tenant",
+      "cmd": "INSERT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": null,
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    },
+    {
+      "tablename": "finance_ar_open_items",
+      "policyname": "n002_finance_ar_open_items_select_own_tenant",
+      "cmd": "SELECT",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": null
+    },
+    {
+      "tablename": "finance_ar_open_items",
+      "policyname": "n002_finance_ar_open_items_update_own_tenant",
+      "cmd": "UPDATE",
+      "roles": [
+        "authenticated"
+      ],
+      "qual": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))",
+      "with_check": "(client_id = ((current_setting('request.jwt.claims'::text, true))::jsonb ->> 'client_id'::text))"
+    }
+  ],
+  "triggers": [],
+  "funcs": [
+    {
+      "routine_name": "col_is_pk"
+    },
+    {
+      "routine_name": "to_num_us"
+    },
+    {
+      "routine_name": "kpi_ventas_rango"
+    },
+    {
+      "routine_name": "has_fk"
+    },
+    {
+      "routine_name": "col_is_pk"
+    },
+    {
+      "routine_name": "col_is_pk"
+    },
+    {
+      "routine_name": "col_is_null"
+    },
+    {
+      "routine_name": "to_num_accounting"
+    },
+    {
+      "routine_name": "to_date_safe"
+    },
+    {
+      "routine_name": "kpi_top_clientes_rango"
+    },
+    {
+      "routine_name": "hasnt_fk"
+    },
+    {
+      "routine_name": "hasnt_fk"
+    },
+    {
+      "routine_name": "to_timestamp_safe"
+    },
+    {
+      "routine_name": "to_date_safe"
+    },
+    {
+      "routine_name": "to_date_safe"
+    },
+    {
+      "routine_name": "to_timestamp_safe"
+    },
+    {
+      "routine_name": "to_timestamp_safe"
+    },
+    {
+      "routine_name": "to_num_accounting"
+    },
+    {
+      "routine_name": "to_num_accounting"
+    },
+    {
+      "routine_name": "to_num_accounting"
+    },
+    {
+      "routine_name": "col_is_pk"
+    },
+    {
+      "routine_name": "col_is_pk"
+    },
+    {
+      "routine_name": "col_is_pk"
+    },
+    {
+      "routine_name": "col_isnt_pk"
+    },
+    {
+      "routine_name": "col_isnt_pk"
+    },
+    {
+      "routine_name": "col_isnt_pk"
+    },
+    {
+      "routine_name": "refresh_sales_actuals"
+    },
+    {
+      "routine_name": "col_isnt_pk"
+    },
+    {
+      "routine_name": "_get_col_type"
+    },
+    {
+      "routine_name": "generate_insights_snapshot"
+    },
+    {
+      "routine_name": "_get_col_type"
+    },
+    {
+      "routine_name": "_get_col_ns_type"
+    },
+    {
+      "routine_name": "_typename"
+    },
+    {
+      "routine_name": "refresh_stg_inventory_clean"
+    },
+    {
+      "routine_name": "refresh_stg_sales_clean"
+    },
+    {
+      "routine_name": "_cdi"
+    },
+    {
+      "routine_name": "refresh_inventory_supply_intelligence"
+    },
+    {
+      "routine_name": "refresh_stg_sales_lines_clean"
+    },
+    {
+      "routine_name": "format_type_string"
+    },
+    {
+      "routine_name": "col_type_is"
+    },
+    {
+      "routine_name": "refresh_stg_inventory_transactions_clean"
+    },
+    {
+      "routine_name": "col_type_is"
+    },
+    {
+      "routine_name": "col_type_is"
+    },
+    {
+      "routine_name": "col_type_is"
+    },
+    {
+      "routine_name": "col_type_is"
+    },
+    {
+      "routine_name": "col_isnt_pk"
+    },
+    {
+      "routine_name": "refresh_stg_items_master_clean"
+    },
+    {
+      "routine_name": "refresh_stg_inbound_shipments_clean"
+    },
+    {
+      "routine_name": "refresh_stg_ar_open_items_clean"
+    },
+    {
+      "routine_name": "col_type_is"
+    },
+    {
+      "routine_name": "_has_def"
+    },
+    {
+      "routine_name": "_has_def"
+    },
+    {
+      "routine_name": "col_has_default"
+    },
+    {
+      "routine_name": "col_has_default"
+    },
+    {
+      "routine_name": "col_has_default"
+    },
+    {
+      "routine_name": "col_hasnt_default"
+    },
+    {
+      "routine_name": "col_hasnt_default"
+    },
+    {
+      "routine_name": "refresh_finance_snapshots"
+    },
+    {
+      "routine_name": "col_hasnt_default"
+    },
+    {
+      "routine_name": "_def_is"
+    },
+    {
+      "routine_name": "col_isnt_pk"
+    },
+    {
+      "routine_name": "pg_version"
+    },
+    {
+      "routine_name": "pg_version_num"
+    },
+    {
+      "routine_name": "os_name"
+    },
+    {
+      "routine_name": "pgtap_version"
+    },
+    {
+      "routine_name": "plan"
+    },
+    {
+      "routine_name": "no_plan"
+    },
+    {
+      "routine_name": "_get"
+    },
+    {
+      "routine_name": "_get_latest"
+    },
+    {
+      "routine_name": "_get_latest"
+    },
+    {
+      "routine_name": "has_fk"
+    },
+    {
+      "routine_name": "refresh_stg_customer_payments_clean"
+    },
+    {
+      "routine_name": "_get_note"
+    },
+    {
+      "routine_name": "_get_note"
+    },
+    {
+      "routine_name": "_set"
+    },
+    {
+      "routine_name": "_set"
+    },
+    {
+      "routine_name": "_set"
+    },
+    {
+      "routine_name": "_add"
+    },
+    {
+      "routine_name": "_add"
+    },
+    {
+      "routine_name": "rls_auto_enable"
+    },
+    {
+      "routine_name": "add_result"
+    },
+    {
+      "routine_name": "num_failed"
+    },
+    {
+      "routine_name": "_cdi"
+    },
+    {
+      "routine_name": "col_default_is"
+    },
+    {
+      "routine_name": "_finish"
+    },
+    {
+      "routine_name": "finish"
+    },
+    {
+      "routine_name": "diag"
+    },
+    {
+      "routine_name": "diag"
+    },
+    {
+      "routine_name": "diag"
+    },
+    {
+      "routine_name": "diag"
+    },
+    {
+      "routine_name": "_cdi"
+    },
+    {
+      "routine_name": "refresh_ar_actuals"
+    },
+    {
+      "routine_name": "ok"
+    },
+    {
+      "routine_name": "ok"
+    },
+    {
+      "routine_name": "is"
+    },
+    {
+      "routine_name": "is"
+    },
+    {
+      "routine_name": "isnt"
+    },
+    {
+      "routine_name": "isnt"
+    },
+    {
+      "routine_name": "_alike"
+    },
+    {
+      "routine_name": "matches"
+    },
+    {
+      "routine_name": "matches"
+    },
+    {
+      "routine_name": "imatches"
+    },
+    {
+      "routine_name": "imatches"
+    },
+    {
+      "routine_name": "alike"
+    },
+    {
+      "routine_name": "alike"
+    },
+    {
+      "routine_name": "ialike"
+    },
+    {
+      "routine_name": "ialike"
+    },
+    {
+      "routine_name": "_unalike"
+    },
+    {
+      "routine_name": "doesnt_match"
+    },
+    {
+      "routine_name": "doesnt_match"
+    },
+    {
+      "routine_name": "doesnt_imatch"
+    },
+    {
+      "routine_name": "doesnt_imatch"
+    },
+    {
+      "routine_name": "unalike"
+    },
+    {
+      "routine_name": "unalike"
+    },
+    {
+      "routine_name": "unialike"
+    },
+    {
+      "routine_name": "unialike"
+    },
+    {
+      "routine_name": "col_default_is"
+    },
+    {
+      "routine_name": "col_default_is"
+    },
+    {
+      "routine_name": "cmp_ok"
+    },
+    {
+      "routine_name": "cmp_ok"
+    },
+    {
+      "routine_name": "pass"
+    },
+    {
+      "routine_name": "pass"
+    },
+    {
+      "routine_name": "fail"
+    },
+    {
+      "routine_name": "fail"
+    },
+    {
+      "routine_name": "todo"
+    },
+    {
+      "routine_name": "todo"
+    },
+    {
+      "routine_name": "todo"
+    },
+    {
+      "routine_name": "todo"
+    },
+    {
+      "routine_name": "todo_start"
+    },
+    {
+      "routine_name": "todo_start"
+    },
+    {
+      "routine_name": "col_default_is"
+    },
+    {
+      "routine_name": "unaccent"
+    },
+    {
+      "routine_name": "unaccent"
+    },
+    {
+      "routine_name": "unaccent_init"
+    },
+    {
+      "routine_name": "unaccent_lexize"
+    },
+    {
+      "routine_name": "normalize_text"
+    },
+    {
+      "routine_name": "in_todo"
+    },
+    {
+      "routine_name": "todo_end"
+    },
+    {
+      "routine_name": "_todo"
+    },
+    {
+      "routine_name": "skip"
+    },
+    {
+      "routine_name": "skip"
+    },
+    {
+      "routine_name": "skip"
+    },
+    {
+      "routine_name": "skip"
+    },
+    {
+      "routine_name": "_query"
+    },
+    {
+      "routine_name": "throws_ok"
+    },
+    {
+      "routine_name": "throws_ok"
+    },
+    {
+      "routine_name": "throws_ok"
+    },
+    {
+      "routine_name": "throws_ok"
+    },
+    {
+      "routine_name": "throws_ok"
+    },
+    {
+      "routine_name": "throws_ok"
+    },
+    {
+      "routine_name": "throws_ok"
+    },
+    {
+      "routine_name": "col_default_is"
+    },
+    {
+      "routine_name": "col_default_is"
+    },
+    {
+      "routine_name": "has_fk"
+    },
+    {
+      "routine_name": "_error_diag"
+    },
+    {
+      "routine_name": "lives_ok"
+    },
+    {
+      "routine_name": "lives_ok"
+    },
+    {
+      "routine_name": "performs_ok"
+    },
+    {
+      "routine_name": "performs_ok"
+    },
+    {
+      "routine_name": "_time_trials"
+    },
+    {
+      "routine_name": "performs_within"
+    },
+    {
+      "routine_name": "performs_within"
+    },
+    {
+      "routine_name": "performs_within"
+    },
+    {
+      "routine_name": "performs_within"
+    },
+    {
+      "routine_name": "_relexists"
+    },
+    {
+      "routine_name": "_relexists"
+    },
+    {
+      "routine_name": "has_relation"
+    },
+    {
+      "routine_name": "has_relation"
+    },
+    {
+      "routine_name": "has_relation"
+    },
+    {
+      "routine_name": "hasnt_relation"
+    },
+    {
+      "routine_name": "hasnt_relation"
+    },
+    {
+      "routine_name": "hasnt_relation"
+    },
+    {
+      "routine_name": "_rexists"
+    },
+    {
+      "routine_name": "_rexists"
+    },
+    {
+      "routine_name": "refresh_open_sales_order_demand"
+    },
+    {
+      "routine_name": "_rexists"
+    },
+    {
+      "routine_name": "_rexists"
+    },
+    {
+      "routine_name": "has_table"
+    },
+    {
+      "routine_name": "has_table"
+    },
+    {
+      "routine_name": "has_table"
+    },
+    {
+      "routine_name": "has_table"
+    },
+    {
+      "routine_name": "hasnt_table"
+    },
+    {
+      "routine_name": "hasnt_table"
+    },
+    {
+      "routine_name": "hasnt_table"
+    },
+    {
+      "routine_name": "hasnt_table"
+    },
+    {
+      "routine_name": "has_view"
+    },
+    {
+      "routine_name": "has_view"
+    },
+    {
+      "routine_name": "has_view"
+    },
+    {
+      "routine_name": "has_view"
+    },
+    {
+      "routine_name": "hasnt_view"
+    },
+    {
+      "routine_name": "hasnt_view"
+    },
+    {
+      "routine_name": "hasnt_view"
+    },
+    {
+      "routine_name": "hasnt_view"
+    },
+    {
+      "routine_name": "has_sequence"
+    },
+    {
+      "routine_name": "has_sequence"
+    },
+    {
+      "routine_name": "has_sequence"
+    },
+    {
+      "routine_name": "has_sequence"
+    },
+    {
+      "routine_name": "hasnt_sequence"
+    },
+    {
+      "routine_name": "hasnt_sequence"
+    },
+    {
+      "routine_name": "hasnt_sequence"
+    },
+    {
+      "routine_name": "has_foreign_table"
+    },
+    {
+      "routine_name": "has_foreign_table"
+    },
+    {
+      "routine_name": "has_foreign_table"
+    },
+    {
+      "routine_name": "has_foreign_table"
+    },
+    {
+      "routine_name": "hasnt_foreign_table"
+    },
+    {
+      "routine_name": "hasnt_foreign_table"
+    },
+    {
+      "routine_name": "hasnt_foreign_table"
+    },
+    {
+      "routine_name": "hasnt_foreign_table"
+    },
+    {
+      "routine_name": "has_composite"
+    },
+    {
+      "routine_name": "has_composite"
+    },
+    {
+      "routine_name": "has_composite"
+    },
+    {
+      "routine_name": "hasnt_composite"
+    },
+    {
+      "routine_name": "hasnt_composite"
+    },
+    {
+      "routine_name": "hasnt_composite"
+    },
+    {
+      "routine_name": "fn_rule_v002_detail"
+    },
+    {
+      "routine_name": "_cexists"
+    },
+    {
+      "routine_name": "_cexists"
+    },
+    {
+      "routine_name": "has_column"
+    },
+    {
+      "routine_name": "has_column"
+    },
+    {
+      "routine_name": "has_column"
+    },
+    {
+      "routine_name": "hasnt_column"
+    },
+    {
+      "routine_name": "hasnt_column"
+    },
+    {
+      "routine_name": "hasnt_column"
+    },
+    {
+      "routine_name": "_col_is_null"
+    },
+    {
+      "routine_name": "_col_is_null"
+    },
+    {
+      "routine_name": "col_not_null"
+    },
+    {
+      "routine_name": "col_not_null"
+    },
+    {
+      "routine_name": "col_is_null"
+    },
+    {
+      "routine_name": "col_is_pk"
+    },
+    {
+      "routine_name": "_hasc"
+    },
+    {
+      "routine_name": "_hasc"
+    },
+    {
+      "routine_name": "has_pk"
+    },
+    {
+      "routine_name": "has_pk"
+    },
+    {
+      "routine_name": "has_pk"
+    },
+    {
+      "routine_name": "has_pk"
+    },
+    {
+      "routine_name": "hasnt_pk"
+    },
+    {
+      "routine_name": "hasnt_pk"
+    },
+    {
+      "routine_name": "hasnt_pk"
+    },
+    {
+      "routine_name": "_ident_array_to_string"
+    },
+    {
+      "routine_name": "_pg_sv_column_array"
+    },
+    {
+      "routine_name": "_pg_sv_table_accessible"
+    },
+    {
+      "routine_name": "_keys"
+    },
+    {
+      "routine_name": "_keys"
+    },
+    {
+      "routine_name": "_ckeys"
+    },
+    {
+      "routine_name": "_ckeys"
+    },
+    {
+      "routine_name": "col_is_pk"
+    },
+    {
+      "routine_name": "hasnt_fk"
+    },
+    {
+      "routine_name": "_fkexists"
+    },
+    {
+      "routine_name": "_fkexists"
+    },
+    {
+      "routine_name": "col_is_fk"
+    },
+    {
+      "routine_name": "col_is_fk"
+    },
+    {
+      "routine_name": "col_is_fk"
+    },
+    {
+      "routine_name": "col_is_fk"
+    },
+    {
+      "routine_name": "col_is_fk"
+    },
+    {
+      "routine_name": "col_is_fk"
+    },
+    {
+      "routine_name": "col_isnt_fk"
+    },
+    {
+      "routine_name": "col_isnt_fk"
+    },
+    {
+      "routine_name": "col_isnt_fk"
+    },
+    {
+      "routine_name": "col_isnt_fk"
+    },
+    {
+      "routine_name": "col_isnt_fk"
+    },
+    {
+      "routine_name": "col_isnt_fk"
+    },
+    {
+      "routine_name": "has_unique"
+    },
+    {
+      "routine_name": "has_unique"
+    },
+    {
+      "routine_name": "has_unique"
+    },
+    {
+      "routine_name": "_constraint"
+    },
+    {
+      "routine_name": "_constraint"
+    },
+    {
+      "routine_name": "col_is_unique"
+    },
+    {
+      "routine_name": "col_is_unique"
+    },
+    {
+      "routine_name": "col_is_unique"
+    },
+    {
+      "routine_name": "col_is_unique"
+    },
+    {
+      "routine_name": "col_is_unique"
+    },
+    {
+      "routine_name": "col_is_unique"
+    },
+    {
+      "routine_name": "col_is_unique"
+    },
+    {
+      "routine_name": "col_is_unique"
+    },
+    {
+      "routine_name": "has_check"
+    },
+    {
+      "routine_name": "has_check"
+    },
+    {
+      "routine_name": "has_check"
+    },
+    {
+      "routine_name": "col_has_check"
+    },
+    {
+      "routine_name": "col_has_check"
+    },
+    {
+      "routine_name": "col_has_check"
+    },
+    {
+      "routine_name": "col_has_check"
+    },
+    {
+      "routine_name": "col_has_check"
+    },
+    {
+      "routine_name": "col_has_check"
+    },
+    {
+      "routine_name": "fk_ok"
+    },
+    {
+      "routine_name": "fk_ok"
+    },
+    {
+      "routine_name": "fk_ok"
+    },
+    {
+      "routine_name": "fk_ok"
+    },
+    {
+      "routine_name": "fk_ok"
+    },
+    {
+      "routine_name": "fk_ok"
+    },
+    {
+      "routine_name": "fk_ok"
+    },
+    {
+      "routine_name": "fk_ok"
+    },
+    {
+      "routine_name": "_prokind"
+    },
+    {
+      "routine_name": "_funkargs"
+    },
+    {
+      "routine_name": "_got_func"
+    },
+    {
+      "routine_name": "_got_func"
+    },
+    {
+      "routine_name": "_got_func"
+    },
+    {
+      "routine_name": "_got_func"
+    },
+    {
+      "routine_name": "has_function"
+    },
+    {
+      "routine_name": "has_function"
+    },
+    {
+      "routine_name": "has_function"
+    },
+    {
+      "routine_name": "has_function"
+    },
+    {
+      "routine_name": "has_function"
+    },
+    {
+      "routine_name": "has_function"
+    },
+    {
+      "routine_name": "has_function"
+    },
+    {
+      "routine_name": "has_function"
+    },
+    {
+      "routine_name": "hasnt_function"
+    },
+    {
+      "routine_name": "hasnt_function"
+    },
+    {
+      "routine_name": "hasnt_function"
+    },
+    {
+      "routine_name": "hasnt_function"
+    },
+    {
+      "routine_name": "hasnt_function"
+    },
+    {
+      "routine_name": "hasnt_function"
+    },
+    {
+      "routine_name": "hasnt_function"
+    },
+    {
+      "routine_name": "hasnt_function"
+    },
+    {
+      "routine_name": "_pg_sv_type_array"
+    },
+    {
+      "routine_name": "can"
+    },
+    {
+      "routine_name": "can"
+    },
+    {
+      "routine_name": "can"
+    },
+    {
+      "routine_name": "can"
+    },
+    {
+      "routine_name": "_ikeys"
+    },
+    {
+      "routine_name": "_ikeys"
+    },
+    {
+      "routine_name": "_have_index"
+    },
+    {
+      "routine_name": "_have_index"
+    },
+    {
+      "routine_name": "has_index"
+    },
+    {
+      "routine_name": "has_index"
+    },
+    {
+      "routine_name": "has_index"
+    },
+    {
+      "routine_name": "has_index"
+    },
+    {
+      "routine_name": "has_index"
+    },
+    {
+      "routine_name": "has_index"
+    },
+    {
+      "routine_name": "_is_schema"
+    },
+    {
+      "routine_name": "has_index"
+    },
+    {
+      "routine_name": "has_index"
+    },
+    {
+      "routine_name": "has_index"
+    },
+    {
+      "routine_name": "has_index"
+    },
+    {
+      "routine_name": "hasnt_index"
+    },
+    {
+      "routine_name": "hasnt_index"
+    },
+    {
+      "routine_name": "hasnt_index"
+    },
+    {
+      "routine_name": "hasnt_index"
+    },
+    {
+      "routine_name": "_is_indexed"
+    },
+    {
+      "routine_name": "is_indexed"
+    },
+    {
+      "routine_name": "is_indexed"
+    },
+    {
+      "routine_name": "is_indexed"
+    },
+    {
+      "routine_name": "is_indexed"
+    },
+    {
+      "routine_name": "is_indexed"
+    },
+    {
+      "routine_name": "is_indexed"
+    },
+    {
+      "routine_name": "is_indexed"
+    },
+    {
+      "routine_name": "has_leftop"
+    },
+    {
+      "routine_name": "index_is_unique"
+    },
+    {
+      "routine_name": "index_is_unique"
+    },
+    {
+      "routine_name": "index_is_unique"
+    },
+    {
+      "routine_name": "index_is_unique"
+    },
+    {
+      "routine_name": "index_is_primary"
+    },
+    {
+      "routine_name": "index_is_primary"
+    },
+    {
+      "routine_name": "index_is_primary"
+    },
+    {
+      "routine_name": "index_is_primary"
+    },
+    {
+      "routine_name": "is_clustered"
+    },
+    {
+      "routine_name": "is_clustered"
+    },
+    {
+      "routine_name": "is_clustered"
+    },
+    {
+      "routine_name": "is_clustered"
+    },
+    {
+      "routine_name": "index_is_type"
+    },
+    {
+      "routine_name": "index_is_type"
+    },
+    {
+      "routine_name": "index_is_type"
+    },
+    {
+      "routine_name": "index_is_type"
+    },
+    {
+      "routine_name": "_trig"
+    },
+    {
+      "routine_name": "_trig"
+    },
+    {
+      "routine_name": "has_trigger"
+    },
+    {
+      "routine_name": "has_trigger"
+    },
+    {
+      "routine_name": "has_trigger"
+    },
+    {
+      "routine_name": "has_trigger"
+    },
+    {
+      "routine_name": "hasnt_trigger"
+    },
+    {
+      "routine_name": "hasnt_trigger"
+    },
+    {
+      "routine_name": "hasnt_trigger"
+    },
+    {
+      "routine_name": "hasnt_trigger"
+    },
+    {
+      "routine_name": "trigger_is"
+    },
+    {
+      "routine_name": "trigger_is"
+    },
+    {
+      "routine_name": "trigger_is"
+    },
+    {
+      "routine_name": "trigger_is"
+    },
+    {
+      "routine_name": "has_schema"
+    },
+    {
+      "routine_name": "has_schema"
+    },
+    {
+      "routine_name": "hasnt_schema"
+    },
+    {
+      "routine_name": "hasnt_schema"
+    },
+    {
+      "routine_name": "has_tablespace"
+    },
+    {
+      "routine_name": "has_tablespace"
+    },
+    {
+      "routine_name": "has_tablespace"
+    },
+    {
+      "routine_name": "hasnt_tablespace"
+    },
+    {
+      "routine_name": "hasnt_tablespace"
+    },
+    {
+      "routine_name": "_has_type"
+    },
+    {
+      "routine_name": "_has_type"
+    },
+    {
+      "routine_name": "has_type"
+    },
+    {
+      "routine_name": "has_type"
+    },
+    {
+      "routine_name": "has_type"
+    },
+    {
+      "routine_name": "has_type"
+    },
+    {
+      "routine_name": "hasnt_type"
+    },
+    {
+      "routine_name": "hasnt_type"
+    },
+    {
+      "routine_name": "hasnt_type"
+    },
+    {
+      "routine_name": "hasnt_type"
+    },
+    {
+      "routine_name": "has_domain"
+    },
+    {
+      "routine_name": "has_domain"
+    },
+    {
+      "routine_name": "has_domain"
+    },
+    {
+      "routine_name": "has_domain"
+    },
+    {
+      "routine_name": "hasnt_domain"
+    },
+    {
+      "routine_name": "hasnt_domain"
+    },
+    {
+      "routine_name": "hasnt_domain"
+    },
+    {
+      "routine_name": "hasnt_domain"
+    },
+    {
+      "routine_name": "has_enum"
+    },
+    {
+      "routine_name": "has_enum"
+    },
+    {
+      "routine_name": "has_enum"
+    },
+    {
+      "routine_name": "has_enum"
+    },
+    {
+      "routine_name": "hasnt_enum"
+    },
+    {
+      "routine_name": "hasnt_enum"
+    },
+    {
+      "routine_name": "hasnt_enum"
+    },
+    {
+      "routine_name": "hasnt_enum"
+    },
+    {
+      "routine_name": "enum_has_labels"
+    },
+    {
+      "routine_name": "enum_has_labels"
+    },
+    {
+      "routine_name": "enum_has_labels"
+    },
+    {
+      "routine_name": "enum_has_labels"
+    },
+    {
+      "routine_name": "_has_role"
+    },
+    {
+      "routine_name": "has_role"
+    },
+    {
+      "routine_name": "has_role"
+    },
+    {
+      "routine_name": "hasnt_role"
+    },
+    {
+      "routine_name": "hasnt_role"
+    },
+    {
+      "routine_name": "_has_user"
+    },
+    {
+      "routine_name": "has_user"
+    },
+    {
+      "routine_name": "has_user"
+    },
+    {
+      "routine_name": "hasnt_user"
+    },
+    {
+      "routine_name": "hasnt_user"
+    },
+    {
+      "routine_name": "_is_super"
+    },
+    {
+      "routine_name": "is_superuser"
+    },
+    {
+      "routine_name": "is_superuser"
+    },
+    {
+      "routine_name": "isnt_superuser"
+    },
+    {
+      "routine_name": "isnt_superuser"
+    },
+    {
+      "routine_name": "_has_group"
+    },
+    {
+      "routine_name": "has_group"
+    },
+    {
+      "routine_name": "has_group"
+    },
+    {
+      "routine_name": "hasnt_group"
+    },
+    {
+      "routine_name": "hasnt_group"
+    },
+    {
+      "routine_name": "_grolist"
+    },
+    {
+      "routine_name": "is_member_of"
+    },
+    {
+      "routine_name": "is_member_of"
+    },
+    {
+      "routine_name": "is_member_of"
+    },
+    {
+      "routine_name": "is_member_of"
+    },
+    {
+      "routine_name": "isnt_member_of"
+    },
+    {
+      "routine_name": "isnt_member_of"
+    },
+    {
+      "routine_name": "isnt_member_of"
+    },
+    {
+      "routine_name": "isnt_member_of"
+    },
+    {
+      "routine_name": "_cmp_types"
+    },
+    {
+      "routine_name": "_cast_exists"
+    },
+    {
+      "routine_name": "_cast_exists"
+    },
+    {
+      "routine_name": "_cast_exists"
+    },
+    {
+      "routine_name": "has_cast"
+    },
+    {
+      "routine_name": "has_cast"
+    },
+    {
+      "routine_name": "has_cast"
+    },
+    {
+      "routine_name": "has_cast"
+    },
+    {
+      "routine_name": "has_cast"
+    },
+    {
+      "routine_name": "has_cast"
+    },
+    {
+      "routine_name": "hasnt_cast"
+    },
+    {
+      "routine_name": "hasnt_cast"
+    },
+    {
+      "routine_name": "hasnt_cast"
+    },
+    {
+      "routine_name": "hasnt_cast"
+    },
+    {
+      "routine_name": "hasnt_cast"
+    },
+    {
+      "routine_name": "hasnt_cast"
+    },
+    {
+      "routine_name": "_expand_context"
+    },
+    {
+      "routine_name": "_get_context"
+    },
+    {
+      "routine_name": "cast_context_is"
+    },
+    {
+      "routine_name": "hasnt_rightop"
+    },
+    {
+      "routine_name": "cast_context_is"
+    },
+    {
+      "routine_name": "_op_exists"
+    },
+    {
+      "routine_name": "_op_exists"
+    },
+    {
+      "routine_name": "_op_exists"
+    },
+    {
+      "routine_name": "has_operator"
+    },
+    {
+      "routine_name": "has_operator"
+    },
+    {
+      "routine_name": "has_operator"
+    },
+    {
+      "routine_name": "has_operator"
+    },
+    {
+      "routine_name": "has_operator"
+    },
+    {
+      "routine_name": "has_operator"
+    },
+    {
+      "routine_name": "hasnt_operator"
+    },
+    {
+      "routine_name": "hasnt_operator"
+    },
+    {
+      "routine_name": "hasnt_operator"
+    },
+    {
+      "routine_name": "hasnt_operator"
+    },
+    {
+      "routine_name": "hasnt_operator"
+    },
+    {
+      "routine_name": "hasnt_operator"
+    },
+    {
+      "routine_name": "has_leftop"
+    },
+    {
+      "routine_name": "has_leftop"
+    },
+    {
+      "routine_name": "has_leftop"
+    },
+    {
+      "routine_name": "has_leftop"
+    },
+    {
+      "routine_name": "has_leftop"
+    },
+    {
+      "routine_name": "hasnt_leftop"
+    },
+    {
+      "routine_name": "hasnt_leftop"
+    },
+    {
+      "routine_name": "hasnt_leftop"
+    },
+    {
+      "routine_name": "hasnt_leftop"
+    },
+    {
+      "routine_name": "hasnt_leftop"
+    },
+    {
+      "routine_name": "hasnt_leftop"
+    },
+    {
+      "routine_name": "has_rightop"
+    },
+    {
+      "routine_name": "has_rightop"
+    },
+    {
+      "routine_name": "has_rightop"
+    },
+    {
+      "routine_name": "has_rightop"
+    },
+    {
+      "routine_name": "has_rightop"
+    },
+    {
+      "routine_name": "has_rightop"
+    },
+    {
+      "routine_name": "hasnt_rightop"
+    },
+    {
+      "routine_name": "hasnt_rightop"
+    },
+    {
+      "routine_name": "hasnt_rightop"
+    },
+    {
+      "routine_name": "hasnt_rightop"
+    },
+    {
+      "routine_name": "hasnt_rightop"
+    },
+    {
+      "routine_name": "_are"
+    },
+    {
+      "routine_name": "tablespaces_are"
+    },
+    {
+      "routine_name": "tablespaces_are"
+    },
+    {
+      "routine_name": "schemas_are"
+    },
+    {
+      "routine_name": "schemas_are"
+    },
+    {
+      "routine_name": "_extras"
+    },
+    {
+      "routine_name": "_extras"
+    },
+    {
+      "routine_name": "_extras"
+    },
+    {
+      "routine_name": "_extras"
+    },
+    {
+      "routine_name": "_missing"
+    },
+    {
+      "routine_name": "languages_are"
+    },
+    {
+      "routine_name": "_missing"
+    },
+    {
+      "routine_name": "_missing"
+    },
+    {
+      "routine_name": "_missing"
+    },
+    {
+      "routine_name": "tables_are"
+    },
+    {
+      "routine_name": "tables_are"
+    },
+    {
+      "routine_name": "tables_are"
+    },
+    {
+      "routine_name": "tables_are"
+    },
+    {
+      "routine_name": "views_are"
+    },
+    {
+      "routine_name": "views_are"
+    },
+    {
+      "routine_name": "views_are"
+    },
+    {
+      "routine_name": "views_are"
+    },
+    {
+      "routine_name": "sequences_are"
+    },
+    {
+      "routine_name": "sequences_are"
+    },
+    {
+      "routine_name": "sequences_are"
+    },
+    {
+      "routine_name": "sequences_are"
+    },
+    {
+      "routine_name": "functions_are"
+    },
+    {
+      "routine_name": "functions_are"
+    },
+    {
+      "routine_name": "findfuncs"
+    },
+    {
+      "routine_name": "functions_are"
+    },
+    {
+      "routine_name": "functions_are"
+    },
+    {
+      "routine_name": "indexes_are"
+    },
+    {
+      "routine_name": "indexes_are"
+    },
+    {
+      "routine_name": "indexes_are"
+    },
+    {
+      "routine_name": "indexes_are"
+    },
+    {
+      "routine_name": "users_are"
+    },
+    {
+      "routine_name": "users_are"
+    },
+    {
+      "routine_name": "groups_are"
+    },
+    {
+      "routine_name": "groups_are"
+    },
+    {
+      "routine_name": "languages_are"
+    },
+    {
+      "routine_name": "_is_trusted"
+    },
+    {
+      "routine_name": "has_language"
+    },
+    {
+      "routine_name": "has_language"
+    },
+    {
+      "routine_name": "hasnt_language"
+    },
+    {
+      "routine_name": "hasnt_language"
+    },
+    {
+      "routine_name": "language_is_trusted"
+    },
+    {
+      "routine_name": "language_is_trusted"
+    },
+    {
+      "routine_name": "_opc_exists"
+    },
+    {
+      "routine_name": "_opc_exists"
+    },
+    {
+      "routine_name": "has_opclass"
+    },
+    {
+      "routine_name": "has_opclass"
+    },
+    {
+      "routine_name": "has_opclass"
+    },
+    {
+      "routine_name": "has_opclass"
+    },
+    {
+      "routine_name": "hasnt_opclass"
+    },
+    {
+      "routine_name": "hasnt_opclass"
+    },
+    {
+      "routine_name": "hasnt_opclass"
+    },
+    {
+      "routine_name": "hasnt_opclass"
+    },
+    {
+      "routine_name": "opclasses_are"
+    },
+    {
+      "routine_name": "opclasses_are"
+    },
+    {
+      "routine_name": "opclasses_are"
+    },
+    {
+      "routine_name": "opclasses_are"
+    },
+    {
+      "routine_name": "rules_are"
+    },
+    {
+      "routine_name": "rules_are"
+    },
+    {
+      "routine_name": "rules_are"
+    },
+    {
+      "routine_name": "rules_are"
+    },
+    {
+      "routine_name": "_is_instead"
+    },
+    {
+      "routine_name": "_is_instead"
+    },
+    {
+      "routine_name": "has_rule"
+    },
+    {
+      "routine_name": "has_rule"
+    },
+    {
+      "routine_name": "has_rule"
+    },
+    {
+      "routine_name": "is_definer"
+    },
+    {
+      "routine_name": "has_rule"
+    },
+    {
+      "routine_name": "hasnt_rule"
+    },
+    {
+      "routine_name": "hasnt_rule"
+    },
+    {
+      "routine_name": "hasnt_rule"
+    },
+    {
+      "routine_name": "hasnt_rule"
+    },
+    {
+      "routine_name": "rule_is_instead"
+    },
+    {
+      "routine_name": "rule_is_instead"
+    },
+    {
+      "routine_name": "rule_is_instead"
+    },
+    {
+      "routine_name": "rule_is_instead"
+    },
+    {
+      "routine_name": "_expand_on"
+    },
+    {
+      "routine_name": "_contract_on"
+    },
+    {
+      "routine_name": "_rule_on"
+    },
+    {
+      "routine_name": "_rule_on"
+    },
+    {
+      "routine_name": "rule_is_on"
+    },
+    {
+      "routine_name": "rule_is_on"
+    },
+    {
+      "routine_name": "rule_is_on"
+    },
+    {
+      "routine_name": "rule_is_on"
+    },
+    {
+      "routine_name": "_nosuch"
+    },
+    {
+      "routine_name": "_func_compare"
+    },
+    {
+      "routine_name": "_func_compare"
+    },
+    {
+      "routine_name": "_func_compare"
+    },
+    {
+      "routine_name": "_func_compare"
+    },
+    {
+      "routine_name": "_lang"
+    },
+    {
+      "routine_name": "_lang"
+    },
+    {
+      "routine_name": "_lang"
+    },
+    {
+      "routine_name": "_lang"
+    },
+    {
+      "routine_name": "function_lang_is"
+    },
+    {
+      "routine_name": "function_lang_is"
+    },
+    {
+      "routine_name": "function_lang_is"
+    },
+    {
+      "routine_name": "function_lang_is"
+    },
+    {
+      "routine_name": "function_lang_is"
+    },
+    {
+      "routine_name": "function_lang_is"
+    },
+    {
+      "routine_name": "function_lang_is"
+    },
+    {
+      "routine_name": "function_lang_is"
+    },
+    {
+      "routine_name": "_returns"
+    },
+    {
+      "routine_name": "_returns"
+    },
+    {
+      "routine_name": "_returns"
+    },
+    {
+      "routine_name": "_returns"
+    },
+    {
+      "routine_name": "_retval"
+    },
+    {
+      "routine_name": "function_returns"
+    },
+    {
+      "routine_name": "function_returns"
+    },
+    {
+      "routine_name": "function_returns"
+    },
+    {
+      "routine_name": "function_returns"
+    },
+    {
+      "routine_name": "function_returns"
+    },
+    {
+      "routine_name": "function_returns"
+    },
+    {
+      "routine_name": "function_returns"
+    },
+    {
+      "routine_name": "function_returns"
+    },
+    {
+      "routine_name": "_definer"
+    },
+    {
+      "routine_name": "_definer"
+    },
+    {
+      "routine_name": "_definer"
+    },
+    {
+      "routine_name": "_definer"
+    },
+    {
+      "routine_name": "is_definer"
+    },
+    {
+      "routine_name": "is_definer"
+    },
+    {
+      "routine_name": "is_definer"
+    },
+    {
+      "routine_name": "is_definer"
+    },
+    {
+      "routine_name": "is_definer"
+    },
+    {
+      "routine_name": "is_definer"
+    },
+    {
+      "routine_name": "is_definer"
+    },
+    {
+      "routine_name": "isnt_definer"
+    },
+    {
+      "routine_name": "isnt_definer"
+    },
+    {
+      "routine_name": "isnt_definer"
+    },
+    {
+      "routine_name": "isnt_definer"
+    },
+    {
+      "routine_name": "isnt_definer"
+    },
+    {
+      "routine_name": "isnt_definer"
+    },
+    {
+      "routine_name": "isnt_definer"
+    },
+    {
+      "routine_name": "isnt_definer"
+    },
+    {
+      "routine_name": "_type_func"
+    },
+    {
+      "routine_name": "_type_func"
+    },
+    {
+      "routine_name": "_type_func"
+    },
+    {
+      "routine_name": "_type_func"
+    },
+    {
+      "routine_name": "is_aggregate"
+    },
+    {
+      "routine_name": "is_aggregate"
+    },
+    {
+      "routine_name": "is_aggregate"
+    },
+    {
+      "routine_name": "is_aggregate"
+    },
+    {
+      "routine_name": "is_aggregate"
+    },
+    {
+      "routine_name": "is_aggregate"
+    },
+    {
+      "routine_name": "is_aggregate"
+    },
+    {
+      "routine_name": "is_aggregate"
+    },
+    {
+      "routine_name": "isnt_aggregate"
+    },
+    {
+      "routine_name": "isnt_aggregate"
+    },
+    {
+      "routine_name": "isnt_aggregate"
+    },
+    {
+      "routine_name": "isnt_aggregate"
+    },
+    {
+      "routine_name": "isnt_aggregate"
+    },
+    {
+      "routine_name": "isnt_aggregate"
+    },
+    {
+      "routine_name": "isnt_aggregate"
+    },
+    {
+      "routine_name": "isnt_aggregate"
+    },
+    {
+      "routine_name": "_strict"
+    },
+    {
+      "routine_name": "_strict"
+    },
+    {
+      "routine_name": "_strict"
+    },
+    {
+      "routine_name": "_strict"
+    },
+    {
+      "routine_name": "is_strict"
+    },
+    {
+      "routine_name": "is_strict"
+    },
+    {
+      "routine_name": "is_strict"
+    },
+    {
+      "routine_name": "is_strict"
+    },
+    {
+      "routine_name": "is_strict"
+    },
+    {
+      "routine_name": "is_strict"
+    },
+    {
+      "routine_name": "is_strict"
+    },
+    {
+      "routine_name": "is_strict"
+    },
+    {
+      "routine_name": "isnt_strict"
+    },
+    {
+      "routine_name": "isnt_strict"
+    },
+    {
+      "routine_name": "isnt_strict"
+    },
+    {
+      "routine_name": "isnt_strict"
+    },
+    {
+      "routine_name": "isnt_strict"
+    },
+    {
+      "routine_name": "isnt_strict"
+    },
+    {
+      "routine_name": "isnt_strict"
+    },
+    {
+      "routine_name": "isnt_strict"
+    },
+    {
+      "routine_name": "_expand_vol"
+    },
+    {
+      "routine_name": "_refine_vol"
+    },
+    {
+      "routine_name": "_vol"
+    },
+    {
+      "routine_name": "_vol"
+    },
+    {
+      "routine_name": "_vol"
+    },
+    {
+      "routine_name": "_vol"
+    },
+    {
+      "routine_name": "volatility_is"
+    },
+    {
+      "routine_name": "volatility_is"
+    },
+    {
+      "routine_name": "volatility_is"
+    },
+    {
+      "routine_name": "volatility_is"
+    },
+    {
+      "routine_name": "volatility_is"
+    },
+    {
+      "routine_name": "volatility_is"
+    },
+    {
+      "routine_name": "volatility_is"
+    },
+    {
+      "routine_name": "volatility_is"
+    },
+    {
+      "routine_name": "check_test"
+    },
+    {
+      "routine_name": "check_test"
+    },
+    {
+      "routine_name": "check_test"
+    },
+    {
+      "routine_name": "check_test"
+    },
+    {
+      "routine_name": "check_test"
+    },
+    {
+      "routine_name": "findfuncs"
+    },
+    {
+      "routine_name": "findfuncs"
+    },
+    {
+      "routine_name": "findfuncs"
+    },
+    {
+      "routine_name": "_runem"
+    },
+    {
+      "routine_name": "_is_verbose"
+    },
+    {
+      "routine_name": "do_tap"
+    },
+    {
+      "routine_name": "do_tap"
+    },
+    {
+      "routine_name": "do_tap"
+    },
+    {
+      "routine_name": "do_tap"
+    },
+    {
+      "routine_name": "_currtest"
+    },
+    {
+      "routine_name": "_cleanup"
+    },
+    {
+      "routine_name": "diag_test_name"
+    },
+    {
+      "routine_name": "_runner"
+    },
+    {
+      "routine_name": "runtests"
+    },
+    {
+      "routine_name": "runtests"
+    },
+    {
+      "routine_name": "runtests"
+    },
+    {
+      "routine_name": "runtests"
+    },
+    {
+      "routine_name": "_temptable"
+    },
+    {
+      "routine_name": "_temptable"
+    },
+    {
+      "routine_name": "is_empty"
+    },
+    {
+      "routine_name": "_temptypes"
+    },
+    {
+      "routine_name": "_docomp"
+    },
+    {
+      "routine_name": "_relcomp"
+    },
+    {
+      "routine_name": "_relcomp"
+    },
+    {
+      "routine_name": "set_eq"
+    },
+    {
+      "routine_name": "set_eq"
+    },
+    {
+      "routine_name": "set_eq"
+    },
+    {
+      "routine_name": "set_eq"
+    },
+    {
+      "routine_name": "bag_eq"
+    },
+    {
+      "routine_name": "bag_eq"
+    },
+    {
+      "routine_name": "bag_eq"
+    },
+    {
+      "routine_name": "bag_eq"
+    },
+    {
+      "routine_name": "_do_ne"
+    },
+    {
+      "routine_name": "collect_tap"
+    },
+    {
+      "routine_name": "_relne"
+    },
+    {
+      "routine_name": "_relne"
+    },
+    {
+      "routine_name": "set_ne"
+    },
+    {
+      "routine_name": "set_ne"
+    },
+    {
+      "routine_name": "set_ne"
+    },
+    {
+      "routine_name": "set_ne"
+    },
+    {
+      "routine_name": "bag_ne"
+    },
+    {
+      "routine_name": "bag_ne"
+    },
+    {
+      "routine_name": "bag_ne"
+    },
+    {
+      "routine_name": "bag_ne"
+    },
+    {
+      "routine_name": "_relcomp"
+    },
+    {
+      "routine_name": "set_has"
+    },
+    {
+      "routine_name": "set_has"
+    },
+    {
+      "routine_name": "bag_has"
+    },
+    {
+      "routine_name": "bag_has"
+    },
+    {
+      "routine_name": "set_hasnt"
+    },
+    {
+      "routine_name": "set_hasnt"
+    },
+    {
+      "routine_name": "bag_hasnt"
+    },
+    {
+      "routine_name": "bag_hasnt"
+    },
+    {
+      "routine_name": "results_eq"
+    },
+    {
+      "routine_name": "results_eq"
+    },
+    {
+      "routine_name": "results_eq"
+    },
+    {
+      "routine_name": "results_eq"
+    },
+    {
+      "routine_name": "results_eq"
+    },
+    {
+      "routine_name": "results_eq"
+    },
+    {
+      "routine_name": "results_eq"
+    },
+    {
+      "routine_name": "results_eq"
+    },
+    {
+      "routine_name": "results_eq"
+    },
+    {
+      "routine_name": "results_eq"
+    },
+    {
+      "routine_name": "results_eq"
+    },
+    {
+      "routine_name": "results_eq"
+    },
+    {
+      "routine_name": "isnt_empty"
+    },
+    {
+      "routine_name": "isnt_empty"
+    },
+    {
+      "routine_name": "collect_tap"
+    },
+    {
+      "routine_name": "results_ne"
+    },
+    {
+      "routine_name": "results_ne"
+    },
+    {
+      "routine_name": "results_ne"
+    },
+    {
+      "routine_name": "results_ne"
+    },
+    {
+      "routine_name": "results_ne"
+    },
+    {
+      "routine_name": "results_ne"
+    },
+    {
+      "routine_name": "results_ne"
+    },
+    {
+      "routine_name": "results_ne"
+    },
+    {
+      "routine_name": "results_ne"
+    },
+    {
+      "routine_name": "results_ne"
+    },
+    {
+      "routine_name": "results_ne"
+    },
+    {
+      "routine_name": "results_ne"
+    },
+    {
+      "routine_name": "isa_ok"
+    },
+    {
+      "routine_name": "isa_ok"
+    },
+    {
+      "routine_name": "is_empty"
+    },
+    {
+      "routine_name": "_tlike"
+    },
+    {
+      "routine_name": "throws_like"
+    },
+    {
+      "routine_name": "throws_like"
+    },
+    {
+      "routine_name": "throws_ilike"
+    },
+    {
+      "routine_name": "throws_ilike"
+    },
+    {
+      "routine_name": "throws_matching"
+    },
+    {
+      "routine_name": "throws_matching"
+    },
+    {
+      "routine_name": "throws_imatching"
+    },
+    {
+      "routine_name": "throws_imatching"
+    },
+    {
+      "routine_name": "roles_are"
+    },
+    {
+      "routine_name": "roles_are"
+    },
+    {
+      "routine_name": "_types_are"
+    },
+    {
+      "routine_name": "types_are"
+    },
+    {
+      "routine_name": "types_are"
+    },
+    {
+      "routine_name": "row_eq"
+    },
+    {
+      "routine_name": "_types_are"
+    },
+    {
+      "routine_name": "types_are"
+    },
+    {
+      "routine_name": "types_are"
+    },
+    {
+      "routine_name": "domains_are"
+    },
+    {
+      "routine_name": "domains_are"
+    },
+    {
+      "routine_name": "domains_are"
+    },
+    {
+      "routine_name": "domains_are"
+    },
+    {
+      "routine_name": "enums_are"
+    },
+    {
+      "routine_name": "enums_are"
+    },
+    {
+      "routine_name": "enums_are"
+    },
+    {
+      "routine_name": "enums_are"
+    },
+    {
+      "routine_name": "_dexists"
+    },
+    {
+      "routine_name": "_dexists"
+    },
+    {
+      "routine_name": "_get_dtype"
+    },
+    {
+      "routine_name": "schema_owner_is"
+    },
+    {
+      "routine_name": "_get_dtype"
+    },
+    {
+      "routine_name": "domain_type_is"
+    },
+    {
+      "routine_name": "domain_type_is"
+    },
+    {
+      "routine_name": "domain_type_is"
+    },
+    {
+      "routine_name": "domain_type_is"
+    },
+    {
+      "routine_name": "domain_type_is"
+    },
+    {
+      "routine_name": "domain_type_is"
+    },
+    {
+      "routine_name": "domain_type_isnt"
+    },
+    {
+      "routine_name": "domain_type_isnt"
+    },
+    {
+      "routine_name": "domain_type_isnt"
+    },
+    {
+      "routine_name": "domain_type_isnt"
+    },
+    {
+      "routine_name": "domain_type_isnt"
+    },
+    {
+      "routine_name": "domain_type_isnt"
+    },
+    {
+      "routine_name": "row_eq"
+    },
+    {
+      "routine_name": "triggers_are"
+    },
+    {
+      "routine_name": "triggers_are"
+    },
+    {
+      "routine_name": "triggers_are"
+    },
+    {
+      "routine_name": "triggers_are"
+    },
+    {
+      "routine_name": "_areni"
+    },
+    {
+      "routine_name": "casts_are"
+    },
+    {
+      "routine_name": "casts_are"
+    },
+    {
+      "routine_name": "display_oper"
+    },
+    {
+      "routine_name": "operators_are"
+    },
+    {
+      "routine_name": "operators_are"
+    },
+    {
+      "routine_name": "_get_rel_owner"
+    },
+    {
+      "routine_name": "operators_are"
+    },
+    {
+      "routine_name": "operators_are"
+    },
+    {
+      "routine_name": "columns_are"
+    },
+    {
+      "routine_name": "columns_are"
+    },
+    {
+      "routine_name": "columns_are"
+    },
+    {
+      "routine_name": "columns_are"
+    },
+    {
+      "routine_name": "_get_db_owner"
+    },
+    {
+      "routine_name": "db_owner_is"
+    },
+    {
+      "routine_name": "db_owner_is"
+    },
+    {
+      "routine_name": "_get_schema_owner"
+    },
+    {
+      "routine_name": "schema_owner_is"
+    },
+    {
+      "routine_name": "is_partitioned"
+    },
+    {
+      "routine_name": "_get_rel_owner"
+    },
+    {
+      "routine_name": "relation_owner_is"
+    },
+    {
+      "routine_name": "relation_owner_is"
+    },
+    {
+      "routine_name": "relation_owner_is"
+    },
+    {
+      "routine_name": "relation_owner_is"
+    },
+    {
+      "routine_name": "_get_rel_owner"
+    },
+    {
+      "routine_name": "_get_rel_owner"
+    },
+    {
+      "routine_name": "_get_rel_owner"
+    },
+    {
+      "routine_name": "_get_rel_owner"
+    },
+    {
+      "routine_name": "table_owner_is"
+    },
+    {
+      "routine_name": "table_owner_is"
+    },
+    {
+      "routine_name": "table_owner_is"
+    },
+    {
+      "routine_name": "table_owner_is"
+    },
+    {
+      "routine_name": "view_owner_is"
+    },
+    {
+      "routine_name": "view_owner_is"
+    },
+    {
+      "routine_name": "_get_func_owner"
+    },
+    {
+      "routine_name": "view_owner_is"
+    },
+    {
+      "routine_name": "view_owner_is"
+    },
+    {
+      "routine_name": "sequence_owner_is"
+    },
+    {
+      "routine_name": "sequence_owner_is"
+    },
+    {
+      "routine_name": "sequence_owner_is"
+    },
+    {
+      "routine_name": "sequence_owner_is"
+    },
+    {
+      "routine_name": "composite_owner_is"
+    },
+    {
+      "routine_name": "composite_owner_is"
+    },
+    {
+      "routine_name": "composite_owner_is"
+    },
+    {
+      "routine_name": "composite_owner_is"
+    },
+    {
+      "routine_name": "foreign_table_owner_is"
+    },
+    {
+      "routine_name": "foreign_table_owner_is"
+    },
+    {
+      "routine_name": "foreign_table_owner_is"
+    },
+    {
+      "routine_name": "foreign_table_owner_is"
+    },
+    {
+      "routine_name": "_get_func_owner"
+    },
+    {
+      "routine_name": "function_owner_is"
+    },
+    {
+      "routine_name": "function_owner_is"
+    },
+    {
+      "routine_name": "function_owner_is"
+    },
+    {
+      "routine_name": "function_owner_is"
+    },
+    {
+      "routine_name": "_get_tablespace_owner"
+    },
+    {
+      "routine_name": "tablespace_owner_is"
+    },
+    {
+      "routine_name": "tablespace_owner_is"
+    },
+    {
+      "routine_name": "_get_index_owner"
+    },
+    {
+      "routine_name": "_get_index_owner"
+    },
+    {
+      "routine_name": "index_owner_is"
+    },
+    {
+      "routine_name": "index_owner_is"
+    },
+    {
+      "routine_name": "index_owner_is"
+    },
+    {
+      "routine_name": "index_owner_is"
+    },
+    {
+      "routine_name": "_get_language_owner"
+    },
+    {
+      "routine_name": "language_owner_is"
+    },
+    {
+      "routine_name": "language_owner_is"
+    },
+    {
+      "routine_name": "_get_opclass_owner"
+    },
+    {
+      "routine_name": "_get_opclass_owner"
+    },
+    {
+      "routine_name": "opclass_owner_is"
+    },
+    {
+      "routine_name": "opclass_owner_is"
+    },
+    {
+      "routine_name": "opclass_owner_is"
+    },
+    {
+      "routine_name": "opclass_owner_is"
+    },
+    {
+      "routine_name": "_get_type_owner"
+    },
+    {
+      "routine_name": "_get_type_owner"
+    },
+    {
+      "routine_name": "type_owner_is"
+    },
+    {
+      "routine_name": "type_owner_is"
+    },
+    {
+      "routine_name": "type_owner_is"
+    },
+    {
+      "routine_name": "type_owner_is"
+    },
+    {
+      "routine_name": "_assets_are"
+    },
+    {
+      "routine_name": "_get_table_privs"
+    },
+    {
+      "routine_name": "_table_privs"
+    },
+    {
+      "routine_name": "table_privs_are"
+    },
+    {
+      "routine_name": "table_privs_are"
+    },
+    {
+      "routine_name": "table_privs_are"
+    },
+    {
+      "routine_name": "table_privs_are"
+    },
+    {
+      "routine_name": "_db_privs"
+    },
+    {
+      "routine_name": "_get_db_privs"
+    },
+    {
+      "routine_name": "database_privs_are"
+    },
+    {
+      "routine_name": "database_privs_are"
+    },
+    {
+      "routine_name": "_get_func_privs"
+    },
+    {
+      "routine_name": "_fprivs_are"
+    },
+    {
+      "routine_name": "function_privs_are"
+    },
+    {
+      "routine_name": "function_privs_are"
+    },
+    {
+      "routine_name": "function_privs_are"
+    },
+    {
+      "routine_name": "function_privs_are"
+    },
+    {
+      "routine_name": "_get_lang_privs"
+    },
+    {
+      "routine_name": "language_privs_are"
+    },
+    {
+      "routine_name": "language_privs_are"
+    },
+    {
+      "routine_name": "_get_schema_privs"
+    },
+    {
+      "routine_name": "schema_privs_are"
+    },
+    {
+      "routine_name": "schema_privs_are"
+    },
+    {
+      "routine_name": "_get_tablespaceprivs"
+    },
+    {
+      "routine_name": "tablespace_privs_are"
+    },
+    {
+      "routine_name": "tablespace_privs_are"
+    },
+    {
+      "routine_name": "_get_sequence_privs"
+    },
+    {
+      "routine_name": "sequence_privs_are"
+    },
+    {
+      "routine_name": "sequence_privs_are"
+    },
+    {
+      "routine_name": "sequence_privs_are"
+    },
+    {
+      "routine_name": "sequence_privs_are"
+    },
+    {
+      "routine_name": "_get_ac_privs"
+    },
+    {
+      "routine_name": "any_column_privs_are"
+    },
+    {
+      "routine_name": "any_column_privs_are"
+    },
+    {
+      "routine_name": "hasnt_materialized_view"
+    },
+    {
+      "routine_name": "any_column_privs_are"
+    },
+    {
+      "routine_name": "any_column_privs_are"
+    },
+    {
+      "routine_name": "_get_col_privs"
+    },
+    {
+      "routine_name": "column_privs_are"
+    },
+    {
+      "routine_name": "column_privs_are"
+    },
+    {
+      "routine_name": "column_privs_are"
+    },
+    {
+      "routine_name": "column_privs_are"
+    },
+    {
+      "routine_name": "_get_fdw_privs"
+    },
+    {
+      "routine_name": "fdw_privs_are"
+    },
+    {
+      "routine_name": "fdw_privs_are"
+    },
+    {
+      "routine_name": "foreign_tables_are"
+    },
+    {
+      "routine_name": "_get_server_privs"
+    },
+    {
+      "routine_name": "server_privs_are"
+    },
+    {
+      "routine_name": "server_privs_are"
+    },
+    {
+      "routine_name": "materialized_views_are"
+    },
+    {
+      "routine_name": "materialized_views_are"
+    },
+    {
+      "routine_name": "materialized_views_are"
+    },
+    {
+      "routine_name": "materialized_views_are"
+    },
+    {
+      "routine_name": "materialized_view_owner_is"
+    },
+    {
+      "routine_name": "materialized_view_owner_is"
+    },
+    {
+      "routine_name": "materialized_view_owner_is"
+    },
+    {
+      "routine_name": "materialized_view_owner_is"
+    },
+    {
+      "routine_name": "has_materialized_view"
+    },
+    {
+      "routine_name": "has_materialized_view"
+    },
+    {
+      "routine_name": "has_materialized_view"
+    },
+    {
+      "routine_name": "hasnt_materialized_view"
+    },
+    {
+      "routine_name": "hasnt_materialized_view"
+    },
+    {
+      "routine_name": "foreign_tables_are"
+    },
+    {
+      "routine_name": "foreign_tables_are"
+    },
+    {
+      "routine_name": "foreign_tables_are"
+    },
+    {
+      "routine_name": "_extensions"
+    },
+    {
+      "routine_name": "_extensions"
+    },
+    {
+      "routine_name": "extensions_are"
+    },
+    {
+      "routine_name": "extensions_are"
+    },
+    {
+      "routine_name": "extensions_are"
+    },
+    {
+      "routine_name": "extensions_are"
+    },
+    {
+      "routine_name": "_ext_exists"
+    },
+    {
+      "routine_name": "_ext_exists"
+    },
+    {
+      "routine_name": "has_extension"
+    },
+    {
+      "routine_name": "has_extension"
+    },
+    {
+      "routine_name": "has_extension"
+    },
+    {
+      "routine_name": "has_extension"
+    },
+    {
+      "routine_name": "hasnt_extension"
+    },
+    {
+      "routine_name": "hasnt_extension"
+    },
+    {
+      "routine_name": "hasnt_extension"
+    },
+    {
+      "routine_name": "hasnt_extension"
+    },
+    {
+      "routine_name": "is_partitioned"
+    },
+    {
+      "routine_name": "is_partitioned"
+    },
+    {
+      "routine_name": "is_partitioned"
+    },
+    {
+      "routine_name": "isnt_partitioned"
+    },
+    {
+      "routine_name": "isnt_partitioned"
+    },
+    {
+      "routine_name": "isnt_partitioned"
+    },
+    {
+      "routine_name": "isnt_partitioned"
+    },
+    {
+      "routine_name": "_partof"
+    },
+    {
+      "routine_name": "_partof"
+    },
+    {
+      "routine_name": "is_partition_of"
+    },
+    {
+      "routine_name": "is_partition_of"
+    },
+    {
+      "routine_name": "is_partition_of"
+    },
+    {
+      "routine_name": "is_partition_of"
+    },
+    {
+      "routine_name": "_parts"
+    },
+    {
+      "routine_name": "_parts"
+    },
+    {
+      "routine_name": "partitions_are"
+    },
+    {
+      "routine_name": "partitions_are"
+    },
+    {
+      "routine_name": "partitions_are"
+    },
+    {
+      "routine_name": "partitions_are"
+    },
+    {
+      "routine_name": "_ident_array_to_sorted_string"
+    },
+    {
+      "routine_name": "_array_to_sorted_string"
+    },
+    {
+      "routine_name": "policies_are"
+    },
+    {
+      "routine_name": "policies_are"
+    },
+    {
+      "routine_name": "policies_are"
+    },
+    {
+      "routine_name": "policies_are"
+    },
+    {
+      "routine_name": "policy_roles_are"
+    },
+    {
+      "routine_name": "policy_roles_are"
+    },
+    {
+      "routine_name": "hasnt_inherited_tables"
+    },
+    {
+      "routine_name": "hasnt_inherited_tables"
+    },
+    {
+      "routine_name": "policy_roles_are"
+    },
+    {
+      "routine_name": "policy_roles_are"
+    },
+    {
+      "routine_name": "policy_cmd_is"
+    },
+    {
+      "routine_name": "policy_cmd_is"
+    },
+    {
+      "routine_name": "policy_cmd_is"
+    },
+    {
+      "routine_name": "policy_cmd_is"
+    },
+    {
+      "routine_name": "_inherited"
+    },
+    {
+      "routine_name": "_inherited"
+    },
+    {
+      "routine_name": "has_inherited_tables"
+    },
+    {
+      "routine_name": "has_inherited_tables"
+    },
+    {
+      "routine_name": "has_inherited_tables"
+    },
+    {
+      "routine_name": "has_inherited_tables"
+    },
+    {
+      "routine_name": "hasnt_inherited_tables"
+    },
+    {
+      "routine_name": "halfvec_send"
+    },
+    {
+      "routine_name": "hasnt_inherited_tables"
+    },
+    {
+      "routine_name": "_ancestor_of"
+    },
+    {
+      "routine_name": "_ancestor_of"
+    },
+    {
+      "routine_name": "is_ancestor_of"
+    },
+    {
+      "routine_name": "is_ancestor_of"
+    },
+    {
+      "routine_name": "is_ancestor_of"
+    },
+    {
+      "routine_name": "is_ancestor_of"
+    },
+    {
+      "routine_name": "is_ancestor_of"
+    },
+    {
+      "routine_name": "is_ancestor_of"
+    },
+    {
+      "routine_name": "is_ancestor_of"
+    },
+    {
+      "routine_name": "is_ancestor_of"
+    },
+    {
+      "routine_name": "isnt_ancestor_of"
+    },
+    {
+      "routine_name": "isnt_ancestor_of"
+    },
+    {
+      "routine_name": "isnt_ancestor_of"
+    },
+    {
+      "routine_name": "isnt_ancestor_of"
+    },
+    {
+      "routine_name": "isnt_ancestor_of"
+    },
+    {
+      "routine_name": "isnt_ancestor_of"
+    },
+    {
+      "routine_name": "isnt_ancestor_of"
+    },
+    {
+      "routine_name": "isnt_ancestor_of"
+    },
+    {
+      "routine_name": "is_descendent_of"
+    },
+    {
+      "routine_name": "is_descendent_of"
+    },
+    {
+      "routine_name": "is_descendent_of"
+    },
+    {
+      "routine_name": "is_descendent_of"
+    },
+    {
+      "routine_name": "is_descendent_of"
+    },
+    {
+      "routine_name": "is_descendent_of"
+    },
+    {
+      "routine_name": "is_descendent_of"
+    },
+    {
+      "routine_name": "is_descendent_of"
+    },
+    {
+      "routine_name": "isnt_descendent_of"
+    },
+    {
+      "routine_name": "isnt_descendent_of"
+    },
+    {
+      "routine_name": "isnt_descendent_of"
+    },
+    {
+      "routine_name": "isnt_descendent_of"
+    },
+    {
+      "routine_name": "isnt_descendent_of"
+    },
+    {
+      "routine_name": "isnt_descendent_of"
+    },
+    {
+      "routine_name": "isnt_descendent_of"
+    },
+    {
+      "routine_name": "isnt_descendent_of"
+    },
+    {
+      "routine_name": "is_normal_function"
+    },
+    {
+      "routine_name": "is_normal_function"
+    },
+    {
+      "routine_name": "is_normal_function"
+    },
+    {
+      "routine_name": "is_normal_function"
+    },
+    {
+      "routine_name": "is_normal_function"
+    },
+    {
+      "routine_name": "is_normal_function"
+    },
+    {
+      "routine_name": "is_normal_function"
+    },
+    {
+      "routine_name": "is_normal_function"
+    },
+    {
+      "routine_name": "isnt_normal_function"
+    },
+    {
+      "routine_name": "isnt_normal_function"
+    },
+    {
+      "routine_name": "isnt_normal_function"
+    },
+    {
+      "routine_name": "isnt_normal_function"
+    },
+    {
+      "routine_name": "isnt_normal_function"
+    },
+    {
+      "routine_name": "isnt_normal_function"
+    },
+    {
+      "routine_name": "isnt_normal_function"
+    },
+    {
+      "routine_name": "isnt_normal_function"
+    },
+    {
+      "routine_name": "is_window"
+    },
+    {
+      "routine_name": "is_window"
+    },
+    {
+      "routine_name": "is_window"
+    },
+    {
+      "routine_name": "is_window"
+    },
+    {
+      "routine_name": "is_window"
+    },
+    {
+      "routine_name": "is_window"
+    },
+    {
+      "routine_name": "is_window"
+    },
+    {
+      "routine_name": "is_window"
+    },
+    {
+      "routine_name": "isnt_window"
+    },
+    {
+      "routine_name": "isnt_window"
+    },
+    {
+      "routine_name": "isnt_window"
+    },
+    {
+      "routine_name": "isnt_window"
+    },
+    {
+      "routine_name": "isnt_window"
+    },
+    {
+      "routine_name": "isnt_window"
+    },
+    {
+      "routine_name": "isnt_window"
+    },
+    {
+      "routine_name": "isnt_window"
+    },
+    {
+      "routine_name": "is_procedure"
+    },
+    {
+      "routine_name": "is_procedure"
+    },
+    {
+      "routine_name": "is_procedure"
+    },
+    {
+      "routine_name": "is_procedure"
+    },
+    {
+      "routine_name": "is_procedure"
+    },
+    {
+      "routine_name": "is_procedure"
+    },
+    {
+      "routine_name": "is_procedure"
+    },
+    {
+      "routine_name": "is_procedure"
+    },
+    {
+      "routine_name": "isnt_procedure"
+    },
+    {
+      "routine_name": "isnt_procedure"
+    },
+    {
+      "routine_name": "isnt_procedure"
+    },
+    {
+      "routine_name": "isnt_procedure"
+    },
+    {
+      "routine_name": "isnt_procedure"
+    },
+    {
+      "routine_name": "isnt_procedure"
+    },
+    {
+      "routine_name": "isnt_procedure"
+    },
+    {
+      "routine_name": "isnt_procedure"
+    },
+    {
+      "routine_name": "vector_in"
+    },
+    {
+      "routine_name": "vector_out"
+    },
+    {
+      "routine_name": "vector_typmod_in"
+    },
+    {
+      "routine_name": "vector_recv"
+    },
+    {
+      "routine_name": "vector_send"
+    },
+    {
+      "routine_name": "l2_distance"
+    },
+    {
+      "routine_name": "inner_product"
+    },
+    {
+      "routine_name": "cosine_distance"
+    },
+    {
+      "routine_name": "l1_distance"
+    },
+    {
+      "routine_name": "vector_dims"
+    },
+    {
+      "routine_name": "vector_norm"
+    },
+    {
+      "routine_name": "l2_normalize"
+    },
+    {
+      "routine_name": "binary_quantize"
+    },
+    {
+      "routine_name": "subvector"
+    },
+    {
+      "routine_name": "vector_add"
+    },
+    {
+      "routine_name": "vector_sub"
+    },
+    {
+      "routine_name": "vector_mul"
+    },
+    {
+      "routine_name": "vector_concat"
+    },
+    {
+      "routine_name": "vector_lt"
+    },
+    {
+      "routine_name": "vector_le"
+    },
+    {
+      "routine_name": "vector_eq"
+    },
+    {
+      "routine_name": "vector_ne"
+    },
+    {
+      "routine_name": "vector_ge"
+    },
+    {
+      "routine_name": "vector_gt"
+    },
+    {
+      "routine_name": "vector_cmp"
+    },
+    {
+      "routine_name": "vector_l2_squared_distance"
+    },
+    {
+      "routine_name": "halfvec_avg"
+    },
+    {
+      "routine_name": "vector_negative_inner_product"
+    },
+    {
+      "routine_name": "vector_spherical_distance"
+    },
+    {
+      "routine_name": "vector_accum"
+    },
+    {
+      "routine_name": "vector_avg"
+    },
+    {
+      "routine_name": "vector_combine"
+    },
+    {
+      "routine_name": "vector"
+    },
+    {
+      "routine_name": "array_to_vector"
+    },
+    {
+      "routine_name": "array_to_vector"
+    },
+    {
+      "routine_name": "array_to_vector"
+    },
+    {
+      "routine_name": "array_to_vector"
+    },
+    {
+      "routine_name": "vector_to_float4"
+    },
+    {
+      "routine_name": "ivfflathandler"
+    },
+    {
+      "routine_name": "hnswhandler"
+    },
+    {
+      "routine_name": "ivfflat_halfvec_support"
+    },
+    {
+      "routine_name": "ivfflat_bit_support"
+    },
+    {
+      "routine_name": "hnsw_halfvec_support"
+    },
+    {
+      "routine_name": "hnsw_bit_support"
+    },
+    {
+      "routine_name": "hnsw_sparsevec_support"
+    },
+    {
+      "routine_name": "halfvec_in"
+    },
+    {
+      "routine_name": "halfvec_out"
+    },
+    {
+      "routine_name": "halfvec_typmod_in"
+    },
+    {
+      "routine_name": "halfvec_recv"
+    },
+    {
+      "routine_name": "l2_distance"
+    },
+    {
+      "routine_name": "inner_product"
+    },
+    {
+      "routine_name": "cosine_distance"
+    },
+    {
+      "routine_name": "l1_distance"
+    },
+    {
+      "routine_name": "vector_dims"
+    },
+    {
+      "routine_name": "l2_norm"
+    },
+    {
+      "routine_name": "l2_normalize"
+    },
+    {
+      "routine_name": "binary_quantize"
+    },
+    {
+      "routine_name": "subvector"
+    },
+    {
+      "routine_name": "halfvec_add"
+    },
+    {
+      "routine_name": "halfvec_sub"
+    },
+    {
+      "routine_name": "halfvec_mul"
+    },
+    {
+      "routine_name": "halfvec_concat"
+    },
+    {
+      "routine_name": "halfvec_lt"
+    },
+    {
+      "routine_name": "halfvec_le"
+    },
+    {
+      "routine_name": "halfvec_eq"
+    },
+    {
+      "routine_name": "halfvec_ne"
+    },
+    {
+      "routine_name": "halfvec_ge"
+    },
+    {
+      "routine_name": "halfvec_gt"
+    },
+    {
+      "routine_name": "halfvec_cmp"
+    },
+    {
+      "routine_name": "halfvec_l2_squared_distance"
+    },
+    {
+      "routine_name": "halfvec_negative_inner_product"
+    },
+    {
+      "routine_name": "halfvec_spherical_distance"
+    },
+    {
+      "routine_name": "halfvec_accum"
+    },
+    {
+      "routine_name": "halfvec_combine"
+    },
+    {
+      "routine_name": "halfvec"
+    },
+    {
+      "routine_name": "halfvec_to_vector"
+    },
+    {
+      "routine_name": "vector_to_halfvec"
+    },
+    {
+      "routine_name": "array_to_halfvec"
+    },
+    {
+      "routine_name": "array_to_halfvec"
+    },
+    {
+      "routine_name": "array_to_halfvec"
+    },
+    {
+      "routine_name": "array_to_halfvec"
+    },
+    {
+      "routine_name": "halfvec_to_float4"
+    },
+    {
+      "routine_name": "hamming_distance"
+    },
+    {
+      "routine_name": "jaccard_distance"
+    },
+    {
+      "routine_name": "sparsevec_in"
+    },
+    {
+      "routine_name": "sparsevec_out"
+    },
+    {
+      "routine_name": "sparsevec_typmod_in"
+    },
+    {
+      "routine_name": "sparsevec_recv"
+    },
+    {
+      "routine_name": "sparsevec_send"
+    },
+    {
+      "routine_name": "l2_distance"
+    },
+    {
+      "routine_name": "inner_product"
+    },
+    {
+      "routine_name": "cosine_distance"
+    },
+    {
+      "routine_name": "l1_distance"
+    },
+    {
+      "routine_name": "l2_norm"
+    },
+    {
+      "routine_name": "l2_normalize"
+    },
+    {
+      "routine_name": "sparsevec_lt"
+    },
+    {
+      "routine_name": "sparsevec_le"
+    },
+    {
+      "routine_name": "sparsevec_eq"
+    },
+    {
+      "routine_name": "sparsevec_ne"
+    },
+    {
+      "routine_name": "sparsevec_ge"
+    },
+    {
+      "routine_name": "sparsevec_gt"
+    },
+    {
+      "routine_name": "sparsevec_cmp"
+    },
+    {
+      "routine_name": "sparsevec_l2_squared_distance"
+    },
+    {
+      "routine_name": "sparsevec_negative_inner_product"
+    },
+    {
+      "routine_name": "sparsevec"
+    },
+    {
+      "routine_name": "vector_to_sparsevec"
+    },
+    {
+      "routine_name": "sparsevec_to_vector"
+    },
+    {
+      "routine_name": "halfvec_to_sparsevec"
+    },
+    {
+      "routine_name": "sparsevec_to_halfvec"
+    },
+    {
+      "routine_name": "array_to_sparsevec"
+    },
+    {
+      "routine_name": "array_to_sparsevec"
+    },
+    {
+      "routine_name": "array_to_sparsevec"
+    },
+    {
+      "routine_name": "array_to_sparsevec"
+    },
+    {
+      "routine_name": "evaluate_c002_dso_deterioration"
+    },
+    {
+      "routine_name": "evaluate_c003_customer_credit_risk"
+    },
+    {
+      "routine_name": "evaluate_c004_collection_efficiency"
+    },
+    {
+      "routine_name": "evaluate_c005_critical_overdue_documents"
+    },
+    {
+      "routine_name": "take_daily_health_snapshot"
+    },
+    {
+      "routine_name": "fn_sales_pipeline_vs_supply"
+    },
+    {
+      "routine_name": "get_policy_value"
+    },
+    {
+      "routine_name": "refresh_inventory_supply_snapshot"
+    }
+  ]
+}

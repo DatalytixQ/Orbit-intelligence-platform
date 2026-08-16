@@ -1,0 +1,38 @@
+{
+  "integration": "NetSuite_SuiteQL",
+  "target_table": "raw_ns_transaction_lines",
+  "primary_keys": ["transaction_id", "line_id"],
+  "description": "Mapeo de líneas de transacciones con GL Impact",
+  "extraction": {
+    "type": "REST_SUITEQL",
+    "base_query": "SELECT t.id as transaction_id, tl.linesequencenumber as line_id, tl.item as item_id, tl.account as account_id, tl.department as department_id, tl.class as class_id, tl.location as location_id, tl.quantity, tl.rate, tl.netamount, tl.costestimate, t.lastmodifieddate as last_modified_ts FROM transaction t JOIN transactionline tl ON t.id = tl.transaction",
+    "filters": [
+      { "field": "t.type", "operator": "IN", "value": "('CustInvc', 'CashSale', 'SalesOrd', 'Estimate', 'CreditMemo')" },
+      { "field": "tl.mainline", "operator": "=", "value": "F" },
+      { "field": "tl.taxline", "operator": "=", "value": "F" },
+      { "field": "t.lastmodifieddate", "operator": ">=", "value": "TO_DATE('{{LAST_SYNC_DATE}}', 'YYYY-MM-DD HH24:MI:SS')" }
+    ]
+  },
+  "mapping": {
+    "transaction_id": { "source_field": "transaction_id", "type": "string" },
+    "line_id": { "source_field": "line_id", "type": "string" },
+    "item_id": { "source_field": "item_id", "type": "string" },
+    "account_id": { "source_field": "account_id", "type": "string" },
+    "department_id": { "source_field": "department_id", "type": "string" },
+    "class_id": { "source_field": "class_id", "type": "string" },
+    "location_id": { "source_field": "location_id", "type": "string" },
+    "quantity": { "source_field": "quantity", "type": "number" },
+    "rate": { "source_field": "rate", "type": "number" },
+    "netamount": { "source_field": "netamount", "type": "number" },
+    "costestimate": { "source_field": "costestimate", "type": "number" },
+    "last_modified_ts": { "source_field": "last_modified_ts", "type": "date" }
+  },
+  "defaults": {
+    "source_system": "netsuite",
+    "client_id": "vonderk",
+    "snapshot_ts": "{{CURRENT_TIMESTAMP}}"
+  },
+  "validation_rules": [
+    { "field": "transaction_id", "rule": "is_not_null" }
+  ]
+}

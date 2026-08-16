@@ -1,0 +1,232 @@
+[
+  {
+    "file": "\\frontend\\app\\account\\password\\page.tsx",
+    "line": 43,
+    "content": "const response = await fetch(\"http://localhost:3000/api/auth/change-password\", {"
+  },
+  {
+    "file": "\\frontend\\app\\admin\\product-maturity\\page.tsx",
+    "line": 40,
+    "content": "fetch(\"/api/maturity\").then((res) => res.json()).catch(() => ({})),"
+  },
+  {
+    "file": "\\frontend\\app\\admin\\product-maturity\\page.tsx",
+    "line": 41,
+    "content": "fetch(\"/api/runtime/status\").then((res) => res.json()).catch(() => ({})),"
+  },
+  {
+    "file": "\\frontend\\app\\admin\\product-maturity\\page.tsx",
+    "line": 42,
+    "content": "fetch(\"/api/runtime/campaign\").then((res) => res.json()).catch(() => ({})),"
+  },
+  {
+    "file": "\\frontend\\app\\admin\\product-maturity\\page.tsx",
+    "line": 43,
+    "content": "fetch(\"/api/runtime/events\").then((res) => res.json()).catch(() => ({ events: [] })),"
+  },
+  {
+    "file": "\\frontend\\app\\admin\\product-maturity\\page.tsx",
+    "line": 44,
+    "content": "fetch(\"/api/runtime/history\").then((res) => res.json()).catch(() => ({})),"
+  },
+  {
+    "file": "\\frontend\\app\\admin\\product-maturity\\page.tsx",
+    "line": 45,
+    "content": "fetch(\"/api/governance\").then((res) => res.json()).catch(() => ({}))"
+  },
+  {
+    "file": "\\frontend\\app\\finance\\dso-analytics\\page.tsx",
+    "line": 60,
+    "content": "fetchFromApiClient(`/api/kpi/finance/dso-analytics?${params.toString()}`).then(setData);"
+  },
+  {
+    "file": "\\frontend\\app\\finance\\dso-analytics\\page.tsx",
+    "line": 64,
+    "content": "fetchFromApiClient(\"/api/kpi/finance/dso-customers\").then(setCustomerOptions);"
+  },
+  {
+    "file": "\\frontend\\app\\finance\\page.tsx",
+    "line": 64,
+    "content": "fetchFromApi(\"/api/kpi/finance/current\"),"
+  },
+  {
+    "file": "\\frontend\\app\\finance\\page.tsx",
+    "line": 65,
+    "content": "fetchFromApi(\"/api/kpi/finance/ar-aging-summary\"),"
+  },
+  {
+    "file": "\\frontend\\app\\finance\\page.tsx",
+    "line": 66,
+    "content": "fetchFromApi(\"/api/kpi/finance/risk-bundle\"),"
+  },
+  {
+    "file": "\\frontend\\app\\finance\\page.tsx",
+    "line": 67,
+    "content": "fetchFromApi(\"/api/kpi/finance/special-receivables\"),"
+  },
+  {
+    "file": "\\frontend\\app\\finance\\page.tsx",
+    "line": 68,
+    "content": "fetchFromApi(\"/api/kpi/finance/risk-trend\"),"
+  },
+  {
+    "file": "\\frontend\\app\\insights\\page.tsx",
+    "line": 9,
+    "content": "const executiveAnalytics = await fetchFromApi(\"/api/analytics/executive\");"
+  },
+  {
+    "file": "\\frontend\\app\\insights\\[id]\\page.tsx",
+    "line": 13,
+    "content": "const insight = await fetchFromApi(`/api/insights/${params.id}`);"
+  },
+  {
+    "file": "\\frontend\\app\\inventory\\page.tsx",
+    "line": 95,
+    "content": "const coverage: CoverageItem[] = await fetchFromApi(\"/api/kpi/inventory/coverage\");"
+  },
+  {
+    "file": "\\frontend\\app\\inventory\\page.tsx",
+    "line": 98,
+    "content": "\"/api/kpi/inventory/critical-items-count\""
+  },
+  {
+    "file": "\\frontend\\app\\inventory\\page.tsx",
+    "line": 102,
+    "content": "\"/api/kpi/inventory/critical-value\""
+  },
+  {
+    "file": "\\frontend\\app\\inventory\\page.tsx",
+    "line": 106,
+    "content": "\"/api/kpi/inventory/slow-moving-summary\""
+  },
+  {
+    "file": "\\frontend\\app\\inventory\\page.tsx",
+    "line": 110,
+    "content": "\"/api/kpi/inventory/critical-demand-mix\""
+  },
+  {
+    "file": "\\frontend\\app\\inventory\\page.tsx",
+    "line": 114,
+    "content": "\"/api/kpi/inventory/top-critical\""
+  },
+  {
+    "file": "\\frontend\\app\\inventory\\page.tsx",
+    "line": 118,
+    "content": "\"/api/kpi/inventory/slow-moving\""
+  },
+  {
+    "file": "\\frontend\\app\\login\\page.tsx",
+    "line": 20,
+    "content": "const response = await fetch(`${baseUrl}/api/auth/login`, {"
+  },
+  {
+    "file": "\\frontend\\app\\page.tsx",
+    "line": 204,
+    "content": "fetchFromApi(\"/api/home-executive-summary\") as Promise<HomeExecutiveSummary>,"
+  },
+  {
+    "file": "\\frontend\\app\\page.tsx",
+    "line": 205,
+    "content": "fetchFromApi(\"/api/kpi/sales/monthly\") as Promise<SalesMonthlyItem[]>,"
+  },
+  {
+    "file": "\\frontend\\app\\page.tsx",
+    "line": 206,
+    "content": "fetchFromApi(\"/api/kpi/sales/forecast-monthly\") as Promise<SalesForecastMonthlyItem[]>,"
+  },
+  {
+    "file": "\\frontend\\app\\page.tsx",
+    "line": 207,
+    "content": "fetchFromApi(\"/api/kpi/sales/forecast-quarterly\") as Promise<SalesForecastQuarterlyItem[]>,"
+  },
+  {
+    "file": "\\frontend\\app\\page.tsx",
+    "line": 208,
+    "content": "fetchFromApi(\"/api/kpi/finance/current\") as Promise<FinanceCurrentSnapshot>,"
+  },
+  {
+    "file": "\\frontend\\app\\page.tsx",
+    "line": 209,
+    "content": "fetchFromApi(\"/api/kpi/finance/ar-aging-summary\") as Promise<FinanceAgingItem[]>,"
+  },
+  {
+    "file": "\\frontend\\app\\page.tsx",
+    "line": 210,
+    "content": "fetchFromApi(\"/api/kpi/inventory/critical-demand-mix\") as Promise<CriticalDemandMixItem[]>,"
+  },
+  {
+    "file": "\\frontend\\app\\page.tsx",
+    "line": 211,
+    "content": "fetchFromApi(\"/api/kpi/home/commercial-summary\") as Promise<HomeCommercialSummaryItem[]>,"
+  },
+  {
+    "file": "\\frontend\\app\\page.tsx",
+    "line": 212,
+    "content": "fetchFromApi(\"/api/kpi/home/sales-vs-last-year\") as Promise<SalesVsLastYearItem[]>,"
+  },
+  {
+    "file": "\\frontend\\app\\page.tsx",
+    "line": 213,
+    "content": "fetchFromApi(\"/api/executive/health-score\") as Promise<HealthScoreData>,"
+  },
+  {
+    "file": "\\frontend\\app\\sales\\page.tsx",
+    "line": 65,
+    "content": "const salesMonthly: SalesMonthlyItem[] = await fetchFromApi(\"/api/kpi/sales/monthly\");"
+  },
+  {
+    "file": "\\frontend\\app\\sales\\page.tsx",
+    "line": 68,
+    "content": "\"/api/kpi/sales/top-participation-2026\""
+  },
+  {
+    "file": "\\frontend\\app\\sales\\page.tsx",
+    "line": 72,
+    "content": "\"/api/kpi/sales/by-category\""
+  },
+  {
+    "file": "\\frontend\\components\\ActionManagementTable.tsx",
+    "line": 37,
+    "content": "const updated = await fetchFromApiClient(`/api/insights/actions/${id}/status`, {"
+  },
+  {
+    "file": "\\frontend\\components\\ExecutiveInsightsPanel.tsx",
+    "line": 68,
+    "content": "const response = await fetchFromApiClient(\"/api/ai/chat\", {"
+  },
+  {
+    "file": "\\frontend\\components\\insights\\InsightsPanel.tsx",
+    "line": 22,
+    "content": "fetch(\"http://localhost:3000/api/insights/current\")"
+  },
+  {
+    "file": "\\frontend\\lib\\api.client.ts",
+    "line": 15,
+    "content": "const response = await fetch(`${API_BASE_URL}${path}`, {"
+  },
+  {
+    "file": "\\frontend\\lib\\api.ts",
+    "line": 26,
+    "content": "const response = await fetch(`${API_BASE_URL}${path}`, {"
+  },
+  {
+    "file": "\\frontend\\middleware.ts",
+    "line": 7,
+    "content": "const isPublicPath = path === '/login' || path.startsWith('/api/');"
+  },
+  {
+    "file": "\\frontend\\services\\aiService.ts",
+    "line": 4,
+    "content": "const res = await fetchFromApiClient('/api/ai/chat-v2', {"
+  },
+  {
+    "file": "\\frontend\\services\\aiService.ts",
+    "line": 17,
+    "content": "const res = await fetchFromApiClient('/api/analytics/executive');"
+  },
+  {
+    "file": "\\frontend\\services\\aiService.ts",
+    "line": 25,
+    "content": "const res = await fetchFromApiClient('/api/insights/current');"
+  }
+]

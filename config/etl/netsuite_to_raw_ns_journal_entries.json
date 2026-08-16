@@ -1,0 +1,26 @@
+{
+  "integration": "NetSuite_SuiteQL",
+  "target_table": "raw_ns_journal_entries",
+  "primary_keys": ["id"],
+  "description": "Asientos Contables - Journal Entries (GL disponible solo a nivel cabecera)",
+  "extraction": {
+    "type": "REST_SUITEQL",
+    "base_query": "SELECT t.id, t.tranid, t.trandate, t.subsidiary, t.memo, t.currency, t.exchangerate, t.lastmodifieddate FROM transaction t",
+    "filters": [
+      { "field": "t.type", "operator": "=", "value": "Journal" },
+      { "field": "t.lastmodifieddate", "operator": ">=", "value": "TO_DATE('{{LAST_SYNC_DATE}}', 'YYYY-MM-DD HH24:MI:SS')" }
+    ]
+  },
+  "mapping": {
+    "id": { "source_field": "id", "type": "string" },
+    "tranid": { "source_field": "tranid", "type": "string" },
+    "trandate": { "source_field": "trandate", "type": "date" },
+    "subsidiary": { "source_field": "subsidiary", "type": "string" },
+    "memo": { "source_field": "memo", "type": "string" },
+    "currency": { "source_field": "currency", "type": "string" },
+    "exchangerate": { "source_field": "exchangerate", "type": "number" },
+    "last_modified_ts": { "source_field": "lastmodifieddate", "type": "date" }
+  },
+  "defaults": { "source_system": "netsuite", "client_id": "vonderk", "snapshot_ts": "{{CURRENT_TIMESTAMP}}" },
+  "validation_rules": [{ "field": "id", "rule": "is_not_null" }]
+}

@@ -1,0 +1,28 @@
+schema_documentation_policy:
+  version: "1.6"
+  purpose: "Ensure real-time documentation synchronization with schema evolution"
+  
+  mandatory_updates:
+    database_md:
+      file: "docs/business/database.md"
+      requirements:
+        - "Table Name"
+        - "Description/Purpose"
+        - "Layer (RAW, STG, Business, Operations)"
+        - "Consumers"
+        - "RLS Scope"
+    
+    execution_log:
+      file: "docs/orchestration/execution_log.md"
+      requirements:
+        - "Log schema evolution step."
+        - "Link to proposal and sql scripts."
+        
+    artifact_registry:
+      file: "docs/orchestration/artifact_registry.yaml"
+      requirements:
+        - "Register the new SQL scripts."
+        
+  trigger:
+    when: "Immediately after successful validation of schema execution."
+    who: "Autonomous Supervisor"
