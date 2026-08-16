@@ -5,7 +5,7 @@
   "description": "Mapeo de líneas de transacciones con GL Impact",
   "extraction": {
     "type": "REST_SUITEQL",
-    "base_query": "SELECT t.id as transaction_id, tl.linesequencenumber as line_id, tl.item as item_id, tl.account as account_id, tl.department as department_id, tl.class as class_id, tl.location as location_id, tl.quantity, tl.rate, tl.netamount, tl.costestimate, t.lastmodifieddate as last_modified_ts FROM transaction t JOIN transactionline tl ON t.id = tl.transaction",
+    "base_query": "SELECT t.id as transaction_id, tl.linesequencenumber as line_id, tl.item as item_id, tl.account as account_id, tl.department as department_id, tl.class as class_id, tl.location as location_id, tl.subsidiary as subsidiary_id, tl.quantity, tl.rate, tl.netamount, tl.costestimate, t.lastmodifieddate as last_modified_ts FROM transaction t JOIN transactionline tl ON t.id = tl.transaction",
     "filters": [
       { "field": "t.type", "operator": "IN", "value": "('CustInvc', 'CashSale', 'SalesOrd', 'Estimate', 'CreditMemo')" },
       { "field": "tl.mainline", "operator": "=", "value": "F" },
@@ -25,6 +25,7 @@
     "rate": { "source_field": "rate", "type": "number" },
     "netamount": { "source_field": "netamount", "type": "number" },
     "costestimate": { "source_field": "costestimate", "type": "number" },
+    "subsidiary": { "source_field": "subsidiary_id", "type": "string" },
     "last_modified_ts": { "source_field": "last_modified_ts", "type": "date" }
   },
   "defaults": {

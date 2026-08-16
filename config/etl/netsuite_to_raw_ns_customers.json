@@ -13,7 +13,7 @@
   "mapping": {
     "customer_id": { "source_field": "id", "type": "string" },
     "companyname": { "source_field": "companyname", "type": "string" },
-    "subsidiary_id": { "source_field": "subsidiary", "type": "string" },
+    "subsidiary": { "source_field": "subsidiary", "type": "string" },
     "salesrep_id": { "source_field": "salesrep", "type": "string" },
     "email": { "source_field": "email", "type": "string" },
     "phone": { "source_field": "phone", "type": "string" },

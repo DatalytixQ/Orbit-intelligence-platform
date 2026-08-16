@@ -5,7 +5,7 @@
   "description": "Mapeo maestro de cabeceras de transacciones",
   "extraction": {
     "type": "REST_SUITEQL",
-    "base_query": "SELECT id, tranid, trandate, postingperiod, type, status, entity, currency, exchangerate, lastmodifieddate, taxtotal, employee, createdfrom, probability, expectedclosedate, entitystatus, saleschannel FROM transaction",
+    "base_query": "SELECT id, tranid, trandate, postingperiod, type, status, entity, currency, exchangerate, lastmodifieddate, taxtotal, employee, createdfrom, probability, expectedclosedate, entitystatus, saleschannel, subsidiary FROM transaction",
     "filters": [
       { "field": "type", "operator": "IN", "value": "('CustInvc', 'CashSale', 'SalesOrd', 'Estimate', 'CreditMemo', 'ReturnAuth', 'CashRfnd', 'CustCred')" },
       { "field": "lastmodifieddate", "operator": ">=", "value": "TO_DATE('{{LAST_SYNC_DATE}}', 'YYYY-MM-DD HH24:MI:SS')" }
@@ -28,7 +28,8 @@
     "probability": { "source_field": "probability", "type": "number" },
     "expected_close_date": { "source_field": "expectedclosedate", "type": "date" },
     "entity_status": { "source_field": "entitystatus", "type": "string" },
-    "sales_channel": { "source_field": "saleschannel", "type": "string" }
+    "sales_channel": { "source_field": "saleschannel", "type": "string" },
+    "subsidiary": { "source_field": "subsidiary", "type": "string" }
   },
   "defaults": {
     "source_system": "netsuite",
