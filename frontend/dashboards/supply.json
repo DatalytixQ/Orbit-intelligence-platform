@@ -1,0 +1,125 @@
+{
+  "id": "supply",
+  "name": "DQ Orbit — Inteligencia de Abastecimiento",
+  "description": "Proyección de inventarios, cumplimiento de órdenes y resolución proactiva de quiebres sobre el pipeline de demanda",
+  "domain": "Abastecimiento",
+  "version": "2.0.0",
+  "layout": {
+    "columns": 4,
+    "rowHeight": 120,
+    "gap": 16
+  },
+  "widgets": [
+    {
+      "id": "supply-kpi-pipeline",
+      "type": "kpi",
+      "title": "Pipeline Abierto",
+      "metric": "pipeline-revenue-kpi",
+      "size": "sm",
+      "kpiConfig": {
+        "format": "currency",
+        "currency": "ARS",
+        "severity": "neutral"
+      },
+      "gridPosition": { "x": 0, "y": 0, "w": 1, "h": 1 }
+    },
+    {
+      "id": "supply-kpi-deliverable",
+      "type": "kpi",
+      "title": "Ingreso Entregable",
+      "metric": "deliverable-revenue-kpi",
+      "size": "sm",
+      "kpiConfig": {
+        "format": "currency",
+        "currency": "ARS",
+        "severity": "success"
+      },
+      "gridPosition": { "x": 1, "y": 0, "w": 1, "h": 1 }
+    },
+    {
+      "id": "supply-kpi-risk",
+      "type": "kpi",
+      "title": "Ingreso en Riesgo",
+      "metric": "risk-revenue-kpi",
+      "size": "sm",
+      "kpiConfig": {
+        "format": "currency",
+        "currency": "ARS",
+        "severity": "critical"
+      },
+      "gridPosition": { "x": 2, "y": 0, "w": 1, "h": 1 }
+    },
+    {
+      "id": "supply-kpi-margin-risk",
+      "type": "kpi",
+      "title": "Margen en Riesgo",
+      "metric": "margin-risk-kpi",
+      "size": "sm",
+      "kpiConfig": {
+        "format": "currency",
+        "currency": "ARS",
+        "severity": "warning"
+      },
+      "gridPosition": { "x": 3, "y": 0, "w": 1, "h": 1 }
+    },
+    {
+      "id": "supply-pipeline-chart",
+      "type": "bar-chart",
+      "title": "Pipeline vs Capacidad de Entrega",
+      "metric": "/api/supply/pipeline-vs-supply",
+      "size": "md",
+      "chartConfig": {
+        "xField": "expected_ship_date",
+        "yField": "pending_revenue",
+        "colorField": "item_name",
+        "orientation": "vertical",
+        "showLegend": false
+      },
+      "gridPosition": { "x": 0, "y": 1, "w": 2, "h": 3 }
+    },
+    {
+      "id": "supply-risk-table",
+      "type": "table",
+      "title": "Riesgo por Cliente",
+      "metric": "/api/supply/risk-by-customer",
+      "size": "md",
+      "tableConfig": {
+        "columns": [
+          { "key": "customer_name", "label": "Cliente", "format": "text", "sortable": true },
+          { "key": "risk_status", "label": "Riesgo", "format": "text", "sortable": true },
+          { "key": "revenue_at_supply_risk", "label": "Ingreso en Riesgo", "format": "currency", "sortable": true }
+        ],
+        "maxRows": 5
+      },
+      "gridPosition": { "x": 2, "y": 1, "w": 2, "h": 3 }
+    },
+    {
+      "id": "supply-inbound-timeline",
+      "type": "bar-chart",
+      "title": "Cronograma de Arribos Críticos",
+      "metric": "/api/supply/inbound-timeline",
+      "size": "md",
+      "chartConfig": {
+        "xField": "next_expected_date",
+        "yField": "inbound_qty",
+        "colorField": "status",
+        "orientation": "vertical",
+        "showLegend": true
+      },
+      "gridPosition": { "x": 0, "y": 4, "w": 2, "h": 3 }
+    },
+    {
+      "id": "supply-insights",
+      "type": "insight",
+      "title": "Puntos de Atención Prioritaria",
+      "subtitle": "¿Qué debo resolver hoy?",
+      "metric": "supply-insights-data",
+      "size": "sm",
+      "drillThrough": {
+        "type": "ai",
+        "target": "Analizar los cuellos de botella en la cadena de suministro"
+      },
+      "gridPosition": { "x": 2, "y": 4, "w": 2, "h": 3 }
+    }
+  ]
+}

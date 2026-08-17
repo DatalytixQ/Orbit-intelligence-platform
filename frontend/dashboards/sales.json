@@ -1,0 +1,70 @@
+{
+  "id": "sales",
+  "name": "DQ Orbit — Workspace de Ventas",
+  "description": "¿Estamos alcanzando los objetivos comerciales y de crecimiento?",
+  "domain": "Ventas",
+  "version": "2.0.0",
+  "layout": {
+    "columns": 3,
+    "rowHeight": 120,
+    "gap": 16
+  },
+  "widgets": [
+    {
+      "id": "sales-monthly-kpi",
+      "type": "kpi",
+      "title": "Ventas del Mes",
+      "metric": "/api/kpi/sales/total",
+      "size": "sm",
+      "kpiConfig": {
+        "format": "currency",
+        "currency": "ARS",
+        "severity": "neutral"
+      },
+      "gridPosition": { "x": 0, "y": 0, "w": 1, "h": 2 }
+    },
+    {
+      "id": "sales-category-chart",
+      "type": "bar-chart",
+      "title": "Ventas por Categoría",
+      "metric": "/api/kpi/sales/by-category",
+      "size": "md",
+      "chartConfig": {
+        "xField": "month",
+        "yField": "sales_net_amount",
+        "colorField": "item_class",
+        "orientation": "vertical",
+        "showLegend": true
+      },
+      "gridPosition": { "x": 1, "y": 0, "w": 2, "h": 3 }
+    },
+    {
+      "id": "sales-executive-table",
+      "type": "table",
+      "title": "Top Clientes",
+      "metric": "/api/kpi/sales/top-customers",
+      "size": "md",
+      "tableConfig": {
+        "columns": [
+          { "key": "customer_name", "label": "Cliente", "format": "text", "sortable": true },
+          { "key": "total_sales_ars", "label": "Ventas (ARS)", "format": "currency", "sortable": true }
+        ],
+        "maxRows": 5
+      },
+      "gridPosition": { "x": 0, "y": 3, "w": 2, "h": 3 }
+    },
+    {
+      "id": "insights-panel",
+      "type": "insight",
+      "title": "Puntos de Atención Prioritaria",
+      "subtitle": "¿Qué debo resolver hoy?",
+      "metric": "/api/business-insights/top",
+      "size": "sm",
+      "drillThrough": {
+        "type": "ai",
+        "target": "Dame un análisis detallado de esta alerta de ventas: {{regla}}. ¿Qué debo hacer?"
+      },
+      "gridPosition": { "x": 2, "y": 3, "w": 1, "h": 3 }
+    }
+  ]
+}

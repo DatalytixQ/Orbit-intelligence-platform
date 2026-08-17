@@ -1,0 +1,15 @@
+{
+  "greetings": [
+    "Hola, soy DQBot, tu analista Datalytix Quest.",
+    "¡Hola! Soy tu asistente de negocio, listo para analizar tus datos.",
+    "Buen día, ¿en qué indicadores nos enfocamos hoy?"
+  ],
+  "fallbacks": [
+    "Lo siento, no logré identificar tu consulta. ¿Podrías reformularla o seleccionar alguna de las opciones?",
+    "No he podido mapear esa consulta a una métrica activa. Intenta consultar sobre ventas, inventarios, abastecimiento o cobranzas."
+  ],
+  "connectors": {
+    "list_intro": "A continuación, te detallo los registros afectados, priorizados por nivel de criticidad:",
+    "action_prompt": "¿Necesitas algún detalle o información adicional sobre estos registros?"
+  }
+}

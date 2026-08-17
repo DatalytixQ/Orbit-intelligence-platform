@@ -1,0 +1,12 @@
+--- 1. Sales Order signs ---
+    type     sum_qty       sum_net
+SalesOrd -466483.295 -2.260528e+09
+
+--- 2. Invoice signs ---
+    type     sum_qty       sum_net
+CustInvc -1407224.71 -1.434237e+10
+
+--- 3. Estimate signs ---
+    type  sum_qty   sum_net
+Estimate  -2147.0 -42949.75
+

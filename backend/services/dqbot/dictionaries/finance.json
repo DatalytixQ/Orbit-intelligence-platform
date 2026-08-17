@@ -1,0 +1,3 @@
+{
+  "c001_summary": "He revisado la exposición de **Cuentas por Cobrar** de la cartera de clientes. Encontré **{{count}} clientes** con saldo vencido relevante, acumulando una deuda total de **{{total_overdue}}**.\n\nEsta situación representa un riesgo financiero directo para el flujo de caja. Los clientes con mayor antigüedad de deuda (>90 días) son los de acción más urgente: se recomienda evaluar la retención de despachos y activar un plan de cobranza prioritario para recuperar el capital comprometido."
+}

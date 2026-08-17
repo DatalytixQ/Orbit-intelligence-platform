@@ -1,0 +1,28 @@
+--- 1. Transaction Lines for FC A-00007-00049651 (ID 387682) ---
+line_id item_id  quantity    rate  netamount
+      1    9670     -40.0 16968.0  -678720.0
+      2    9669     -40.0 16968.0  -678720.0
+      3    9674     -30.0 12120.0  -363600.0
+      4    3389      -1.0     0.0        0.0
+
+--- 2. Duplicates check in dm_dim_items_enriched ---
+item_id  cnt
+  10000    9
+  10001    9
+  10002    9
+  10003    9
+  10004    9
+
+--- 3. Customer 3984 info ---
+customer_id         companyname salesrep_id
+       3984 PANA ILUMINACION SA         551
+
+--- 4. All Sales Reps in dm_dim_sales_reps ---
+Empty DataFrame
+Columns: [salesrep_id, rep_entityid, rep_full_name]
+Index: []
+
+--- 5. Check raw_ns_transactions for duplicates ---
+transaction_id  count
+        387682      1
+

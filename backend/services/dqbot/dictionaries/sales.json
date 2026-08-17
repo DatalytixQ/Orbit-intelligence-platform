@@ -1,0 +1,4 @@
+{
+  "v001_summary": "He revisado la concentración de cartera de clientes (Alerta V001). Detecté un riesgo operativo de alta prioridad debido a que el cliente principal **{{customer_name}}** concentra una porción riesgosa ({{participation_pct}}%) de los ingresos de esta línea.\n\nEsto representa una exposición peligrosa en caso de pérdida de la cuenta o insolvencia de dicho cliente. Te sugiero ver el detalle a continuación para diversificar la cuota comercial.",
+  "v002_summary": "He evaluado los márgenes comerciales y las proyecciones (Alerta V002). Encontré una desviación importante afectando a **{{count}} líneas de producto o representantes**, acumulando un impacto negativo o desvío de **{{total_deviation}}** frente a la meta o plan original.\n\nEspecíficamente, el Run Rate actual refleja que de no tomar acción, el margen general del mes cerrará muy por debajo del objetivo."
+}

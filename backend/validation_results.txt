@@ -1,0 +1,33 @@
+
+==================================================
+1. Top 10 Facturas Recientes (con COGS y Margen)
+==================================================
+     invoice_number  sale_date customer_id         rep_full_name categoria    qty  net_amount        cogs  gross_margin
+FC A-00007-00049651 2026-08-12        3984       Maria Hernandez Productos -111.0 -1721040.00  -552063.60   -1168976.40
+FC A-00007-00049652 2026-08-12        3778          Maria Romero Productos  -41.0  -800526.00  -331781.60    -468744.40
+FC A-00007-00049653 2026-08-12       14071        Soledad Bervih Productos -102.0 -3640287.45        0.00   -3640287.45
+FC A-00007-00049654 2026-08-12        3807          Maria Romero Productos  -15.0  -477528.00  -140235.89    -337292.11
+FC A-00007-00049655 2026-08-12        3787          Maria Romero Productos  -24.0  -514797.00  -203601.58    -311195.42
+FC A-00007-00049656 2026-08-12        3778          Maria Romero Productos  -30.0  -583017.45  -204802.76    -378214.69
+FC A-00007-00049657 2026-08-12        3641          Nestor Cejas Productos   -9.0  -227250.00  -105536.32    -121713.68
+FC A-00007-00049658 2026-08-12        3825 Lautaro Navarro Tuero Productos  -33.0 -1009383.90  -330255.10    -679128.80
+FC A-00007-00049659 2026-08-12        3787          Maria Romero Productos -123.0 -3299912.40 -1149489.20   -2150423.20
+FC A-00007-00049660 2026-08-12       14130        Soledad Bervih Productos  -82.0 -3964209.60  -692475.92   -3271733.68
+
+==================================================
+2. Estados actuales en Pipeline (SalesOrd)
+==================================================
+status  cantidad   monto_total
+     C        85  0.000000e+00
+     F       152 -3.347774e+04
+     B       575 -6.223437e+04
+     G      6946 -1.015482e+09
+     H     35710 -1.244950e+09
+
+==================================================
+3. Ventas por Categoría (Julio 2026)
+==================================================
+    categoria        ventas
+Sin Categoría -6.706600e+05
+    Servicios -4.376050e+07
+    Productos -8.835406e+08

@@ -1,0 +1,96 @@
+{
+  "id": "inventory",
+  "name": "DQ Orbit — Workspace de Inventario",
+  "description": "Monitoreo de cobertura, riesgo de quiebre y capital inmovilizado",
+  "domain": "Inventario",
+  "version": "2.0.0",
+  "layout": {
+    "columns": 3,
+    "rowHeight": 120,
+    "gap": 16
+  },
+  "widgets": [
+    {
+      "id": "inventory-kpi-critical-count",
+      "type": "kpi",
+      "title": "Riesgo de Quiebre (Ítems)",
+      "metric": "critical-count-kpi",
+      "size": "sm",
+      "kpiConfig": {
+        "format": "number",
+        "severity": "critical"
+      },
+      "gridPosition": { "x": 0, "y": 0, "w": 1, "h": 1 }
+    },
+    {
+      "id": "inventory-kpi-critical-value",
+      "type": "kpi",
+      "title": "Valor Crítico",
+      "metric": "critical-value-kpi",
+      "size": "sm",
+      "kpiConfig": {
+        "format": "currency",
+        "currency": "ARS",
+        "severity": "warning"
+      },
+      "gridPosition": { "x": 1, "y": 0, "w": 1, "h": 1 }
+    },
+    {
+      "id": "inventory-kpi-slow-moving",
+      "type": "kpi",
+      "title": "Inventario Inmovilizado",
+      "metric": "slow-moving-kpi",
+      "size": "sm",
+      "kpiConfig": {
+        "format": "currency",
+        "currency": "ARS",
+        "severity": "warning"
+      },
+      "gridPosition": { "x": 2, "y": 0, "w": 1, "h": 1 }
+    },
+    {
+      "id": "inventory-coverage-chart",
+      "type": "bar-chart",
+      "title": "Cobertura General de Inventario",
+      "metric": "/api/kpi/inventory/coverage",
+      "size": "md",
+      "chartConfig": {
+        "xField": "coverage_status",
+        "yField": "inventory_value",
+        "colorField": "coverage_status",
+        "orientation": "horizontal",
+        "showLegend": false
+      },
+      "gridPosition": { "x": 0, "y": 1, "w": 2, "h": 3 }
+    },
+    {
+      "id": "inventory-insights",
+      "type": "insight",
+      "title": "Puntos de Atención Prioritaria",
+      "subtitle": "¿Qué debo resolver hoy?",
+      "metric": "inventory-insights-data",
+      "size": "sm",
+      "drillThrough": {
+        "type": "ai",
+        "target": "Analizar los riesgos de inventario detectados"
+      },
+      "gridPosition": { "x": 2, "y": 1, "w": 1, "h": 6 }
+    },
+    {
+      "id": "inventory-critical-table",
+      "type": "table",
+      "title": "Top Ítems Críticos",
+      "metric": "/api/kpi/inventory/top-critical",
+      "size": "md",
+      "tableConfig": {
+        "columns": [
+          { "key": "item_name", "label": "Producto", "format": "text", "sortable": true },
+          { "key": "coverage_status", "label": "Estado", "format": "text", "sortable": true },
+          { "key": "inventory_value", "label": "Valor (ARS)", "format": "currency", "sortable": true }
+        ],
+        "maxRows": 6
+      },
+      "gridPosition": { "x": 0, "y": 4, "w": 2, "h": 3 }
+    }
+  ]
+}

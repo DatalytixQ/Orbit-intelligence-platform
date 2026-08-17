@@ -1,0 +1,139 @@
+{
+  "id": "home",
+  "name": "DQ Orbit — Executive Command Center",
+  "description": "Vista ejecutiva de salud empresarial, alertas prioritarias y métricas cross-domain.",
+  "domain": "home",
+  "version": "2.0.0",
+  "layout": {
+    "columns": 4,
+    "rowHeight": 120,
+    "gap": 16
+  },
+  "widgets": [
+    {
+      "id": "health-score",
+      "type": "kpi",
+      "title": "Business Health Score",
+      "metric": "/api/executive/health-score",
+      "size": "sm",
+      "kpiConfig": {
+        "format": "number",
+        "trend": {
+          "field": "delta",
+          "format": "absolute"
+        },
+        "narrative": "Índice compuesto de salud operacional basado en Ventas, Finanzas, Inventario y Abastecimiento.",
+        "severity": "neutral"
+      },
+      "gridPosition": { "x": 0, "y": 0, "w": 1, "h": 2 }
+    },
+    {
+      "id": "sales-variance",
+      "type": "kpi",
+      "title": "Ventas vs Mes Anterior",
+      "metric": "/api/home-executive-summary",
+      "size": "sm",
+      "kpiConfig": {
+        "format": "percent",
+        "severity": "neutral"
+      },
+      "filterDimension": "domain",
+      "drillThrough": {
+        "type": "route",
+        "target": "/sales"
+      },
+      "gridPosition": { "x": 1, "y": 0, "w": 1, "h": 2 }
+    },
+    {
+      "id": "finance-variance",
+      "type": "kpi",
+      "title": "Exposición Financiera",
+      "metric": "/api/kpi/finance/ar-aging-summary",
+      "size": "sm",
+      "kpiConfig": {
+        "format": "currency",
+        "currency": "ARS",
+        "severity": "neutral"
+      },
+      "filterDimension": "domain",
+      "drillThrough": {
+        "type": "route",
+        "target": "/finance"
+      },
+      "gridPosition": { "x": 2, "y": 0, "w": 1, "h": 2 }
+    },
+    {
+      "id": "inventory-variance",
+      "type": "kpi",
+      "title": "Items Críticos",
+      "metric": "/api/kpi/inventory/critical-items-count",
+      "size": "sm",
+      "kpiConfig": {
+        "format": "number",
+        "severity": "neutral"
+      },
+      "filterDimension": "domain",
+      "drillThrough": {
+        "type": "route",
+        "target": "/inventory"
+      },
+      "gridPosition": { "x": 3, "y": 0, "w": 1, "h": 2 }
+    },
+    {
+      "id": "executive-queue",
+      "type": "table",
+      "title": "Cola de Decisiones Ejecutivas",
+      "subtitle": "Acciones prioritarias que requieren atención inmediata",
+      "metric": "/api/home-executive-summary",
+      "size": "full",
+      "tableConfig": {
+        "columns": [
+          { "key": "domain", "label": "Dominio", "format": "text", "sortable": true, "width": "100px" },
+          { "key": "titulo", "label": "Situación", "format": "text", "sortable": false },
+          { "key": "semaforo", "label": "Severidad", "format": "text", "sortable": true, "width": "100px" },
+          { "key": "impacto_principal", "label": "Impacto", "format": "text", "sortable": false },
+          { "key": "accion_corta", "label": "Acción", "format": "text", "sortable": false }
+        ],
+        "maxRows": 5
+      },
+      "drillThrough": {
+        "type": "ai",
+        "target": "Analiza la situación: {{titulo}} en el dominio {{domain}}. ¿Cuáles son los riesgos y qué acciones recomiendas?"
+      },
+      "gridPosition": { "x": 0, "y": 2, "w": 4, "h": 3 }
+    },
+    {
+      "id": "finance-aging",
+      "type": "bar-chart",
+      "title": "Antigüedad de Cartera",
+      "metric": "/api/kpi/finance/ar-aging-summary",
+      "size": "md",
+      "chartConfig": {
+        "xField": "aging_bucket",
+        "yField": "open_balance",
+        "colorField": "aging_bucket",
+        "orientation": "vertical",
+        "showLegend": false
+      },
+      "filterDimension": "aging_bucket",
+      "drillThrough": {
+        "type": "route",
+        "target": "/finance"
+      },
+      "gridPosition": { "x": 0, "y": 5, "w": 2, "h": 3 }
+    },
+    {
+      "id": "insights-panel",
+      "type": "insight",
+      "title": "Insights de Negocio",
+      "subtitle": "Alertas heurísticas detectadas automáticamente",
+      "metric": "/api/business-insights/top",
+      "size": "md",
+      "drillThrough": {
+        "type": "ai",
+        "target": "Dame un análisis detallado de esta alerta: {{regla}}. ¿Qué debo hacer?"
+      },
+      "gridPosition": { "x": 2, "y": 5, "w": 2, "h": 3 }
+    }
+  ]
+}
