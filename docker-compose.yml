@@ -1,6 +1,19 @@
 version: '3.8'
 
 services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: orbit_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: orbit_admin
+      POSTGRES_PASSWORD: ProSecurePassword2026!
+      POSTGRES_DB: orbit_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
   backend:
     build: 
       context: ./backend
@@ -18,6 +31,8 @@ services:
       - /app/venv # Prevents local venv from overwriting container's
     environment:
       - NODE_ENV=production
+    depends_on:
+      - postgres
 
   # n8n is included here so everything spins up together
   n8n:
@@ -41,3 +56,4 @@ services:
 
 volumes:
   n8n_data:
+  pgdata:
