@@ -16,11 +16,16 @@ const nextConfig: NextConfig = {
         root: path.resolve(__dirname),
     },
     async rewrites() {
+        // En Next.js 'standalone', esto se evalúa durante 'next build'.
+        // Como el build de Docker inyecta NODE_ENV=production, fijamos la ruta interna de Docker.
+        const destinationBase = process.env.NODE_ENV === 'production' 
+            ? 'http://orbit_backend:3000' 
+            : 'http://localhost:3000';
+            
         return [
             {
                 source: '/api/:path*',
-                // Si la variable BACKEND_URL existe en Docker, la usa, sino asume que el backend está corriendo local en 3000
-                destination: `${process.env.BACKEND_URL || 'http://localhost:3000'}/api/:path*`,
+                destination: `${destinationBase}/api/:path*`,
             },
         ];
     },
