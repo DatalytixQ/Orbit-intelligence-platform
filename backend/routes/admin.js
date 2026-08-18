@@ -54,7 +54,7 @@ router.post("/users", requireAuth, checkAdmin, async (req, res) => {
 // ==========================================
 router.get("/areas", requireAuth, async (req, res) => {
   try {
-    const areas = await sql`SELECT * FROM public.app_areas WHERE is_active = true ORDER BY sort_order ASC`;
+    const areas = await sql`SELECT * FROM public.app_areas WHERE is_active = true AND client_id = ${req.user.client_id} ORDER BY sort_order ASC`;
     res.json({ ok: true, areas });
   } catch (err) {
     res.status(500).json({ ok: false, error: err.message });
@@ -67,7 +67,7 @@ router.get("/reports", requireAuth, async (req, res) => {
       SELECT r.*, a.name as area_name 
       FROM public.app_reports r 
       JOIN public.app_areas a ON r.area_id = a.id 
-      WHERE r.is_active = true 
+      WHERE r.is_active = true AND r.client_id = ${req.user.client_id}
       ORDER BY a.sort_order ASC, r.name ASC
     `;
     res.json({ ok: true, reports });
@@ -81,7 +81,7 @@ router.get("/reports", requireAuth, async (req, res) => {
 // ==========================================
 router.get("/roles", requireAuth, async (req, res) => {
   try {
-    const roles = await sql`SELECT id, name, is_admin, is_active FROM public.app_roles WHERE is_active = true ORDER BY created_at DESC`;
+    const roles = await sql`SELECT id, name, is_admin, is_active FROM public.app_roles WHERE is_active = true AND client_id = ${req.user.client_id} ORDER BY created_at DESC`;
     
     // Adjuntar los reportes a cada rol
     for (let role of roles) {
@@ -106,8 +106,8 @@ router.post("/roles", requireAuth, checkAdmin, async (req, res) => {
 
     // 1. Crear el rol
     const result = await sql`
-      INSERT INTO public.app_roles (name, is_admin) 
-      VALUES (${name}, ${is_admin || false}) 
+      INSERT INTO public.app_roles (client_id, name, is_admin) 
+      VALUES (${req.user.client_id}, ${name}, ${is_admin || false}) 
       RETURNING id, name, is_admin
     `;
     

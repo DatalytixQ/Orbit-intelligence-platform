@@ -14,6 +14,7 @@ import LayoutEngine from "@/lib/engines/LayoutEngine";
 import { RenderWidget, type DashboardConfig, type WidgetConfig } from "@/lib/engines/WidgetEngine";
 import { useFilterEngine, type ActiveFilter } from "@/lib/engines/FilterEngine";
 import { X, Filter, RotateCcw } from "lucide-react";
+import { fetchFromApiClient } from "@/lib/api.client";
 
 type DashboardRendererProps = {
   config: DashboardConfig;
@@ -39,14 +40,6 @@ export default function DashboardRenderer({
 
     setIsRefreshing(true);
     try {
-      const token =
-        typeof window !== "undefined"
-          ? localStorage.getItem("datalytixq_token") || ""
-          : "";
-
-      const baseUrl =
-        process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
-
       // Build filter query params
       const filterParams = new URLSearchParams();
       filters.forEach((f) => {
@@ -61,16 +54,10 @@ export default function DashboardRenderer({
         config.widgets.map(async (w) => {
           try {
             const separator = w.metric.includes("?") ? "&" : "?";
-            const url = `${baseUrl}${w.metric}${qs ? `${separator}${qs}` : ""}`;
-            const res = await fetch(url, {
-              headers: {
-                "Content-Type": "application/json",
-                ...(token ? { Authorization: `Bearer ${token}` } : {}),
-              },
+            const url = `${w.metric}${qs ? `${separator}${qs}` : ""}`;
+            const data = await fetchFromApiClient(url, {
               cache: "no-store",
             });
-            if (!res.ok) return [w.id, null] as const;
-            const data = await res.json();
             return [w.id, data] as const;
           } catch {
             return [w.id, null] as const;

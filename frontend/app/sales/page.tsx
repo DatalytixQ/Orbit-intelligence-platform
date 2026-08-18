@@ -6,6 +6,7 @@ import { TrendingUp, Users, ShoppingCart, DollarSign, Package, Percent } from "l
 import { AreaChart, Area, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from "recharts";
 import DynamicSidebar from "@/components/layout/DynamicSidebar";
 import UnifiedDashboardHeader from "@/components/layout/UnifiedDashboardHeader";
+import { fetchFromApiClient } from "@/lib/api.client";
 
 const COLORS = ['#6366f1', '#8b5cf6', '#ec4899', '#14b8a6', '#f59e0b'];
 
@@ -15,13 +16,10 @@ export default function SalesDashboard() {
   const [byCategory, setByCategory] = useState<any[]>([]);
   
   useEffect(() => {
-    const token = 'dummy-token'; // Replace with actual auth logic
-    const headers = { 'Authorization': `Bearer ${token}` };
-    
     Promise.all([
-      fetch('http://localhost:3000/api/kpi/sales/summary', { headers }).then(res => res.json()),
-      fetch('http://localhost:3000/api/kpi/sales/monthly-trend', { headers }).then(res => res.json()),
-      fetch('http://localhost:3000/api/kpi/sales/by-category', { headers }).then(res => res.json())
+      fetchFromApiClient('/api/kpi/sales/summary'),
+      fetchFromApiClient('/api/kpi/sales/monthly-trend'),
+      fetchFromApiClient('/api/kpi/sales/by-category')
     ]).then(([sum, trend, cat]) => {
       setSummary(sum);
       setMonthlyTrend(trend);

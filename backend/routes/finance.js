@@ -2,6 +2,11 @@ const express = require("express");
 const router = express.Router();
 const sql = require("../db");
 const { getFinanceRiskBundle } = require("../services/financeRisk");
+const { requireAuth } = require("../middleware/auth");
+
+router.use(requireAuth);
+
+// TODO: Add client_id filter to queries when dm views expose client_id
 
 router.get("/kpi/finance/current", async (_req, res) => {
   try {

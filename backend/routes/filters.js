@@ -55,10 +55,11 @@ router.get("/kpi/filters", async (req, res) => {
 // ETL Data Freshness — return the actual last sync timestamp
 router.get("/kpi/system/etl-status", async (req, res) => {
   try {
+    // TODO: Add client_id filter to dm_ views when they expose client_id
     const result = await sql`
       SELECT 
         MAX(sale_date) as last_transaction_date,
-        (SELECT MAX(created_at) FROM raw_ns_transactions) as last_etl_sync
+        (SELECT MAX(created_at) FROM raw_ns_transactions WHERE client_id = ${req.user.client_id}) as last_etl_sync
     FROM dm_fact_sales
     `;
     

@@ -9,6 +9,7 @@
 import React, { useState, useCallback } from "react";
 import { motion } from "framer-motion";
 import type { WidgetConfig, WidgetSize } from "./WidgetEngine";
+import { fetchFromApiClient } from "@/lib/api.client";
 
 // Grid layout position type
 export type LayoutItem = {
@@ -97,22 +98,14 @@ export function loadLayout(dashboardId: string): LayoutItem[] | null {
  */
 export async function saveLayoutToServer(
   dashboardId: string, 
-  layout: LayoutItem[],
-  token: string
+  layout: LayoutItem[]
 ): Promise<boolean> {
   try {
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000"}/api/settings/dashboard-layout`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `Bearer ${token}`,
-        },
-        body: JSON.stringify({ dashboard_id: dashboardId, layout }),
-      }
-    );
-    return response.ok;
+    const data = await fetchFromApiClient("/api/settings/dashboard-layout", {
+      method: "POST",
+      body: JSON.stringify({ dashboard_id: dashboardId, layout }),
+    });
+    return !!data;
   } catch {
     return false;
   }

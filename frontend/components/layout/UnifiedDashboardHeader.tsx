@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Download, Maximize2 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { fetchFromApiClient } from "@/lib/api.client";
 
 export interface TabOption {
   id: string;
@@ -81,17 +82,10 @@ export default function UnifiedDashboardHeader({
   const [etlStatus, setEtlStatus] = useState<any>(null);
 
   useEffect(() => {
-    const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
-    const token = localStorage.getItem('datalytixq_token');
-    const headers = { 'Authorization': `Bearer ${token}` };
-
     const fetchFilters = async () => {
       try {
-        const res = await fetch(`${baseUrl}/api/kpi/filters`, { headers });
-        if (res.ok) {
-          const data = await res.json();
-          setFiltersData(data);
-        }
+        const data = await fetchFromApiClient('/api/kpi/filters');
+        setFiltersData(data);
       } catch (e) {
         console.error("Failed to load filters", e);
       }
@@ -99,11 +93,8 @@ export default function UnifiedDashboardHeader({
 
     const fetchEtlStatus = async () => {
       try {
-        const res = await fetch(`${baseUrl}/api/kpi/system/etl-status`, { headers });
-        if (res.ok) {
-          const data = await res.json();
-          setEtlStatus(data);
-        }
+        const data = await fetchFromApiClient('/api/kpi/system/etl-status');
+        setEtlStatus(data);
       } catch (e) {
         console.error("Failed to load ETL status", e);
       }

@@ -6,18 +6,16 @@ import { Users, Activity, AlertTriangle, Moon } from "lucide-react";
 import { ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer, Cell } from "recharts";
 import DynamicSidebar from "@/components/layout/DynamicSidebar";
 import UnifiedDashboardHeader from "@/components/layout/UnifiedDashboardHeader";
+import { fetchFromApiClient } from "@/lib/api.client";
 
 export default function RFMDashboard() {
   const [summary, setSummary] = useState<any>(null);
   const [scatter, setScatter] = useState<any[]>([]);
 
   useEffect(() => {
-    const token = 'dummy-token';
-    const headers = { 'Authorization': `Bearer ${token}` };
-
     Promise.all([
-      fetch('http://localhost:3000/api/kpi/rfm/summary', { headers }).then(res => res.json()),
-      fetch('http://localhost:3000/api/kpi/rfm/scatter', { headers }).then(res => res.json())
+      fetchFromApiClient('/api/kpi/rfm/summary'),
+      fetchFromApiClient('/api/kpi/rfm/scatter')
     ]).then(([sum, scat]) => {
       setSummary(sum);
       setScatter(scat);

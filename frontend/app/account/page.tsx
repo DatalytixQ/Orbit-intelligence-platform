@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { User, Key, Globe, Shield, CheckCircle, AlertCircle, Lock } from "lucide-react";
 import DynamicSidebar from "@/components/layout/DynamicSidebar";
 import { useTranslations } from "next-intl";
+import { fetchFromApiClient } from "@/lib/api.client";
 
 export default function UserProfilePage() {
   const t = useTranslations('Profile');
@@ -32,16 +33,9 @@ export default function UserProfilePage() {
   const fetchProfile = async () => {
     setLoading(true);
     try {
-      const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
-      const token = localStorage.getItem("datalytixq_token");
-      const res = await fetch(`${baseUrl}/api/auth/profile`, {
-        headers: { Authorization: `Bearer ${token}` }
-      });
-      if (res.ok) {
-        const data = await res.json();
-        setProfileData(data);
-        setSelectedLang(data.user.language_preference || "es");
-      }
+      const data = await fetchFromApiClient("/api/auth/profile");
+      setProfileData(data);
+      setSelectedLang(data.user.language_preference || "es");
     } catch (err) {
       console.error("Error fetching profile:", err);
     } finally {
@@ -53,18 +47,12 @@ export default function UserProfilePage() {
     setSavingLang(true);
     setLangSuccess(false);
     try {
-      const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
-      const token = localStorage.getItem("datalytixq_token");
-      const res = await fetch(`${baseUrl}/api/auth/profile/language`, {
+      const data = await fetchFromApiClient("/api/auth/profile/language", {
         method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`
-        },
         body: JSON.stringify({ language: selectedLang })
       });
 
-      if (res.ok) {
+      if (data) {
         document.cookie = `NEXT_LOCALE=${selectedLang}; path=/; max-age=31536000; SameSite=Lax`;
         setLangSuccess(true);
         setTimeout(() => {
@@ -94,28 +82,19 @@ export default function UserProfilePage() {
 
     setChangingPass(true);
     try {
-      const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
-      const token = localStorage.getItem("datalytixq_token");
-      const res = await fetch(`${baseUrl}/api/auth/change-password`, {
+      const data = await fetchFromApiClient("/api/auth/change-password", {
         method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`
-        },
         body: JSON.stringify({ currentPassword, newPassword })
       });
 
-      const data = await res.json();
-      if (res.ok) {
+      if (data) {
         setPassSuccess(true);
         setCurrentPassword("");
         setNewPassword("");
         setConfirmPassword("");
-      } else {
-        setPassError(data.error || "Error al cambiar contraseña");
       }
-    } catch (err) {
-      setPassError("Error al conectar con el servidor");
+    } catch (err: any) {
+      setPassError(err.message || "Error al conectar con el servidor");
     } finally {
       setChangingPass(false);
     }

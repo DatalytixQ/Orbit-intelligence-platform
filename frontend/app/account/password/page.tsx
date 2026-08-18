@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import AppShell from "@/components/layout/AppShell";
+import { fetchFromApiClient } from "@/lib/api.client";
 
 export default function ChangePasswordPage() {
   const [currentPassword, setCurrentPassword] = useState("");
@@ -30,31 +31,18 @@ export default function ChangePasswordPage() {
       return;
     }
 
-    const token = localStorage.getItem("datalytixq_token");
-
-    if (!token) {
-      setError("Sesión no válida. Vuelve a iniciar sesión.");
-      return;
-    }
-
     setLoading(true);
 
     try {
-      const response = await fetch("http://localhost:3000/api/auth/change-password", {
+      const data = await fetchFromApiClient("/api/auth/change-password", {
         method: "PATCH",
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
         body: JSON.stringify({
           currentPassword,
           newPassword,
         }),
       });
 
-      const data = await response.json();
-
-      if (!response.ok || !data.ok) {
+      if (data && data.ok === false) {
         throw new Error(data.error || "No se pudo actualizar la contraseña");
       }
 

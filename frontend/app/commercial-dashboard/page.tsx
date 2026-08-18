@@ -16,6 +16,7 @@ import DynamicSidebar from "@/components/layout/DynamicSidebar";
 import UnifiedDashboardHeader from "@/components/layout/UnifiedDashboardHeader";
 import { useTranslations } from "next-intl";
 import SlideOver from "@/components/ui/SlideOver";
+import { fetchFromApiClient } from "@/lib/api.client";
 
 export default function CommercialDashboardPage() {
   const t = useTranslations('Commercial');
@@ -51,10 +52,6 @@ export default function CommercialDashboardPage() {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
-        const token = localStorage.getItem('datalytixq_token'); 
-        const headers = { 'Authorization': `Bearer ${token}` };
-        
         const params = new URLSearchParams();
         if (selectedEmpresa !== 'all') params.append('subsidiary_id', selectedEmpresa);
         if (selectedMoneda !== 'all') params.append('currency_id', selectedMoneda);
@@ -65,23 +62,23 @@ export default function CommercialDashboardPage() {
         
         const qs = params.toString() ? `?${params.toString()}` : '';
 
-        const [sumRes, trendRes, catRes, chanRes, repRes, paretoRes, topCustRes] = await Promise.all([
-          fetch(`${baseUrl}/api/kpi/sales/summary${qs}`, { headers }),
-          fetch(`${baseUrl}/api/kpi/sales/monthly-trend-yoy${qs}`, { headers }),
-          fetch(`${baseUrl}/api/kpi/sales/by-category${qs}`, { headers }),
-          fetch(`${baseUrl}/api/kpi/sales/by-channel${qs}`, { headers }),
-          fetch(`${baseUrl}/api/kpi/sales/by-rep${qs}`, { headers }),
-          fetch(`${baseUrl}/api/kpi/sales/customer-pareto${qs}`, { headers }),
-          fetch(`${baseUrl}/api/kpi/sales/top-customers${qs}`, { headers })
+        const [sumData, trendData, catData, chanData, repData, paretoData, topCustData] = await Promise.all([
+          fetchFromApiClient(`/api/kpi/sales/summary${qs}`),
+          fetchFromApiClient(`/api/kpi/sales/monthly-trend-yoy${qs}`),
+          fetchFromApiClient(`/api/kpi/sales/by-category${qs}`),
+          fetchFromApiClient(`/api/kpi/sales/by-channel${qs}`),
+          fetchFromApiClient(`/api/kpi/sales/by-rep${qs}`),
+          fetchFromApiClient(`/api/kpi/sales/customer-pareto${qs}`),
+          fetchFromApiClient(`/api/kpi/sales/top-customers${qs}`)
         ]);
 
-        if (sumRes.ok) setSummary(await sumRes.json());
-        if (trendRes.ok) setSalesMonthly(await trendRes.json());
-        if (catRes.ok) setSalesByCategory(await catRes.json());
-        if (chanRes.ok) setSalesByChannel(await chanRes.json());
-        if (repRes.ok) setSalesByRep(await repRes.json());
-        if (paretoRes.ok) setCustomerPareto(await paretoRes.json());
-        if (topCustRes.ok) setTopCustomersList(await topCustRes.json());
+        setSummary(sumData);
+        setSalesMonthly(trendData);
+        setSalesByCategory(catData);
+        setSalesByChannel(chanData);
+        setSalesByRep(repData);
+        setCustomerPareto(paretoData);
+        setTopCustomersList(topCustData);
       } catch (error) {
         console.error("Error fetching sales data:", error);
       } finally {
@@ -98,10 +95,6 @@ export default function CommercialDashboardPage() {
     const fetchTransactions = async () => {
       setLoadingTx(true);
       try {
-        const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
-        const token = localStorage.getItem('datalytixq_token'); 
-        const headers = { 'Authorization': `Bearer ${token}` };
-        
         const params = new URLSearchParams();
         if (selectedEmpresa !== 'all') params.append('subsidiary_id', selectedEmpresa);
         if (selectedMoneda !== 'all') params.append('currency_id', selectedMoneda);
@@ -113,9 +106,8 @@ export default function CommercialDashboardPage() {
         params.append('offset', (transactionPage * 20).toString());
         
         const qs = params.toString() ? `?${params.toString()}` : '';
-        const res = await fetch(`${baseUrl}/api/kpi/sales/transactions${qs}`, { headers });
-        if (res.ok) {
-          const data = await res.json();
+        const data = await fetchFromApiClient(`/api/kpi/sales/transactions${qs}`);
+        if (data) {
           setTransactions(data.data);
           setTransactionTotal(data.pagination.total);
         }

@@ -15,6 +15,7 @@ import {
   User
 } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { fetchFromApiClient } from "@/lib/api.client";
 
 export default function DynamicSidebar() {
   const pathname = usePathname();
@@ -41,20 +42,13 @@ export default function DynamicSidebar() {
 
   const fetchMenuData = async () => {
     try {
-      const token = localStorage.getItem("datalytixq_token");
-      if (!token) return;
-      const headers = { Authorization: `Bearer ${token}` };
-      const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
-
-      const [aRes, rRes] = await Promise.all([
-        fetch(`${baseUrl}/api/admin/areas`, { headers }),
-        fetch(`${baseUrl}/api/admin/reports`, { headers })
+      const [aData, rData] = await Promise.all([
+        fetchFromApiClient("/api/admin/areas"),
+        fetchFromApiClient("/api/admin/reports")
       ]);
 
-      if (aRes.ok && rRes.ok) {
-        setAreas((await aRes.json()).areas);
-        setReports((await rRes.json()).reports);
-      }
+      setAreas(aData.areas);
+      setReports(rData.reports);
     } catch (e) {
       console.error(e);
     }

@@ -1,7 +1,11 @@
 const express = require("express");
 const router = express.Router();
 const sql = require("../db");
+const { requireAuth } = require("../middleware/auth");
 
+router.use(requireAuth);
+
+// TODO: Add client_id filter to queries when dm views expose client_id
 router.get("/home-premium", async (_req, res) => {
   try {
     const result = await sql`

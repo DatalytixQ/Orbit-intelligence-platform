@@ -6,18 +6,16 @@ import { Target, Trophy, XOctagon, Briefcase } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell } from "recharts";
 import DynamicSidebar from "@/components/layout/DynamicSidebar";
 import UnifiedDashboardHeader from "@/components/layout/UnifiedDashboardHeader";
+import { fetchFromApiClient } from "@/lib/api.client";
 
 export default function PipelineDashboard() {
   const [summary, setSummary] = useState<any>(null);
   const [funnel, setFunnel] = useState<any[]>([]);
 
   useEffect(() => {
-    const token = 'dummy-token';
-    const headers = { 'Authorization': `Bearer ${token}` };
-
     Promise.all([
-      fetch('http://localhost:3000/api/kpi/pipeline/summary', { headers }).then(res => res.json()),
-      fetch('http://localhost:3000/api/kpi/pipeline/funnel', { headers }).then(res => res.json())
+      fetchFromApiClient('/api/kpi/pipeline/summary'),
+      fetchFromApiClient('/api/kpi/pipeline/funnel')
     ]).then(([sum, fun]) => {
       setSummary(sum);
       setFunnel(fun);

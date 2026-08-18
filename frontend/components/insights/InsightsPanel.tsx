@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { fetchFromApiClient } from "@/lib/api.client";
 
 type InsightData = {
   id: number;
@@ -19,8 +20,7 @@ export default function InsightsPanel() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/insights/current")
-      .then((res) => res.json())
+    fetchFromApiClient("/api/insights/current")
       .then((data) => {
         setInsights(Array.isArray(data) ? data : []);
         setLoading(false);

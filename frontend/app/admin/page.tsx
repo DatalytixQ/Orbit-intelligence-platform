@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { fetchFromApiClient } from "@/lib/api.client";
 import DynamicSidebar from "@/components/layout/DynamicSidebar";
 import { Settings, Users, Shield, LayoutDashboard, Folder, Tags, Zap, Plus, X, Check, Save } from "lucide-react";
 
@@ -25,28 +26,17 @@ export default function AdminSettingsPage() {
 
   const fetchData = async () => {
     try {
-      const token = localStorage.getItem("datalytixq_token");
-      if (!token) {
-        router.push("/login");
-        return;
-      }
-
-      const headers = { Authorization: `Bearer ${token}` };
-      const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
-
-      const [uRes, rRes, aRes, repRes] = await Promise.all([
-        fetch(`${baseUrl}/api/admin/users`, { headers }),
-        fetch(`${baseUrl}/api/admin/roles`, { headers }),
-        fetch(`${baseUrl}/api/admin/areas`, { headers }),
-        fetch(`${baseUrl}/api/admin/reports`, { headers })
+      const [uData, rData, aData, repData] = await Promise.all([
+        fetchFromApiClient("/api/admin/users"),
+        fetchFromApiClient("/api/admin/roles"),
+        fetchFromApiClient("/api/admin/areas"),
+        fetchFromApiClient("/api/admin/reports")
       ]);
 
-      if (uRes.ok && rRes.ok && aRes.ok && repRes.ok) {
-        setUsers((await uRes.json()).users);
-        setRoles((await rRes.json()).roles);
-        setAreas((await aRes.json()).areas);
-        setReports((await repRes.json()).reports);
-      }
+      setUsers(uData.users);
+      setRoles(rData.roles);
+      setAreas(aData.areas);
+      setReports(repData.reports);
     } catch (e) {
       console.error(e);
     } finally {
@@ -213,28 +203,21 @@ function RolesTab({ roles, areas, reports, refreshData }: { roles: any[], areas:
     }));
 
     try {
-      const token = localStorage.getItem("datalytixq_token");
-      const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
-
-      const res = await fetch(`${baseUrl}/api/admin/roles`, {
+      const resData = await fetchFromApiClient("/api/admin/roles", {
         method: "POST",
-        headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
         body: JSON.stringify({ name: roleName, is_admin: isAdmin, reports: formattedReports })
       });
 
-      if (res.ok) {
+      if (resData) {
         setShowModal(false);
         setRoleName("");
         setIsAdmin(false);
         setSelectedReports({});
         refreshData();
-      } else {
-        const data = await res.json();
-        alert(data.error || "Error al crear rol");
       }
-    } catch (e) {
+    } catch (e: any) {
       console.error(e);
-      alert("Error de conexión");
+      alert(e.message || "Error al crear rol");
     }
   };
 
@@ -402,9 +385,6 @@ function UsersTab({ users, roles, refreshData }: { users: any[], roles: any[], r
     if (!fullName || !email || !password || !roleId) return alert("Todos los campos son obligatorios");
 
     try {
-      const token = localStorage.getItem("datalytixq_token");
-      const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
-
       // Mocking API call for now (we'd need an actual /api/admin/users POST endpoint)
       // Since we don't have it defined in this project's requirements, we will simulate success.
       alert("Simulación: Usuario creado exitosamente (Endpoint POST no implementado aún).");
