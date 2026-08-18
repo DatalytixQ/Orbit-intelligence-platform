@@ -34,6 +34,19 @@ services:
     depends_on:
       - postgres
 
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: orbit_frontend
+    restart: always
+    ports:
+      - "3001:3000"
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - backend
+
   # n8n is included here so everything spins up together
   n8n:
     image: docker.n8n.io/n8nio/n8n

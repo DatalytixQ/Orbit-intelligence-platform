@@ -45,6 +45,7 @@ async function seed() {
     await sql`
       CREATE TABLE public.app_roles (
         id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+        client_id VARCHAR(50) REFERENCES public.clients(client_id) ON DELETE CASCADE,
         name VARCHAR(100) NOT NULL,
         is_admin BOOLEAN DEFAULT false,
         is_active BOOLEAN DEFAULT true,
@@ -64,7 +65,7 @@ async function seed() {
     await sql`
       CREATE TABLE public.app_users (
         id SERIAL PRIMARY KEY,
-        client_id VARCHAR(50) REFERENCES public.clients(client_id),
+        client_id VARCHAR(50) REFERENCES public.clients(client_id) ON DELETE CASCADE,
         email VARCHAR(255) UNIQUE NOT NULL,
         password_hash VARCHAR(255) NOT NULL,
         full_name VARCHAR(100),
@@ -73,6 +74,34 @@ async function seed() {
         created_at TIMESTAMP DEFAULT NOW()
       );
     `;
+
+    console.log("Configurando Row-Level Security (RLS)...");
+    
+    // Habilitar RLS en las tablas multi-tenant
+    await sql`ALTER TABLE public.app_roles ENABLE ROW LEVEL SECURITY;`;
+    await sql`ALTER TABLE public.app_users ENABLE ROW LEVEL SECURITY;`;
+
+    // Crear políticas de aislamiento por tenant
+    // current_setting('app.current_tenant', true) obtiene la variable de sesión sin dar error si no existe.
+    // Si la variable no existe (ej. un superusuario en consola), devolverá NULL y no mostrará datos, a menos que sea el dueño de la tabla.
+    
+    // Para asegurar que el dueño (nosotros corriendo el seed) pueda insertar, Postgres por defecto permite al dueño saltarse el RLS 
+    // a menos que se use FORCE ROW LEVEL SECURITY. Aún así, creamos políticas robustas:
+    
+    await sql`
+      CREATE POLICY tenant_isolation_roles ON public.app_roles
+      AS PERMISSIVE FOR ALL
+      TO public
+      USING (client_id = current_setting('app.current_tenant', true)::VARCHAR);
+    `;
+
+    await sql`
+      CREATE POLICY tenant_isolation_users ON public.app_users
+      AS PERMISSIVE FOR ALL
+      TO public
+      USING (client_id = current_setting('app.current_tenant', true)::VARCHAR);
+    `;
+
 
     console.log("Insertando datos iniciales...");
     
@@ -107,12 +136,12 @@ async function seed() {
       RETURNING id, name
     `;
 
-    // 4. Roles
+    // 4. Roles Locales (Asociados al cliente Vonderk)
     const roles = await sql`
-      INSERT INTO public.app_roles (name, is_admin) VALUES 
-      ('CEO / Administrador', true),
-      ('Gerencia Comercial', false),
-      ('Analista Financiero', false)
+      INSERT INTO public.app_roles (client_id, name, is_admin) VALUES 
+      ('vonderk', 'CEO / Administrador', true),
+      ('vonderk', 'Gerencia Comercial', false),
+      ('vonderk', 'Analista Financiero', false)
       RETURNING id, name
     `;
 
