@@ -1,8 +1,8 @@
 const { GoogleGenAI } = require("@google/genai");
 const Groq = require("groq-sdk");
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+const ai = process.env.GEMINI_API_KEY ? new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY }) : null;
+const groq = process.env.GROQ_API_KEY ? new Groq({ apiKey: process.env.GROQ_API_KEY }) : null;
 
 const GEMINI_MODEL = process.env.AI_MODEL || "gemini-1.5-flash";
 const GROQ_MODEL = "llama-3.3-70b-versatile";
