@@ -1,5 +1,5 @@
-const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
+export const API_BASE_URL =
+  process.env.NEXT_PUBLIC_API_URL || (process.env.NODE_ENV === 'production' ? '' : 'http://localhost:3000');
 
 export async function fetchFromApiClient(path: string, options: RequestInit = {}) {
   const token = typeof window !== "undefined" ? localStorage.getItem("datalytixq_token") || "" : "";

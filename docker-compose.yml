@@ -44,6 +44,8 @@ services:
       - "3001:3000"
     environment:
       - NODE_ENV=production
+      - BACKEND_URL=http://orbit_backend:3000
+      - NEXT_PUBLIC_API_URL=
     depends_on:
       - backend
 

@@ -1,7 +1,7 @@
 import { cookies } from "next/headers";
 
-const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3000";
+export const API_BASE_URL =
+  process.env.BACKEND_URL || (process.env.NODE_ENV === 'production' ? 'http://orbit_backend:3000' : 'http://localhost:3000');
 
 export async function fetchFromApi(path: string, options: RequestInit = {}) {
   let token = "";

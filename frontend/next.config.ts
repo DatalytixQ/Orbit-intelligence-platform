@@ -15,6 +15,15 @@ const nextConfig: NextConfig = {
     turbopack: {
         root: path.resolve(__dirname),
     },
+    async rewrites() {
+        return [
+            {
+                source: '/api/:path*',
+                // Si la variable BACKEND_URL existe en Docker, la usa, sino asume que el backend está corriendo local en 3000
+                destination: `${process.env.BACKEND_URL || 'http://localhost:3000'}/api/:path*`,
+            },
+        ];
+    },
 };
 
 export default withNextIntl(nextConfig);
