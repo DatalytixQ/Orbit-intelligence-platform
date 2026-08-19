@@ -9,8 +9,7 @@ const getFilterConditions = (query, dateColumn = 'sale_date') => {
   const { subsidiary_id, currency_id, channel, rep_id, startDate, endDate } = query;
   let conditions = [];
   
-  // TODO: Add client_id filter when dm views expose client_id
-  
+  conditions.push(sql`client_id = ${req.user.client_id}`);
   if (subsidiary_id && subsidiary_id !== 'all') conditions.push(sql`subsidiary_id = ANY(get_subsidiary_tree(${subsidiary_id}))`);
   if (currency_id && currency_id !== 'all') conditions.push(sql`currency_id = ${currency_id}`);
   if (channel && channel !== 'all') conditions.push(sql`COALESCE(sales_channel_id, 'Directo (Default)') = ${channel}`);

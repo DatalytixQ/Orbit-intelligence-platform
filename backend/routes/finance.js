@@ -10,7 +10,7 @@ router.use(requireAuth);
 
 router.get("/kpi/finance/current", async (_req, res) => {
   try {
-    const result = await sql`select * from public.kpi_finance_current_snapshot`;
+    const result = await sql`select * from public.kpi_finance_current_snapshot where client_id = ${req.user.client_id}`;
     res.json(result[0] || {});
   } catch (e) {
     res.status(500).json({ ok: false, error: e.message });
@@ -19,7 +19,7 @@ router.get("/kpi/finance/current", async (_req, res) => {
 
 router.get("/kpi/finance/ar-aging-summary", async (_req, res) => {
   try {
-    const result = await sql`select * from public.kpi_finance_ar_aging_summary`;
+    const result = await sql`select * from public.kpi_finance_ar_aging_summary where client_id = ${req.user.client_id}`;
     res.json(result);
   } catch (e) {
     res.status(500).json({ ok: false, error: e.message });
@@ -53,7 +53,7 @@ router.get("/kpi/finance/ar-open-items", async (_req, res) => {
           else 0
         end as days_overdue
       from public.finance_ar_open_items_cxc
-      where coalesce(is_initial_balance, false) = false
+      where client_id = ${req.user.client_id} and coalesce(is_initial_balance, false) = false
       order by days_overdue desc, open_balance desc
       limit 300
     `;
@@ -68,6 +68,7 @@ router.get("/kpi/finance/special-receivables", async (_req, res) => {
     const result = await sql`
       select *
       from public.kpi_finance_special_receivables
+      where client_id = ${req.user.client_id}
     `;
     res.json(result);
   } catch (e) {
@@ -80,6 +81,7 @@ router.get("/kpi/finance/special-receivables-detail", async (_req, res) => {
     const result = await sql`
       select *
       from public.kpi_finance_special_receivables_detail
+      where client_id = ${req.user.client_id}
     `;
     res.json(result);
   } catch (e) {
@@ -96,7 +98,7 @@ router.get("/kpi/finance/top-risk-customers", async (_req, res) => {
     const result = await sql`
       select *
       from public.kpi_finance_customer_risk
-      where overdue_balance > 0
+      where client_id = ${req.user.client_id} and overdue_balance > 0
       order by risk_score desc, overdue_90_balance desc, overdue_balance desc
       limit 20
     `;
@@ -117,6 +119,7 @@ router.get("/kpi/finance/risk-summary", async (_req, res) => {
         round(sum(overdue_90_balance), 2) as overdue_90_balance,
         round(avg(risk_score), 1) as avg_risk_score
       from public.kpi_finance_customer_risk
+      where client_id = ${req.user.client_id}
       group by risk_segment
     `;
     res.json(result);
@@ -156,11 +159,13 @@ router.get("/kpi/finance/dso-analytics", async (req, res) => {
           round(sum(overdue_90_balance),2) as overdue_90_balance,
           count(*) filter (where overdue_90_balance > ${minBalance}) as action_customers
         from public.mv_kpi_finance_dso_action_list
+        where client_id = ${req.user.client_id}
       `,
       sql`
         select *
         from public.mv_kpi_finance_dso_action_list
-        where (${segment} = 'ALL' or risk_segment = ${segment})
+        where client_id = ${req.user.client_id}
+          and (${segment} = 'ALL' or risk_segment = ${segment})
           and (${customerId} = 'ALL' or customer_id::text = ${customerId})
           and (${onlyCritical} = false or overdue_90_balance > ${minBalance})
         order by
@@ -175,6 +180,7 @@ router.get("/kpi/finance/dso-analytics", async (req, res) => {
           count(*) as customers,
           round(avg(dso_days),1) as dso_days
         from public.mv_kpi_finance_dso_action_list
+        where client_id = ${req.user.client_id}
         group by risk_segment
         order by dso_days desc nulls last
       `,
@@ -196,7 +202,7 @@ router.get("/kpi/finance/dso-customers", async (_req, res) => {
     const result = await sql`
       select distinct customer_id, customer_name
       from public.mv_kpi_finance_dso_action_list
-      where customer_name is not null
+      where client_id = ${req.user.client_id} and customer_name is not null
       order by customer_name
     `;
     res.json(result);
@@ -218,6 +224,7 @@ router.get("/kpi/finance/dso-executive", async (_req, res) => {
     const dsoAvg = await sql`
       select round(avg(dso_days), 1) as current_dso
       from public.mv_kpi_finance_dso_action_list
+      where client_id = ${req.user.client_id}
     `;
     
     const totals = await sql`
@@ -225,7 +232,7 @@ router.get("/kpi/finance/dso-executive", async (_req, res) => {
         round(sum(open_balance) filter (where due_date is not null and current_date > due_date), 2) as current_overdue_balance,
         round(sum(open_balance) filter (where due_date is not null and current_date - due_date > ${criticalDays}), 2) as current_critical_balance
       from public.finance_ar_open_items_cxc
-      where coalesce(is_initial_balance, false) = false
+      where client_id = ${req.user.client_id} and coalesce(is_initial_balance, false) = false
     `;
 
     const summary = {
@@ -238,6 +245,7 @@ router.get("/kpi/finance/dso-executive", async (_req, res) => {
     const trend = await sql`
       select *
       from public.vw_kpi_finance_dso_trend
+      where client_id = ${req.user.client_id}
       order by month_date asc
     `;
 
@@ -245,6 +253,7 @@ router.get("/kpi/finance/dso-executive", async (_req, res) => {
     const offenders = await sql`
       select *
       from public.vw_kpi_finance_dso_offenders
+      where client_id = ${req.user.client_id}
     `;
     
     // Insights generados basados en los offenders
@@ -415,6 +424,7 @@ router.get("/kpi/customers/health-summary", async (_req, res) => {
     const result = await sql`
       select *
       from public.kpi_customer_health_summary
+      where client_id = ${req.user.client_id}
       order by
         case health_status
           when 'Crítico' then 1
@@ -436,6 +446,7 @@ router.get("/kpi/customers/health-detail", async (_req, res) => {
     const result = await sql`
       select *
       from public.kpi_customer_health_classified
+      where client_id = ${req.user.client_id}
       order by
         overdue_balance desc nulls last,
         max_days_overdue desc nulls last,

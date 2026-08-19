@@ -74,6 +74,7 @@ WHERE type = 'Estimate';
 DROP VIEW IF EXISTS public.dm_fact_sales CASCADE;
 CREATE OR REPLACE VIEW public.dm_fact_sales AS
 SELECT
+    t.client_id      AS client_id,
     t.transaction_id AS transaction_id,
     t.tranid         AS invoice_number,
     t.trandate::DATE AS sale_date,
@@ -107,8 +108,8 @@ SELECT
     -- COGS y MARGEN
     i.unit_cost      AS unit_cost_reference,
     -- ACTUAL COGS (Contable / Base)
-    (CASE WHEN i.item_type IN ('InvtPart', 'Assembly', 'Kit') THEN (tl.quantity * -1) ELSE 0 END * COALESCE(i.unit_cost, 0)) AS actual_cogs_local,
-    (COALESCE(t.exchange_rate, 1) * (CASE WHEN i.item_type IN ('InvtPart', 'Assembly', 'Kit') THEN (tl.quantity * -1) ELSE 0 END * COALESCE(i.unit_cost, 0))) AS actual_cogs_base,
+    (CASE WHEN i.item_type IN ('InvtPart', 'Assembly', 'Kit') THEN (tl.quantity * -1) ELSE 0 END * COALESCE(i.unit_cost, 0)) AS cogs_local,
+    (COALESCE(t.exchange_rate, 1) * (CASE WHEN i.item_type IN ('InvtPart', 'Assembly', 'Kit') THEN (tl.quantity * -1) ELSE 0 END * COALESCE(i.unit_cost, 0))) AS cogs_base,
     (tl.netamount * -1) - (CASE WHEN i.item_type IN ('InvtPart', 'Assembly', 'Kit') THEN (tl.quantity * -1) ELSE 0 END * COALESCE(i.unit_cost, 0)) AS actual_gross_profit,
     
     -- ESTIMATED COGS (Transaccional)
@@ -127,6 +128,7 @@ WHERE t.type IN ('CustInvc', 'CashSale', 'CustCred', 'CashRfnd');
 DROP VIEW IF EXISTS public.dm_fact_pipeline CASCADE;
 CREATE OR REPLACE VIEW public.dm_fact_pipeline AS
 SELECT
+    t.client_id      AS client_id,
     t.transaction_id AS transaction_id, 
     t.tranid         AS order_number, 
     t.trandate::DATE AS order_date,
@@ -161,6 +163,7 @@ WHERE t.type IN ('SalesOrd', 'Estimate');
 DROP VIEW IF EXISTS public.dm_fact_rfm CASCADE;
 CREATE OR REPLACE VIEW public.dm_fact_rfm AS
 SELECT
+    t.client_id AS client_id,
     t.entity_id AS customer_id,
     MAX(t.trandate::DATE)                       AS last_purchase_date,
     CURRENT_DATE - MAX(t.trandate::DATE)        AS recency_days,
@@ -170,4 +173,4 @@ SELECT
 FROM public.raw_ns_transactions t
 JOIN public.raw_ns_transaction_lines tl ON t.transaction_id = tl.transaction_id
 WHERE t.type IN ('CustInvc', 'CashSale')
-GROUP BY t.entity_id;
+GROUP BY t.client_id, t.entity_id;

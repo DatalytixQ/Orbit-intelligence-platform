@@ -5,7 +5,7 @@ const { requireAuth } = require("../middleware/auth");
 
 router.use(requireAuth);
 
-// TODO: Add client_id filter to queries when dm views expose client_id
+// Added client_id filter to queries
 // ========================================
 // SALES PIPELINE DASHBOARD API
 // ========================================
@@ -22,6 +22,7 @@ router.get("/kpi/pipeline/summary", async (req, res) => {
           COUNT(DISTINCT transaction_id) FILTER (WHERE opportunity_status = 'Closed Won') AS won_opportunities,
           COUNT(DISTINCT transaction_id) FILTER (WHERE opportunity_status = 'Closed Lost') AS lost_opportunities
         FROM public.dm_fact_pipeline
+        WHERE client_id = ${req.user.client_id}
       )
       SELECT
         open_opportunities,
@@ -47,7 +48,7 @@ router.get("/kpi/pipeline/funnel", async (req, res) => {
         COUNT(DISTINCT transaction_id) as opp_count,
         SUM(amount_base) as total_amount
       FROM public.dm_fact_pipeline
-      WHERE opportunity_status NOT IN ('Closed Lost', 'Closed Won')
+      WHERE client_id = ${req.user.client_id} AND opportunity_status NOT IN ('Closed Lost', 'Closed Won')
       GROUP BY opportunity_status
       ORDER BY total_amount DESC
     `;
@@ -67,7 +68,7 @@ router.get("/kpi/pipeline/by-rep", async (req, res) => {
         SUM(f.weighted_amount_base) as weighted_pipeline
       FROM public.dm_fact_pipeline f
       LEFT JOIN public.dm_dim_sales_reps r ON f.salesrep_id = r.salesrep_id
-      WHERE f.opportunity_status NOT IN ('Closed Lost', 'Closed Won')
+      WHERE f.client_id = ${req.user.client_id} AND f.opportunity_status NOT IN ('Closed Lost', 'Closed Won')
       GROUP BY r.rep_full_name
       ORDER BY gross_pipeline DESC
     `;

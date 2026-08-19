@@ -49,6 +49,37 @@ router.post("/users", requireAuth, checkAdmin, async (req, res) => {
   }
 });
 
+router.put("/users/:id", requireAuth, checkAdmin, async (req, res) => {
+  try {
+    const { email, full_name, role_id, is_active } = req.body;
+    const result = await sql`
+      UPDATE public.app_users 
+      SET email = COALESCE(${email}, email),
+          full_name = COALESCE(${full_name}, full_name),
+          role_id = COALESCE(${role_id}::uuid, role_id),
+          is_active = COALESCE(${is_active}, is_active)
+      WHERE id = ${req.params.id} AND client_id = ${req.user.client_id}
+      RETURNING id, email, full_name
+    `;
+    res.json({ ok: true, user: result[0] });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err.message });
+  }
+});
+
+router.delete("/users/:id", requireAuth, checkAdmin, async (req, res) => {
+  try {
+    await sql`
+      UPDATE public.app_users 
+      SET is_active = false 
+      WHERE id = ${req.params.id} AND client_id = ${req.user.client_id}
+    `;
+    res.json({ ok: true });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err.message });
+  }
+});
+
 // ==========================================
 // ÁREAS Y REPORTES
 // ==========================================
@@ -56,6 +87,47 @@ router.get("/areas", requireAuth, async (req, res) => {
   try {
     const areas = await sql`SELECT * FROM public.app_areas WHERE is_active = true AND client_id = ${req.user.client_id} ORDER BY sort_order ASC`;
     res.json({ ok: true, areas });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err.message });
+  }
+});
+
+router.post("/areas", requireAuth, checkAdmin, async (req, res) => {
+  try {
+    const { name, icon, sort_order } = req.body;
+    const result = await sql`
+      INSERT INTO public.app_areas (client_id, name, icon, sort_order)
+      VALUES (${req.user.client_id}, ${name}, ${icon}, ${sort_order})
+      RETURNING *
+    `;
+    res.json({ ok: true, area: result[0] });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err.message });
+  }
+});
+
+router.put("/areas/:id", requireAuth, checkAdmin, async (req, res) => {
+  try {
+    const { name, icon, sort_order, is_active } = req.body;
+    const result = await sql`
+      UPDATE public.app_areas 
+      SET name = COALESCE(${name}, name),
+          icon = COALESCE(${icon}, icon),
+          sort_order = COALESCE(${sort_order}, sort_order),
+          is_active = COALESCE(${is_active}, is_active)
+      WHERE id = ${req.params.id} AND client_id = ${req.user.client_id}
+      RETURNING *
+    `;
+    res.json({ ok: true, area: result[0] });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err.message });
+  }
+});
+
+router.delete("/areas/:id", requireAuth, checkAdmin, async (req, res) => {
+  try {
+    await sql`UPDATE public.app_areas SET is_active = false WHERE id = ${req.params.id} AND client_id = ${req.user.client_id}`;
+    res.json({ ok: true });
   } catch (err) {
     res.status(500).json({ ok: false, error: err.message });
   }
@@ -71,6 +143,49 @@ router.get("/reports", requireAuth, async (req, res) => {
       ORDER BY a.sort_order ASC, r.name ASC
     `;
     res.json({ ok: true, reports });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err.message });
+  }
+});
+
+router.post("/reports", requireAuth, checkAdmin, async (req, res) => {
+  try {
+    const { area_id, name, path, icon, is_dashboard } = req.body;
+    const result = await sql`
+      INSERT INTO public.app_reports (client_id, area_id, name, path, icon, is_dashboard)
+      VALUES (${req.user.client_id}, ${area_id}::uuid, ${name}, ${path}, ${icon}, ${is_dashboard})
+      RETURNING *
+    `;
+    res.json({ ok: true, report: result[0] });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err.message });
+  }
+});
+
+router.put("/reports/:id", requireAuth, checkAdmin, async (req, res) => {
+  try {
+    const { area_id, name, path, icon, is_dashboard, is_active } = req.body;
+    const result = await sql`
+      UPDATE public.app_reports 
+      SET area_id = COALESCE(${area_id}::uuid, area_id),
+          name = COALESCE(${name}, name),
+          path = COALESCE(${path}, path),
+          icon = COALESCE(${icon}, icon),
+          is_dashboard = COALESCE(${is_dashboard}, is_dashboard),
+          is_active = COALESCE(${is_active}, is_active)
+      WHERE id = ${req.params.id} AND client_id = ${req.user.client_id}
+      RETURNING *
+    `;
+    res.json({ ok: true, report: result[0] });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err.message });
+  }
+});
+
+router.delete("/reports/:id", requireAuth, checkAdmin, async (req, res) => {
+  try {
+    await sql`UPDATE public.app_reports SET is_active = false WHERE id = ${req.params.id} AND client_id = ${req.user.client_id}`;
+    res.json({ ok: true });
   } catch (err) {
     res.status(500).json({ ok: false, error: err.message });
   }
@@ -124,6 +239,42 @@ router.post("/roles", requireAuth, checkAdmin, async (req, res) => {
     }
 
     res.json({ ok: true, role: result[0] });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err.message });
+  }
+});
+
+router.put("/roles/:id", requireAuth, checkAdmin, async (req, res) => {
+  try {
+    const { name, is_admin, is_active, reports } = req.body;
+    const roleResult = await sql`
+      UPDATE public.app_roles 
+      SET name = COALESCE(${name}, name),
+          is_admin = COALESCE(${is_admin}, is_admin),
+          is_active = COALESCE(${is_active}, is_active)
+      WHERE id = ${req.params.id} AND client_id = ${req.user.client_id}
+      RETURNING *
+    `;
+    
+    if (reports && Array.isArray(reports)) {
+      await sql`DELETE FROM public.app_role_reports WHERE role_id = ${req.params.id}`;
+      for (const rep of reports) {
+        await sql`
+          INSERT INTO public.app_role_reports (role_id, report_id, can_update) 
+          VALUES (${req.params.id}, ${rep.report_id}::uuid, ${rep.can_update || false})
+        `;
+      }
+    }
+    res.json({ ok: true, role: roleResult[0] });
+  } catch (err) {
+    res.status(500).json({ ok: false, error: err.message });
+  }
+});
+
+router.delete("/roles/:id", requireAuth, checkAdmin, async (req, res) => {
+  try {
+    await sql`UPDATE public.app_roles SET is_active = false WHERE id = ${req.params.id} AND client_id = ${req.user.client_id}`;
+    res.json({ ok: true });
   } catch (err) {
     res.status(500).json({ ok: false, error: err.message });
   }
